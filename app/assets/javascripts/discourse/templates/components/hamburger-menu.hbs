@@ -79,7 +79,8 @@
 
   {{#menu-links omitRule="true"}}
     <li>{{d-link route="about" class="about-link" label="about.simple_title"}}</li>
-    {{#unless prioritizeFaq}}
+    <li>{{d-link route="test" class="about-link" label="test"}}</li>
+  {{#unless prioritizeFaq}}
       <li>{{d-link path=faqUrl class="faq-link" label="faq"}}</li>
     {{/unless}}
 

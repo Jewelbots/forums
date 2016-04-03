@@ -30,6 +30,8 @@ Discourse::Application.routes.draw do
       get "live_post_counts"
     end
   end
+  
+  resources :birthdate 
 
   resources :directory_items
 

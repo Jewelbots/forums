@@ -1,7 +1,7 @@
 export default function() {
   // Error page
   this.route('exception', { path: '/exception' });
-
+  this.resource('birthdate', { path : '/birthdate' });
   this.resource('about', { path: '/about' });
 
   // Topic routes
