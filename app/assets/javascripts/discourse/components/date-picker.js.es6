@@ -11,6 +11,8 @@ export default Em.Component.extend({
     const input = this.$(".date-picker")[0];
 
     loadScript("/javascripts/pikaday.js").then(() => {
+      
+      
       let default_opts = {
         field: input,
         container: this.$()[0],
@@ -27,7 +29,10 @@ export default Em.Component.extend({
         },
         onSelect: date => this.set("value", moment(date).format("YYYY-MM-DD"))
       };
-
+      if(this.get('options') == "birthdate"){
+        default_opts.defaultDate = moment().subtract(10, "year").toDate();
+        default_opts.minDate = null;
+      }
       this._picker = new Pikaday(Object.assign(default_opts, this._opts()));
     });
   },
