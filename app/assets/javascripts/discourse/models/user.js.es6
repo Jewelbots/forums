@@ -145,6 +145,7 @@ const User = RestModel.extend({
             'website',
             'location',
             'name',
+            'birthday',
             'locale',
             'custom_fields',
             'user_fields',

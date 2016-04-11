@@ -50,6 +50,7 @@ export default Ember.Controller.extend(ModalFunctionality, {
     if (this.get('emailValidation.failed')) return true;
     if (this.get('usernameValidation.failed')) return true;
     if (this.get('passwordValidation.failed')) return true;
+    if (this.get('birthdateValidation.failed')) return true;
 
     // Validate required fields
     let userFields = this.get('userFields');
@@ -336,7 +337,7 @@ export default Ember.Controller.extend(ModalFunctionality, {
 
     createAccount() {
       const self = this,
-          attrs = this.getProperties('accountName', 'accountEmail', 'accountPassword', 'accountUsername', 'accountPasswordConfirm', 'accountChallenge'),
+          attrs = this.getProperties('accountName', 'accountEmail', 'accountBirthday', 'accountPassword', 'accountUsername', 'accountPasswordConfirm', 'accountChallenge'),
           userFields = this.get('userFields');
 
       // Add the userfields to the data

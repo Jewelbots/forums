@@ -21,6 +21,17 @@
           <td><label>{{i18n 'user.email.instructions'}}</label></td>
         </tr>
 
+        <tr class="input">
+            <td class="label"><label for='new-account-birthday'>Birthday</label></td>
+            <td>
+                {{date-picker options="birthdate" name="date-of-birth" value="accountBirthday"}}
+            </td>
+        </tr>
+        <tr class="instructions">
+            <td></td>
+            <td><label>Sorry, we gotta ask</label></td>
+        </tr>
+
         {{#if usernameRequired}}
           <tr class="input">
                 <td class="label"><label for='new-account-username'>{{i18n 'user.username.title'}}</label></td>

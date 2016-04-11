@@ -191,6 +191,7 @@ class User < ActiveRecord::Base
     user.email = params[:email]
     user.password = params[:password]
     user.username = params[:username]
+    user.date_of_birth = params[:date_of_birth]
     user
   end
 
@@ -1007,7 +1008,7 @@ end
 #  previous_visit_at       :datetime
 #  suspended_at            :datetime
 #  suspended_till          :datetime
-#  date_of_birth           :date
+#  date_of_birth           :date            
 #  views                   :integer          default(0), not null
 #  flag_level              :integer          default(0), not null
 #  ip_address              :inet

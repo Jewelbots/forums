@@ -527,7 +527,7 @@ class UsersController < ApplicationController
 
     results = UserSearch.new(term, topic_id: topic_id, topic_allowed_users: topic_allowed_users, searching_user: current_user).search
 
-    user_fields = [:username, :upload_avatar_template]
+    user_fields = [:username, :upload_avatar_template, :date_of_birth]
     user_fields << :name if SiteSetting.enable_names?
 
     to_render = { users: results.as_json(only: user_fields, methods: [:avatar_template]) }
