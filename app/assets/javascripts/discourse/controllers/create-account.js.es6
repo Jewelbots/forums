@@ -323,6 +323,13 @@ export default Ember.Controller.extend(ModalFunctionality, {
   }.property('accountPassword', 'rejectedPasswords.@each', 'accountUsername', 'accountEmail', 'isDeveloper'),
 
   @on('init')
+   hideSignup(){
+       //hide all fields besides birthday until birthday is selected
+    $("tr").hide();
+    $(".create").hide();
+    $(".birthday").show();
+
+   },
   fetchConfirmationValue() {
     return Discourse.ajax('/users/hp.json').then(json => {
       this.set('accountPasswordConfirm', json.value);
@@ -335,6 +342,19 @@ export default Ember.Controller.extend(ModalFunctionality, {
       this.get('controllers.login').send('externalLogin', provider);
     },
 
+    checkBirthday(){
+    var birthday = new Date(this.get('accountBirthday'));
+    var difference  = Date.now() - birthday.getTime();
+    var ageDiff = new Date(difference);
+    var age = Math.abs(ageDiff.getUTCFullYear() - 1970);
+    
+    console.log(age);
+    //var ageDate = new Date(ageDifMs); // miliseconds from epoch
+     //       return Math.abs(ageDate.getUTCFullYear() - 1970);
+    //var age = 
+    // if(Date.Now() - this.get(accountBirthday) < 13)    
+
+    },
     createAccount() {
       const self = this,
           attrs = this.getProperties('accountName', 'accountEmail', 'accountBirthday', 'accountPassword', 'accountUsername', 'accountPasswordConfirm', 'accountChallenge'),

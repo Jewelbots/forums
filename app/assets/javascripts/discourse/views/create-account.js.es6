@@ -13,6 +13,7 @@ export default ModalBodyView.extend({
     if ($.cookie('email')) {
       createAccountController.set('accountEmail', $.cookie('email'));
     }
+    createAccountController.hideSignup();
 
     Em.run.schedule('afterRender', function() {
       $("input[type='text'], input[type='password']").keydown(function(e) {
