@@ -65,8 +65,19 @@ export default Ember.Controller.extend(ModalFunctionality, {
     return false;
   }.property('passwordRequired', 'nameValidation.failed', 'emailValidation.failed', 'usernameValidation.failed', 'passwordValidation.failed', 'formSubmitted', 'userFields.@each.value'),
 
-
   usernameRequired: Ember.computed.not('authOptions.omit_username'),
+
+  nextDisabled: function(){
+    console.log(this);
+    if (Ember.isEmpty(this.get('accountBirthday'))) {
+        return true;
+      };
+    return false;
+    }.property('birthdayValidation.failed'),
+
+  birthdayValidation : function(){
+    return "Please enter a valid birthday";
+  }.property('accountBirthday'),
 
   passwordRequired: function() {
     return Ember.isEmpty(this.get('authOptions.auth_provider'));
@@ -84,7 +95,7 @@ export default Ember.Controller.extend(ModalFunctionality, {
   nameValidation: function() {
     if (Discourse.SiteSettings.full_name_required && Ember.isEmpty(this.get('accountName'))) {
       return Discourse.InputValidation.create({ failed: true });
-    }
+  }
 
     return Discourse.InputValidation.create({ok: true});
   }.property('accountName'),
@@ -330,6 +341,11 @@ export default Ember.Controller.extend(ModalFunctionality, {
     $(".birthday").show();
 
    },
+  showSignup(){
+    $("tr").show();
+    $(".next").hide();
+    $(".create").show();
+  },
   fetchConfirmationValue() {
     return Discourse.ajax('/users/hp.json').then(json => {
       this.set('accountPasswordConfirm', json.value);
@@ -343,18 +359,25 @@ export default Ember.Controller.extend(ModalFunctionality, {
     },
 
     checkBirthday(){
+    if(!this.nextDisabled)
+    {
+    
     var birthday = new Date(this.get('accountBirthday'));
     var difference  = Date.now() - birthday.getTime();
     var ageDiff = new Date(difference);
     var age = Math.abs(ageDiff.getUTCFullYear() - 1970);
     
     console.log(age);
-    //var ageDate = new Date(ageDifMs); // miliseconds from epoch
-     //       return Math.abs(ageDate.getUTCFullYear() - 1970);
-    //var age = 
-    // if(Date.Now() - this.get(accountBirthday) < 13)    
+    if(age < 13)
+       alert("too young!!!");
+    else
+       this.showSignup();
 
-    },
+    }
+    else
+    {
+     
+    }},
     createAccount() {
       const self = this,
           attrs = this.getProperties('accountName', 'accountEmail', 'accountBirthday', 'accountPassword', 'accountUsername', 'accountPasswordConfirm', 'accountChallenge'),

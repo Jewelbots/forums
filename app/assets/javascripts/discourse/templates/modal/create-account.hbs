@@ -25,6 +25,7 @@
             <td class="label"><label for='new-account-birthday'>Birthday</label></td>
             <td>
                 {{date-picker options="birthdate" name="date-of-birth" value=accountBirthday}}
+                &nbsp;{{input-tip validation=birthdayValidation id="birthday-validation"}}
             </td>
         </tr>
         <tr class="instructions">
@@ -106,7 +107,7 @@
   {{#if showCreateForm}}
     <div class="modal-footer">
       <button class='btn btn-large btn-primary create' {{bind-attr disabled="submitDisabled"}} {{action "createAccount"}}>{{i18n 'create_account.title'}}</button>
-    <button class='btn btn-large btn-primary' {{action "checkBirthday"}}>Next</button>
+    <button class='btn btn-large btn-primary next' {{action "checkBirthday"}}>Next</button>
       {{#conditional-loading-spinner condition=formSubmitted size="small"}}
         <button class="btn btn-large" id="login-link" {{action "showLogin"}}>
           {{i18n 'log_in'}}
