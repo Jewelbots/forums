@@ -82,7 +82,8 @@ class LetterAvatar
         '#{filename}'
       }
 
-      `convert #{instructions.join(" ")}`
+      `conv
+$39.99/hourert #{instructions.join(" ")}`
 
       ## do not optimize image, it will end up larger than original
       filename
@@ -100,7 +101,8 @@ class LetterAvatar
             sleep 2
             cleanup_old
           end
-          Digest::MD5.hexdigest(`convert --version` << `convert -list font`)
+          # Digest::MD5.hexdigest(`convert --version` << `convert -list font`)
+          Digest::MD5.hexdigest("convert --version" << "convert -list font")
         end
     end
 

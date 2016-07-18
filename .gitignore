@@ -105,3 +105,4 @@ config/version.rb
 bundler_stubs/*
 
 vendor/bundle/*
+config/database.yml

@@ -1,118 +1,164 @@
 {{#unless complete}}
-  <div class="modal-body">
-    {{#unless hasAuthOptions}}
-      {{login-buttons action="externalLogin"}}
-    {{/unless}}
+    <div class="modal-body">
+        {{#unless hasAuthOptions}}
+            {{login-buttons action="externalLogin"}}
+        {{/unless}}
+
+        {{#if showCreateForm}}
+            <div>
+                <div class="check-info-by-stripe">
+                    <script
+                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+                    data-name="Permission from an Adult"
+                    data-description="Verified then click submit again"
+                    data-image="/img/documentation/checkout/marketplace.png"
+                    data-locale="auto">
+                    </script>
+
+                    <!--<div class="description">-->
+                        <!--<div>-->
+                            <!--<p>Since you are under 13 we need to get permission from your adult for you to join the community</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<br/>-->
+
+                    <!--<form method="POST" id="stripe-form">-->
+                        <!--<span class="payment-errors"></span>-->
+
+                        <!--<div class="form-row">-->
+                            <!--<span>CC #</span> &nbsp;-->
+                            <!--<input type="text" size="20" data-stripe="number">-->
+                        <!--</div>-->
+
+                        <!--<div class="form-row">-->
+                            <!--<span>Expiration (MM/YY)</span> &nbsp;-->
+                            <!--<input type="text" size="2" data-stripe="exp_month">-->
+                            <!--<span> / </span>-->
+                            <!--<input type="text" size="2" data-stripe="exp_year">-->
+                        <!--</div>-->
+
+                        <!--<div class="form-row">-->
+                            <!--<span>CVC</span> &nbsp;-->
+                            <!--<input type="text" size="4" data-stripe="cvc">-->
+                        <!--</div>-->
+
+                        <!--<input type="submit" class="stripe-form-submit" value="Submit" style="display: none">-->
+                    <!--</form>-->
+                </div>
+                <div class="default-signup">
+                    <form>
+                        <table class="">
+                            <tr class="input">
+                                <td class="label"><label for='new-account-email'>{{i18n 'user.email.title'}}</label></td>
+                                <td>
+                                    {{input type="email" value=accountEmail id="new-account-email" disabled=emailValidated name="email" autofocus="autofocus"}}
+                                    &nbsp;{{input-tip validation=emailValidation}}
+                                </td>
+                            </tr>
+                            <tr class="instructions">
+                                <td></td>
+                                <td><label>{{i18n 'user.email.instructions'}}</label></td>
+                            </tr>
+
+                            {{#if usernameRequired}}
+                                <tr class="input">
+                                    <td class="label"><label for='new-account-username'>{{i18n 'user.username.title'}}</label></td>
+                                    <td>
+                                        {{input value=accountUsername id="new-account-username" name="username" maxlength=maxUsernameLength}}
+                                        &nbsp;{{input-tip validation=usernameValidation id="username-validation"}}
+                                    </td>
+                                </tr>
+                                <tr class="instructions">
+                                    <td></td>
+                                    <td><label>{{i18n 'user.username.instructions'}}</label></td>
+                                </tr>
+                            {{/if}}
+
+                            {{#if siteSettings.enable_names}}
+                                <tr class="input">
+                                    <td style="width:80px" class="label">
+                                        <label for='new-account-name'>{{i18n 'user.name.title'}}</label>
+                                    </td>
+                                    <td style="width:496px">
+                                        {{text-field value=accountName id="new-account-name"}}&nbsp;{{input-tip validation=nameValidation}}
+                                    </td>
+                                </tr>
+                                <tr class="instructions">
+                                    <td></td>
+                                    <td><label>{{nameInstructions}}</label></td>
+                                </tr>
+                            {{/if}}
+
+                            {{plugin-outlet "create-account-before-password"}}
+
+                            {{#if passwordRequired}}
+                                <tr class="input">
+                                    <td class="label"><label for='new-account-password'>{{i18n 'user.password.title'}}</label></td>
+                                    <td>
+                                        {{password-field value=accountPassword type="password" id="new-account-password" capsLockOn=capsLockOn}}
+                                        &nbsp;{{input-tip validation=passwordValidation}}
+                                    </td>
+                                </tr>
+                                <tr class="instructions">
+                                    <td></td>
+                                    <td>
+                                        <label>{{passwordInstructions}}</label>
+                                        <div {{bind-attr class=":caps-lock-warning capsLockOn::invisible"}}><i class="fa fa-exclamation-triangle"></i> {{i18n 'login.caps_lock_warning'}}</div>
+                                    </td>
+                                </tr>
+                            {{/if}}
+
+                            <tr class="password-confirmation">
+                                <td><label for='new-account-password-confirmation'>{{i18n 'user.password_confirmation.title'}}</label></td>
+                                <td>
+                                    {{input type="password" value=accountPasswordConfirm id="new-account-confirmation"}}
+                                    {{input value=accountChallenge id="new-account-challenge"}}
+                                </td>
+                            </tr>
+
+                        </table>
+                    </form>
+                </div>
+                <div class="first-signup" style="height: 300px;">
+                    <div style="text-align: center; width: 100%;">
+                        <label>Welcome to Jewelbots!</label>
+                        <label>To Register, please enter your birthdate</label>
+                    </div>
+                    <br/>
+                    <br/>
+                    <div style="text-align: center; width: 100%;">
+                        <b>Birthday</b>
+                        &nbsp;&nbsp;
+                        {{date-picker options="birthdate" name="date-of-birth" value=accountBirthday}}
+                        &nbsp;
+                        {{input-tip validation=birthdayValidation id="birthday-validation"}}
+                        <span id="error_birthday_msg" style="color:#a52a2a; display: none;">Invalid birthday!</span>
+                    </div>
+                </div>
+
+                {{#if userFields}}
+                    <div class='user-fields'>
+                        {{#each f in userFields}}
+                            {{user-field field=f.field value=f.value}}
+                        {{/each}}
+                    </div>
+                {{/if}}
+
+            </div>
+        {{/if}}
+    </div>
 
     {{#if showCreateForm}}
-      <div>
-        <form>
-        <table>
-
-        <tr class="input">
-              <td class="label"><label for='new-account-email'>{{i18n 'user.email.title'}}</label></td>
-              <td>
-              {{input type="email" value=accountEmail id="new-account-email" disabled=emailValidated name="email" autofocus="autofocus"}}
-              &nbsp;{{input-tip validation=emailValidation}}
-              </td>
-        </tr>
-        <tr class="instructions">
-          <td></td>
-          <td><label>{{i18n 'user.email.instructions'}}</label></td>
-        </tr>
-
-        <tr class="input birthday">
-            <td class="label"><label for='new-account-birthday'>Birthday</label></td>
-            <td>
-                {{date-picker options="birthdate" name="date-of-birth" value=accountBirthday}}
-                &nbsp;{{input-tip validation=birthdayValidation id="birthday-validation"}}
-            </td>
-        </tr>
-        <tr class="instructions">
-            <td></td>
-            <td><label>Sorry, we gotta ask</label></td>
-        </tr>
-
-        {{#if usernameRequired}}
-          <tr class="input">
-                <td class="label"><label for='new-account-username'>{{i18n 'user.username.title'}}</label></td>
-                <td>
-                {{input value=accountUsername id="new-account-username" name="username" maxlength=maxUsernameLength}}
-                &nbsp;{{input-tip validation=usernameValidation id="username-validation"}}
-                </td>
-          </tr>
-          <tr class="instructions">
-            <td></td>
-            <td><label>{{i18n 'user.username.instructions'}}</label></td>
-          </tr>
-        {{/if}}
-
-        {{#if siteSettings.enable_names}}
-          <tr class="input">
-            <td style="width:80px" class="label">
-              <label for='new-account-name'>{{i18n 'user.name.title'}}</label>
-            </td>
-            <td style="width:496px">
-              {{text-field value=accountName id="new-account-name"}}&nbsp;{{input-tip validation=nameValidation}}
-            </td>
-          </tr>
-          <tr class="instructions">
-            <td></td>
-            <td><label>{{nameInstructions}}</label></td>
-          </tr>
-        {{/if}}
-
-        {{plugin-outlet "create-account-before-password"}}
-
-        {{#if passwordRequired}}
-          <tr class="input">
-              <td class="label"><label for='new-account-password'>{{i18n 'user.password.title'}}</label></td>
-              <td>
-              {{password-field value=accountPassword type="password" id="new-account-password" capsLockOn=capsLockOn}}
-              &nbsp;{{input-tip validation=passwordValidation}}
-              </td>
-          </tr>
-          <tr class="instructions">
-            <td></td>
-            <td>
-              <label>{{passwordInstructions}}</label>
-              <div {{bind-attr class=":caps-lock-warning capsLockOn::invisible"}}><i class="fa fa-exclamation-triangle"></i> {{i18n 'login.caps_lock_warning'}}</div>
-            </td>
-          </tr>
-        {{/if}}
-
-        <tr class="password-confirmation">
-          <td><label for='new-account-password-confirmation'>{{i18n 'user.password_confirmation.title'}}</label></td>
-          <td>
-            {{input type="password" value=accountPasswordConfirm id="new-account-confirmation"}}
-            {{input value=accountChallenge id="new-account-challenge"}}
-          </td>
-        </tr>
-
-        </table>
-
-        {{#if userFields}}
-          <div class='user-fields'>
-            {{#each f in userFields}}
-              {{user-field field=f.field value=f.value}}
-            {{/each}}
-          </div>
-        {{/if}}
-
-        </form>
-      </div>
+        <div class="modal-footer">
+            <button class='btn btn-large btn-primary create' {{bind-attr disabled="submitDisabled"}} {{action "createAccount"}}>{{i18n 'create_account.title'}}</button>
+            <button class='btn btn-large btn-primary next' {{action "checkBirthday"}}>Submit</button>
+            {{#conditional-loading-spinner condition=formSubmitted size="small"}}
+                <button class="btn btn-large" id="login-link" {{action "showLogin"}}>
+                    {{i18n 'log_in'}}
+                </button>
+            {{/conditional-loading-spinner}}
+        </div>
     {{/if}}
-  </div>
-
-  {{#if showCreateForm}}
-    <div class="modal-footer">
-      <button class='btn btn-large btn-primary create' {{bind-attr disabled="submitDisabled"}} {{action "createAccount"}}>{{i18n 'create_account.title'}}</button>
-    <button class='btn btn-large btn-primary next' {{action "checkBirthday"}}>Next</button>
-      {{#conditional-loading-spinner condition=formSubmitted size="small"}}
-        <button class="btn btn-large" id="login-link" {{action "showLogin"}}>
-          {{i18n 'log_in'}}
-        </button>
-      {{/conditional-loading-spinner}}
-    </div>
-  {{/if}}
 {{/unless}}

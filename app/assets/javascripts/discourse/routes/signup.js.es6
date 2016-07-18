@@ -8,7 +8,7 @@ SignupRoute.reopen({
 
     if (!this.siteSettings.login_required) {
       this.replaceWith('discovery.latest').then(e => {
-        if (canSignUp) {
+        if (canSignUp) { 
           Ember.run.next(() => e.send('showCreateAccount'));
         }
       });

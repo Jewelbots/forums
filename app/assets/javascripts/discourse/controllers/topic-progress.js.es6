@@ -66,7 +66,7 @@ export default Ember.Controller.extend({
     this.set('expanded', false);
     DiscourseURL.routeTo(url);
   },
-
+    
   streamPercentage: function() {
     if (!this.get('model.postStream.loaded')) { return 0; }
     if (this.get('model.postStream.highest_post_number') === 0) { return 0; }
