@@ -94,7 +94,7 @@ chef/tmp/*
 .procfile
 
 # .env, local environment variables for use with foreman
-.env
+#.env
 
 # exclude our git version file for now
 config/version.rb
