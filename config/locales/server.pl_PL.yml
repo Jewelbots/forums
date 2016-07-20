@@ -24,12 +24,14 @@ pl_PL:
   loading: "Ładowanie"
   powered_by_html: 'Zasilane przez <a href="http://www.discourse.org">Discourse</a>, najlepiej oglądać z włączonym JavaScriptem'
   log_in: "Logowanie"
-  purge_reason: "Automatycznie usunięto jako porzucone, nieaktywne konto"
   disable_remote_images_download_reason: "Pobieranie zewnętrznych grafik zostało wyłączone z uwagi na niską ilość wolnego miejsca na dysku."
   anonymous: "Anonim"
   emails:
     incoming:
       default_subject: "Przychodzący email od %{email}"
+      show_trimmed_content: "Pokaż skróconą zawartość"
+      errors:
+        no_message_id_error: "Zdarza się kiedy email nie posiada nagłówka 'Message-Id'."
   errors: &errors
     format: '%{attribute} %{message}'
     messages:
@@ -118,7 +120,6 @@ pl_PL:
   user_is_suspended: "Zawieszeni użytkownicy nie mogą wysyłać wiadomości."
   topic_not_found: "Coś poszło nie tak. Być może temat został zamknięty lub usunięty w międzyczasie?"
   just_posted_that: "jest zbyt podobne do tego co umieściłeś niedawno"
-  has_already_been_used: "został już użyty"
   invalid_characters: "zawiera niepoprawne znaki"
   is_invalid: "jest niewystarczająca – spróbuj ją rozwinąć"
   next_page: "następna strona →"
@@ -143,7 +144,6 @@ pl_PL:
     delete_reason: "Skasowany z poziomu kolejki moderacji."
   groups:
     errors:
-      can_not_modify_automatic: "Nie możesz modyfikować automatycznej grupy"
       member_already_exist: "'%{username}' należy już do tej grupy."
     default_names:
       everyone: "wszyscy"
@@ -418,7 +418,6 @@ pl_PL:
     continue_button: "Przejdź do %{site_name}"
     welcome_to: "Witamy na forum %{site_name}!"
     approval_required: "Moderator musi zaakceptować Twoje nowe konto zanim uzyskasz dostęp do forum. O aktywacji zostaniesz poinformowanym mailem."
-    missing_session: "Nie wiemy, czy twoje konto zostało utworzone, upewnij się, że masz włączone pliki cookies."
   post_action_types:
     off_topic:
       title: 'Nie na temat'
@@ -573,27 +572,19 @@ pl_PL:
     page_view_anon_reqs:
       title: "Anonimowy"
       xaxis: "Dzień"
-      yaxis: "Anonimowe zapytania API "
     page_view_logged_in_reqs:
       title: "Zalogowany"
       xaxis: "Dzień"
-      yaxis: "Zalogowano w zapytaniach API"
     page_view_crawler_reqs:
       title: "Bot indeksujący"
       xaxis: "Dzień"
-      yaxis: "API robotów indeksujących żąda"
     page_view_total_reqs:
       title: "Łącznie"
       xaxis: "Dzień"
-      yaxis: "Razem żądań API"
     page_view_logged_in_mobile_reqs:
-      title: "Zalogowany w zapytaniach API "
       xaxis: "Dzień"
-      yaxis: "Urządzenie zalogowane w zapytaniach API"
     page_view_anon_mobile_reqs:
-      title: "Anonimowe zapytania do API"
       xaxis: "Dzień"
-      yaxis: "Mobilne anonimowe zapytania do API"
     http_background_reqs:
       title: "Tło"
       xaxis: "Dzień"
@@ -702,7 +693,6 @@ pl_PL:
     summary_max_results: "Maksymalna liczba wpisów w 'Podsumowaniu tematu'"
     enable_long_polling: "Message bus used for notification can use long polling"
     anon_polling_interval: "How often should anonymous clients poll in milliseconds"
-    flags_required_to_hide_post: "Number of flags that cause a post to be automatically hidden and PM sent to the user (0 for never)"
     cooldown_minutes_after_hiding_posts: "Liczba minut, ile musi odczekać użytkownik, zanim będzie mógł edytować post ukryty w wyniku oflagowania przez społeczność"
     max_topics_in_first_day: "Maksymalna liczba tematów, jakie może stworzyć użytkownik pierwszego dnia na tej stronie."
     max_replies_in_first_day: "Maksymalna liczba odpowiedzi, jakie może napisać użytkownik pierwszego dnia na tej stronie."
@@ -783,8 +773,6 @@ pl_PL:
     tl2_requires_likes_received: "Ile lajków musi otrzymać użytkownik, zanim otrzyma promocję na 2 poziom zaufania."
     tl2_requires_likes_given: "Ile lajków musi dać użytkownik, zanim otrzyma promocję na 2 poziom zaufania."
     tl2_requires_topic_reply_count: "Na ile tematów musi odpowiedzieć użytkownik, zanim otrzyma promocję na 2 poziom zaufania."
-    tl3_requires_topics_replied_to: "Minimalna liczba tematów, na które użytkownik musiał odpowiedzieć w ciągu ostatnich 100 dni, aby kwalifikować się do promocji na 3 poziom zaufania. (0 albo więcej)"
-    tl3_requires_likes_received: "Minimalna liczba lajków, jakie należało otrzymać w ciągu ostatnich 100 dni, by kwalifikować się do promocji na 3 stopień zaufania."
     min_trust_to_create_topic: "The minimum trust level required to create a new topic."
     newuser_max_links: "Ile linków może dodać nowy użytkownik do posta."
     newuser_max_images: "Ile obrazów może dodać nowy użytkownik do posta."
@@ -802,7 +790,6 @@ pl_PL:
     faq_url: "If you have a FAQ hosted elsewhere that you want to use, provide the full URL here."
     tos_url: "If you have a Terms of Service document hosted elsewhere that you want to use, provide the full URL here."
     privacy_policy_url: "If you have a Privacy Policy document hosted elsewhere that you want to use, provide the full URL here."
-    newuser_spam_host_threshold: "How many times a new user can post a link to the same host within their `newuser_spam_host_posts` posts before being considered spam."
     staff_like_weight: "O ile większą wagę mają mieć polubienia przyznawane przez członków zespołu?"
     reply_by_email_enabled: "Włącz możliwość odpowiadania na wpisy poprzez email."
     reply_by_email_address: "Template for reply by email incoming email address, for example: %{reply_key}@reply.example.com or replies+%{reply_key}@example.com"
@@ -857,11 +844,6 @@ pl_PL:
       category: 'Kategorie'
       topic: 'Wyniki'
       user: 'Użytkownicy'
-  sso:
-    not_found: "Sprawdzenie lub stworzenie konta jest niemożliwe, skontaktuj się z administracją strony"
-    account_not_approved: "Konto czeka na zatwierdzenie. Dostaniesz powiadomienie emailem, kiedy to się stanie."
-    unknown_error: "Błąd aktualizowania informacji, skontaktuj się z administracją strony"
-    timeout_expired: "Zbyt długi czas logowania, spróbuj zalogować się ponownie"
   original_poster: "Autor pierwszego wpisu"
   most_posts: "Większość postów"
   most_recent_poster: "Autor najnowszego wpisu"
@@ -1001,20 +983,6 @@ pl_PL:
   system_messages:
     post_hidden:
       subject_template: "Wpis został ukryty z powodu oflagowania przez społeczność"
-      text_body_template: |
-        Witamy,
-
-        To automatyczna wiadomość od %{site_name}, by poinformować Cię, że Twój post został ukryty.
-
-        %{base_url}%{url}
-
-        %{flag_reason}
-
-        Wielu członków społeczności oznaczyło ten post przed jego ukryciem, zatem prosimy Cię, byś zastanowił się, jak możesz zrewidować swoje stanowisko, uwzględniając ich opinię. **Możesz edytować post po %{edit_delay} minutach, po czym będzie on znów widoczny.
-
-        Jednakże jeśli post został ukryty przez społeczność po raz drugi, pozostanie taki, dopóki nie zajmie się nim personel - za tym mogą iść dalsze działania, jak możliwe zawieszenie Twojego konta.
-
-        Aby uzyskać informacje na temat dalszego postępowania, przeczytaj [wytyczne dla społeczności] (%{base_url}/guidelines).
     welcome_user:
       subject_template: "Witaj na %{site_name}!"
     welcome_invite:
@@ -1071,20 +1039,8 @@ pl_PL:
     csv_export_failed:
       subject_template: "Nieudany eksport danych"
       text_body_template: "Przepraszamy, ale eksport danych zakończył się niepowodzeniem. Sprawdź logi lub skontaktuj się z operatorami serwisu."
-    too_many_spam_flags:
-      subject_template: "Nowe konto zablokowane"
-    blocked_by_staff:
-      subject_template: "Account blocked"
     user_automatically_blocked:
       subject_template: "Nowy użytkownik %{username} został zablokowany z powodu oflagowania przez społeczność"
-    unblocked:
-      subject_template: "Konto odblokowane"
-      text_body_template: |
-        Witaj,
-
-        Wysyłamy tę automatyczną wiadomość z %{site_name} aby poinformować Cię, że Twoje konto zostało odblokowane po interwencji zespołu.
-
-        Możesz znowu tworzyć wpisy i tematy.
     pending_users_reminder:
       subject_template:
         one: "1 użytkownik czeka na zatwierdzenie"
@@ -1186,8 +1142,6 @@ pl_PL:
     pasted_image_filename: "Pasted image"
     images:
       size_not_found: "Sorry, but we couldn't determine the size of the image. Maybe your image is corrupted?"
-  flag_reason:
-    sockpuppet: "A new user created a topic, and another new user at the same IP address replied. See the flag_sockpuppets site setting."
   email_log:
     no_user: "Nie można znaleźć użytkownika z ID %{user_id}"
     post_deleted: "Wpis został usunięty przez autora"
@@ -1209,56 +1163,6 @@ pl_PL:
     title: "Warunki użytkowania"
   privacy_topic:
     title: "Polityka prywatności"
-  badges:
-    long_descriptions:
-      autobiographer: |
-        Ta odznaka jest przyznawana za wypełnienie <a href="/my/preferences">w twoim profilu i za wybranie zdjęcia profilowego. Pozwól lepiej się poznać i pokaż swoje zainteresowania, aby społeczność była jeszcze lepsza i silniej związana.
-      first_like: |+
-        Ta odznaka jest przyznawana, kiedy po raz pierwszy polubisz posta, posługując się przyciskiem :heart:. Dzięki lajkowaniu postów członkowie społeczności wiedzą, że ich wpisy były interesujące, użyteczne, fajne i zabawne. Dziel się miłością!
-
-      first_link: |
-        Ta odznaka jest przyznawana, kiedy po raz pierwszy podajesz link do innego tematu w odpowiedzi. Lajkowanie tematów pomaga innym czytającym w odnalezieniu powiązanych interesujących dyskusji, pokazując związki między tematami w obydwu kierunkach.
-      first_quote: |+
-        Ta odznaka jest przyznawana, kiedy po raz pierwszy cytujesz jakiś post w swojej odpowiedzi. Cytowanie powiązanych fragmentów wcześniejszych postów w odpowiedziach pozwala na prowadzenie dyskusji na temat.
-
-      first_share: |
-        Ta odznaka jest przyznawana, kiedy po raz pierwszy dzielisz się linkiem odpowiedzi albo tematu, posługując się przyciskiem "Prześlij". Dzielenie się linkami to znakomity sposób na pokazanie ciekawej dyskusji innym i na powiększenie grona znajomych.
-      read_guidelines: |
-        Ta odznaka jest przyznawana za <a href="/guidelines">przeczytanie przewodników społeczności</a>. Obserwowanie tych prostych przewodników i dzielenie się nimi pomaga zbudować bezpieczną, wesołą i trwałą społeczność.
-      reader: |
-        Ta odznaka jest przyznawana za przeczytanie długiego tematu. Czytanie jest podstawą. Uważne czytanie pozwoli ci śledzić dyskusję i komentować w lepszy, bardziej kompleksowy sposób.
-      editor: |
-        Ta odznaka jest przyznawana za edytowanie swojego postu. Nie wahaj się i edytuj swoje posty, by je ulepszać, poprawiać błędy oraz dodawać to, o czym wcześniej zapomniałeś.
-      first_flag: |
-        Ta odznaka jest przyznawana za oflagowanie posta. Flagowanie jest kluczowe dla dobrostanu naszej społeczności. Jeśli zauważysz post, który wymaga uwagi moderatora, prosimy,
-        oflaguj go bez wahania. Możesz także posłużyć się flagowaniem rozmowy, by wysłać </b>wiadomości</b> do innych użytkowników.
-      nice_share: |+
-        Ta odznaka jest przyznawana za podzielenie się linkiem do posta odwiedzonego przez 25 gości z zewnątrz. Dobra robota! Dzielenie się linkami do ciekawych rozmów z przyjaciółmi to wspaniały sposób na powiększenie naszej społeczności.
-
-      welcome: |
-        Ta odznaka jest przyznawana, kiedy dostajesz pierwszego lajka przy poście. Gratulacje, napisałeś coś, co inni użytkownicy uznali za interesujące, fajne lub użyteczne!
-      anniversary: |
-        Ta odznaka jest przyznawana, kiedy jesteś członkiem społeczności od roku z co najmniej jednym postem napisanym w tym roku. Dziękujemy, że się udzielasz w naszej społeczności!
-      good_share: |
-        Ta odznaka jest przyznawana za podzielenie się linkiem do posta odwiedzonego przez 300 gości z zewnątrz. Dobra robota! Pokazałeś interesującą dyskusję <i>wielu</i> nowym osobom i pomogłeś nam się rozwinąć.
-      great_share: |
-        Ta odznaka jest przyznawana za podzielenie się linkiem do posta odwiedzonego przez 100 gości z zewnątrz. Super! Pokazałeś interesującą dyskusję ogromnej ilości nowych osób i pomogłeś nam bardzo w rozwoju.
-      nice_post: |
-        Ta odznaka jest przyznawana za napisanie odpowiedzi, która otrzymała 10 lajków. Dobra robota!
-      nice_topic: "Ta odznaka jest przyznawana za utworzenie tematu, który otrzymał 10 lajków. Dobra robota! \n"
-      good_post: |
-        Ta odznaka jest przyznawana za napisanie odpowiedzi, która otrzymała 25 lajków. Wspaniała robota!
-      good_topic: "Ta odznaka jest przyznawana za utworzenie tematu, który otrzymał 25 lajków. Wspaniała robota! \n"
-      great_post: "Ta odznaka jest przyznawana za napisanie posta, który otrzymał 50 lajków. Super! \n"
-      great_topic: "Ta odznaka jest przyznawana za napisanie odpowiedzi, która otrzymała 50 lajków. Super! \n"
-      basic: |
-        Ta odznaka jest przyznawana, kiedy otrzymujesz 1 poziom zaufania. Dziękujemy, że tutaj jesteś i myszkujesz w tematach, by dowiedzieć się, o co nam chodzi. Zniesiono ograniczenia nałożone na ciebie jako na nowego użytkownika. Przyznano ci wszystkie podstawowe możliwości, takie jak pisanie prywatnych wiadomości, flagowanie, edytowanie Wikipedii, a także możliwość umieszczania zdjęć i linków.
-      member: |
-        Ta odznaka jest przyznawana, kiedy osiągasz 2 poziom zaufania. Dziękujemy, że od kilku tygodni udzielasz się w naszej społeczności. Możesz teraz wysyłać osobiste zaproszenia ze swojej strony użytkownika, tworzyć indywidualne tematy i wiadomości grupowe, a także masz kilka lajków na dzień więcej.
-      regular: |
-        Ta odznaka jest przyznawana, kiedy osiągasz 3 poziom zaufania. Dziękujemy, że od miesięcy udzielasz się tutaj regularnie, jesteś jednym z najaktywniejszych czytelników i rzetelnie przyczyniasz się do tego, że nasza społeczność jest wspaniała. Możesz teraz zmieniać kategorie i nazwy tematów, masz dostęp do prywatnego salonu, silniejsze flagi do oznaczania spamu oraz o wiele więcej lajków dziennie.
-      leader: |
-        Ta odznaka jest przyznawana, kiedy osiągasz 4 poziom zaufania. Jesteś liderem w tej społeczności, wybranym przez zespół, a twoje czyny i słowa dają pozytywny przykład. Możesz edytować wszystkie posty i zajmować się tematami z pozycji moderatora, tzn. przypinać, zamykać, odznaczać, archiwizować, dzielić, łączyć. Masz także setki lajków dziennie.
   admin_login:
     success: "Email wysłany"
     error: "Błąd!"

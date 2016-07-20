@@ -286,7 +286,6 @@ te:
       dismiss_notifications: "అన్నీ చదివినట్టు గుర్తించు"
       dismiss_notifications_tooltip: "అన్ని చదవని ప్రకటనలూ చదివినట్టు గుర్తించు"
       disable_jump_reply: "నేను జవాబిచ్చాక నా టపాకు వెళ్లవద్దు"
-      edit_history_public: "ఇతర సభ్యలను నా టపా దిద్దుబాట్లను చూడనివ్వు"
       external_links_in_new_tab: "అన్ని బాహ్య లంకెలనూ కొత్త ట్యాబులో తెరువు"
       enable_quoting: "హైలైట్ అయిన పాఠ్యానికి కోట్ జవాబు చేతనం చేయి"
       change: "మార్చు"
@@ -297,7 +296,6 @@ te:
       suspended_notice: "ఈ సభ్యుడు {{date}} వరకూ సస్పెండయ్యాడు"
       suspended_reason: "కారణం:"
       github_profile: "గిట్ హబ్"
-      mailing_list_mode: "ప్రతి కొత్త టపాకూ నాకో ఈమెయిల్ పంపు (నేనా విషయాన్ని లేదా వర్గాన్ని నిశ్శబ్దించేంతవరకూ)"
       watched_categories: "ఒకకన్నేసారు"
       tracked_categories: "గమనించారు"
       muted_categories: "నిశ్శబ్దం"
@@ -326,7 +324,6 @@ te:
         title: "నా గురించి మార్చు"
       change_username:
         title: "సభ్యనామం మార్చు"
-        confirm: "మీరు సభ్యనామం మారిస్తే, మీ టపాల అన్ని గత కోట్లు మరియు @పేరు ప్రస్తావనలు సరిగ్గా పనిచెయ్యవు. మీరు నిజ్జంగానే సభ్యనామం మార్చాలనుకుంటున్నారా? "
         taken: "క్షమించాలి, ఆ సభ్యనామం వేరొకరు తీసుకున్నారు."
         error: "మీ సభ్యనామం మార్చడంలో దోషం."
         invalid: "ఆ సభ్యనామం చెల్లనిది. కేవలం సంఖ్యలు, అక్షరాలు మాత్రమే కలిగి ఉండాలి. "
@@ -391,7 +388,6 @@ te:
       website: "వెబ్ సైటు"
       email_settings: "ఈమెయిల్"
       email_digests:
-        title: "నేను ఇక్కడికి రాకపోతే, కొత్త విషయాలు నాకు ఈమెయిల్ గా పంపండి:"
         daily: "ప్రతీరోజు"
         every_three_days: "ప్రతి మూడు రోజులకీ"
         weekly: "ప్రతీవారం"
@@ -653,7 +649,6 @@ te:
       post_format: "{{username}} నుండి #{{post_number}}"
       context:
         user: "@{{username}} యొక్క విషయాలు వెతుకు"
-        category: "\"{{category}}\" వర్గంలో వెతుకు"
         topic: "ఈ విషయంలో వెతుకు"
     go_back: 'వెనక్కు మరలు'
     not_logged_in_user: 'సభ్యుని ప్రస్తుత కలాపాల మరియు అభిరూపాల సారాంశ పుట'
@@ -880,10 +875,7 @@ te:
         create: "క్షమించాలి. మీ టపా సృష్టించుటలో దోషం. దయచేసి మరలా ప్రయత్నించండి. "
         edit: "క్షమించాలి. మీ టపా సవరించుటలో దోషం. మరలా ప్రయత్నించండి"
         upload: "క్షమించాలి. దస్త్రం ఎగుమతించుటలో దోషం. దయచేసి మరలా ప్రయత్నించండి. "
-        attachment_too_large: "క్షమించాలి. మీరు ఎగుమతించ ప్రయత్నిస్తున్న దస్త్రం మరీ పెద్దది. (గరిష్ట పరిమాణ పరిమితి {{max_size_kb}}కేబీ)."
-        file_too_large: "క్షమించాలి. మీరు ఎగుమతించ ప్రయత్నిస్తున్న దస్త్రం మరీ పెద్దది. (గరిష్ట పరిమాణ పరిమితి {{max_size_kb}}కేబీ)."
         too_many_uploads: "క్షమించాలి. మీరు ఒకసారి ఒక దస్త్రం మాత్రమే ఎగుమతించగలరు"
-        too_many_dragged_and_dropped_files: "క్షమించాలి. మీరు కేవలం 10 దస్త్రాల వరకు మాత్రమే ఒకేమారు లాగి వదలగలరు. "
         upload_not_authorized: "క్షమించాలి. మీరు ఎగుమతించాలనుకుంటున్న దస్త్రం అధీకృతమైనది కాదు. (అధీకృత పొడిగింతలు:{{authorized_extensions}})."
         image_upload_not_allowed_for_new_user: "క్షమించాలి. కొత్త సభ్యులు బొమ్మలు ఎగుమతి చేయలేరు."
         attachment_upload_not_allowed_for_new_user: "క్షమించాలి. కొత్త సభ్యులు జోడింపులు ఎగుమతి చేయలేరు."
@@ -1219,7 +1211,6 @@ te:
           30_days_ago: "ముప్పై రోజుల క్రితం"
           all: "అన్ని"
           view_table: "టేబుల్"
-          view_chart: "బార్ పట్టిక"
           refresh_report: "రిపోర్టు తాజాపరుచు"
           start_date: "ఆరంభ తేదీ"
           end_date: "ముగింపు తేదీ"
@@ -1335,12 +1326,6 @@ te:
           backups: "బ్యాకప్పులు"
           logs: "లాగ్స్"
         none: "ఎట్టి బ్యాకప్పులూ లేవు"
-        read_only:
-          enable:
-            title: "కేవలం చదివే రీతే చేతనం చేయి"
-            confirm: "మీరు నిజంగా కేవలం చదివే రీతి చేతనంచేయాలనుకుంటున్నారా?"
-          disable:
-            title: "కేవలం చదివే రీతి అచేతనం చేయి"
         logs:
           none: "ఇంకా లాగులు లేవు..."
         columns:
@@ -1890,8 +1875,6 @@ te:
         mark_watching: '<b>m</b>, <b>w</b> చూసిన విషయం'
     badges:
       title: బ్యాడ్జీలు
-      allow_title: "శీర్షికగా కూడా వాడవచ్చు"
-      multiple_grant: "పలుమార్లు బహూకరించవచ్చు"
       more_badges:
         one: "+%{count} కంటే"
         other: "+%{count} ఇంకా"
@@ -1911,74 +1894,3 @@ te:
           name: ఇతర
         posting:
           name: రాస్తున్నారు
-      badge:
-        editor:
-          name: ఎడిటరు
-          description: తొలి టపా సవరణ
-        basic_user:
-          name: ప్రాథమిక
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/4">మంజూరు చేసిన</a> అన్ని ఆవశ్యక సామాజిక చర్యలు
-        member:
-          name: సభ్యుడు
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/5">మంజూరు చేసిన </a> ఆహ్వానాలు
-        regular:
-          name: రెగ్యులరు
-        leader:
-          name: లీడరు
-        welcome:
-          name: సుస్వాగతం
-          description: ఒక ఇష్టాన్ని అందుకున్నారు
-        autobiographer:
-          name: ఆత్మకధావాది
-          description: వినియోగదారు నింపిన <a href="/my/preferences">ఫ్రొపైల్ </a> సమాచారం
-        anniversary:
-          name: వార్షికోత్సవం
-          description: ఒక సంవత్సరం నుండి చురుకైన సభ్యుడు, కనీసం ఒకసారి టపా చేశాడు
-        nice_post:
-          name: మంచి టపా
-          description: ఒక టపా 10 ఇష్టాలు స్వీకరిస్తే , ఈ చిహ్నం అనేక సార్లు మంజూరు అవుతుంది
-        good_post:
-          name: చాలా మంచి టపా
-          description: ఒక టపా 25 ఇష్టాలు స్వీకరిస్తే , ఈ చిహ్నం అనేక సార్లు మంజూరు అవుతుంది
-        great_post:
-          name: బహుమంచి టపా
-          description: ఒక టపా 50 ఇష్టాలు స్వీకరిస్తే , ఈ చిహ్నం అనేక సార్లు మంజూరు అవుతుంది
-        nice_topic:
-          name: మంచి విషయం
-          description: ఒక విషయం 10 ఇష్టాలు స్వీకరిస్తే , ఈ చిహ్నం అనేక సార్లు మంజూరు అవుతుంది
-        good_topic:
-          name: చాలా మంచి విషయం
-          description: ఒక విషయం 25 ఇష్టాలు స్వీకరిస్తే , ఈ చిహ్నం అనేక సార్లు మంజూరు అవుతుంది
-        great_topic:
-          name: బహుమంచి విషయం
-          description: ఒక విషయం 50 ఇష్టాలు స్వీకరిస్తే , ఈ చిహ్నం అనేక సార్లు మంజూరు అవుతుంది
-        nice_share:
-          name: మంచి పంపకం
-          description: ఒక టపాను 25మంది సభ్యులతో పంచుకున్నారు
-        good_share:
-          name: చాలామంచి పంపకం
-          description: ఒక టపాను 300మంది సభ్యులతో పంచుకున్నారు
-        great_share:
-          name: బహుమంచి పంపకం
-          description: ఒక టపాను 1000 మంది సభ్యులతో పంచుకున్నారు
-        first_like:
-          name: తొలి ఇష్టం
-          description: టపాను ఇష్టపడ్డారు
-        first_flag:
-          name: తొలి కేతనం
-          description: ఒక టపాను కేతనించారు
-        first_share:
-          name: తొలి పంపకం
-          description: ఒక టపాను పంచారు
-        first_link:
-          name: తొలి లంకె
-          description: వేరొక విషయానికి అంతర్గతంగా లంకె కలిపారు
-        first_quote:
-          name: తొలి కోట్
-          description: ఒక సభ్యుడిని కోట్ చేసారు
-        read_guidelines:
-          name: మార్గదర్శకాలు చదువు
-          description: <a href="/guidelines">కమ్యునిటీ మార్గదర్శకాలు</a> చదవండి
-        reader:
-          name: చదువరి
-          description: 100 టపాల కన్నా ఎక్కువ ఉన్న అంశంలో ప్రతి టపా చదవండి

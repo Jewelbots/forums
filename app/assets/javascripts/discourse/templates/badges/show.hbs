@@ -1,28 +1,26 @@
-<div class='container show-badge'>
+<div class='container show-badge {{model.slug}}'>
   <h1>
     {{#link-to 'badges.index'}}{{i18n 'badges.title'}}{{/link-to}}
      /
-    {{model.displayName}}
+    {{model.name}}
   </h1>
 
-  {{#if longDescription}}
-    <div class='long-description banner'>
-      {{{longDescription}}}
-    </div>
-  {{/if}}
-
-  <div class='badges-listing'>
-    <div class='row'>
-      <div class='grant-count'>{{i18n 'badges.granted' count=grantCount}}</div>
-      <div class='info'>
-        {{i18n 'badges.allow_title'}} {{check-mark checked=model.allow_title}}<br>
-        {{i18n 'badges.multiple_grant'}} {{check-mark checked=model.multiple_grant}}
+  <div class='show-badge-details'>
+    {{badge-card badge=model size="large" count=userBadges.grant_count}}
+    <div class='badge-grant-info'>
+      <div>
+        <div class='grant-info-item'>
+          {{check-mark checked=model.allow_title}} {{i18n 'badges.allow_title'}}
+        </div>
+        <div class='grant-info-item'>
+          {{check-mark checked=model.multiple_grant}} {{i18n 'badges.multiple_grant'}}
+        </div>
       </div>
     </div>
   </div>
 
   {{#if userBadges}}
-    <div class="user-badges">
+    <div class="user-badges {{model.slug}}">
       {{#load-more selector=".badge-info" action="loadMore"}}
         {{#each userBadges as |ub|}}
           {{#user-info user=ub.user size="medium" class="badge-info" date=ub.granted_at}}
@@ -35,7 +33,7 @@
       {{/load-more}}
 
       {{#unless canLoadMore}}
-        {{#if user}}
+        {{#if canShowOthers}}
         <div class='clearfix'>
           <a class='btn' href='{{model.url}}'>{{i18n 'badges.others_count' count=model.grant_count}}</a>
         </div>

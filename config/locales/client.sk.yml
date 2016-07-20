@@ -324,8 +324,6 @@ sk:
       title: "Používatelia"
       likes_given: "Rozdané"
       likes_received: "Prijaté"
-      topics_entered: "Navštívené"
-      topics_entered_long: "Navšívených tém"
       time_read: "Čas strávený čítaním"
       topic_count: "Témy"
       topic_count_long: "Vytvorených tém"
@@ -471,7 +469,6 @@ sk:
       dismiss_notifications_tooltip: "Označiť všetky neprečítané upozornenia ako prečítané"
       disable_jump_reply: "Neskočiť na môj príspevok po odpovedi"
       dynamic_favicon: "Zobraziť počet nových/upravených tém na ikone prehliadača"
-      edit_history_public: "Povoliť ostatným užívateľom zobrazenie všetkých verzií môjho príspevku"
       external_links_in_new_tab: "Otvoriť všekty externé odkazy v novej záložke"
       enable_quoting: "Umožniť odpoveď s citáciou z označeného textu"
       change: "zmeniť"
@@ -483,7 +480,6 @@ sk:
       suspended_notice: "Tento  používateľ je suspendovaný do {{date}}"
       suspended_reason: "Dôvod:"
       github_profile: "Github"
-      mailing_list_mode: "Pošli mi email pri každom novom príspevku (pokiaľ neignorujem tému alebo kategóriu)"
       watched_categories: "Sledované"
       watched_categories_instructions: "Budete automaticky sledovať všetky nové témy v týchto kategóriách. Budete upozornený na všetky nové príspevky a témy, a zároveň bude vedľa témy zobrazený počet nových príspevkov."
       tracked_categories: "Sledované"
@@ -525,10 +521,8 @@ sk:
         set_password: "Nastaviť heslo"
       change_about:
         title: "Upraviť O mne"
-        error: "Pri úprave hodnoty nastala chyba"
       change_username:
         title: "Zmeniť užívateľské meno"
-        confirm: "Ak si zmeníte vaše užívateľské meno, všetky predchádajúce cítacie vašich príspevkov a @zmienok prestanú platiť. Ste si určite istý, že to chcete?"
         taken: "Sorry, toto užívateľské meno je obsadené."
         error: "Pri zmene užívateľského mena prišlo k chybe."
         invalid: "Toto užívateľské meno nie je platné. Musí obsahovať iba znaky a čísla."
@@ -609,7 +603,6 @@ sk:
         always: "vždy"
         never: "nikdy"
       email_digests:
-        title: "Ak to tu nenavštívim, pošlite mi emailový súhrn s novinkami:"
         every_30_minutes: "každých 30 mintút"
         every_hour: "každú hodinu"
         daily: "denne"
@@ -687,17 +680,11 @@ sk:
       summary:
         title: "Sumarizácia"
         stats: "Štatistiky"
-        topic_count: "Vytvorené témy"
-        post_count: "Vytvorené príspevky"
-        likes_given: "Udelené Páči sa mi"
-        likes_received: "Obdržané Páči sa mi"
-        days_visited: "Navštívených dní"
-        posts_read_count: "Prečítaných príspevkov"
         top_replies: "Najvýznamnejšie odpovede"
-        top_topics: "Najvýznamnejšie témy"
-        top_badges: "Najvýznamnejšie odznaky"
-        more_topics: "Viac tém"
         more_replies: "Viac odpovedí"
+        top_topics: "Najvýznamnejšie témy"
+        more_topics: "Viac tém"
+        top_badges: "Najvýznamnejšie odznaky"
         more_badges: "Viac odznakov"
       associated_accounts: "Prihlásenia"
       ip_address:
@@ -909,7 +896,6 @@ sk:
       link_description: "tu zadaj popis odkazu"
       link_dialog_title: "Vložte hyperlink"
       link_optional_text: "nepovinný názov"
-      link_placeholder: "http://example.com \"voliteľný text\""
       quote_title: "Úvodzovky"
       quote_text: "Úvodzovky"
       code_title: "Preformátovaný text"
@@ -946,7 +932,6 @@ sk:
       group_mentioned: "<i title='group mentioned' class='fa fa-at'></i><p><span>{{username}}</span> {{description}}</p>"
       quoted: "<i title='quoted' class='fa fa-quote-right'></i><p><span>{{username}}</span> {{description}}</p>"
       replied: "<i title='replied' class='fa fa-reply'></i><p><span>{{username}}</span> {{description}}</p>"
-      posted: "<i title='replied' class='fa fa-reply'></i><p><span>{{username}}</span> {{description}}</p>"
       edited: "<i title='edited' class='fa fa-pencil'></i><p><span>{{username}}</span> {{description}}</p>"
       liked: "<i title='liked' class='fa fa-heart'></i><p><span>{{username}}</span> {{description}}</p>"
       private_message: "<i title='private message' class='fa fa-envelope-o'></i><p><span>{{username}}</span> {{description}}</p>"
@@ -1017,7 +1002,6 @@ sk:
       post_format: "#{{post_number}} podľa {{username}}"
       context:
         user: "Vyhľadávanie podľa @{{username}}"
-        category: "Vyhľadávanie podľa  \"{{category}}\"  kategórie"
         topic: "Hľadaj v tejto téme"
         private_messages: "Hľadaj správy"
     hamburger_menu: "prejsť na iné témy, alebo kategórie"
@@ -1376,10 +1360,7 @@ sk:
         create: "Ľutujeme, pri vytváraní príspevku nastala chyba. Prosím, skúste znovu."
         edit: "Ľutujeme, pri úprave príspevku nastala chyba. Prosím, skúste znovu."
         upload: "Ľutujeme, pri nahrávaní súboru nastala chyba. Prosím, skúste znovu."
-        attachment_too_large: "Ľutujeme, súbor, ktorý sa pokúšate nahrať, je príliš veľký (maximálna veľkosť je {{max_size_kb}}kb)."
-        file_too_large: "Ľutujeme, súbor, ktorý sa pokúšate nahrať je príliš veľký (maximálna veľkosť je {{max_size_kb}}kb)"
         too_many_uploads: "Ľutujeme, ale naraz je možné nahrať len jeden súbor."
-        too_many_dragged_and_dropped_files: "Prepáčte, naraz môžte presunúť maximálne 10 súborov."
         upload_not_authorized: "Ľutujeme, súbor, ktorý sa pokúšate nahrať nemá povolenú príponu  (povolené prípony sú: {{authorized_extensions}})."
         image_upload_not_allowed_for_new_user: "Ľutujeme, noví použivatelia nemôžu nahrávať obrázky."
         attachment_upload_not_allowed_for_new_user: "Ľutujeme, noví používatelia nemôžu nahrávať prílohy."
@@ -1837,7 +1818,6 @@ sk:
           30_days_ago: "Pred 30 dňami"
           all: "Všetky"
           view_table: "tabuľka"
-          view_chart: "stĺpcový graf"
           refresh_report: "Obnoviť report"
           start_date: "Od"
           end_date: "Do"
@@ -1977,14 +1957,6 @@ sk:
           backups: "Zálohy"
           logs: "Logy"
         none: "Nie je dostupná žiadna záloha."
-        read_only:
-          enable:
-            title: "Povoliť mód len na čítanie."
-            label: "Povoliť mód len na čítanie."
-            confirm: "Ste si istý, že chcete povoliť mód len na čítanie?"
-          disable:
-            title: "Zakázať mód len na čítanie"
-            label: "Zakázať mód len na čítanie"
         logs:
           none: "Zatiaľ žiadne logy..."
         columns:
@@ -2161,7 +2133,6 @@ sk:
           none: "Nenájdené žiadne ďalšie emaily."
           modal:
             error: "Chyba"
-            date: "Dátum"
           filters:
             from_placeholder: "from@example.com"
             to_placeholder: "to@example.com"
@@ -2415,7 +2386,6 @@ sk:
         deactivate_explanation: "Deaktivovaý užívateľ musí znovu overiť svoj email"
         suspended_explanation: "Suspendovaní užívatelia sa nemôžu prihlasovať."
         block_explanation: "Zablokovaní uťívatelia nemôžu zakladať témy ani pridávať príspevky."
-        stage_explanation: "Dočasný používateľ môže prispievať emailom iba do vybraných tém."
         trust_level_change_failed: "Nastala chyba pri zmene úrovne dôveryhodnosti užívateľa."
         suspend_modal_title: "Zruš práva užívateľovi"
         trust_level_2_users: "Užívatelia na 2 Stupni dôvery"
@@ -2699,10 +2669,7 @@ sk:
         one: "Získal tento odkaz 1 krát"
         few: "Získal tento odkaz %{count} krát"
         other: "Získal tento odkaz %{count} krát"
-      more_with_badge: "Iný s týmto odznakom"
       title: Odznaky
-      allow_title: "môže byť použitý ako názov"
-      multiple_grant: "Môže byť ocenené viacnásobne"
       badge_count:
         one: "1 Odznak"
         few: "%{count} Odznaky"
@@ -2728,97 +2695,6 @@ sk:
           name: Ostatné
         posting:
           name: Prispievam
-      badge:
-        editor:
-          name: Editor
-          description: Úprava prvého príspevku
-        basic_user:
-          name: Základné
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/4">Povolené</a> všetky základné funkcie komunity
-        member:
-          name: Člen
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/5">Povolené</a> pozývanie
-        regular:
-          name: Bežný
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/6">Povolené</a> zmeny kategóriií, premenovávanie, odkazy a lóža
-        leader:
-          name: Vodca
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/7">Pridelené</a> globálna editácia, pripnutia, uzatváranie, archivovanie, rozdeľovanie a spájanie
-        welcome:
-          name: Vitajte
-          description: Prijal "Páči sa"
-        autobiographer:
-          name: Autobiograf
-          description: Vyplnený užívateľský <a href="/my/preferences">profil</a>
-        anniversary:
-          name: Výročie
-          description: Aktívny člen, napísal aspoň jeden príspevok za rok
-        nice_post:
-          name: Pekný príspevok
-          description: Príspevok získal 10 "Páči sa". Tento odznak môže byť pridelený viac krát
-        good_post:
-          name: Dobrý príspevok
-          description: Príspevok získal 25 "Páči sa". Tento odznak môže byť pridelený viac krát
-        great_post:
-          name: Vynikajúci príspevok
-          description: Príspevok získal 50 "Páči sa". Tento odznak môže byť pridelený viac krát
-        nice_topic:
-          name: Pekná téma
-          description: Téma získala 10 "Páči sa". Tento odznak môže byť pridelený viac krát
-        good_topic:
-          name: Dobrá téma
-          description: Téma získala 25 "Páči sa". Tento odznak môže byť pridelený viac krát
-        great_topic:
-          name: Vynikajúca téma
-          description: Téma získala 50 "Páči sa". Tento odznak môže byť pridelený viac krát
-        nice_share:
-          name: Pekné zdieľanie
-          description: Zdieľaný príspevok s 25 jedinečnými návštevami
-        good_share:
-          name: Dobré zdieľanie
-          description: Zdieľaný príspevok s 300 jedinečnými návštevami
-        great_share:
-          name: Výborné zdieľanie
-          description: Zdieľaný príspevok s 1000 jedinečnými návštevami
-        first_like:
-          name: Prvé "Páči sa mi"
-          description: Príspevok, ktorý sa páčil
-        first_flag:
-          name: Prvé označenie
-          description: Označený príspevok
-        promoter:
-          name: Propagátor
-          description: pozval užívateľa
-        campaigner:
-          name: Bojovník
-          description: Pozval 3 základných užívateľov (stupeň dôvery 1)
-        champion:
-          name: Šampión
-          description: Pozval 5 členov (stupeň dôvery 2)
-        first_share:
-          name: Prvé zdieľanie
-          description: Zdieľal príspevok
-        first_link:
-          name: Prvý odkaz
-          description: Pridaný vnútorný odkaz na ďalšiu tému
-        first_quote:
-          name: Prvý citát
-          description: Citoval užívateľa
-        read_guidelines:
-          name: 'Prečítať pravidlá '
-          description: Prečítať <a href="/guidelines">pravidlá komunity</a>
-        reader:
-          name: Čitateľ
-          description: Prečítať každý príspevok v téme, ktorá má viac ako 100 príspevkov
-        popular_link:
-          name: Populárny odkaz
-          description: Príspevok s externým odkazom s najmenej 50 kliknutiami
-        hot_link:
-          name: Horúci odkaz
-          description: Príspevok s externým odkazom s najmenej 300 kliknutiami
-        famous_link:
-          name: Skvelý odkaz
-          description: Príspevok s externým odkazom s najmenej 1000 kliknutiami
     google_search: |
       <h3>Vyhľadávať pomocou Google</h3>
       <p>

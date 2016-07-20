@@ -56,7 +56,7 @@ class Emoji
 
   def self.create_from_db_item(emoji)
     name = emoji["name"]
-    filename = "#{name}.png"
+    filename = "#{emoji['filename'] || name}.png"
     Emoji.new.tap do |e|
       e.name = name
       e.url = "/images/emoji/#{SiteSetting.emoji_set}/#{filename}"
@@ -90,7 +90,14 @@ class Emoji
   end
 
   def self.db
-    @db ||= File.open(db_file, "r:UTF-8") { |f| JSON.parse(f.read) }
+    return @db if @db
+    @db = File.open(db_file, "r:UTF-8") { |f| JSON.parse(f.read) }
+
+    # Small tweak to `emoji.json` from Emoji one
+    @db['emojis'] << {"code" => "1f44d", "name" => "+1", "filename" => "thumbsup"}
+    @db['emojis'] << {"code" => "1f44e", "name" => "-1", "filename" => "thumbsdown"}
+
+    @db
   end
 
   def self.load_standard
@@ -124,17 +131,22 @@ class Emoji
     "#{Discourse.base_uri}/uploads/#{db}/_emoji"
   end
 
+  def self.replacement_code(code)
+    hexes = code.split('-').map(&:hex)
+
+    # Don't replace digits, letters and some symbols
+    return hexes.pack("U" * hexes.size) if hexes[0] > 255
+  end
+
   def self.unicode_replacements
     return @unicode_replacements if @unicode_replacements
 
 
     @unicode_replacements = {}
     db['emojis'].each do |e|
-      hex = e['code'].hex
-      # Don't replace digits, letters and some symbols
-      if hex > 255 && e['name'] != 'tm'
-        @unicode_replacements[[hex].pack('U')] = e['name']
-      end
+      next if e['name'] == 'tm'
+      code = replacement_code(e['code'])
+      @unicode_replacements[code] = e['name'] if code
     end
 
     @unicode_replacements["\u{2639}"] = 'frowning'

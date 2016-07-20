@@ -52,7 +52,8 @@ class UserHistory < ActiveRecord::Base
                           grant_moderation: 34,
                           revoke_moderation: 35,
                           backup_operation: 36,
-                          rate_limited_like: 37 # not used anymore
+                          rate_limited_like: 37, # not used anymore
+                          revoke_email: 38
                          )
   end
 
@@ -86,7 +87,8 @@ class UserHistory < ActiveRecord::Base
                         :revoke_admin,
                         :grant_moderation,
                         :revoke_moderation,
-                        :backup_operation]
+                        :backup_operation,
+                        :revoke_email]
   end
 
   def self.staff_action_ids

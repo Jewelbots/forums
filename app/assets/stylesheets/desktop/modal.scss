@@ -31,7 +31,7 @@
 .modal-body {
   overflow-y: auto;
   max-height: 400px;
-  padding: 15px 15px 70px 15px;
+  padding: 15px;
 }
 
 .modal-footer .btn + .btn {
@@ -194,5 +194,21 @@
 .delete-flag-modal, .agree-flag-modal {
   .modal-inner-container {
     width: 400px;
+  }
+}
+
+.change-timestamp {
+  min-height: 300px;
+
+  .date-picker {
+    width: 10em;
+  }
+
+  input[type=time] {
+    width: 6em;
+  }
+
+  form {
+    margin: 0;
   }
 }

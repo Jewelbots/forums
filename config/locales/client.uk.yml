@@ -279,7 +279,6 @@ uk:
       dismiss_notifications: "Позначити все як прочитане"
       dismiss_notifications_tooltip: "Позначити всі сповіщення як прочитані"
       disable_jump_reply: "Не перескакувати до мого допису коли я відповім"
-      edit_history_public: "Дати іншим дивитися версії мого повідомлення"
       external_links_in_new_tab: "Відкривати всі зовнішні посилання у новій вкладці"
       enable_quoting: "Увімкнути відповіді на цитати для виділеного тексту"
       change: "змінити"
@@ -291,7 +290,6 @@ uk:
       suspended_notice: "Цього користувача призупинено до {{date}}."
       suspended_reason: "Причина: "
       github_profile: "Github"
-      mailing_list_mode: "Надсилати всі нові дописи мені електронною поштою (доки я це не вимкну)"
       watched_categories: "Відслідковувані"
       tracked_categories: "Відстежувані"
       muted_categories: "Ігноровані"
@@ -319,7 +317,6 @@ uk:
         title: "Змінити Про мене"
       change_username:
         title: "Зміна імені користувача"
-        confirm: "Якщо Ви зміните ім'я користувача, всі попередні цитування Ваших дописів та згадки @імені буде порушено. Ви точно абсолютно впевнені, що хочете цього?"
         taken: "Даруйте, це ім'я користувача вже зайняте."
         error: "Під час зміни імені користувача трапилася помилка."
         invalid: "Таке ім'я користувача не підійде. Воно має містити лише цифри та літери"
@@ -756,7 +753,6 @@ uk:
         create: "Даруйте, під час створення допису трапилася помилка. Будь ласка, спробуйте ще раз."
         edit: "Даруйте, під час редагування допису трапилася помилка. Будь ласка, спробуйте ще раз."
         upload: "Даруйте, під час завантаження цього файлу трапилася помилка. Будь ласка, спробуйте ще раз."
-        attachment_too_large: "Даруйте, але файл, який Ви намагаєтеся завантажити, надто великий (максимальний розмір складає {{max_size_kb}} кБ)."
         too_many_uploads: "Даруйте, але Ви можете одночасно завантажувати тільки один файл."
         upload_not_authorized: "Даруйте, але файл, який Ви намагаєтеся завантажити, є недозволеним (дозволені розширення: {{authorized_extensions}})."
         image_upload_not_allowed_for_new_user: "Даруйте, нові користувачі не можуть завантажувати зображення."
@@ -1041,12 +1037,6 @@ uk:
           backups: "Backups"
           logs: "Logs"
         none: "No backup available."
-        read_only:
-          enable:
-            title: "Enable the read-only mode"
-            confirm: "Are you sure you want to enable the read-only mode?"
-          disable:
-            title: "Disable the read-only mode"
         logs:
           none: "No logs yet..."
         columns:
@@ -1404,28 +1394,3 @@ uk:
           name: Спільнота
         other:
           name: Інше
-      badge:
-        editor:
-          name: Редактор
-        basic_user:
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/4">Надані</a> всі основні функції спільноти
-        welcome:
-          name: Ласкаво просимо
-        autobiographer:
-          name: Автобіографіст
-        anniversary:
-          name: Річниця
-        nice_topic:
-          name: Непогана тема
-        good_topic:
-          name: Хороша тема
-        great_topic:
-          name: Чудова тема
-        first_link:
-          name: Перше посилання
-        first_quote:
-          name: Перша цитата
-        read_guidelines:
-          name: Читати інструкції
-        reader:
-          name: Читач

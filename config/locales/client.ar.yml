@@ -31,6 +31,7 @@ ar:
         millions: "{{number}} مليون"
     dates:
       time: "h:mm a"
+      timeline_date: "MMM YYYY"
       long_no_year: "D MMM h:mm a"
       long_no_year_no_time: "D MMM"
       full_no_year_no_time: "Do MMMM"
@@ -187,6 +188,7 @@ ar:
       google+: 'شارك هذا الرابط في جوجل+'
       email: 'شارك هذا الرابط في بريد إلكتروني'
     action_codes:
+      private_topic: "جعل هذا الموضوع خاص منذ {when}%"
       split_topic: "قسم هذا الموضوع في %{when}"
       invited_user: "دعوة %{who} %{when}"
       removed_user: "ازالة  %{who} %{when}"
@@ -215,6 +217,7 @@ ar:
         us_east_1: "الولايات المتحدة الشرقيه ( ولايه فيرجينيا )"
         us_west_1: "الولايات المتحدة الغربية (  كاليفورنيا )"
         us_west_2: "الولايات المتحدة الغربية ( ولاية أوريغون )"
+        us_gov_west_1: "إستضافة أمازون الحسابية الحكومية (الولايات المتحدة الأمريكية)"
         eu_west_1: "الاتحاد الأوروبي ( أيرلندا )"
         eu_central_1: "الاتحاد الأوروبي ( فرانكفورت )"
         ap_southeast_1: "آسيا والمحيط الهادئ ( سنغافورة )"
@@ -401,8 +404,6 @@ ar:
       title: "الأعضاء"
       likes_given: "الإعجابات المعطاة"
       likes_received: "الإعجابات المستلمة"
-      topics_entered: "المواضيع المدخلة"
-      topics_entered_long: "المواضيع المدخلة"
       time_read: "وقت القراءة"
       topic_count: "المواضيع"
       topic_count_long: "المواضيع المضافة"
@@ -563,7 +564,6 @@ ar:
       dismiss_notifications_tooltip: "جعل جميع اشعارات غيرمقروء الى مقروء"
       disable_jump_reply: "لاتذهب إلى مشاركتي بعد الرد"
       dynamic_favicon: "إعرض عدد المواضيع الجديدة والمحدثة في أيقونة المتصفح"
-      edit_history_public: "جعل المستخدمين الاخرين يطلعون على تعديلاتي"
       external_links_in_new_tab: "إفتح كل الروابط الخارجية في صفحة جديدة"
       enable_quoting: "فعل خاصية إقتباس النصوص المظللة"
       change: "تغيير"
@@ -575,7 +575,6 @@ ar:
       suspended_notice: "هذا المستخدم موقوف حتى تاريخ  {{date}}"
       suspended_reason: "سبب"
       github_profile: "Github"
-      mailing_list_mode: "استقبال بريد الكتروني لكل مشاركة  جديدة (إلا إذا كتمت الموضوع أو التصنيف)"
       watched_categories: "مراقبة"
       watched_categories_instructions: "ستتم مراقبة جميع المواضيع الجديدة في هذه التصانيف. سيتم اشعارك بجميع المشاركات والمواضيع الجديدة، بالاضافة الى  عدد المشاركات الجديدة الذي سيظهر بجانب الموضوع."
       tracked_categories: "متابعة"
@@ -618,10 +617,8 @@ ar:
         set_password: " إعادة تعين الرمز السري"
       change_about:
         title: "تعديل معلومات عنّي"
-        error: "حدث خطأ عند تغيير القيمة."
       change_username:
         title: "تغيير اسم المستخدم"
-        confirm: "إذا قمت بتغيير الاسم المستعار، فإن جميع المشاركات التي قمت بالمشاركة بها سيتم الغائها. هل أنت متأكد بقيامك على هذه الخطوة؟"
         taken: "نأسف، اسم المستخدم مأخوذ."
         error: "حدث خطأ عند تغيير اسم المستخدم."
         invalid: "اسم المستخدم غير صالح. يجب ان يحتوي على ارقام وحروف فقط "
@@ -709,7 +706,6 @@ ar:
         always: "دائماً"
         never: "ابداً"
       email_digests:
-        title: "إرسال رسالة إلكترونية تحتوي على جديد الموقع عندما لا أزور الموقع"
         every_30_minutes: "بعد 30 دقيقه"
         every_hour: "كل ساعه "
         daily: "يومي"
@@ -791,17 +787,11 @@ ar:
       summary:
         title: "ملخص"
         stats: "احصائيات"
-        topic_count: "مواضيع منشئة"
-        post_count: "مشاركات منشئة"
-        likes_given: "اجابات معطاة"
-        likes_received: "اعجابات مستقبلة"
-        days_visited: "ايام الزياره"
-        posts_read_count: "قراء المواضيع"
         top_replies: "أفضل المشاركات"
-        top_topics: "افضل المواضيع"
-        top_badges: "افضل الاوسمه"
-        more_topics: "المزيد من المواضيع"
         more_replies: "المزيد من الردود"
+        top_topics: "افضل المواضيع"
+        more_topics: "المزيد من المواضيع"
+        top_badges: "افضل الاوسمه"
         more_badges: "المزيد من الاوسمه"
       associated_accounts: "حساب مرتبط"
       ip_address:
@@ -851,7 +841,6 @@ ar:
     too_few_topics_and_posts_notice: "دعونا <a href='http://blog.discourse.org/2014/08/building-a-discourse-community/'>الحصول على هذه المناقشة بدأت!</a> يوجد حاليا<strong>%{currentTopics} / %{requiredTopics}</strong> المواضيع و <strong>%{currentPosts} / %{requiredPosts}</strong> المشاركات. الزوار الجدد بحاجة إلى بعض الأحاديث لقراءة والرد على."
     too_few_topics_notice: "دعونا <a href='http://blog.discourse.org/2014/08/building-a-discourse-community/'>الحصول على هذه المناقشة التي!</a> وهناك حاليا <strong>%{currentTopics} / %{requiredTopics}</strong> المواضيع. الزوار الجديدة بحاجة إلى بعض الأحاديث قراءة والرد عليها."
     too_few_posts_notice: "دعونا <a href='http://blog.discourse.org/2014/08/building-a-discourse-community/'>الحصول على هذه المناقشة التي بدأت!</a> يوجد حاليا <strong>%{currentPosts} / %{requiredPosts}</strong> مشاركات. الزوار الجديدة بحاجة إلى بعض الأحاديث قراءة والرد عليها."
-    logs_error_rate_exceeded_notice: "%{timestamp}: التقيم الي الخاص بــ  <a href='%{url}' target='_blank'>%{rate} errors/%{duration}</a> قد تجاوز اعدادت الموقع المحدده %{siteSettingLimit} errors/%{duration}."
     learn_more: "تعلم المزيد..."
     year: 'سنة'
     year_desc: 'المواضيع المكتوبة خلال 365 يوم الماضية'
@@ -981,7 +970,6 @@ ar:
       saved_local_draft_tip: "تم الحفظ محلياً"
       similar_topics: "موضوعك مشابه لـ ..."
       drafts_offline: "مسودات محفوظة "
-      group_mentioned: "عند استعمال  {{group}}, انت على وشك اشعار <a href='{{group_link}}'>{{count}} people</a>."
       error:
         title_missing: "العنوان مطلوب"
         title_too_short: "العنوان يجب أن يكون اكثر  {{min}} حرف"
@@ -1019,7 +1007,6 @@ ar:
       link_description: "ادخل وصف الرابط هنا "
       link_dialog_title: "اضف الرابط"
       link_optional_text: "عنوان اختياري"
-      link_placeholder: "http://example.com \"نص إختياري\""
       quote_title: "اقتباس فقرة"
       quote_text: "اقتباس فقرة"
       code_title: "المحافظة على التنسيق"
@@ -1065,7 +1052,6 @@ ar:
       invited_to_topic: "<i title='invited to topic' class='fa fa-hand-o-right'></i><p><span>{{username}}</span> {{description}}</p>"
       invitee_accepted: "<i title='accepted your invitation' class='fa fa-user'></i><p><span>{{username}}</span> accepted your invitation</p>"
       moved_post: "<i title='moved post' class='fa fa-sign-out'></i><p><span>{{username}}</span> نقل{{description}}</p>"
-      linked: "<i title='linked post' class='fa fa-arrow-left'></i><p><span>{{username}}</span> {{description}}</p>"
       granted_badge: "<i title='badge granted' class='fa fa-certificate'></i><p>استحق'{{description}}'</p>"
       alt:
         mentioned: "مؤشرة بواسطة"
@@ -1127,7 +1113,6 @@ ar:
       post_format: "#{{post_number}} بواسطة {{username}}"
       context:
         user: "البحث عن مواضيع @{{username}}"
-        category: "البحث في التصنيف \"{{category}}\""
         topic: "بحث في هذا الموضوع"
         private_messages: "البحث في الرسائل الخاصة"
     hamburger_menu: "أذهب لقائمة موضوع أخر أو فئة"
@@ -1389,8 +1374,6 @@ ar:
         no_banner_exists: "لا يوجد اشعار للموضوع"
         banner_exists: "شعار الموضوع <strong class='badge badge-notification unread'>هناك</strong> حاليا."
       inviting: "دعوة..."
-      automatically_add_to_groups_optional: "هذه الدعوة تتضمن صلاحيات الدخول على المجموعات : (اختياري , مدير فقط )"
-      automatically_add_to_groups_required: "هذه الدعوة تتضمن صلاحيات الدخول على هذه المجموعات: (<b>يتطلب </b>, مدير"
       invite_private:
         title: 'رسالة دعوة'
         email_or_username: "دعوات عن طريق اسم المستخدم او البريد الالكتروني"
@@ -1546,10 +1529,7 @@ ar:
         create: "المعذرة، حدثت مشكلة أثناء إنشاء المشاركة. الرجاء المحاولة مرة أخرى."
         edit: "المعذرة، حدث  خطأ أثناء تحرير مشاركتك. الرجاء المحاولة في وقت لاحق."
         upload: "المعذرة، حدث خطأ أثناء رفع الملف. الرجاء المحاولة في وقت لاحق."
-        attachment_too_large: "نعتذر، الملف الذي تريد رفعه كبير جداَ ( الحد الاقصى {{max_size_kb}} كيلوبايت )"
-        file_too_large: "المعذرة، الملف الذي تحاول رفعه أكبر من المسموح به {{max_size_kb}} كيلوبايت"
         too_many_uploads: "نأسف, يمكنك رفع ملف واحد فقط في نفس الوقت."
-        too_many_dragged_and_dropped_files: "يمكنك سحب و إفلات ١٠ ملفات في الوقت الواحد كحد أقصى."
         upload_not_authorized: "المعذرة، الملف الذي تحاول رفعه غير مسموح به، الامتدادات المسموح بها هي {{authorized_extensions}}."
         image_upload_not_allowed_for_new_user: "نعتذر، المستخدمين الجدد لا يمكنهم رفع صور."
         attachment_upload_not_allowed_for_new_user: "نعتذر، المستخدمين الجدد لا يمكنهم رفع مرفقات."
@@ -2103,7 +2083,6 @@ ar:
           30_days_ago: "منذ ٣٠ يوم"
           all: "الكل"
           view_table: "جدول"
-          view_chart: "شريط الرسم البياني"
           refresh_report: "تحديث التقرير "
           start_date: "تاريخ البدء"
           end_date: "تاريخ الإنتهاء"
@@ -2258,14 +2237,6 @@ ar:
           backups: "نسخة احتياطية"
           logs: "Logs"
         none: "لاتوجد نسخ احتياطية"
-        read_only:
-          enable:
-            title: "تفعيل وضع القراءة فقط"
-            label: "تفعيل وضع القراءة فقط."
-            confirm: "هل أنت متأكد من تفعيل وضع القراءة فقط؟"
-          disable:
-            title: "تعطيل وضع القراءة فقط"
-            label: "تعطيل وضع القراءة فقط."
         logs:
           none: "No logs yet."
         columns:
@@ -2445,14 +2416,6 @@ ar:
           modal:
             title: "تفاصيل الرسائل الوارده"
             error: "خطأ"
-            return_path: "المسار-السابق"
-            message_id: "معرف الرساله"
-            in_reply_to: "بالرد-الى"
-            references: "المراجع"
-            date: "التاريخ"
-            from: "من"
-            to: "الى"
-            cc: "Cc"
             subject: "الموضوع"
             body: "المحتوى"
             rejection_message: "البريد المحظور"
@@ -2731,7 +2694,6 @@ ar:
         deactivate_explanation: "المستخدم الغير نشط يحب أن يتأكد من البريد الالكتروني"
         suspended_explanation: "المستخدم الموقوف لايملك صلاحية تسجيل الدخول"
         block_explanation: "المستخدم الموقوف لايستطيع أن يشارك"
-        stage_explanation: "العضو المنظم يمكنه فقط النشر عن طريق البريد الالكتروني في المواضيع المخصصه ."
         trust_level_change_failed: "هناك مشكلة في تغيير مستوى ثقة المستخدم "
         suspend_modal_title: "حظر المستخدم"
         trust_level_2_users: "أعضاء مستوى الثقة 2."
@@ -2958,204 +2920,3 @@ ar:
           label: "جديد :"
           add: "أضف"
           filter: "بحث  ( رابط داخلي أو خارجي )"
-    lightbox:
-      download: "تحميل"
-    search_help:
-      title: 'بحث عن المساعدة'
-    keyboard_shortcuts_help:
-      title: 'أختصارات لوحة المفاتيح'
-      jump_to:
-        title: 'اقفز إلى'
-        home: '<b>g</b>, <b>h</b> الرئيسية'
-        latest: '<b>g</b>, <b>l</b> الأخير'
-        new: '<b>g</b>, <b>n</b> جديد'
-        unread: '<b>g</b>, <b>u</b> لم يقرأ'
-        categories: '<b>g</b>, <b>c</b> الفئات'
-        top: '<b>g</b>, <b>t</b> الأعلى'
-        bookmarks: '<b>g</b>, <b>b</b> الإشارات المرجعية'
-        profile: '<b>g</b>, <b>p</b> ملف التعريف'
-        messages: '<b>g</b>, <b>m</b> الرسائل'
-      navigation:
-        title: 'المتصفح'
-        jump: '<b>#</b> الذهاب الى الموضوع #'
-        back: '<b>u</b>خلف'
-        up_down: '<b>k</b>/<b>j</b> نقل المحدد &uarr; &darr;'
-        open: '<b>o</b> أو <b>أدخل</b> فتح الموضوع المحدد'
-        next_prev: '<b>shift</b>+<b>j</b>/<b>shift</b>+<b>k</b> القسم التالي/السابق'
-      application:
-        title: 'التطبيقات'
-        create: '<b>c</b> انشاء موضوع جديد'
-        notifications: '<b>n</b> فتح الإشعارات'
-        hamburger_menu: '<b>=</b> فتح قائمة الموقع'
-        user_profile_menu: '<b>p</b>أفتح قائمة المستخدم'
-        show_incoming_updated_topics: '<b>.</b> عرض المواضيع المحدثة'
-        search: '<b>/</b> البحث'
-        help: '<b>p</b>أفتح قائمة المستخدم'
-        dismiss_new_posts: 'تجاهل جديد / المشاركات <b>x</b>, <b>r</b>'
-        dismiss_topics: '<b>x</b>, <b>t</b> رفض المواضيع'
-        log_out: '<b>shift</b>+<b>z</b> <b>shift</b>+<b>z</b> تسجيل خروج'
-      actions:
-        title: 'إجراءات'
-        bookmark_topic: '<b>f</b> تبديل علامة مرجعية الموضوع'
-        pin_unpin_topic: 'ثبت/عدم التثبيت للموضوع <b>shift</b>+<b>p</b> '
-        share_topic: 'مشاركة الموضوع <b>shift</b>+<b>s</b>'
-        share_post: '<b>s</b> مشاركة الموضوع'
-        reply_as_new_topic: 'الرد في موضوع مرتبط <b>t</b>'
-        reply_topic: 'رد على الموضوع <b>shift</b>+<b>r</b>'
-        reply_post: '<b>r</b> الرد على الموضوع'
-        quote_post: '<b>q</b> اقتباس المشاركة'
-        like: '<b>l</b> الأعجاب بالموضوع'
-        flag: 'تعليم المشاركة <b/>!<b>'
-        bookmark: '<b>b</b> الإشارات المرجعية الخاصة بالموضوع'
-        edit: '<b>l</b>  تعديل الموضوع'
-        delete: '<b>d</b> حذف الموضوع'
-        mark_muted: 'صمّت الموضوع  <b>m</b>, <b>m</b>'
-        mark_regular: '<b>m</b>, <b>r</b> موضوع منظم (الإفتراضي)'
-        mark_tracking: '<b>m</b>, <b>t</b>  تابع الموضوع'
-        mark_watching: '<b>m</b>, <b>w</b> شاهد الموضوع'
-    badges:
-      earned_n_times:
-        zero: "لم يحصل على  هذه الشاره ولا مره"
-        one: "استحق هذه الشاره  مره واحده"
-        two: "استحق هذه الشاره مرتين"
-        few: "استحق هذه الشاره  %{count} مرات"
-        many: "استحق هذه الشاره  %{count} مرات"
-        other: "استحق هذه الشاره  %{count} مرات"
-      more_with_badge: "اخرون بنفس الدرع"
-      title: أوسمة
-      allow_title: "يمكن استخدامه كعنوان"
-      multiple_grant: "يمكن منحه عدة مرات. "
-      badge_count:
-        zero: "%{count} شاره"
-        one: "%{count} شاره"
-        two: "%{count} شاراتين"
-        few: "%{count} أوسمة"
-        many: "%{count} أوسمة"
-        other: "%{count} أوسمة"
-      more_badges:
-        zero: "+%{count} المزيد"
-        one: "+%{count} المزيد"
-        two: "+%{count} المزيد"
-        few: "+%{count} المزيد"
-        many: "+%{count} المزيد"
-        other: "+%{count} المزيد"
-      granted:
-        zero: "ﻻيوجد ممنوحات."
-        one: "ممنوح واحد."
-        two: "ممنوحان."
-        few: "%{count} ممنوحات."
-        many: "%{count} ممنوحات."
-        other: "%{count} ممنوحات."
-      select_badge_for_title: حدد وسام لتستخدمه كعنوانك
-      none: "لا شئ"
-      badge_grouping:
-        getting_started:
-          name: البداية
-        community:
-          name: مجتمع
-        trust_level:
-          name: مستوى الثقة
-        other:
-          name: الجميع
-        posting:
-          name: نشر
-      badge:
-        editor:
-          name: محرر
-          description: أول موضوع تم تحريره
-        basic_user:
-          name: أساسي
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/4">منح</a> جميع وظائف المجتمع الأساسية.
-        member:
-          name: عضو
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/5">مُنح</a> دعوات
-        regular:
-          name: منتظم
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/6">منح</a> اعادة تصنيف, اعادة تسمية, اتباع الروابط
-        leader:
-          name: قائد
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/7">منح</a> تحرير عام, تثبيت, اغلاق, ارشفة, تقسيم ودمج
-        welcome:
-          name: مرحباً
-          description: تلقيت إعجاب
-        autobiographer:
-          name: الكاتب سيرته بنفسه
-          description: تصفية عضو <a href="/my/preferences">ملف التعريف </a>معلومات
-        anniversary:
-          name: ذكرى
-          description: عضو نشط لمدة عام، شارك مرة واحدة على الأقل
-        nice_post:
-          name: منشور رائع
-          description: 'تلقيت 10 إعجاب لهذه المشاركة . هذا الاشعار يتم إرسالة مرات عديدة '
-        good_post:
-          name: منشور جيد
-          description: تلقيت 25 إعجاب لهذه المشاركة . هذا الاشعار يتم إرسالة مرات عديدة
-        great_post:
-          name: منشور ممتاز
-          description: تلقيت 50 إعجاب لهذه المشاركة . هذا الاشعار يتم إرسالة مرات عديدة
-        nice_topic:
-          name: 'موضوع رائع '
-          description: تلقيت 10 إعجاب لهذا الموضوع . هذا الاشعار يتم إرسالة مرات عديدة
-        good_topic:
-          name: موضوع جيد
-          description: تلقيت 25 إعجاب لهذا الموضوع . هذا الوسام يتم منحه عدة مرات
-        great_topic:
-          name: موضوع ممتاز
-          description: تلقيت 50 إعجاب لهذا الموضوع . هذا الوسام يتم منحه عدة مرات
-        nice_share:
-          name: مشاركة رائعة
-          description: تم مشاركة رد مع أكثر من 25 زائر
-        good_share:
-          name: مشاركة جيدة
-          description: تم مشاركة رد مع أكثر من 300 زائر
-        great_share:
-          name: مشاركة ممتازة
-          description: تم مشاركة رد مع أكثر من 1000 زائر
-        first_like:
-          name: اول اعجاب
-          description: أعجب في رد
-        first_flag:
-          name: اول بلاغ
-          description: مشاركة مبلغ عنها
-        promoter:
-          name: متعهد
-          description: دعوة مستخدم
-        campaigner:
-          name: ناشط
-          description: تم دعوة 3 أعضاء (مستوى الثقة 1)
-        champion:
-          name: بطل
-          description: تم دعوة 5 أعضاء (مستوى الثقة 2)
-        first_share:
-          name: اول مشاركة
-          description: مشاركة تعليق
-        first_link:
-          name: الرابط الأول
-          description: اضافة رابط لموضوع اخر
-        first_quote:
-          name: أول اقتباس
-          description: اقتبس من عضو
-        read_guidelines:
-          name: اقرأ التعليمات
-          description: اطلع على  <a href="/guidelines">توجيهات المجتمع</a>
-        reader:
-          name: قارئ
-          description: قراءة جميع المشاركات في موضوع فيه أكثر من 100 مشاركة
-        popular_link:
-          name: رابط مشهور
-          description: شارك رابط خارجي بـ  50 نقرة على الأقل.
-        hot_link:
-          name: الرابط الساخن
-          description: شارك رابط خارجي بـ 300 نقرة على الأقل.
-        famous_link:
-          name: رابط مشهور
-          description: شارك الرابط الخارجي بـ 1000 نقرة على الأقل
-    google_search: |
-      <h3>ابحث في قوقل</h3>
-      <p>
-        <form action='//google.com/search' id='google-search' onsubmit="document.getElementById('google-query').value = 'site:' + window.location.host + ' ' + document.getElementById('user-query').value; return true;">
-          <input type="text" id='user-query' value="">
-          <input type='hidden' id='google-query' name="q">
-          <button class="btn btn-primary">قوقل</button>
-        </form>
-      </p>

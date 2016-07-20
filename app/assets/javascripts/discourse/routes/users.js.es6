@@ -34,7 +34,7 @@ export default Discourse.Route.extend({
     this._params = params;
     return this.store.find("directoryItem", params);
   },
-    
+
   setupController(controller, model) {
     const params = this._params;
     controller.setProperties({ model, period: params.period, nameInput: params.name });

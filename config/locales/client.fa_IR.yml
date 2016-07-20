@@ -26,6 +26,7 @@ fa_IR:
         millions: "{{number}}M"
     dates:
       time: "h:mm a"
+      timeline_date: "MMM YYYY"
       long_no_year: "MMM D h:mm a"
       long_no_year_no_time: "MMM D"
       full_no_year_no_time: "MMMM Do"
@@ -37,6 +38,7 @@ fa_IR:
       long_date_with_year_without_time: "MMM D, 'YY"
       long_date_without_year_with_linebreak: "MMM D <br/>LT"
       long_date_with_year_with_linebreak: "MMM D, 'YY <br/>LT"
+      wrap_ago: "%{date} پیش"
       tiny:
         half_a_minute: "< 1 دقیقه"
         less_than_x_seconds:
@@ -253,8 +255,6 @@ fa_IR:
       title: "کاربران"
       likes_given: "داده"
       likes_received: "دریافت"
-      topics_entered: "وارد شده"
-      topics_entered_long: "موضوعات وارد شده"
       time_read: "زمان خوانده‌ شده"
       topic_count: "موضوعات"
       topic_count_long: "موضوعات ساخته شده"
@@ -391,7 +391,6 @@ fa_IR:
       dismiss_notifications_tooltip: "علامت گذاری همه اطلاعیه های خوانده نشده به عنوان خوانده شده"
       disable_jump_reply: "بعد از پاسخ من به پست من پرش نکن"
       dynamic_favicon: " تعداد موضوعات جدید یا بروز شده را روی آیکون مرورگر نمایش بده"
-      edit_history_public: "اجازه بده کاربران دیگر اصلاحات نوشته مرا ببینند"
       external_links_in_new_tab: "همهٔ پیوندهای برون‌رو را در یک تب جدید باز کن"
       enable_quoting: "فعال کردن نقل قول گرفتن از متن انتخاب شده"
       change: "تغییر"
@@ -403,7 +402,6 @@ fa_IR:
       suspended_notice: "این کاربر تا {{date}} در وضعیت معلق است."
       suspended_reason: "دلیل: "
       github_profile: "Github"
-      mailing_list_mode: "برای هر نوشته جدید، ایمیلی برای من بفرست (مگر اینکه من موضوع یا دسته‌بندی را ساکت کنم)"
       watched_categories: "تماشا شده"
       watched_categories_instructions: "شما به صورت خودکار تمام نوشته‌های این دسته را مشاهده‌ خواهید کرد. به شما تمام عناوین و نوشته‌‌های جدید اطلاع رسانی خواهد شد، و تعداد نوشته‌های جدید هر عنوان در کنار آن نمایش داده می‌شود."
       tracked_categories: "پی‌گیری شده"
@@ -444,10 +442,8 @@ fa_IR:
         set_password: "تغییر کلمه عبور"
       change_about:
         title: "تغییر «دربارهٔ من»"
-        error: "در فرایند تغییر این مقدار خطایی رخ داد."
       change_username:
         title: "تغییر نام کاربری"
-        confirm: "اگر نام کاربری خود را تغییر دهید، همهٔ نقل‌قول‌های پیشین از نوشته‌های شما و اشاره‌های @name از کار می‌افتند. آیا برای انجام این کار اطمینان کامل دارید؟"
         taken: "متأسفیم، آن نام کاربری  قبلا گرفته شده است."
         error: "در فرآیند تغییر نام کاربری شما خطایی روی داد."
         invalid: "آن نام کاربری نامعتبر است. تنها باید عددها و حرف‌ها را در بر بگیرد."
@@ -519,7 +515,6 @@ fa_IR:
       website: "تارنما"
       email_settings: "ایمیل"
       email_digests:
-        title: "هنگامی که به سایت سر نمی‌زنم، گزارش کوتاهی از رویدادهای تازه را برایم ایمیل کن:"
         daily: "روزانه"
         every_three_days: "هر سه روز"
         weekly: "هفتگی"
@@ -792,7 +787,6 @@ fa_IR:
       link_description: "توضیحات لینک را اینجا وارد کنید."
       link_dialog_title: "لینک را درج کنید"
       link_optional_text: "سرنویس اختیاری"
-      link_placeholder: "\"متن دلخواه\" http://example.com"
       quote_title: "نقل قول"
       quote_text: "نقل قول"
       code_title: "نوشته تنظیم نشده"
@@ -892,7 +886,6 @@ fa_IR:
       post_format: "#{{post_number}} توسط {{username}}"
       context:
         user: "جستجوی نوشته‌ها با @{{username}}"
-        category: "جستجوی دستهٔ «{{category}}»"
         topic: "جستجوی این موضوع"
         private_messages: "جستجوی پیام"
     hamburger_menu: "به فهرست مبحث یا دسته بندی دیگر بروید"
@@ -1205,10 +1198,7 @@ fa_IR:
         create: "متأسفیم، در فرستادن نوشته شما خطایی روی داد. لطفاً دوباره تلاش کنید."
         edit: "متأسفیم، در ویرایش نوشته شما خطایی روی داد. لطفاً دوباره تلاش کنید."
         upload: "متأسفیم، در بارگذاری آن پرونده خطایی روی داد. لطفاً دوباره تلاش کنید."
-        attachment_too_large: "با عرض پوزش٬ فایلی را که تلاش برای ارسال آن دارید بسیار بزرگ است (حداکثر سایز {{max_size_kb}}kb است)"
-        file_too_large: "با عرض پوزش٬ فایلی را که تلاش برای ارسال آن دارید بسیار بزرگ است (حداکثر سایز {{max_size_kb}}kb است)"
         too_many_uploads: "متأسفیم، هر بار تنها می‌توانید یک پرونده را بار بگذارید."
-        too_many_dragged_and_dropped_files: "با عرض پوزش، شما همزمان فقط می توانید 10 فایل را گرفته و رها کنید."
         upload_not_authorized: "متأسفیم، پرونده‌ای که تلاش دارید آن را بار بگذارید، پروانه‌دار نیست (پسوندهای پروانه‌دار: {{authorized_extensions})"
         image_upload_not_allowed_for_new_user: "با عرض پوزش، کاربران جدید نمی توانند تصویر بار گذاری نماییند."
         attachment_upload_not_allowed_for_new_user: "با عرض پوزش، کاربران جدید نمی توانند فایل پیوست بار گذاری نماییند."
@@ -1604,7 +1594,6 @@ fa_IR:
           30_days_ago: "30 روز پیش"
           all: "همه"
           view_table: "جدول"
-          view_chart: "نمودار میله ها"
           refresh_report: "تازه کردن گزارش"
           start_date: "تاریخ شروع"
           end_date: "تاریخ پایان"
@@ -1733,14 +1722,6 @@ fa_IR:
           backups: "پشتیبان ها"
           logs: "گزارش ها"
         none: "هیچ پشتیبانی در دسترس نیست."
-        read_only:
-          enable:
-            title: "به کار گرفتن شیوهٔ‌ فقط-خواندنی"
-            label: "غیر فعال کردن مد فقط خواندن"
-            confirm: "آیا مطمئنید که می‌خواهید حالت فقط-خواندنی را فعال کنید ؟"
-          disable:
-            title: " حالت فقط-خواندنی را غیر فعال کن"
-            label: "غیر فعال کردن مد فقط خواندن"
         logs:
           none: "هنوز بدون گزارش است ..."
         columns:
@@ -2406,8 +2387,6 @@ fa_IR:
         mark_watching: '<b>m</b>, <b>w</b> مشاهده موضوع'
     badges:
       title: مدال‌ها
-      allow_title: "می تواند برای یک عنوان استفاده شود"
-      multiple_grant: "می توان چندین بار اهدا کرد"
       badge_count:
         other: "%{count} مدال"
       more_badges:
@@ -2427,99 +2406,6 @@ fa_IR:
           name: دیگر
         posting:
           name: در حال نوشتن
-      badge:
-        editor:
-          name: ویرایشگر
-          description: نخستین ویرایش نوشته
-        basic_user:
-          name: اساسی
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/4">اعطا کردن</a> تمام عملکرد های ضروری برای انجمن
-        member:
-          name: عضو
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/5">اعطا کردن</a> دعوت نامه
-        regular:
-          name: منظم
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/6">a> دعوت نامه تغییر دسته بندی، تغییر نام دهید، به دنبال کردن لینک ها و سالن
-        leader:
-          name: رهبر
-          description: '<a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/7">اعطا کردن</a>
-
-            ویرایش سراسری، پین، بستن، بایگانی، تقسیم و ادغام'
-        welcome:
-          name: خوش آمدید
-          description: ' یک پسند دریافت شد'
-        autobiographer:
-          name: نویسندهء شرح حال
-          description: فیلد کاربر <a href="/my/preferences">نمایه </a>اطلاعات
-        anniversary:
-          name: سالگرد
-          description: عضو فعال به مدت یک سال،ارسال شده حداقل یک بار
-        nice_post:
-          name: نوشته‌ی دلپذیر
-          description: دریافت 10 پسند در یک نوشته. این نشان را می توان چندین بار اعطا کرد
-        good_post:
-          name: نوشته‌ی خوب
-          description: دریافت 25 پسند در یک نوشته. این نشان را می توان چندین بار اعطا کرد
-        great_post:
-          name: نوشته‌ی عالی
-          description: دریافت 50 پسند در یک نوشته. این نشان را می توان چندین بار اعطا کرد
-        nice_topic:
-          name: موضوع دلپذیر
-          description: دریافت 10 پسند در یک موضوع. این نشان را می توان چندین بار اعطا کرد
-        good_topic:
-          name: موضوع خوب
-          description: دریافت 25 پسند در یک موضوع. این نشان را می توان چندین بار اعطا کرد
-        great_topic:
-          name: موضوع عالی
-          description: دریافت 50 پسند در یک موضوع. این نشان را می توان چندین بار اعطا کرد
-        nice_share:
-          name: ا‌شتراک‌گذاری خوب
-          description: اشتراک گذاری نوشته با 25 بازدید کننده منحصر به فرد
-        good_share:
-          name: اشتراک‌گذاری خوب
-          description: اشتراک گذاری نوشته با 300 بازدید کننده منحصر به فرد
-        great_share:
-          name: اشتراک‌گذاری عالی
-          description: اشتراک گذاری نوشته با 1000 بازدید کننده منحصر به فرد
-        first_like:
-          name: نخستین پسند
-          description: نوشته ای را پسندید
-        first_flag:
-          name: پرچم نخست
-          description: نوشته را پرچم زد
-        promoter:
-          name: ترویج دهنده
-          description: دعوت کننده یک کاربر
-        campaigner:
-          name: فعال
-          description: دعوت کننده سه کاربر معمولی (سطح اعتماد ۱)
-        champion:
-          name: قهرمان
-          description: دعوت کننده پنج کاربر عضو (سطح اعتماد ۲)
-        first_share:
-          name: نخستین اشتراک‌گذاری
-          description: نوشته ای به اشتراک گذاشته شده
-        first_link:
-          name: پیوند نخست
-          description: لینک های داخلی اضافه شده به دیگر موضوعات
-        first_quote:
-          name: نقل‌قول نخست
-          description: نقل قول یک کاربر
-        read_guidelines:
-          name: خواندن دستورالعمل ها
-          description: خواندن <a href="/guidelines">دستورالعمل های انجمن</a>
-        reader:
-          name: خواننده
-          description: مطالعه تمام نوشته‌هایی در یک  موضوع  که بیش از 100 نوشته دارد.
-        popular_link:
-          name: پیوند محبوب
-          description: پیوندی به بیرون با حداقل 50 کلیک ارسال شد
-        hot_link:
-          name: پیوند داغ
-          description: پیوندی به بیرون با حداقل 300 کلیک ارسال شد
-        famous_link:
-          name: پیوند معروف
-          description: پیوندی به بیرون با حداقل 1000 کلیک ارسال شد
     google_search: |
       <h3>جستجو با گوگل</h3>
 

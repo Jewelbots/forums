@@ -24,7 +24,6 @@ da:
   loading: "Indlæser"
   powered_by_html: 'Siden er lavet med <a href="http://www.discourse.org">Discourse</a>, opleves bedst med JavaScript slået til'
   log_in: "Log ind"
-  purge_reason: "Automatisk slettet som forladt, ikke aktiveret, konto"
   disable_remote_images_download_reason: "Fjerndownload af billeder deaktiveret grundet utilstrækkelig diskplads"
   anonymous: "Anonym"
   errors: &errors
@@ -110,7 +109,6 @@ da:
   user_is_suspended: "Suspenderede brugere tilllades ikke at oprette indlæg."
   topic_not_found: "Der er gået noget galt. Måske er emnet blevet lukket eller slettet mens du kiggede på det?"
   just_posted_that: "ligner et andet indlæg, som du har skrevet for nyligt, for meget"
-  has_already_been_used: "er allerede i brug"
   invalid_characters: "indeholder ugyldige tegn"
   is_invalid: "er ugyldig; prøv at være mere beskrivende"
   next_page: "næste side →"
@@ -135,7 +133,6 @@ da:
     delete_reason: "Slettet via køen til moderation af indlæg."
   groups:
     errors:
-      can_not_modify_automatic: "Du kan ikke modificere en automatisk gruppe"
       member_already_exist: "'%{username}' er allerede medlem af denne gruppe."
     default_names:
       everyone: "Alle"
@@ -355,7 +352,6 @@ da:
     continue_button: "Fortsæt til %{site_name}"
     welcome_to: "Velkommen til %{site_name}!"
     approval_required: "En moderator skal godkende din nye konto før du kan tilgå forummet. Du får en e-mail, når din konto er godkendt!"
-    missing_session: "Vi kan ikke se, om din konto blev oprettet, se venligst om du har aktiveret cookies."
   post_action_types:
     off_topic:
       title: 'Uden for emnet'
@@ -509,27 +505,19 @@ da:
     page_view_anon_reqs:
       title: "Anonym"
       xaxis: "Dag"
-      yaxis: "Anonyme API-Forespørgsler"
     page_view_logged_in_reqs:
       title: "Logget ind"
       xaxis: "Dag"
-      yaxis: "Indloggede API-forespørgsler"
     page_view_crawler_reqs:
       title: "Web Crawlers"
       xaxis: "Dag"
-      yaxis: "Web Crawler API-forespørgsler"
     page_view_total_reqs:
       title: "Total"
       xaxis: "Dag"
-      yaxis: "Totale API-forespørgsler"
     page_view_logged_in_mobile_reqs:
-      title: "Indloggede API-forespørgsler"
       xaxis: "Dag"
-      yaxis: "Mobile indloggede API-forespørgsler"
     page_view_anon_mobile_reqs:
-      title: "Anonyme API-forespørgsler"
       xaxis: "Dag"
-      yaxis: "Mobile anonyme API-forepørgsler"
     http_background_reqs:
       title: "Baggrund"
       xaxis: "Dag"
@@ -580,7 +568,6 @@ da:
     email_custom_headers: "En liste af brugerdefinerede e-mail-headers adskilt af |-tegn."
     enable_long_polling: "Message bus til underretninger kan bruge long polling"
     anon_polling_interval: "Hvor ofte skal anonyme brugere polle, i millisekunder."
-    flags_required_to_hide_post: "Antallet af flag som gør at et indlæg automatisk skjules og der sendes en PM til brugeren (0 for aldrig)."
     max_topics_in_first_day: "Det maksimale antal indlæg en bruger har lov til at oprette på deres første dag på sitet."
     max_replies_in_first_day: "Det maksimale antal svar en bruger har lov til at oprette på deres første dag på sitet."
     notify_mods_when_user_blocked: "Send en besked til alle moderatorer hvis en bruger blokeres automatisk"
@@ -611,8 +598,6 @@ da:
     purge_deleted_uploads_grace_period_days: "Grace-periode (i dage) før et slettet upload bliver fjernet."
     tl2_requires_likes_received: "Hvor mange likes en bruger skal modtage inden forfremmelse til tillidsniveau 2."
     tl2_requires_likes_given: "Hvor mange likes en bruger skal give inden forfremmelse til tillidsniveau 2."
-    tl3_requires_likes_given: "Det antal likes en bruger skal have givet i de seneste 100 dage for at kvalificere sig til forfremmelse til tillidsniveau 3."
-    tl3_requires_likes_received: "Det antal likes en bruger skal have modtaget i de seneste 100 dage for at kvalificere sig til forfremmelse til tillidsniveau 3."
     min_trust_to_create_topic: "Det mindste tillidsniveau der skal til for at oprette et nyt emne."
     title_fancy_entities: "Omdan almindelige ASCII-tegn i emnetitler til fancy HTML-entities, i stil med SmartyPants http://daringfireball.net/projects/smartypants/"
     title_prettify: "Undgå hyppige tastefejl i titlen, inklusive overforbrug af store bogstaver, første bogstav med småt, gentagne ! og ?, ekstra . i slutningen, etc."
@@ -621,7 +606,6 @@ da:
     faq_url: "Hvis du hoster en FAQ et andet sted kan du indtaste den fulde URL her."
     tos_url: "Hvis du hoster dine forretningsbetingelser et andet sted kan du indtaste den fulde URL her."
     privacy_policy_url: "Hvis du hoster din privatlivspolitik et andet sted kan du indtaste den fulde URL her."
-    newuser_spam_host_threshold: "Hvor mange gange en ny bruger kan linke til den samme host i deres `newuser_spam_host_posts` indlæg før det opfattes som spam."
     reply_by_email_address: "Skabelon for e-mail-adressen i formularen, for eksempel: %{reply_key}@reply.myforum.com."
     delete_all_posts_max: "Det maksimale antal indlæg der kan slettes på én gang med “Slet alle indlæg”-knappen. Hvis en bruger har mere end dette antal indlæg, kan indlæggene ikke slettes på én gang og brugeren kan ikke slettes."
     username_change_period: "Antal dage efter oprettelsen hvor brugere kan ændre deres brugernavn (0 for ikke at tillade skift af brugernavn)."
@@ -640,7 +624,6 @@ da:
     default_other_enable_quoting: "Slå som standard \"svar på den markerede tekst\" til."
     default_other_dynamic_favicon: "Vis som standard nyt / opdateret emnetal på browserikon"
     default_other_disable_jump_reply: "Spring ikke som standard til det nye indlæg efter brugeren har svaret"
-    default_other_edit_history_public: "Offentliggør som standard rettelser til indlæg."
     default_categories_watching: "Liste over kategorier der som standard overvåges."
     default_categories_tracking: "Liste over kategorier der som standard følges."
     default_categories_muted: "Liste over kategorier der som standard ignoreres."
@@ -705,18 +688,6 @@ da:
       subject_template: "Velkommen til %{site_name}!"
     welcome_invite:
       subject_template: "Velkommen til %{site_name}!"
-    too_many_spam_flags:
-      subject_template: "Ny konto blokeret"
-    blocked_by_staff:
-      subject_template: "Konto blokeret"
-    unblocked:
-      subject_template: "Blokering af konto fjernet"
-      text_body_template: |
-        Hej,
-
-        Dette er en automatisk besked fra %{site_name} for at informere dig om at blokeringen af din konto er blevet fjernet efter at administratorerne har set på sagen.
-
-        Du kan nu igen oprette nye svar og emner.
     pending_users_reminder:
       subject_template:
         one: "1 bruger afventer godkendelse"
@@ -807,8 +778,6 @@ da:
     images:
       too_large: "Beklager, men billedet som du forsøger at uploade er for stort (den maksimale størrelse er %{max_size_kb}KB). Gør det venligst mindre og prøv igen."
       size_not_found: "Beklager, men vi kunne ikke fastslå billedets størrelse. Måske er dit billede ødelagt?"
-  flag_reason:
-    sockpuppet: "En ny bruger oprettede et emne, og en anden ny bruger med den samme IP-adresse svarede på det. Se indstillingen af flag_sockpuppets."
   email_log:
     anonymous_user: "Brugeren er anonym"
     seen_recently: "Bruger har været logget på for nyligt"
@@ -834,6 +803,47 @@ da:
     title: "FAQ/Retningslinjer"
   tos_topic:
     title: "Vilkår"
+  badges:
+    editor:
+      name: Redaktør
+      description: Rettet første indlæg
+    basic_user:
+      name: Basis
+    member:
+      name: Medlem
+    regular:
+      name: Regulær
+    leader:
+      name: Leder
+    welcome:
+      name: Velkommen
+      description: Modtog et like
+    autobiographer:
+      name: Selvbiograf
+    anniversary:
+      name: Jubilæum
+    nice_post:
+      name: Fint svar
+      description: Modtog 10 likes på et svar
+    good_post:
+      name: Godt svar
+    great_post:
+      name: Rigtigt godt svar
+    nice_topic:
+      name: Fint emne
+    good_topic:
+      name: Godt emne
+    admired:
+      name: Beundret
+    crazy_in_love:
+      name: Vildt forelsket
+    thank_you:
+      name: Tak
+    gives_back:
+      name: Giver tilbage
+    empathetic:
+      name: Empatisk
+      description: Har 500 likede indlæg og givet 1000 likes
   admin_login:
     success: "Email sendt"
     error: "Fejl!"

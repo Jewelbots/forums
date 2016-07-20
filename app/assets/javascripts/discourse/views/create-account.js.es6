@@ -13,8 +13,9 @@ export default ModalBodyView.extend({
     if ($.cookie('email')) {
       createAccountController.set('accountEmail', $.cookie('email'));
     }
-    createAccountController.hideSignup();
 
+    createAccountController.hideSignup();
+      
     Em.run.schedule('afterRender', function() {
       $("input[type='text'], input[type='password']").keydown(function(e) {
         if (createAccountController.get('submitDisabled') === false && e.keyCode === 13) {

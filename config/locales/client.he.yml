@@ -291,8 +291,6 @@ he:
       title: "משתמשים"
       likes_given: "ניתנ/ו"
       likes_received: "התקבל/ו"
-      topics_entered: "כניסות"
-      topics_entered_long: "פוסטים אליהם נכנסת"
       time_read: "זמן קריאה"
       topic_count: "פוסטים"
       topic_count_long: "פוסטים שנוצרו"
@@ -424,7 +422,6 @@ he:
       dismiss_notifications_tooltip: "סימון כל ההתראות שלא נקראו כהתראות שנקראו"
       disable_jump_reply: "אל תקפצו לפרסומים שלי לאחר שאני משיב/ה"
       dynamic_favicon: "הצג את מספר פוסטים חדשים/מעודכנים על האייקון של הדפדפן"
-      edit_history_public: "אפשרו למשתמשים אחרים לראות את תיקוני הפרסומים שלי"
       external_links_in_new_tab: "פתח את כל הקישורים החיצוניים בעמוד חדש"
       enable_quoting: "אפשרו תגובת ציטוט לטקסט מסומן"
       change: "שנה"
@@ -436,7 +433,6 @@ he:
       suspended_notice: "המשתמש הזה מושעה עד לתאריך: {{date}}."
       suspended_reason: "הסיבה: "
       github_profile: "גיטהאב"
-      mailing_list_mode: "שלחו לי דוא\"ל על כל פרסום חדש (אלא אם אשתיק את המעקב אחר הפוסט או הקטגוריה)"
       watched_categories: "עוקב"
       watched_categories_instructions: "תעקבו באופן אוטומטי אחרי כל הפוסטים החדשים בקטגוריות אלה. תקבלו התראה על כל פרסום ופוסט חדש."
       tracked_categories: "רגיל+"
@@ -468,10 +464,8 @@ he:
         set_password: "הזן סיסמה"
       change_about:
         title: "שינוי בנוגע אליי"
-        error: "הייתה שגיאה בשינוי הערך"
       change_username:
         title: "שנה שם משתמש"
-        confirm: "אם תשנו את שם המשתמש/ת שלך, כל הציטוטים של ההודעות שלך ואזכורי @שם_המשתמש שלך יישברו. את/ה בטוחים לחלוטין שברצונך לשנות?"
         taken: "סליחה, שם המשתמש הזה תפוס."
         error: "ארעה שגיאה בשינוי שם המשתמש שלך."
         invalid: "שם המשתמש אינו תקין. עליו לכלול רק אותיות באנגלית ומספרים."
@@ -540,7 +534,6 @@ he:
       website: "אתר"
       email_settings: "דואר אלקטרוני"
       email_digests:
-        title: "כשאיני מבקר/ת כאן, שלחו לי מייל עם תקציר העדכונים:"
         daily: "יומית"
         every_three_days: "כל שלושה ימים"
         weekly: "שבועית"
@@ -814,7 +807,6 @@ he:
       link_description: "הזן תיאור קישור כאן"
       link_dialog_title: "הזן קישור"
       link_optional_text: "כותרת אופציונלית"
-      link_placeholder: "http://example.com \"טקסט אופציונלי\""
       quote_title: "ציטוט"
       quote_text: "ציטוט"
       code_title: "טקסט מעוצב"
@@ -912,7 +904,6 @@ he:
       post_format: "#{{post_number}} מאת {{username}}"
       context:
         user: "חיפוש פרסומים לפי @{{username}}"
-        category: "חיפוש בקטגוריה \"{{category}}\""
         topic: "חפשו בפוסט זה"
         private_messages: "חיפוש הודעות"
     hamburger_menu: "עבור לרשימת פוסטים אחרת או קטגוריה"
@@ -1228,10 +1219,7 @@ he:
         create: "סליחה, הייתה שגיאה ביצירת ההודעה שלך. אנא נסה שנית."
         edit: "סליחה, הייתה שגיאה בעריכת ההודעה שלך. אנא נסה שנית."
         upload: "סליחה, הייתה שגיאה בהעלאת הקובץ שלך. אנא נסה שנית"
-        attachment_too_large: "סליחה, אך הקובץ שאתה מנסה להעלות גדול מידי (הגודל המקסימלי הוא {{max_size_kb}}kb)."
-        file_too_large: "מצטערים, הקובץ שאתם מנסים להעלות גדול מידי (הגודל המקסימלי המותר הוא {{max_size_kb}}kb)"
         too_many_uploads: "סליחה, אך ניתן להעלות רק קובץ אחת כל פעם."
-        too_many_dragged_and_dropped_files: "מצטערים, אתם יכולים לגרור ולהניח עד 10 קבצים בכל פעם."
         upload_not_authorized: "סליחה, אך סוג הקובץ שאתה מנסה להעלות אינו מורשה (סיומות מורשות: {{authorized_extensions}})."
         image_upload_not_allowed_for_new_user: "סליחה, משתמשים חדשים לא יכולים להעלות תמונות."
         attachment_upload_not_allowed_for_new_user: "סליחה, משתמשים חדשים לא יכולים להעלות קבצים."
@@ -1639,7 +1627,6 @@ he:
           30_days_ago: "לפני 30 ימים"
           all: "הכל"
           view_table: "טבלא"
-          view_chart: "תרשים בר"
           refresh_report: "רענון דו\"ח"
           start_date: "תאריך התחלה"
           end_date: "תאריך סיום"
@@ -1771,14 +1758,6 @@ he:
           backups: "גיבויים"
           logs: "לוגים"
         none: "אין גיבויים זמינים."
-        read_only:
-          enable:
-            title: "אפשר מצב קריאה בלבד"
-            label: "אפשר מצב \"קריאה בלבד\""
-            confirm: "אתה בטוח שברצונך לאפשר את מצב קריאה בלבד??"
-          disable:
-            title: "בטל מצב קריאה בלבד"
-            label: "בטל מצב \"קריאה בלבד\""
         logs:
           none: "עדיין אין לוגים..."
         columns:
@@ -2438,8 +2417,6 @@ he:
         mark_watching: '<b>m</b>, <b>w</b>צפייה בפוסט'
     badges:
       title: תגים
-      allow_title: "יכול לשמש ככותרת"
-      multiple_grant: "יכול להיות מוענק מספר פעמים"
       badge_count:
         one: "תג אחד"
         other: "%{count} תגים"
@@ -2462,97 +2439,6 @@ he:
           name: אחר
         posting:
           name: פרסום
-      badge:
-        editor:
-          name: עורך
-          description: עריכה ראשונה של פוסט
-        basic_user:
-          name: בסיסי
-          description: <a href="https://meta.d הפעולות הקהילתיות הבסיסיותiscourse.org/t/what-do-user-trust-levels-do/4924/4">מאושרות</a> כל
-        member:
-          name: חבר/ה
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/5">הענקת</a> הזמנות
-        regular:
-          name: רגיל/ה
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/6">הענקת</a> קטרוג מחודש, שינוי שם, קישורים עוקבים ולאונג'
-        leader:
-          name: מוביל/ה
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/7">הענקת</a> עריכה גלובלית, הצמדה, סגירה, ארכוב, פיצול ומיזוג
-        welcome:
-          name: ברוכים הבאים
-          description: קיבל לייק
-        autobiographer:
-          name: אוטוביוגרפר/ית?
-          description: פרופיל <a href="/my/preferences">מידע</a> משתמש
-        anniversary:
-          name: יום השנה
-          description: חבר/ה פעיל/ה במשך שנה, פרסמ/ה לפחות פעם אחת
-        nice_post:
-          name: פרסום נחמד
-          description: קיבל/ה 10 לייקים על הפוסט. תג זה ניתן להעניק שוב ושוב ללא הגבלה
-        good_post:
-          name: פרסום מוצלח
-          description: קיבל/ה 25 לייקים על הפוסט. תג זה ניתן להעניק שוב ושוב ללא הגבלה
-        great_post:
-          name: פרסום מצויין
-          description: קבלת 50 לייקים על פרסום. תג זה יכול להיות מוענק מספר פעמים
-        nice_topic:
-          name: פוסט נחמד
-          description: קיבל/ה 10 לייקים על פוסט. תג זה יכול להיות מוענק כמה פעמים
-        good_topic:
-          name: פוסט טוב
-          description: קיבל/ה 25 לייקים על הפוסט. תג זה יכול להיות מוענק כמה פעמים
-        great_topic:
-          name: פוסט מצויין
-          description: קיבל/ה 50 לייקים על הפוסט. תג זה יכול להיות מוענק מספר פעמים
-        nice_share:
-          name: שיתוף נחמד
-          description: שיתפ/ה פרסום עם 25 מבקרים ייחודיים
-        good_share:
-          name: שיתוף טוב
-          description: שיתפ/ה פרסום עם 300 מבקרים ייחודיים
-        great_share:
-          name: שיתוף מעולה
-          description: חלק/ה פרסום עם 1000 מבקרים ייחודיים
-        first_like:
-          name: לייק ראשון
-          description: חיבב/ה פרסום
-        first_flag:
-          name: סימון ראשון
-          description: סימן/סימנה פרסום
-        promoter:
-          name: מקדם
-          description: הזמן משתמש
-        campaigner:
-          name: קמפיינר
-          description: הזמן 3 משתמשים בסיסים (דרגת אמון 1)
-        champion:
-          name: אלוף
-          description: הזמן 5 משתמשים (דרגת אמון 2)
-        first_share:
-          name: שיתוף ראשון
-          description: שיתף/שיתפה פרסום
-        first_link:
-          name: קישור (link) ראשון
-          description: הוסיף/הוסיפה קישור פנימי לפוסט אחר
-        first_quote:
-          name: ציטוט ראשון
-          description: ציטוט משתמש
-        read_guidelines:
-          name: קריאת כללים מנחים
-          description: קראו את <a href="/guidelines">הכללים המנחים של הקהילה</a>
-        reader:
-          name: מקראה
-          description: קראו כל פרסום בפוסט עם יותר מ-100 פרסומים
-        popular_link:
-          name: לינק פופלארי
-          description: פרסם קישור חיצוני עם לפחות 50 לחיצות
-        hot_link:
-          name: קישור חם
-          description: פרסם קישור חיצוני עם לפחות 300 לחיצות
-        famous_link:
-          name: קישור מפורסם
-          description: פרסם קישור חיצוני עם לפחות 1000 לחיצות
     google_search: |
       <h3>חפש עם גוגל</h3>
       <p>

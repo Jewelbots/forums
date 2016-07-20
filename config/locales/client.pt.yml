@@ -111,6 +111,8 @@ pt:
       google+: 'partilhar esta hiperligação no Google+'
       email: 'enviar esta hiperligação por email'
     action_codes:
+      public_topic: "tornei este tópico publico %{when}"
+      private_topic: "tornei este tópico privado %{when}"
       split_topic: "dividir este tópico %{when}"
       invited_user: "Convidou %{who} %{when}"
       removed_user: "Removeu %{who} %{when}"
@@ -134,6 +136,8 @@ pt:
         disabled: 'removido da lista %{when}'
     topic_admin_menu: "Ações administrativas dos Tópicos"
     emails_are_disabled: "Todos os envios de e-mail foram globalmente desativados por um administrador. Nenhum e-mail de notificação será enviado."
+    bootstrap_mode_enabled: "Para facilitar o lançamento do seu novo sítio mais fácil, encontra-se agora em modo de inicialização. Qualquer utilizador novo terá nível de confiança 1 e resumos de email diários ligados. Este modo será automaticamente desligado quando o número total de utilizadores ultrapassar %{min_users}."
+    bootstrap_mode_disabled: "Modo de inicialização será desligado dentro das próximas 24 horas."
     s3:
       regions:
         us_east_1: "Este dos E.U.A. (Virgínia do Norte)"
@@ -298,8 +302,6 @@ pt:
       title: "Utilizadores"
       likes_given: "Dado"
       likes_received: "Recebido"
-      topics_entered: "Inserido"
-      topics_entered_long: "Tópicos Inseridos"
       time_read: "Tempo Lido"
       topic_count: "Tópicos"
       topic_count_long: "Tópicos Criados"
@@ -438,15 +440,12 @@ pt:
         perm_denied_btn: "Permissão Negada"
         perm_denied_expl: "Negou a permissão para as notificações. Autorize as notificações através das configurações do seu navegador."
         disable: "Desativar Notificações"
-        currently_enabled: "(atualmente ativo)"
         enable: "Ativar Notificações"
-        currently_disabled: "(atualmente inativo)"
         each_browser_note: "Nota: Tem que alterar esta configuração em todos os navegadores de internet que utiliza."
       dismiss_notifications: "Marcar tudo como lido"
       dismiss_notifications_tooltip: "Marcar como lidas todas as notificações por ler"
       disable_jump_reply: "Não voltar para a minha mensagem após ter respondido"
       dynamic_favicon: "Mostrar contagem de tópicos novos / atualizados no ícone do browser."
-      edit_history_public: "Permitir que outros utilizadores vejam as minhas revisões de publicação"
       external_links_in_new_tab: "Abrir todas as hiperligações externas num novo separador"
       enable_quoting: "Ativar resposta usando citação de texto destacado"
       change: "alterar"
@@ -458,7 +457,6 @@ pt:
       suspended_notice: "Este utilizador está suspenso até {{date}}."
       suspended_reason: "Motivo: "
       github_profile: "Github"
-      mailing_list_mode: "Enviar-me um email por cada nova mensagem (a não ser que eu silencie o tópico ou categoria)"
       watched_categories: "Vigiado"
       watched_categories_instructions: "Irá acompanhar automaticamente todos os novos tópicos nestas categorias. Será notificado de todas as novas mensagens e tópicos, e uma contagem de novas mensagens irá aparecer junto ao tópico."
       tracked_categories: "Acompanhado"
@@ -501,10 +499,9 @@ pt:
         set_password: "Definir Palavra-passe"
       change_about:
         title: "Modificar Sobre Mim"
-        error: "Ocorreu um erro ao alterar este valor."
+        error: "Ocorreu um erro ao modificar este valor."
       change_username:
         title: "Alterar Nome de Utilizador"
-        confirm: "Se mudar o seu nome de utilizador, todas as citações anteriores das suas mensagens e menções a @nome serão quebradas. Tem a certeza que deseja fazê-lo?"
         taken: "Pedimos desculpa, esse nome de utilizador já está a ser utilizado."
         error: "Ocorreu um erro ao alterar o seu nome de utilizador."
         invalid: "Esse nome de utilizador é inválido. Deve conter apenas números e letras."
@@ -588,7 +585,6 @@ pt:
         always: "sempre"
         never: "nunca"
       email_digests:
-        title: "Quando não visitar o sítio, enviar um email com o resumo das novidades:"
         every_30_minutes: "a cada 30 minutos"
         every_hour: "A cada hora"
         daily: "diariamente"
@@ -666,18 +662,41 @@ pt:
       summary:
         title: "Sumário"
         stats: "Estatísticas"
-        topic_count: "Tópicos Criados"
-        post_count: "Mensagens Criadas"
-        likes_given: "Gostos Dados"
-        likes_received: "Gostos Recebidos"
-        days_visited: "Dias Visitados"
-        posts_read_count: "Mensagens Lidas"
+        time_read: "Tempo de leitura"
+        topic_count:
+          one: "Tópico criado"
+          other: "Tópicos criados"
+        post_count:
+          one: "mensagem criada"
+          other: "mensagens criadas"
+        likes_given:
+          one: "<i class='fa fa-heart'></i> dado"
+          other: "<i class='fa fa-heart'></i> dados"
+        likes_received:
+          one: "<i class='fa fa-heart'></i> recebido"
+          other: "<i class='fa fa-heart'></i> recebidos"
+        days_visited:
+          one: "dia visitado"
+          other: "dias visitados"
+        posts_read:
+          one: "mensagem lida"
+          other: "mensagens lidas"
+        bookmark_count:
+          one: "marcador"
+          other: "marcadores"
         top_replies: "Respostas"
-        top_topics: "Melhores Tópicos"
-        top_badges: "Melhores Distintivos"
-        more_topics: "Mais Tópicos"
+        no_replies: "Nenhuma resposta ainda."
         more_replies: "Mais Respostas"
-        more_badges: "Mais Distintivos"
+        top_topics: "Melhores Tópicos"
+        no_topics: "Nenhum tópico ainda."
+        more_topics: "Mais Tópicos"
+        top_badges: "Melhores Medalhas"
+        no_badges: "Nenhuma medalha ainda."
+        more_badges: "Mais Medalhas"
+        top_links: "Melhores hiperligações"
+        no_links: "Não há nenhuma hiperligação ainda."
+        most_liked_by: "Por mais apreciados"
+        no_likes: "Nenhum gostos ainda."
       associated_accounts: "Contas associadas"
       ip_address:
         title: "Último endereço IP"
@@ -726,7 +745,12 @@ pt:
     too_few_topics_and_posts_notice: "Vamos <a href='http://blog.discourse.org/2014/08/building-a-discourse-community/'>começar esta discussão!</a> Atualmente existem <strong>%{currentTopics} / %{requiredTopics}</strong> tópicos e <strong>%{currentPosts} / %{requiredPosts}</strong> mensagens. Novos visitantes precisam de conversações para ler e responder a."
     too_few_topics_notice: "Vamos <a href='http://blog.discourse.org/2014/08/building-a-discourse-community/'>começar esta discussão!</a> Atualmente existem <strong>%{currentTopics} / %{requiredTopics}</strong> tópios. Novos visitantes precisam de algumas conversações para ler e responder a."
     too_few_posts_notice: "Vamos <a href='http://blog.discourse.org/2014/08/building-a-discourse-community/'>começar esta discussão!</a> Atualmente existem <strong>%{currentPosts} / %{requiredPosts}</strong> mensagens. Novos visitantes precisam de algumas conversações para ler e responder a."
-    logs_error_rate_exceeded_notice: "%{timestamp}: Taxa atual de <a href='%{url}' target='_blank'>%{rate} erros/%{duration}</a> excedeu o limite configurável para este sítio de %{siteSettingLimit} erros/%{duration}."
+    logs_error_rate_notice:
+      reached: "%{timestamp}: Velocidade corrente de <a href='%{url}' target='_blank'>%{rate}</a> alcançou o limite definido nas configurações do site de %{siteSettingRate}."
+      exceeded: "%{timestamp}: Velocidade corrente de <a href='%{url}' target='_blank'>%{rate}</a> excedeu o limite definido nas configurações do site de %{siteSettingRate}."
+      rate:
+        one: "1 erro/%{duration}"
+        other: "%{count} erros/%{duration}"
     learn_more: "saber mais..."
     year: 'ano'
     year_desc: 'tópicos criados nos últimos 365 dias'
@@ -890,7 +914,7 @@ pt:
       link_description: "digite a descrição da hiperligação aqui"
       link_dialog_title: "Inserir Hiperligação"
       link_optional_text: "título opcional"
-      link_placeholder: "http://example.com \"texto opcional\""
+      link_url_placeholder: "http://example.com"
       quote_title: "Bloco de Citação"
       quote_text: "Bloco de Citação"
       code_title: "Texto pré-formatado"
@@ -1000,7 +1024,6 @@ pt:
       post_format: "#{{post_number}} de {{username}}"
       context:
         user: "Procurar mensagens de @{{username}}"
-        category: "Procurar na categoria \"{{category}}\""
         topic: "Pesquisar este tópico"
         private_messages: "Pesquisar mensagens"
     hamburger_menu: "ir para outra lista de tópicos ou categorias"
@@ -1029,6 +1052,9 @@ pt:
         selected:
           one: "Selecionou  <b>1</b> tópico."
           other: "Selecionou <b>{{count}}</b> tópicos."
+        change_tags: "Mudar Etiquetas"
+        choose_new_tags: "Escolha novas etiquetas para estes tópicos:"
+        changed_tags: "As etiquetas para esses tópicos foram mudadas."
       none:
         unread: "Tem tópicos não lidos."
         new: "Não tem novos tópicos."
@@ -1183,6 +1209,8 @@ pt:
         invisible: "Tornar Não Listado"
         visible: "Tornar Listado"
         reset_read: "Repor Data de Leitura"
+        make_public: "Criar tópico publico"
+        make_private: "Criar mensagem privada"
       feature:
         pin: "Fixar Tópico"
         unpin: "Desafixar Tópico"
@@ -1342,10 +1370,9 @@ pt:
         create: "Pedimos desculpa, ocorreu um erro ao criar a sua mensagem. Por favor, tente novamente."
         edit: "Pedimos desculpa, ocorreu um erro ao editar a sua mensagem. Por favor, tente novamente."
         upload: "Pedimos desculpa, ocorreu um erro ao carregar esse ficheiro. Por favor, tente novamente."
-        attachment_too_large: "Pedimos desculpa, o ficheiro que está a carregar é muito grande (o tamanho máximo permitido é {{max_size_kb}}kb)."
-        file_too_large: "Pedimos desculpa, o ficheiro que está a tentar carregar é muito grande (o tamanho máximo permitido é {{max_size_kb}}kb)."
+        file_too_large: "Lamentamos mas esse ficheiro é demasiado grande (o tamanho máximo é de {{max_size_kb}}kb). Porque não carregar o seu ficheiro grande para um serviço de partilha na nuvem e depois partilhar o link?"
         too_many_uploads: "Pedimos desculpa, só pode carregar um ficheiro de cada vez."
-        too_many_dragged_and_dropped_files: "Pedimos desculpa, só pode arrastar e largar até 10 ficheiros de cada vez."
+        too_many_dragged_and_dropped_files: "Lamentamos mas só pode carregar 10 ficheiros de cada vez."
         upload_not_authorized: "Pedimos desculpa, o tipo de ficheiro que está a carregar não está autorizado (extensões autorizadas: {{authorized_extensions}})."
         image_upload_not_allowed_for_new_user: "Pedimos desculpa, os novos utilizadores não podem carregar imagens."
         attachment_upload_not_allowed_for_new_user: "Pedimos desculpa, os novos utilizadores não podem carregar anexos."
@@ -1355,11 +1382,13 @@ pt:
         no_value: "Não, manter"
         yes_value: "Sim, abandonar"
       via_email: "esta mensagem chegou por email"
+      via_auto_generated_email: "esta mensagem chegou via um email gerado automaticamente"
       whisper: "esta mensagem é um susurro privado para os moderadores"
       wiki:
         about: "esta mensagem é uma wiki"
       archetypes:
         save: 'Guardar as Opções'
+      few_likes_left: "Obrigado por partilhar o amor! Restam-lhe apenas um gostos para hoje."
       controls:
         reply: "começar a compor uma resposta a este tópico"
         like: "gostar deste tópico"
@@ -1567,10 +1596,10 @@ pt:
           description: "Nunca será notificado de nada acerca de novos tópicos nestas categorias, e estes não irão aparecer nos recentes."
     flagging:
       title: 'Obrigado por ajudar a manter a nossa comunidade cívica!'
-      private_reminder: 'as sinalizações são privadas, visíveis <b>apenas</b> para o pessoal'
       action: 'Sinalizar Mensagem'
       take_action: "Acionar"
       notify_action: 'Mensagem'
+      official_warning: 'Aviso Oficial'
       delete_spammer: "Eliminar Spammer"
       delete_confirm: "Está prestes a apagar <b>%{posts}</b> mensagens e <b>%{topics}</b> tópicos deste utilizador, remover a sua conta, bloquear acessos do seu endereço IP <b>%{ip_address}</b>, e adicionar o seu endereço de email <b>%{email}</b> a uma lista negra. Tem a certeza que este utilizador é de facto um spammer?"
       yes_delete_spammer: "Sim, Eliminar Spammer"
@@ -1784,7 +1813,7 @@ pt:
           30_days_ago: "30 Dias Atrás"
           all: "Tudo"
           view_table: "tabela"
-          view_chart: "gráfico de barras"
+          view_graph: "grafo"
           refresh_report: "Atualizar relatório"
           start_date: "Data de Início"
           end_date: "Data final"
@@ -1921,12 +1950,12 @@ pt:
         none: "Nenhuma cópia de segurança disponível."
         read_only:
           enable:
-            title: "Ativar o modo só de leitura"
-            label: "Ativar modo só de leitura"
-            confirm: "Tem a certeza que quer ativar o modo só de leitura?"
+            title: "Activar modo só de leitura"
+            label: "Activar só de leitura"
+            confirm: "Tem a certeza que quer activar o modo só de leitura?"
           disable:
-            title: "Desativar o modo só de leitura"
-            label: "Desativar modo só de leitura"
+            title: "Desactivar modo só de leitura"
+            label: "Desactivar só para leitura"
         logs:
           none: "Nenhuns logs ainda..."
         columns:
@@ -2067,9 +2096,6 @@ pt:
           love:
             name: 'amor'
             description: "A cor do botão 'gosto'."
-          wiki:
-            name: 'wiki'
-            description: "Cor base utilizada para o fundo de mensagens wiki"
       email:
         title: "Emails"
         settings: "Configurações"
@@ -2080,6 +2106,7 @@ pt:
         test_error: "Occorreu um problema no envio do email de teste. Por favor verifique novamente as suas definições de email, verifique se o seu host não está a bloquear conexões de email, e tente novamente."
         sent: "Enviado"
         skipped: "Ignorado"
+        bounced: "Devolvida"
         received: "Recebido"
         rejected: "Rejeitado"
         sent_at: "Enviado em"
@@ -2109,14 +2136,7 @@ pt:
           modal:
             title: "Detalhes de emails recebidos."
             error: "Erro"
-            return_path: "Return-Path"
-            message_id: "Message-Id"
-            in_reply_to: "Em-Resposta-A"
-            references: "Referência"
-            date: "Data"
-            from: "De"
-            to: "Para"
-            cc: "Cc"
+            headers: "Cabeçalhos"
             subject: "Assunto"
             body: "Corpo"
             rejection_message: "Correio de rejeição"
@@ -2196,6 +2216,8 @@ pt:
             grant_moderation: "conceder moderação"
             revoke_moderation: "revogar moderação"
             backup_operation: "operação de cópia de segurança"
+            deleted_tag: "etiqueta removida"
+            renamed_tag: "etiqueta renomeada"
         screened_emails:
           title: "Emails Filtrados"
           description: "Quando alguém tenta criar uma nova conta, os seguintes endereços de email serão verificados e o registo será bloqueado, ou outra ação será executada."
@@ -2367,7 +2389,6 @@ pt:
         deactivate_explanation: "Um utilizador desativado deve revalidar o seu email."
         suspended_explanation: "Um utilizador suspenso não pode iniciar sessão."
         block_explanation: "Um utilizador bloqueado não pode publicar mensagens ou iniciar tópicos."
-        stage_explanation: "Um utilizador em estado temporário pode apenas publicar por email em tópicos específicos."
         trust_level_change_failed: "Ocorreu um problema ao alterar o Nível de Confiança do utilizador."
         suspend_modal_title: "Utilizador Suspenso"
         trust_level_2_users: "Utilizadores no Nível de Confiança 2"
@@ -2434,6 +2455,10 @@ pt:
           title: "Exibir no perfil público?"
           enabled: "exibido no perfil"
           disabled: "não exibido no perfil"
+        show_on_user_card:
+          title: "Mostrar no cartão de utilizador?"
+          enabled: "mostrar no cartão de utilizador"
+          disabled: "não apresentado no cartão de utilizador"
         field_types:
           text: 'Campo de Texto'
           confirm: 'Confirmação'
@@ -2479,6 +2504,7 @@ pt:
           login: "Iniciar Sessão"
           plugins: "Plugins"
           user_preferences: "Preferências do Utilizador"
+          tags: "Etiquetas"
       badges:
         title: Distintivos
         new_badge: Novo Distintivo
@@ -2487,6 +2513,7 @@ pt:
         badge: Distintivo
         display_name: Exibir Nome
         description: Descrição
+        long_description: Descrição longa
         badge_type: Tipo de Distintivo
         badge_grouping: Grupo
         badge_groupings:
@@ -2526,6 +2553,7 @@ pt:
           post_revision: "Quando um utilizador edita ou cria uma mensagem"
           trust_level_change: "Quando um utilizador muda de Nível de Confiança"
           user_change: "Quando um utilizador é editado ou criado"
+          post_processed: "Depois de uma mensagem ser processada"
         preview:
           link_text: "Pré-visualizar distintivos concedidos"
           plan_text: "Pré-visualizar com plano de consulta"
@@ -2647,12 +2675,13 @@ pt:
         mark_watching: '<b>m</b>, <b>w</b> Vigiar este tópico'
     badges:
       earned_n_times:
-        one: "Ganhou este distintivo 1 vez"
-        other: "Ganhou este distintivo %{count} vezes"
-      more_with_badge: "Outros com este distintivo"
+        one: "Ganhou esta medalha 1 vez"
+        other: "Ganhou esta medalha %{count} vezes"
+      granted_on: "Ganho %{date}"
+      others_count: "Outras pessoas com esta medalha (%{count})"
       title: Distintivos
-      allow_title: "pode ser usado como título"
-      multiple_grant: "pode ser premiado múltiplas vezes"
+      allow_title: "título disponivel"
+      multiple_grant: "atribuido multiplas vezes"
       badge_count:
         one: "1 Distintivo"
         other: "%{count} Distintivos"
@@ -2675,97 +2704,6 @@ pt:
           name: Outro
         posting:
           name: A publicar
-      badge:
-        editor:
-          name: Editor
-          description: Primeira edição de uma mensagem
-        basic_user:
-          name: Básico
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/4">Atribuídas</a> todas as funções comunitárias essenciais
-        member:
-          name: Membro
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/5">Atribuídos</a> convites
-        regular:
-          name: Habitual
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/6">Atribuída</a> re-categorização, renomeação, seguimento de hiperligações e lounge
-        leader:
-          name: Líder
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/7">Atribuída a</a> edição, destaque, encerramento, arquivo, separação e junção globais
-        welcome:
-          name: Bem-vindo
-          description: Recebeu um gosto
-        autobiographer:
-          name: Autobiógrafo
-          description: 'Preencheu informações no <a href="/my/preferences">perfil</a> de utilizador '
-        anniversary:
-          name: Aniversário
-          description: Membro ativo há um ano, publicou pelo menos uma vez
-        nice_post:
-          name: Boa Mensagem
-          description: Recebeu 10 gostos numa mensagem. Este distintivo pode ser concedido diversas vezes
-        good_post:
-          name: Ótima Mensagem
-          description: 'Recebeu 25 gostos numa mensagem. Este distintivo pode ser concedido diversas vezes '
-        great_post:
-          name: Excelente Mensagem
-          description: Recebeu 50 gostos numa mensagem. Este distintivo pode ser concedido diversas vezes
-        nice_topic:
-          name: Bom Tópico
-          description: Recebeu 10 gostos num tópico. Este distintivo pode ser concedido diversas vezes
-        good_topic:
-          name: Ótimo Tópico
-          description: 'Recebeu 25 gostos num tópico. Este distintivo pode ser concedido diversas vezes '
-        great_topic:
-          name: Excelente Tópico
-          description: Recebeu 50 gostos num tópico. Este distintivo pode ser concedido diversas vezes
-        nice_share:
-          name: Boa Partilha
-          description: Partilhou uma mensagem com 25 visitantes únicos
-        good_share:
-          name: Ótima Partilha
-          description: Partilhou uma mensagem com 300 visitantes únicos
-        great_share:
-          name: Excelente Partilha
-          description: Partilhou uma mensagem com 1000 visitantes únicos
-        first_like:
-          name: Primeiro Gosto
-          description: Gostou de uma mensagem
-        first_flag:
-          name: Primeira Sinalização
-          description: Sinalizou uma mensagem
-        promoter:
-          name: Promotor
-          description: Convidou um utilizador
-        campaigner:
-          name: Partidário
-          description: Convidou 3 utilizadores básicos (nível de confiança 1)
-        champion:
-          name: Campeão
-          description: Convidou 5 membros (nível de confiança 2)
-        first_share:
-          name: Primeira Partilha
-          description: Partilhou uma mensagem
-        first_link:
-          name: Primeira Hiperligação
-          description: Adicionou uma hiperligação interna para outro tópico
-        first_quote:
-          name: Primeira Citação
-          description: Citou um utilizador
-        read_guidelines:
-          name: Ler Diretrizes
-          description: Leu as <a href="/guidelines">diretrizes da comunidade</a>
-        reader:
-          name: Leitor
-          description: Ler todas as mensagens num tópico com mais de 100 mensagens
-        popular_link:
-          name: Hiperligação Popular
-          description: Foi publicada uma hiperligação externa com pelo menos 50 cliques
-        hot_link:
-          name: Hiperligação Quente
-          description: Foi publicada uma hiperligação externa com pelo menos 300 cliques
-        famous_link:
-          name: Hiperligação Famosa
-          description: Foi publicada uma hiperligação externa com pelo menos 1000 cliques
     google_search: |
       <h3>Pesquise com o Google</h3>
       <p>
@@ -2775,3 +2713,53 @@ pt:
       <button class="btn btn-primary">Google</button>
       </form>
       </p>
+    tagging:
+      all_tags: "Todas as Etiquetas"
+      selector_all_tags: "todas as etiquetas"
+      changed: "etiquetas modificadas:"
+      tags: "Etiquetas"
+      choose_for_topic: "escolha etiquetas opcionais para este tópico"
+      delete_tag: "Remover Etiqueta"
+      delete_confirm: "Tem a certeza que deseja remover esta etiqueta?"
+      rename_tag: "Renomear Etiqueta"
+      rename_instructions: "Escolha o novo nome para a etiqueta:"
+      sort_by: "Ordenar por:"
+      sort_by_count: "contagem"
+      sort_by_name: "nome"
+      filters:
+        without_category: "%{filter} %{tag} tópicos"
+        with_category: "%{filter} %{tag} tópicos em %{category}"
+      notifications:
+        watching:
+          title: "A vigiar"
+          description: "Vigiará automaticamente todos os tópicos novos nesta etiqueta. Será notificado acerca de todas as novas mensagens e tópicos,bem como lhe será apresentada a contagem de mensagens por ler e novas ao lado do tópico."
+        tracking:
+          title: "A seguir"
+          description: "Irá automaticamente seguir todos os novos tópicos nesta etiqueta. Uma contagem de mensagens não lidas e novas aparecerá ao lado to tópico."
+        regular:
+          title: "Regular"
+          description: "Será notificado quando alguém mencione o seu @nome ou responda à sua mensagem."
+        muted:
+          title: "Silenciado"
+          description: "Não será notificado acerca de novos tópicos sob esta etiqueta, não aparecendo eles no seu separador de não lidos."
+      topics:
+        none:
+          unread: "Não tem tópicos por ler."
+          new: "Não tem nenhum tópico novo."
+          read: "Ainda não leu quaisquer tópicos."
+          posted: "Ainda não publicou nada em um tópico qualquer."
+          latest: "Não há tópicos recentes."
+          hot: "Não há tópicos quentes."
+          bookmarks: "Não marcou qualquer tópico ainda."
+          top: "Não há quaisquer tópicos de topo."
+          search: "Não há resultados para a procura."
+        bottom:
+          latest: "Não há mais tópicos recentes."
+          hot: "Não há mais tópicos quentes."
+          posted: "Não existem mais tópicos publicados."
+          read: "Não existem mais tópicos lidos."
+          new: "Não existem mais tópicos novos."
+          unread: "Não existem mais tópicos por ler."
+          top: "Não existem mais tópicos de topo."
+          bookmarks: "Não existem mais tópicos marcados."
+          search: "Não existem mais resultados de pesquisa."

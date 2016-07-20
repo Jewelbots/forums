@@ -16,7 +16,6 @@ bs_BA:
   loading: "Loading"
   powered_by_html: 'Powered by <a href="http://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled'
   log_in: "Log In"
-  purge_reason: "Automatically deleted due to being old and unverified"
   disable_remote_images_download_reason: "Remote images download was disabled because there wasn't enough disk space available."
   errors: &errors
     messages:
@@ -43,7 +42,6 @@ bs_BA:
   spamming_host: "Sorry you cannot post a link to that host."
   user_is_suspended: "Suspended users are not allowed to post."
   just_posted_that: "is too similar to what you recently posted"
-  has_already_been_used: "has already been used"
   invalid_characters: "contains invalid characters"
   is_invalid: "is invalid; try to be a little more descriptive"
   next_page: "next page →"
@@ -62,8 +60,6 @@ bs_BA:
     hot: "Hot topics"
   too_late_to_edit: "That post was created too long ago. It can no longer be edited or deleted."
   groups:
-    errors:
-      can_not_modify_automatic: "You can not modify an automatic group"
     default_names:
       everyone: "everyone"
       admins: "admins"
@@ -424,7 +420,6 @@ bs_BA:
     notification_email: "The from: email address used when sending all essential system emails. The domain specified here must have SPF, DKIM and reverse PTR records set correctly for email to arrive."
     email_custom_headers: "A pipe-delimited list of custom email headers"
     email_subject: "Customizable subject format for standard emails. See https://meta.discourse.org/t/customize-subject-format-for-standard-emails/20801"
-    use_https: "Should the full url for the site (Discourse.base_url) be http or https? DO NOT ENABLE THIS UNLESS HTTPS IS ALREADY SET UP AND WORKING!"
     summary_score_threshold: "The minimum score required for a post to be included in 'Summarize This Topic'"
     summary_posts_required: "Minimum posts in a topic before 'Summarize This Topic' is enabled"
     summary_likes_required: "Minimum likes in a topic before 'Summarize This Topic' is enabled"
@@ -433,7 +428,6 @@ bs_BA:
     long_polling_interval: "Interval before a new long poll is issued in milliseconds "
     polling_interval: "How often should logged in user clients poll in milliseconds"
     anon_polling_interval: "How often should anonymous clients poll in milliseconds"
-    flags_required_to_hide_post: "Number of flags that cause a post to be automatically hidden and PM sent to the user (0 for never)"
     cooldown_minutes_after_hiding_posts: "Number of minutes a user must wait before they can edit a post hidden via community flagging"
     max_topics_in_first_day: "The maximum number of topics a user is allowed to create in their first day on the site"
     max_replies_in_first_day: "The maximum number of replies a user is allowed to create in their first day on the site"
@@ -448,7 +442,6 @@ bs_BA:
     ga_domain_name: "Google analytics (ga.js) domain name, eg: mysite.com; see http://google.com/analytics"
     ga_universal_tracking_code: "Google Universal Analytics (analytics.js) tracking code code, eg: UA-12345678-9; see http://google.com/analytics"
     ga_universal_domain_name: "Google Universal Analytics (analytics.js) domain name, eg: mysite.com; see http://google.com/analytics"
-    enable_escaped_fragments: "Fall back to Google's Ajax-Crawling API if no webcrawler is detected. See https://support.google.com/webmasters/answer/174992?hl=en"
     enable_noscript_support: "Enable standard webcrawler search engine support via the noscript tag"
     allow_moderators_to_create_categories: "Allow moderators to create new categories"
     cors_origins: "Allowed origins for cross-origin requests (CORS). Each origin must include http:// or https://. The DISCOURSE_ENABLE_CORS env variable must be set to true to enable CORS."
@@ -472,7 +465,6 @@ bs_BA:
     allow_index_in_robots_txt: "Specify in robots.txt that this site is allowed to be indexed by web search engines."
     email_domains_blacklist: "A list of email domains that users are not allowed to register accounts with. Example: mailinator.com trashmail.net"
     email_domains_whitelist: "A list of email domains that users MUST register accounts with. WARNING: Users with email domains other than those listed will not be allowed!"
-    forgot_password_strict: "Don't inform users of an account's existance when they use the forgot password dialog."
     version_checks: "Ping the Discourse Hub for version updates and show new version messages on the /admin dashboard"
     new_version_emails: "Send an email to the contact_email address when a new version of Discourse is available."
     port: "DEVELOPER ONLY! WARNING! Use this HTTP port rather than the default of port 80. Leave blank for default of 80."
@@ -483,7 +475,6 @@ bs_BA:
     login_required: "Require authentication to read content on this site, disallow anonymous access."
     min_password_length: "Minimum password length."
     block_common_passwords: "Don't allow passwords that are in the 10,000 most common passwords."
-    sso_url: "URL of single sign on endpoint"
     sso_secret: "Secret string used to encrypt/decrypt SSO information, be sure it is 10 chars or longer"
     sso_overrides_avatar: "Overrides user avatar with external site avatar from SSO payload. If enabled, disabling allow_uploaded_avatars is highly recommended"
     enable_local_logins: "Enable local username and password login based accounts. (Note: this must be enabled for invites to work)"
@@ -542,15 +533,9 @@ bs_BA:
     tl2_requires_likes_received: "How many likes a user must receive before promotion to trust level 2."
     tl2_requires_likes_given: "How many likes a user must cast before promotion to trust level 2."
     tl2_requires_topic_reply_count: "How many topics user must reply to before promotion to trust level 2."
-    tl3_requires_topics_replied_to: "Minimum number of topics a user needs to have replied to in the last 100 days to qualify for promotion to trust level 3. (0 or higher)"
-    tl3_requires_topics_viewed: "The percentage of topics created in the last 100 days that a user needs to have viewed to qualify for promotion to trust level 3. (0 to 100)"
-    tl3_requires_posts_read: "The percentage of posts created in the last 100 days that a user needs to have viewed to qualify for promotion to trust level 3. (0 to 100)"
     tl3_requires_topics_viewed_all_time: "The minimum total number of topics a user must have viewed to qualify for trust level 3."
     tl3_requires_posts_read_all_time: "The minimum total number of posts a user must have read to qualify for trust level 3."
-    tl3_requires_max_flagged: "User must not have had more than x posts flagged by x different users in the last 100 days to qualify for promotion to trust level 3, where x is this setting's value. (0 or higher)"
     tl3_promotion_min_duration: "The minimum number of days that a promotion to trust level 3 lasts before a user can be demoted back to trust level 2."
-    tl3_requires_likes_given: "The minimum number of likes that must be given in the last 100 days to qualify for promotion to trust level 3."
-    tl3_requires_likes_received: "The minimum number of likes that must be received in the last 100 days to qualify for promotion to trust level 3."
     tl3_links_no_follow: "Do not remove rel=nofollow from links posted by trust level 3 users."
     min_trust_to_create_topic: "The minimum trust level required to create a new topic."
     min_trust_to_edit_wiki_post: "The minimum trust level required to edit post marked as wiki."
@@ -587,7 +572,6 @@ bs_BA:
     faq_url: "If you have a FAQ hosted elsewhere that you want to use, provide the full URL here."
     tos_url: "If you have a Terms of Service document hosted elsewhere that you want to use, provide the full URL here."
     privacy_policy_url: "If you have a Privacy Policy document hosted elsewhere that you want to use, provide the full URL here."
-    newuser_spam_host_threshold: "How many times a new user can post a link to the same host within their `newuser_spam_host_posts` posts before being considered spam."
     white_listed_spam_host_domains: "A list of domains excluded from spam host testing. New users will never be restricted from creating posts with links to these domains."
     staff_like_weight: "How much extra weighting factor to give staff likes."
     levenshtein_distance_spammer_emails: "When matching spammer emails, number of characters difference that will still allow a fuzzy match."
@@ -779,22 +763,6 @@ bs_BA:
   system_messages:
     post_hidden:
       subject_template: "Post hidden due to community flagging"
-      text_body_template: |
-        Hello,
-
-        This is an automated message from %{site_name} to inform you that your post ...
-
-        %{base_url}%{url}
-
-        ... was hidden due to community flagging.
-
-        %{flag_reason}
-
-        Multiple community members flagged this post before it was hidden, so please consider how you might revise your post to reflect their feedback. **You can edit your post after %{edit_delay} minutes, and it will be automatically unhidden.** This will increase your trust level.
-
-        However, if the post is hidden by the community a second time, it will remain hidden until handled by staff – and there may be further action, including the possible suspension of your account.
-
-        For additional guidance, please refer to our [community guidelines](%{base_url}/guidelines).
     welcome_user:
       subject_template: "Dobrodošli na Revolucionar.com!"
       text_body_template: |
@@ -884,36 +852,10 @@ bs_BA:
       subject_template: "Email issue -- Bad Reply Key"
     email_error_notification:
       subject_template: "Email issue -- POP authentication error"
-    too_many_spam_flags:
-      subject_template: "New account blocked"
-      text_body_template: |
-        Hello,
-
-        This is an automated message from %{site_name} to inform you that your posts have been automatically hidden because they were flagged by the community.
-
-        As a precautionary measure, your new account has been blocked from creating new replies or topics until a staff member can review your account.
-
-        For additional guidance, please refer to our [community guidelines](%{base_url}/guidelines).
-    blocked_by_staff:
-      subject_template: "Account blocked"
-      text_body_template: |
-        Hello,
-
-        This is an automated message from %{site_name} to inform you that your account has been blocked by a staff member.
-
-        For additional guidance, please refer to our [community guidelines](%{base_url}/guidelines).
     user_automatically_blocked:
       subject_template: "New user %{username} blocked due to community flags"
     spam_post_blocked:
       subject_template: "New user %{username} posts blocked due to repeated links"
-    unblocked:
-      subject_template: "Account unblocked"
-      text_body_template: |
-        Hello,
-
-        This is an automated message from %{site_name} to inform you that your account has been unblocked after staff review.
-
-        You can now create new replies and topics again.
     pending_users_reminder:
       text_body_template: |
         There are new user signups waiting to be approved (or rejected) before they can access this forum.
@@ -932,10 +874,6 @@ bs_BA:
     posted_by: "Odgovoreno %{username} dana %{post_date}"
     user_invited_to_private_message_pm:
       subject_template: "[%{site_name}] %{username} invited you to a private message '%{topic_title}'"
-      text_body_template: |
-        %{username} invited you to a private message '%{topic_title}' on %{site_name}:
-
-        Please visit this link to view the topic: %{base_url}%{url}
     user_replied:
       subject_template: "[%{site_name}] %{topic_title}"
     user_quoted:
@@ -1032,9 +970,6 @@ bs_BA:
     images:
       too_large: "Sorry, the image you are trying to upload is too big (maximum size is %{max_size_kb}%kb), please resize it and try again."
       size_not_found: "Sorry, but we couldn't determine the size of the image. Maybe your image is corrupted?"
-  flag_reason:
-    sockpuppet: "A new user created a topic, and another new user at the same IP address replied. See the flag_sockpuppets site setting."
-    spam_hosts: "This new user tried to create multiple posts with links to the same domain. See the newuser_spam_host_threshold site setting."
   email_log:
     no_user: "Can't find user with id %{user_id}"
     suspended_not_pm: "User is suspended, not a private message"
