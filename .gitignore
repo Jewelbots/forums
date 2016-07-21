@@ -36,7 +36,7 @@ config/discourse.conf
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
-/tmp
+#/tmp
 /logfile
 log/
 
