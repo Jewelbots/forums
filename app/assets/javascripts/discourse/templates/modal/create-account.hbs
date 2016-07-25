@@ -10,8 +10,8 @@
                     <script
                             src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                             data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
-                            data-name="Permission from an Adult"
-                            data-description="Verified then click submit again"
+                            data-name="Permission From an Adult"
+                            data-description="You are under 13 year old."
                             data-locale="auto">
                     </script>
                 </div>
@@ -91,14 +91,14 @@
                     </form>
                 </div>
 
-                <div class="first-signup" style="height: 300px;">
+                <div class="first-signup">
                     <div style="text-align: center; width: 100%;">
-                        <label>Welcome to Jewelbots!</label>
-                        <label>To Register, please enter your birthdate</label>
+                        <label>Welcome To Jewelbots Forum!</label>
+                        <label>Please enter your birthdate for registration.</label>
                     </div>
                     <br/>
                     <br/>
-                    <div style="text-align: center; width: 100%;">
+                    <div id="birthday_date_picker_wrap" style="text-align: center; width: 100%;">
                         <b>Birthday</b>
                         &nbsp;&nbsp;
                         {{date-picker options="birthdate" name="date-of-birth" value=accountBirthday}}

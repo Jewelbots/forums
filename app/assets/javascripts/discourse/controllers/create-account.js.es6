@@ -372,11 +372,24 @@ export default Ember.Controller.extend(ModalFunctionality, {
     if ($.cookie('user_birthday')) {
         $('.date-picker').prop('disabled', true);
     }
+
     $('.date-picker').val($.cookie('user_birthday'));
 
     $(".first-signup").show();
-  },
 
+    // $('#birthay_date_picker').click(function(){
+    //     $('#birthday_date_picker_wrap').css('height', '300px');
+    // });
+
+    $('#birthay_date_picker').focusin(function(){
+         $('#birthday_date_picker_wrap').css('height', '270px');
+    });
+
+    $('#birthay_date_picker').focusout(function(){
+        $('#birthday_date_picker_wrap').css('height', '');
+    });
+  },
+    
   showSignup() {
     $(".check-info-by-stripe").hide();
 
