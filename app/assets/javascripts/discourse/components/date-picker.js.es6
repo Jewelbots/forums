@@ -10,7 +10,7 @@ export default Em.Component.extend({
   _loadDatePicker() {
     const input = this.$(".date-picker")[0];
     const container = $("#" + this.get("containerId"))[0];
-
+    const currentYear = (new Date()).getFullYear();
     loadScript("/javascripts/pikaday.js").then(() => {
       Ember.run.next(() => {
         let default_opts = {
@@ -18,6 +18,7 @@ export default Em.Component.extend({
           container: container || this.$()[0],
           bound: container === undefined,
           format: "YYYY-MM-DD",
+          yearRange: [currentYear-100,currentYear],
           firstDay: moment.localeData().firstDayOfWeek(),
           i18n: {
             previousMonth: I18n.t('dates.previous_month'),
