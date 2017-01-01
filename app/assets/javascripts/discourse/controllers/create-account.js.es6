@@ -20,6 +20,7 @@ export default Ember.Controller.extend(ModalFunctionality, {
   prefilledUsername: null,
   userFields: null,
   isDeveloper: false,
+  isAmbassador: false,
 
   hasAuthOptions: Em.computed.notEmpty('authOptions'),
   canCreateLocal: setting('enable_local_logins'),
@@ -389,7 +390,7 @@ export default Ember.Controller.extend(ModalFunctionality, {
         $('#birthday_date_picker_wrap').css('height', '');
     });
   },
-    
+
   showSignup() {
     $(".check-info-by-stripe").hide();
 

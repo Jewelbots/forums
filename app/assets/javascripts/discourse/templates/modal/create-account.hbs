@@ -86,7 +86,29 @@
                                     {{input value=accountChallenge id="new-account-challenge"}}
                                 </td>
                             </tr>
+                            <tr class="ambassador-signup">
+                                <td><label>Would you like sign up to become a Jewelbots ambassador? </label></td>
+                                <td>
+                                  {{input type="checkbox" id="isAmbassador"}}
+                                </td>
 
+                            </tr>
+                            <tr class="instructions">
+                                <td></td>
+                                <td>
+                                    <label>Get early access to news and content, and free Jewelbots stuff!</label>
+                                </td>
+                            </tr>
+                           {{#if isAmbassador}}
+                           <tr class="address">
+                               <td><label>Address</label></td>
+                               <td>
+                                 {{input type="checkbox" id="isAmbassador"}}
+                               </td>
+
+                           </tr>
+
+                           {{/if}}
                         </table>
                     </form>
                 </div>
