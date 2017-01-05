@@ -36,6 +36,10 @@ export default Ember.Controller.extend(ModalFunctionality, {
       accountEmail: '',
       accountUsername: '',
       accountPassword: '',
+      accountIsAmbassador: false,
+      accountAddress: '',
+      accountCity: '',
+      accountZipCode: '',
       authOptions: null,
       globalNicknameExists: false,
       complete: false,
@@ -43,12 +47,14 @@ export default Ember.Controller.extend(ModalFunctionality, {
       rejectedEmails: [],
       rejectedPasswords: [],
       prefilledUsername: null,
-      isDeveloper: false
+      isDeveloper: false,
+      isAmbassador: false
     });
     this._createUserFields();
   },
 
   submitDisabled: function() {
+
     if (!this.get('emailValidation.failed') && !this.get('passwordRequired')) return false; // 3rd party auth
     if (this.get('formSubmitted')) return true;
     if (this.get('nameValidation.failed')) return true;
@@ -56,6 +62,7 @@ export default Ember.Controller.extend(ModalFunctionality, {
     if (this.get('usernameValidation.failed')) return true;
     if (this.get('passwordValidation.failed')) return true;
     if (this.get('birthdayValidation.failed')) return true;
+
 
     // Validate required fields
     let userFields = this.get('userFields');
@@ -68,16 +75,15 @@ export default Ember.Controller.extend(ModalFunctionality, {
       if (anyEmpty) { return true; }
     }
     return false;
-  }.property('passwordRequired', 'nameValidation.failed', 'emailValidation.failed', 'usernameValidation.failed', 'passwordValidation.failed', 'formSubmitted', 'userFields.@each.value'),
+  }.property('passwordRequired', 'nameValidation.failed', 'emailValidation.failed', 'usernameValidation.failed', 'passwordValidation.failed', 'formSubmitted', 'userFields.@each.value', 'stateValidation.failed', 'addressValidation.failed', 'stateValidation.failed', 'zipCodeValidation.failed'),
 
 
   usernameRequired: Ember.computed.not('authOptions.omit_username'),
 
   nextDisabled: function(){
     console.log(this);
-    if (Ember.isEmpty(this.get('accountBirthday'))) {
-        return true;
-    };
+    if (Ember.isEmpty(this.get('address'))) return true;
+
     return false;
   }.property('birthdayValidation.failed'),
 
@@ -109,6 +115,30 @@ export default Ember.Controller.extend(ModalFunctionality, {
 
     return InputValidation.create({ok: true});
   }.property('accountName'),
+
+  addressValidation: function(){
+    if(Ember.isEmpty(this.get('address'))){
+      return InputValidation.create({ failed: true });
+    }
+  }.property('address'),
+
+  cityValidation: function(){
+    if(Ember.isEmpty(this.get('city'))){
+      return InputValidation.create({ failed: true });
+    }
+  }.property('city'),
+
+  zipValidation: function(){
+    if(Ember.isEmpty(this.get('zipCode'))){
+      return InputValidation.create({ failed: true });
+    }
+  }.property('zipCode'),
+
+  stateValidation: function(){
+    if(Ember.isEmpty(this.get('state'))){
+      return InputValidation.create({ failed: true });
+    }
+  }.property('state'),
 
   // Check the email address
   emailValidation: function() {
@@ -364,6 +394,7 @@ export default Ember.Controller.extend(ModalFunctionality, {
     // $("tr").hide();
     $(".check-info-by-stripe").hide();
 
+    $(".user-fields").hide();
     $(".create").hide();
     $(".next").show();
 
@@ -393,8 +424,10 @@ export default Ember.Controller.extend(ModalFunctionality, {
 
   showSignup() {
     $(".check-info-by-stripe").hide();
+    $('#checkAmbassador').prop('checked', false);
 
     // $("tr").show();
+    $(".user-fields").hide();
     $(".create").show();
     $(".next").hide();
 
@@ -404,6 +437,7 @@ export default Ember.Controller.extend(ModalFunctionality, {
     // .stripe-button-el").trigger( "click" );
     // $("#stripe-checkout-btn").trigger( "click" );
   },
+
 
   stripeReturnCheck() {
     if ($(".stripe-button-el").prop('disabled') == true) {
@@ -423,6 +457,7 @@ export default Ember.Controller.extend(ModalFunctionality, {
   },
 
   actions: {
+
     externalLogin(provider) {
       this.get('controllers.login').send('externalLogin', provider);
     },
@@ -462,6 +497,13 @@ export default Ember.Controller.extend(ModalFunctionality, {
     },
 
     createAccount() {
+      //check ambassador fields
+      if(this.isAmbassador){
+        if($('.user-fields').find('input:visible:text:first').val()==''){
+          $('#ambassador-validation').text('Please complete your address first!');
+          return;
+        }
+      }
       const self = this,
           attrs = this.getProperties('accountName', 'accountEmail', 'accountBirthday', 'accountPassword', 'accountUsername', 'accountPasswordConfirm', 'accountChallenge'),
           userFields = this.get('userFields');
@@ -522,6 +564,15 @@ export default Ember.Controller.extend(ModalFunctionality, {
   trigger: function() {
     Ember.run.scheduleOnce('afterRender', this, function() {
     });
-  }.on('init')
 
+  }.on('init'),
+  watchIsAmbassador: function(){
+    if(this.isAmbassador){
+      $(".user-fields").show();
+
+    }
+    else{
+      $(".user-fields").hide();
+    }
+  }.observes('isAmbassador')
 });

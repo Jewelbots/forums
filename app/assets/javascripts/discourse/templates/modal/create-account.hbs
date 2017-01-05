@@ -18,6 +18,7 @@
 
                 <div class="default-signup">
                     <form>
+
                         <table class="">
                             <tr class="input">
                                 <td class="label"><label for='new-account-email'>{{i18n 'user.email.title'}}</label></td>
@@ -86,30 +87,17 @@
                                     {{input value=accountChallenge id="new-account-challenge"}}
                                 </td>
                             </tr>
-                            <tr class="ambassador-signup">
-                                <td><label>Would you like sign up to become a Jewelbots ambassador? </label></td>
+                            <tr class="input">
+                                <td class="label"><label>Would you like to sign up to be a Jewelbots ambassador?</label></td>
                                 <td>
-                                  {{input type="checkbox" id="isAmbassador"}}
+                                    {{input type="checkbox" id="ambassadorCheck" checked=isAmbassador}}
+                                    &nbsp;{{input-tip  id="ambassador-validation"}}
                                 </td>
 
                             </tr>
-                            <tr class="instructions">
-                                <td></td>
-                                <td>
-                                    <label>Get early access to news and content, and free Jewelbots stuff!</label>
-                                </td>
-                            </tr>
-                           {{#if isAmbassador}}
-                           <tr class="address">
-                               <td><label>Address</label></td>
-                               <td>
-                                 {{input type="checkbox" id="isAmbassador"}}
-                               </td>
 
-                           </tr>
-
-                           {{/if}}
                         </table>
+
                     </form>
                 </div>
 
@@ -129,7 +117,6 @@
                         <span id="error_birthday_msg" style="color:#a52a2a; display: none;">Invalid birthday!</span>
                     </div>
                 </div>
-
                 {{#if userFields}}
                     <div class='user-fields'>
                         {{#each f in userFields}}
@@ -139,12 +126,16 @@
                 {{/if}}
             </div>
         {{/if}}
+
     </div>
 
     {{#if showCreateForm}}
         <div class="modal-footer">
+
             <button class='btn btn-large btn-primary create' {{bind-attr disabled="submitDisabled"}} {{action "createAccount"}}>{{i18n 'create_account.title'}}</button>
             <button class='btn btn-large btn-primary next' {{action "checkBirthday"}}>Submit</button>
+
+
             {{#conditional-loading-spinner condition=formSubmitted size="small"}}
                 <button class="btn btn-large" id="login-link" {{action "showLogin"}}>
                     {{i18n 'log_in'}}
