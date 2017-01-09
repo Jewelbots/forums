@@ -1,0 +1,18 @@
+{:uriI"ªfile://app/assets/javascripts/discourse/templates/components/tag-list.hbs?type=text/x-ember-handlebars&id=6150012a52af95dcff7a3afa325b2fff32c8a01f015d18a21985c80d280ca704:ET:load_pathI"app/assets/javascripts;T:filenameI"Gapp/assets/javascripts/discourse/templates/components/tag-list.hbs;T:	nameI",discourse/templates/components/tag-list;T:logical_pathI"0discourse/templates/components/tag-list.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"${{#if title}}
+  <h3>{{title}}</h3>
+{{/if}}
+{{#if category}}
+  {{category-title-link category=category}}
+{{/if}}
+{{#each sortedTags as |tag|}}
+  <div class='tag-box'>
+    {{discourse-tag tag.id}} <span class='tag-count'>x {{tag.count}}</span>
+  </div>
+{{/each}}
+<div class="clearfix" />
+<hr/>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Ufile-digest://app/assets/javascripts/discourse/templates/components/tag-list.hbs;TTF:charsetI"
+utf-8;F:digest"%²L\U.û›N2©òS~ÐIK‡- o£Zsy1_Aj:lengthi$:dependencies_digest"%°úºL4ìb)aa|‰ƒƒÔ–sl¥MF{â¸áS¿*C:idI"E6150012a52af95dcff7a3afa325b2fff32c8a01f015d18a21985c80d280ca704;F:
+mtimel+°cX

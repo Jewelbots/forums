@@ -1,0 +1,11 @@
+I"Œrequire('discourse/lib/raw-handlebars').template({"1":function(container,depth0,helpers,partials,data) {
+    return "      <li><a href>"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"option.name",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "</a></li>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "<div class='autocomplete'>\n  <ul>\n"
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},"option","in","options",{"name":"each","hash":{},"hashTypes":{},"hashContexts":{},"fn":container.program(1, data, 0),"inverse":container.noop,"types":["PathExpression","CommentStatement","PathExpression"],"contexts":[depth0,depth0,depth0],"data":data})) != null ? stack1 : "")
+    + "  </ul>\n</div>\n";
+},"useData":true});:ET

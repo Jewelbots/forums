@@ -1,0 +1,25 @@
+{:uriI"²file://app/assets/javascripts/discourse/templates/modal/edit-topic-auto-close.hbs?type=text/x-ember-handlebars&id=ebf0c2c050951c575c12715cea87ca2cf43cd0c803977903a64793d2deb515bb:ET:load_pathI"app/assets/javascripts;T:filenameI"Oapp/assets/javascripts/discourse/templates/modal/edit-topic-auto-close.hbs;T:	nameI"4discourse/templates/modal/edit-topic-auto-close;T:logical_pathI"8discourse/templates/modal/edit-topic-auto-close.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"F<form>
+  <div class="modal-body">
+    {{auto-close-form autoCloseTime=model.auto_close_time
+                      autoCloseValid=auto_close_valid
+                      autoCloseBasedOnLastPost=model.details.auto_close_based_on_last_post
+                      limited=model.details.auto_close_based_on_last_post }}
+    {{#if willCloseImmediately}}
+      <div class="warning">
+        {{fa-icon "warning"}}
+        {{willCloseI18n}}
+      </div>
+    {{/if}}
+  </div>
+  <div class="modal-footer">
+    {{d-button class="btn-primary" disabled=disable_submit label="topic.auto_close_save" action="saveAutoClose"}}
+    <a {{action "closeModal"}}>{{i18n 'cancel'}}</a>
+    {{conditional-loading-spinner size="small" condition=loading}}
+    {{d-button class="pull-right" action="removeAutoClose" label="topic.auto_close_remove"}}
+  </div>
+</form>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"]file-digest://app/assets/javascripts/discourse/templates/modal/edit-topic-auto-close.hbs;TTF:charsetI"
+utf-8;F:digest"%\i71ð*²I2	Ëœ_Î)›ø!Š<‚0}˜·$ñ…Ä@:lengthiF:dependencies_digest"%à«+­‚µ>I«n9¾O/àç[y\Á$CÏ?ÿÜà`:idI"Eebf0c2c050951c575c12715cea87ca2cf43cd0c803977903a64793d2deb515bb;F:
+mtimel+°cX

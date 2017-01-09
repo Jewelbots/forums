@@ -1,0 +1,12 @@
+{:uriI"Æfile://app/assets/javascripts/discourse/templates/components/share-source.hbs?type=text/x-ember-handlebars&id=247991f6af9460b415d83d04cd89ee873ac6e5bed3507fa52c95e09f8017906d:ET:load_pathI"app/assets/javascripts;T:filenameI"Kapp/assets/javascripts/discourse/templates/components/share-source.hbs;T:	nameI"0discourse/templates/components/share-source;T:logical_pathI"4discourse/templates/components/share-source.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"‡<a href {{action "share" source}} title="{{unbound source.title}}" aria-label="{{unbound source.title}}" >
+  {{#if source.faIcon}}
+    <i class="fa {{source.faIcon}}"></i>
+  {{else}}
+    {{{source.htmlIcon}}}
+  {{/if}}
+</a>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Yfile-digest://app/assets/javascripts/discourse/templates/components/share-source.hbs;TTF:charsetI"
+utf-8;F:digest"%G∏ÛvRZs¡ŸT_>_úÿ:‰ï¢µ≈k8°©»–]0t:lengthi‡:dependencies_digest"%ŒÜ—-(L~KúNHA'Æ'ü•CÔ0Åê124l:idI"E247991f6af9460b415d83d04cd89ee873ac6e5bed3507fa52c95e09f8017906d;F:
+mtimel+∞cX

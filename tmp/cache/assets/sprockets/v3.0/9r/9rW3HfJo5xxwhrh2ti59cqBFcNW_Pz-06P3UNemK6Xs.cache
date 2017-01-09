@@ -1,0 +1,39 @@
+{:uriI" file://app/assets/javascripts/admin/templates/site-settings.hbs?type=text/x-ember-handlebars&id=cb1f7bfc722a4c98ec65f612a9da081556a28b451f9acb2ac017dc918e8fe15f:ET:load_pathI"app/assets/javascripts;T:filenameI"=app/assets/javascripts/admin/templates/site-settings.hbs;T:	nameI""admin/templates/site-settings;T:logical_pathI"&admin/templates/site-settings.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"E<div class='admin-controls'>
+  <div class='search controls'>
+    <label>
+      {{input type="checkbox" checked=onlyOverridden}}
+      {{i18n 'admin.site_settings.show_overriden'}}
+    </label>
+  </div>
+  <div class='controls'>
+    {{d-button action="toggleMenu" class="menu-toggle" icon="bars"}}
+    {{text-field value=filter placeholderKey="type_to_filter" class="no-blur"}}
+    {{d-button action="clearFilter" label="admin.site_settings.clear_filter"}}
+  </div>
+</div>
+
+<div class="admin-nav pull-left">
+  <ul class="nav nav-stacked">
+    {{#each model as |category|}}
+      {{#link-to 'adminSiteSettingsCategory' category.nameKey tagName='li' class=category.nameKey}}
+        {{#link-to 'adminSiteSettingsCategory' category.nameKey class=category.nameKey}}
+          {{category.name}}
+          {{#if filtered}}
+            {{#if category.count}}<span class="count">({{category.count}})</span>{{/if}}
+          {{/if}}
+        {{/link-to}}
+      {{/link-to}}
+    {{/each}}
+  </ul>
+</div>
+
+<div class="admin-detail pull-left mobile-closed">
+  {{outlet}}
+</div>
+
+<div class="clearfix"></div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Kfile-digest://app/assets/javascripts/admin/templates/site-settings.hbs;TTF:charsetI"
+utf-8;F:digest"%b?ÁH/tÁž¾Z!]¤'q¤]‚NgÛ|ûðÊY¼(üú­:lengthiE:dependencies_digest"%É&ÈÑ,y@‘TØ|úÏÒ?0Ç×¡eðòÍÇÖêÓ:idI"Ecb1f7bfc722a4c98ec65f612a9da081556a28b451f9acb2ac017dc918e8fe15f;F:
+mtimel+°cX

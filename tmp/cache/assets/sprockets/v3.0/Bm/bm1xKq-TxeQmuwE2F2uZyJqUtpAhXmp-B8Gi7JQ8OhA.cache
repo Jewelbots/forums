@@ -1,0 +1,33 @@
+{:uriI"§file://app/assets/javascripts/admin/templates/logs/screened_emails.hbs?type=text/x-ember-handlebars&id=2f0e08415be4cc601256ff7f46be2952ea2526622bb64006f2431cb4194d3dfd:ET:load_pathI"app/assets/javascripts;T:filenameI"Dapp/assets/javascripts/admin/templates/logs/screened_emails.hbs;T:	nameI")admin/templates/logs/screened_emails;T:logical_pathI"-admin/templates/logs/screened_emails.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"™<p>
+  {{i18n 'admin.logs.screened_emails.description'}}
+  <button class="btn pull-right" {{action "exportScreenedEmailList"}} title="{{i18n 'admin.export_csv.button_title.screened_email'}}">{{fa-icon "download"}}{{i18n 'admin.export_csv.button_text'}}</button>
+</p>
+<br>
+
+{{#conditional-loading-spinner condition=loading}}
+  {{#if model.length}}
+
+    <div class='table screened-emails'>
+      <div class="heading-container">
+        <div class="col heading first email">{{i18n 'admin.logs.screened_emails.email'}}</div>
+        <div class="col heading action">{{i18n 'admin.logs.action'}}</div>
+        <div class="col heading match_count">{{i18n 'admin.logs.match_count'}}</div>
+        <div class="col heading last_match_at">{{i18n 'admin.logs.last_match_at'}}</div>
+        <div class="col heading created_at">{{i18n 'admin.logs.created_at'}}</div>
+        <div class="col heading ip_address">{{i18n 'admin.logs.ip_address'}}</div>
+        <div class="col heading action"></div>
+        <div class="clearfix"></div>
+      </div>
+
+      {{screened-emails-list content=model}}
+    </div>
+
+  {{else}}
+    {{i18n 'search.no_results'}}
+  {{/if}}
+{{/conditional-loading-spinner}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Rfile-digest://app/assets/javascripts/admin/templates/logs/screened_emails.hbs;TTF:charsetI"
+utf-8;F:digest"%)™!"*¤\‰ÈS<¹Pÿ±Øúu¶Æ@Éºù`Öå1:lengthi™:dependencies_digest"%b®ªØ]ªEô¤¸F7QyÏÊÈEmÿ›{’™‡-ÇËúQ:idI"E2f0e08415be4cc601256ff7f46be2952ea2526622bb64006f2431cb4194d3dfd;F:
+mtimel+°cX

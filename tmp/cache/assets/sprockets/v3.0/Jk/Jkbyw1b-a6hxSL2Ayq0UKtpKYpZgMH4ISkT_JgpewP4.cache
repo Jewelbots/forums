@@ -1,0 +1,19 @@
+I"³require('discourse/lib/raw-handlebars').template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "  <div class=\"topic-excerpt\">\n    "
+    + ((stack1 = helpers.get.call(depth0 != null ? depth0 : {},"topic.excerpt",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},"topic.excerptTruncated",{"name":"if","hash":{},"hashTypes":{},"hashContexts":{},"fn":container.program(2, data, 0),"inverse":container.noop,"types":["PathExpression"],"contexts":[depth0],"data":data})) != null ? stack1 : "")
+    + "  </div>\n";
+},"2":function(container,depth0,helpers,partials,data) {
+    return "      <a href=\""
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"topic.url",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "\">"
+    + container.escapeExpression((helpers.i18n || (depth0 && depth0.i18n) || helpers.helperMissing).call(depth0 != null ? depth0 : {},"read_more",{"name":"i18n","hash":{},"hashTypes":{},"hashContexts":{},"types":["StringLiteral"],"contexts":[depth0],"data":data}))
+    + "</a>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},"topic.hasExcerpt",{"name":"if","hash":{},"hashTypes":{},"hashContexts":{},"fn":container.program(1, data, 0),"inverse":container.noop,"types":["PathExpression"],"contexts":[depth0],"data":data})) != null ? stack1 : "");
+},"useData":true});:ET

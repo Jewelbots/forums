@@ -1,0 +1,67 @@
+{:uriI" file://app/assets/javascripts/admin/templates/plugins-index.hbs?type=text/x-ember-handlebars&id=26cc5af2aa61b2452554e3d36a18eb5fe110ce4ce95f8296b637ea615616c2b1:ET:load_pathI"app/assets/javascripts;T:filenameI"=app/assets/javascripts/admin/templates/plugins-index.hbs;T:	nameI""admin/templates/plugins-index;T:logical_pathI"&admin/templates/plugins-index.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"¬{{#if length}}
+
+  {{#if currentUser.admin}}
+    {{d-button label="admin.plugins.change_settings"
+               icon="gear"
+               class='settings-button pull-right'
+               action="showSettings"}}
+  {{/if}}
+
+  <h3>{{i18n "admin.plugins.installed"}}</h3>
+
+  <br/>
+
+  <table class="admin-plugins">
+    <thead>
+      <tr>
+        <th>{{i18n "admin.plugins.name"}}</th>
+        <th>{{i18n "admin.plugins.version"}}</th>
+        <th>{{i18n "admin.plugins.enabled"}}</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each model as |plugin|}}
+        <tr>
+          <td>
+            {{#if plugin.url}}
+              <a href={{plugin.url}} target="_blank">{{plugin.name}}</a>
+            {{else}}
+              {{plugin.name}}
+            {{/if}}
+          </td>
+          <td>{{plugin.version}}</td>
+          <td class="col-enabled">
+            {{#if plugin.enabled_setting}}
+              {{#if plugin.enabled}}
+                {{i18n "admin.plugins.is_enabled"}}
+              {{else}}
+                {{i18n "admin.plugins.not_enabled"}}
+              {{/if}}
+            {{else}}
+              {{i18n "admin.plugins.is_enabled"}}
+            {{/if}}
+          </td>
+          <td>
+            {{#if currentUser.admin}}
+              {{#if plugin.enabled_setting}}
+                {{d-button action="showSettings" actionParam=plugin icon="gear" label="admin.plugins.change_settings_short"}}
+              {{/if}}
+            {{/if}}
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{else}}
+  <p>{{i18n "admin.plugins.none_installed"}}</p>
+{{/if}}
+
+<p><a href="https://meta.discourse.org/t/install-a-plugin/19157">{{i18n "admin.plugins.howto"}}</a></p>
+
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Kfile-digest://app/assets/javascripts/admin/templates/plugins-index.hbs;TTF:charsetI"
+utf-8;F:digest"%5[¥gz¬™´çÄ„ÒİñwO[£;yM×3Æ·0ÿe:lengthi¬:dependencies_digest"%¿®¦°_MÎ,˜(mMkœ8²)ø9úM£Ö®
+:idI"E26cc5af2aa61b2452554e3d36a18eb5fe110ce4ce95f8296b637ea615616c2b1;F:
+mtimel+°cX

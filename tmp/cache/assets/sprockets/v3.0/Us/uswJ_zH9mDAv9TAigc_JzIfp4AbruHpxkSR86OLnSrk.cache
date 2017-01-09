@@ -1,0 +1,6 @@
+{:uriI"ªfile://app/assets/javascripts/admin/templates/components/group-member.hbs?type=text/x-ember-handlebars&id=22be844eb12c933cfd63012b22e6ae742db6c4ad545e05359ac5bdf0727b8263:ET:load_pathI"app/assets/javascripts;T:filenameI"Gapp/assets/javascripts/admin/templates/components/group-member.hbs;T:	nameI",admin/templates/components/group-member;T:logical_pathI"0admin/templates/components/group-member.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"·<a href={{member.adminPath}}>{{avatar member imageSize="small"}}</a> {{member.username}} {{#unless automatic}}<a class='remove' {{action "remove"}}>{{fa-icon "times"}}</a>{{/unless}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Ufile-digest://app/assets/javascripts/admin/templates/components/group-member.hbs;TTF:charsetI"
+utf-8;F:digest"%ÈZ40İTûsÿJzwM•ûà \âgV·ÎÖ!uIø:lengthi·:dependencies_digest"%…n'N@aù˜y˜Üİ7aU»(ãÄæŠÜ…Ûr:idI"E22be844eb12c933cfd63012b22e6ae742db6c4ad545e05359ac5bdf0727b8263;F:
+mtimel+°cX

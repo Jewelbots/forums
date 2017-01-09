@@ -1,0 +1,34 @@
+{:uriI"∏file://app/assets/javascripts/discourse/templates/components/edit-category-security.hbs?type=text/x-ember-handlebars&id=eafc6a0160088814f874f41e7038b414a124f6c19e77aacde112e71eeda4f685:ET:load_pathI"app/assets/javascripts;T:filenameI"Uapp/assets/javascripts/discourse/templates/components/edit-category-security.hbs;T:	nameI":discourse/templates/components/edit-category-security;T:logical_pathI">discourse/templates/components/edit-category-security.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"õ<section class='field'>
+  {{#if category.is_special}}
+    <p class="warning">{{i18n 'category.special_warning'}}</p>
+  {{/if}}
+  <ul class='permission-list'>
+    {{#each category.permissions as |p|}}
+      <li>
+        <span class="name"><span class="badge-group">{{p.group_name}}</span></span>
+        {{{i18n "category.can"}}}
+        <span class="permission">{{p.permission.description}}</span>
+        {{#if editingPermissions}}
+        <a href {{action "removePermission" p}}>{{fa-icon "times-circle"}}</a>
+        {{/if}}
+      </li>
+    {{/each}}
+  </ul>
+  {{#if editingPermissions}}
+    {{combo-box content=category.availableGroups value=selectedGroup}}
+    {{combo-box class="permission-selector"
+                nameProperty="description"
+                content=category.availablePermissions
+                value=selectedPermission}}
+    <button {{action "addPermission" selectedGroup selectedPermission}} class="btn btn-small">{{i18n 'category.add_permission'}}</button>
+  {{else}}
+    {{#unless category.is_special}}
+      <button {{action "editPermissions"}} class="btn btn-small">{{i18n 'category.edit_permissions'}}</button>
+    {{/unless}}
+  {{/if}}
+</section>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"cfile-digest://app/assets/javascripts/discourse/templates/components/edit-category-security.hbs;TTF:charsetI"
+utf-8;F:digest"%4„p	º§Ü¥ıO5ñ6r£±\∏ÌsàáÊuøàˇ:lengthiõ:dependencies_digest"%ï5Ëù–Ωt6Ã¸ p§œ—/Ü+[Í“í~`°àa]‚:idI"Eeafc6a0160088814f874f41e7038b414a124f6c19e77aacde112e71eeda4f685;F:
+mtimel+∞cX

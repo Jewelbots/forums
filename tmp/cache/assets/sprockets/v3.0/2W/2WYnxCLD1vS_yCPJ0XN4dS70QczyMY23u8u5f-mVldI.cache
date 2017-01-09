@@ -1,0 +1,7 @@
+{:uriI"©file://app/assets/javascripts/discourse/templates/list/activity-column.raw.hbs?type=text/x-handlebars&id=788ae7a4905949a31e0f8aa9ce99be5d821f14b3e7a560642e651b4ce029bd4a:ET:load_pathI"app/assets/javascripts;T:filenameI"Lapp/assets/javascripts/discourse/templates/list/activity-column.raw.hbs;T:	nameI"-discourse/templates/list/activity-column;T:logical_pathI"5discourse/templates/list/activity-column.raw.hbs;T:content_typeI"text/x-handlebars;T:sourceI"<{{this.tagName}} class="{{class}} {{cold-age-class topic.createdAt startDate=topic.bumpedAt class=""}} activity" title="{{{topic.bumpedAtTitle}}}"><a href="{{topic.lastPostUrl}}">{{format-date topic.bumpedAt format="tiny" noTitle="true"}}</a></{{this.tagName}}>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Bprocessors:type=text/x-handlebars&file_type=text/x-handlebars;TTI"Zfile-digest://app/assets/javascripts/discourse/templates/list/activity-column.raw.hbs;TTF:charsetI"
+utf-8;F:digest"%èDˆ%6ÆlŒ/hO†eşjnÀS¸^Íµ¶¶ƒš2:lengthi:dependencies_digest"%cŠ^7„£,Ï[ğ”€È‘§É¡Ù'½ÇòW{pû
+:idI"E788ae7a4905949a31e0f8aa9ce99be5d821f14b3e7a560642e651b4ce029bd4a;F:
+mtimel+°cX

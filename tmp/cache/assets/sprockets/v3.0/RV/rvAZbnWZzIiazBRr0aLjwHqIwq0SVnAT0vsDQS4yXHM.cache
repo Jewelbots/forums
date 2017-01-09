@@ -1,0 +1,38 @@
+{:uriI"–file://app/assets/javascripts/admin/templates/api.hbs?type=text/x-ember-handlebars&id=77ff9a1a8143a799665a551eacf4c27f7487167268ba18f4e63da35810b7c754:ET:load_pathI"app/assets/javascripts;T:filenameI"3app/assets/javascripts/admin/templates/api.hbs;T:	nameI"admin/templates/api;T:logical_pathI"admin/templates/api.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"É{{#if model}}
+  <table class='api-keys'>
+  <tr>
+    <th>{{i18n 'admin.api.key'}}</th>
+    <th>{{i18n 'admin.api.user'}}</th>
+    <th>&nbsp;</th>
+  </tr>
+  {{#each model as |k|}}
+    <tr>
+      <td class='key'>{{k.key}}</td>
+      <td>
+        {{#if k.user}}
+          {{#link-to 'adminUser' k.user}}
+            {{avatar k.user imageSize="small"}}
+          {{/link-to}}
+        {{else}}
+          {{i18n 'admin.api.all_users'}}
+        {{/if}}
+      </td>
+      <td>
+        <button class='btn' {{action "regenerateKey" k}}><i class="fa fa-undo"></i>{{i18n 'admin.api.regenerate'}}</button>
+        <button class='btn' {{action "revokeKey" k}}><i class="fa fa-times"></i>{{i18n 'admin.api.revoke'}}</button>
+      </td>
+    </tr>
+  {{/each}}
+  </table>
+{{else}}
+  <p>{{i18n 'admin.api.none'}}</p>
+{{/if}}
+
+{{#unless hasMasterKey}}
+  <button class='btn' {{action "generateMasterKey"}}><i class="fa fa-key"></i>{{i18n 'admin.api.generate_master'}}</button>
+{{/unless }}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Afile-digest://app/assets/javascripts/admin/templates/api.hbs;TTF:charsetI"
+utf-8;F:digest"%ÀUÕ›),!¾Ò/ÌóîT½–¥èœ+%;7šØ‹:lengthiÉ:dependencies_digest"%ûœu•×mñíW"+Óe¼³_q °cçŞü‡ŠRtˆ%:idI"E77ff9a1a8143a799665a551eacf4c27f7487167268ba18f4e63da35810b7c754;F:
+mtimel+°cX

@@ -1,0 +1,73 @@
+I"ãEmber.HTMLBars.template((function() {
+  return {
+    isHTMLBars: true,
+    revision: "Ember@1.12.2",
+    blockParams: 0,
+    cachedFragment: null,
+    hasRendered: false,
+    build: function build(dom) {
+      var el0 = dom.createDocumentFragment();
+      var el1 = dom.createComment("");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createTextNode("\n");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createElement("label");
+      var el2 = dom.createTextNode("\n  ");
+      dom.appendChild(el1, el2);
+      var el2 = dom.createComment("");
+      dom.appendChild(el1, el2);
+      var el2 = dom.createTextNode("\n  ");
+      dom.appendChild(el1, el2);
+      var el2 = dom.createComment("");
+      dom.appendChild(el1, el2);
+      var el2 = dom.createTextNode("\n  ");
+      dom.appendChild(el1, el2);
+      var el2 = dom.createElement("input");
+      dom.setAttribute(el2,"type","file");
+      dom.setAttribute(el2,"accept",".png,.gif");
+      dom.setAttribute(el2,"style","visibility: hidden; position: absolute;");
+      dom.appendChild(el1, el2);
+      var el2 = dom.createTextNode("\n");
+      dom.appendChild(el1, el2);
+      dom.appendChild(el0, el1);
+      var el1 = dom.createTextNode("\n");
+      dom.appendChild(el0, el1);
+      return el0;
+    },
+    render: function render(context, env, contextualElement) {
+      var dom = env.dom;
+      var hooks = env.hooks, get = hooks.get, inline = hooks.inline, subexpr = hooks.subexpr, concat = hooks.concat, attribute = hooks.attribute;
+      dom.detectNamespace(contextualElement);
+      var fragment;
+      if (env.useFragmentCache && dom.canClone) {
+        if (this.cachedFragment === null) {
+          fragment = this.build(dom);
+          if (this.hasRendered) {
+            this.cachedFragment = fragment;
+          } else {
+            this.hasRendered = true;
+          }
+        }
+        if (this.cachedFragment) {
+          fragment = dom.cloneNode(this.cachedFragment, true);
+        }
+      } else {
+        fragment = this.build(dom);
+      }
+      var element0 = dom.childAt(fragment, [2]);
+      var element1 = dom.childAt(element0, [5]);
+      var morph0 = dom.createMorphAt(fragment,0,0,contextualElement);
+      var morph1 = dom.createMorphAt(element0,1,1);
+      var morph2 = dom.createMorphAt(element0,3,3);
+      var attrMorph0 = dom.createAttrMorph(element0, 'class');
+      var attrMorph1 = dom.createAttrMorph(element1, 'disabled');
+      dom.insertBoundary(fragment, 0);
+      inline(env, morph0, context, "text-field", [], {"name": "name", "placeholderKey": "admin.emoji.name", "value": get(env, context, "name")});
+      attribute(env, attrMorph0, element0, "class", concat(env, ["btn btn-primary ", subexpr(env, context, "if", [get(env, context, "addDisabled"), "disabled"], {})]));
+      inline(env, morph1, context, "fa-icon", ["plus"], {});
+      inline(env, morph2, context, "i18n", ["admin.emoji.add"], {});
+      attribute(env, attrMorph1, element1, "disabled", get(env, context, "addDisabled"));
+      return fragment;
+    }
+  };
+}()));:ET

@@ -1,0 +1,36 @@
+{:uriI"¢file://app/assets/javascripts/discourse/templates/application.hbs?type=text/x-ember-handlebars&id=01f5d55f2c1b9e5d506b2160c9717f751b9652be9426ec32faf2fd76a169549f:ET:load_pathI"app/assets/javascripts;T:filenameI"?app/assets/javascripts/discourse/templates/application.hbs;T:	nameI"$discourse/templates/application;T:logical_pathI"(discourse/templates/application.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"
+{{site-header canSignUp=canSignUp
+              showCreateAccount="showCreateAccount"
+              showLogin="showLogin"
+              showKeyboard="showKeyboardShortcutsHelp"
+              toggleMobileView="toggleMobileView"
+              toggleAnonymous="toggleAnonymous"
+              logout="logout"
+              showSearchHelp="showSearchHelp"}}
+
+<div id="main-outlet" class="wrap">
+  <div class="container">
+    {{#if showTop}}
+      {{custom-html "top"}}
+    {{/if}}
+    {{global-notice}}
+    {{create-topics-notice}}
+  </div>
+  {{outlet}}
+  {{render "user-card"}}
+</div>
+
+{{plugin-outlet "above-footer"}}
+{{#if showFooter}}
+  {{custom-html "footer"}}
+{{/if}}
+{{plugin-outlet "below-footer"}}
+
+{{render "modal"}}
+{{render "topic-entrance"}}
+{{render "composer"}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Mfile-digest://app/assets/javascripts/discourse/templates/application.hbs;TTF:charsetI"
+utf-8;F:digest"%ÜÏøÒCpˆcKLã)´íhPm¼û‘HÍÇû4Å³j:lengthi:dependencies_digest"%náC	Ú¦ú¤…TyÓød³íˆÍnÒçvðZà!È‰n¹:idI"E01f5d55f2c1b9e5d506b2160c9717f751b9652be9426ec32faf2fd76a169549f;F:
+mtimel+°cX

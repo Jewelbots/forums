@@ -1,0 +1,19 @@
+{:uriI"šfile://app/assets/javascripts/admin/templates/plugins.hbs?type=text/x-ember-handlebars&id=e633767b2c186459100e1b68716ed8ead5fc0007fe8ad5b5709ac8ac33b850e3:ET:load_pathI"app/assets/javascripts;T:filenameI"7app/assets/javascripts/admin/templates/plugins.hbs;T:	nameI"admin/templates/plugins;T:logical_pathI" admin/templates/plugins.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"E<div class="admin-nav pull-left">
+  <ul class="nav nav-stacked">
+    {{nav-item route='adminPlugins.index' label="admin.plugins.title"}}
+
+    {{#each adminRoutes as |route|}}
+      {{nav-item route=route.full_location label=route.label}}
+    {{/each}}
+  </ul>
+</div>
+
+<div class="admin-detail pull-left">
+  {{outlet}}
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Efile-digest://app/assets/javascripts/admin/templates/plugins.hbs;TTF:charsetI"
+utf-8;F:digest"% ›?£Û©=í!mÕ
+?{óïÊV7ÿ¡`:zÝSÀ:lengthiE:dependencies_digest"%Y¤ˆ\üz}Ruk!R@ï·MrÓˆ&Ho>áyý ˜Y:idI"Ee633767b2c186459100e1b68716ed8ead5fc0007fe8ad5b5709ac8ac33b850e3;F:
+mtimel+°cX

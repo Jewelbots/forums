@@ -1,0 +1,9 @@
+{:uriI"¬file://app/assets/javascripts/discourse/templates/list/posts-count-column.raw.hbs?type=text/x-handlebars&id=8ec2f429b3ac65c00947169d1623142db0b6d14950c9f7495528f86002e79f5a:ET:load_pathI"app/assets/javascripts;T:filenameI"Oapp/assets/javascripts/discourse/templates/list/posts-count-column.raw.hbs;T:	nameI"0discourse/templates/list/posts-count-column;T:logical_pathI"8discourse/templates/list/posts-count-column.raw.hbs;T:content_typeI"text/x-handlebars;T:sourceI"È<{{view.tagName}} class='num posts-map posts {{view.likesHeat}}' title='{{view.title}}'>
+  <a href class='posts-map badge-posts {{view.likesHeat}}'>{{number topic.replyCount}}</a>
+</{{view.tagName}}>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Bprocessors:type=text/x-handlebars&file_type=text/x-handlebars;TTI"]file-digest://app/assets/javascripts/discourse/templates/list/posts-count-column.raw.hbs;TTF:charsetI"
+utf-8;F:digest"%äœ£g{«Ñ#¥+÷|.ü'Ì¶F RÊòN0ß•@÷:lengthiÈ:dependencies_digest"%ı†ÚÂ0{_ÕãÑ}¸YZ
+ï©¢E×Í¾Ïká‹:idI"E8ec2f429b3ac65c00947169d1623142db0b6d14950c9f7495528f86002e79f5a;F:
+mtimel+°cX

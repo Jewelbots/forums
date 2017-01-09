@@ -1,0 +1,46 @@
+{:uriI"¤file://app/assets/javascripts/discourse/templates/user/username.hbs?type=text/x-ember-handlebars&id=b2de96747a4542c4b28265cd743640d4aa298e032ab505e30d2b4901bc5b7f66:ET:load_pathI"app/assets/javascripts;T:filenameI"Aapp/assets/javascripts/discourse/templates/user/username.hbs;T:	nameI"&discourse/templates/user/username;T:logical_pathI"*discourse/templates/user/username.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"p<section class='user-content'>
+  <form class="form-horizontal">
+
+    <div class="control-group">
+      <div class="controls">
+        <h3>{{i18n 'user.change_username.title'}}</h3>
+      </div>
+    </div>
+
+    {{#if error}}
+      <div class="control-group">
+        <div class="instructions">
+          <div class='alert alert-error'>{{i18n 'user.change_username.error'}}</div>
+        </div>
+      </div>
+    {{/if}}
+
+    <div class="control-group">
+      <label class="control-label">{{i18n 'user.username.title'}}</label>
+      <div class="controls">
+        {{text-field value=newUsername id="change_username" classNames="input-xxlarge" maxlength=maxLength}}
+      </div>
+      <div class='instructions'>
+        {{#if taken}}
+          {{i18n 'user.change_username.taken'}}
+        {{/if}}
+        <span>{{ errorMessage }}</span>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <div class="controls">
+        <button {{action "changeUsername"}} disabled={{saveDisabled}} class="btn btn-primary">{{saveButtonText}}</button>
+          {{#if saved}}{{i18n 'saved'}}{{/if}}
+      </div>
+    </div>
+
+  </form>
+</section>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Ofile-digest://app/assets/javascripts/discourse/templates/user/username.hbs;TTF:charsetI"
+utf-8;F:digest"%œ@A7£SÞ#e2×¾©Ô
+ïŒ‘íÒsÀzJ'Ž8Äàè:lengthip:dependencies_digest"%u«µ'Õü?§
+³4Áá[ù²¿SÌyU¡b%!Vûñ:idI"Eb2de96747a4542c4b28265cd743640d4aa298e032ab505e30d2b4901bc5b7f66;F:
+mtimel+°cX

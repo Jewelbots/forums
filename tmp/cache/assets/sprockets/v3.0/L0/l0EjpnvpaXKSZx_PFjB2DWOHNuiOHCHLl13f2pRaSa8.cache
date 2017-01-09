@@ -1,0 +1,28 @@
+{:uriI"¢file://app/assets/javascripts/admin/templates/site-text-index.hbs?type=text/x-ember-handlebars&id=5959e8e17494d1478348ffa846fe66ad21becb20f8cb776de9f6e3b00e76d9b7:ET:load_pathI"app/assets/javascripts;T:filenameI"?app/assets/javascripts/admin/templates/site-text-index.hbs;T:	nameI"$admin/templates/site-text-index;T:logical_pathI"(admin/templates/site-text-index.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"Õ<div class='search-area'>
+  <p>{{i18n "admin.site_text.description"}}</p>
+
+  {{text-field value=q
+               placeholderKey="admin.site_text.search"
+               class="no-blur site-text-search"
+               autofocus="true"
+               key-up="search"}}
+
+  <div class='extra-options'>
+    {{d-checkbox label="admin.site_text.show_overriden" checked=overridden change="search"}}
+  </div>
+</div>
+
+{{#conditional-loading-spinner condition=searching}}
+  {{#if siteTexts.extras.recommended}}
+    <p><b>{{i18n "admin.site_text.recommended"}}</b></p>
+  {{/if}}
+
+  {{#each siteTexts as |siteText|}}
+    {{site-text-summary siteText=siteText editAction="edit" term=q}}
+  {{/each}}
+{{/conditional-loading-spinner}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Mfile-digest://app/assets/javascripts/admin/templates/site-text-index.hbs;TTF:charsetI"
+utf-8;F:digest"%¡A•†¨I{ùóõ-ó“∂ón≥Ø◊ú˚ùÎfR,±„:lengthiÕ:dependencies_digest"%∞3Yë“!A‹[M˚ô8’Hà‹çâqíΩ]≠;p≤UBI:idI"E5959e8e17494d1478348ffa846fe66ad21becb20f8cb776de9f6e3b00e76d9b7;F:
+mtimel+∞cX

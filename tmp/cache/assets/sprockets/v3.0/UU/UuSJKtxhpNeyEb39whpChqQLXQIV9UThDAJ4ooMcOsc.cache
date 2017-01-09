@@ -1,0 +1,24 @@
+{:uriI"±file://app/assets/javascripts/discourse/templates/components/auto-close-form.hbs?type=text/x-ember-handlebars&id=953b1cc8d1b12ab303c449a92843ad22e8bf3a81cadd50579fefb9752c87c7d2:ET:load_pathI"app/assets/javascripts;T:filenameI"Napp/assets/javascripts/discourse/templates/components/auto-close-form.hbs;T:	nameI"3discourse/templates/components/auto-close-form;T:logical_pathI"7discourse/templates/components/auto-close-form.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"¹<div class="auto-close-fields">
+  <div>
+    <label>
+      {{fa-icon "clock-o"}}
+      {{i18n 'composer.auto_close.label'}}
+      {{text-field value=autoCloseTime}}
+      {{autoCloseUnits}}
+    </label>
+  </div>
+  <div class="examples">
+    {{autoCloseExamples}}
+  </div>
+  <div>
+    <label>
+      {{input type="checkbox" checked=autoCloseBasedOnLastPost}}
+      {{i18n 'composer.auto_close.based_on_last_post'}}
+    </label>
+  </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"\file-digest://app/assets/javascripts/discourse/templates/components/auto-close-form.hbs;TTF:charsetI"
+utf-8;F:digest"%D¢g [o¹roMže>¨TÇÇþÛFîrÏŠ	Já7Ÿ:lengthi¹:dependencies_digest"%¹`ðF}o\ÿŽ]¼3wÃÁÑ¶EaJæuö%Cv”'¨d:idI"E953b1cc8d1b12ab303c449a92843ad22e8bf3a81cadd50579fefb9752c87c7d2;F:
+mtimel+°cX

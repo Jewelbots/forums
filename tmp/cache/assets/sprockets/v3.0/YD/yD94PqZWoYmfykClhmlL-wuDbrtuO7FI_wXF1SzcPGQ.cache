@@ -1,0 +1,26 @@
+{:uriI"¡file://app/assets/javascripts/admin/templates/site-text-edit.hbs?type=text/x-ember-handlebars&id=4cb90f9ca4d1a04e468784b9e6f207f92b9aff7b93865e7dc3d237afe0870663:ET:load_pathI"app/assets/javascripts;T:filenameI">app/assets/javascripts/admin/templates/site-text-edit.hbs;T:	nameI"#admin/templates/site-text-edit;T:logical_pathI"'admin/templates/site-text-edit.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"%<div class='edit-site-text'>
+
+  <div class='title'>
+    <h3>{{siteText.id}}</h3>
+  </div>
+
+  {{expanding-text-area value=buffered.value rows="1" class="site-text-value"}}
+
+  {{#save-controls model=siteText action="saveChanges" saved=saved}}
+    {{#if siteText.can_revert}}
+      {{d-button action="revertChanges" label="admin.site_text.revert" class="revert-site-text"}}
+    {{/if}}
+  {{/save-controls}}
+
+  {{#link-to 'adminSiteText.index' class="go-back"}}
+    {{fa-icon 'arrow-left'}}
+    {{i18n 'admin.site_text.go_back'}}
+  {{/link-to}}
+
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Lfile-digest://app/assets/javascripts/admin/templates/site-text-edit.hbs;TTF:charsetI"
+utf-8;F:digest"%{¾şåbüD«-§²Ò¾†S¸£±í•ĞiÙó%7¸±²:lengthi%:dependencies_digest"%°|Âûª!ÃåæâÁ öÓğÁ~’#©.€3ìÍí
+¿é:idI"E4cb90f9ca4d1a04e468784b9e6f207f92b9aff7b93865e7dc3d237afe0870663;F:
+mtimel+°cX

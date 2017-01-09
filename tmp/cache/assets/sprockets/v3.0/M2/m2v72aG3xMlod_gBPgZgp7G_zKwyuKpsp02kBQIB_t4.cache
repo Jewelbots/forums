@@ -1,0 +1,18 @@
+{:uriI"®file://app/assets/javascripts/discourse/templates/category-tag-autocomplete.raw.hbs?type=text/x-handlebars&id=41215302a683ac55bd94afaaf4741ea72fe420f62eb55af1b89cbe8cd9eaae91:ET:load_pathI"app/assets/javascripts;T:filenameI"Qapp/assets/javascripts/discourse/templates/category-tag-autocomplete.raw.hbs;T:	nameI"2discourse/templates/category-tag-autocomplete;T:logical_pathI":discourse/templates/category-tag-autocomplete.raw.hbs;T:content_typeI"text/x-handlebars;T:sourceI"\<div class='autocomplete'>
+  <ul>
+    {{#each options as |option|}}
+      <li>
+        {{#if option.model}}
+          <a href>{{category-link option.model allowUncategorized="true" link="false"}}</a>
+        {{else}}
+          <a href>{{fa-icon 'tag'}}{{option.text}} x {{option.count}}</a>
+        {{/if}}
+      </li>
+    {{/each}}
+  </ul>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Bprocessors:type=text/x-handlebars&file_type=text/x-handlebars;TTI"_file-digest://app/assets/javascripts/discourse/templates/category-tag-autocomplete.raw.hbs;TTF:charsetI"
+utf-8;F:digest"%å"õ]u¼›í­Œ07$'Úa˜Õ£æ¦Ğ"³fë0¢:lengthi\:dependencies_digest"%¼ßªèÅ*ãÜ ĞEÉ!yø&¿t,ø¦Ò‰ µÚLÍBÃ:idI"E41215302a683ac55bd94afaaf4741ea72fe420f62eb55af1b89cbe8cd9eaae91;F:
+mtimel+°cX

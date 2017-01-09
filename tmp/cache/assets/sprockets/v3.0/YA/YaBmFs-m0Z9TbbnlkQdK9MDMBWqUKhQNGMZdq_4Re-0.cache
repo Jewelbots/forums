@@ -1,0 +1,57 @@
+{:uriI"°file://app/assets/javascripts/discourse/templates/mobile/list/topic_list_item.raw.hbs?type=text/x-handlebars&id=8f6dc37f3da0d1cb0af87ca43e63020a692de8c933dfd5c8dcb61103361020b1:ET:load_pathI"app/assets/javascripts;T:filenameI"Sapp/assets/javascripts/discourse/templates/mobile/list/topic_list_item.raw.hbs;T:	nameI"4discourse/templates/mobile/list/topic_list_item;T:logical_pathI"<discourse/templates/mobile/list/topic_list_item.raw.hbs;T:content_typeI"text/x-handlebars;T:sourceI"<td>
+  {{~#unless expandPinned}}
+  <div class='pull-left'>
+    <a href="{{topic.lastPostUrl}}">{{avatar topic.lastPoster imageSize="large"}}</a>
+  </div>
+  <div class='right'>
+  {{else}}
+  <div>
+  {{/unless~}}
+    <div class='main-link'>
+      {{raw "topic-status" topic=topic}}
+      {{topic-link topic}}
+      {{#if topic.unseen}}
+        <span class="badge-notification new-topic"></span>
+      {{/if}}
+      {{~#if expandPinned}}
+      {{raw "list/topic-excerpt" topic=topic}}
+      {{/if~}}
+    </div>
+
+    <div class='pull-right'>
+      {{raw "list/post-count-or-badges" topic=topic postBadgesEnabled=showTopicPostBadges}}
+    </div>
+
+    <div class="topic-item-stats clearfix">
+      {{#unless hideCategory}}
+        <div class='category'>
+          {{category-link topic.category}}
+        </div>
+      {{/unless}}
+
+      {{#if context.topic.tags}}
+        <div class='discourse-tags'>
+        {{#each context.topic.visibleListTags as |tag|}}
+          {{discourse-tag tag}}
+        {{/each}}
+        </div>
+      {{/if}}
+
+      {{plugin-outlet "topic-list-tags"}}
+
+      <div class="pull-right">
+        <div class='num activity last'>
+          <span class="age activity" title="{{topic.bumpedAtTitle}}"><a href="{{topic.lastPostUrl}}">{{format-date topic.bumpedAt format="tiny" noTitle="true"}}</a></span>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</td>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Bprocessors:type=text/x-handlebars&file_type=text/x-handlebars;TTI"afile-digest://app/assets/javascripts/discourse/templates/mobile/list/topic_list_item.raw.hbs;TTF:charsetI"
+utf-8;F:digest"%6ƒ•¨á0Ó“Vû±çM‘Y¤”zÐõÁÍ!2•Oi:lengthi:dependencies_digest"%ü^ƒ‚
+áVë{TºXÕ¾¿šsµçèt‡¬ô`ï!c¾:idI"E8f6dc37f3da0d1cb0af87ca43e63020a692de8c933dfd5c8dcb61103361020b1;F:
+mtimel+°cX

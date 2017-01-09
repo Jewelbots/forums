@@ -1,0 +1,35 @@
+{:uriI"°file://app/assets/javascripts/discourse/templates/user/posts.hbs?type=text/x-ember-handlebars&id=784d351f189caa764d731e10407e68fe47d439ca39efdb42d904dc61084de46c:ET:load_pathI"app/assets/javascripts;T:filenameI">app/assets/javascripts/discourse/templates/user/posts.hbs;T:	nameI"#discourse/templates/user/posts;T:logical_pathI"'discourse/templates/user/posts.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"X{{#user-stream stream=model}}
+  {{#each model.content as |p|}}
+    <div class="item {{if p.hidden 'hidden'}} {{if p.deleted 'deleted'}} {{if p.moderator_action 'moderator-action'}}">
+      <div class="clearfix info">
+        <a href="{{unbound p.usernameUrl}}" class="avatar-link">
+          <div class="avatar-wrapper">
+            {{avatar p imageSize="large" extraClasses="actor" ignoreTitle="true"}}
+          </div>
+        </a>
+        <span class="time">
+          {{format-date p.created_at leaveAgo="true"}}
+        </span>
+        <span class="title">
+          <a href="{{unbound p.url}}">{{unbound p.topic_title}}</a>
+        </span>
+        <span class="category">
+          {{category-link p.category}}
+        </span>
+        {{#if p.deleted}}
+          <span class="delete-info">
+            <i class="fa fa-trash-o"></i> {{avatar p.deleted_by imageSize="tiny" extraClasses="actor" ignoreTitle="true"}} {{format-date p.deleted_at leaveAgo="true"}}
+          </span>
+        {{/if}}
+      </div>
+      <p class="excerpt">
+        {{{p.excerpt}}}
+      </p>
+    </div>
+  {{/each}}
+{{/user-stream}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Lfile-digest://app/assets/javascripts/discourse/templates/user/posts.hbs;TTF:charsetI"
+utf-8;F:digest"%r7Í˜¥Ú(√Ø"Ω(G¡LÛ!ÔÂguÚês6∫$©i:lengthiX:dependencies_digest"%o(6¯=Q€ŒAÕ≠ÿo«”°%5Í+ßÈMãò°Cl:idI"E784d351f189caa764d731e10407e68fe47d439ca39efdb42d904dc61084de46c;F:
+mtimel+∞cX

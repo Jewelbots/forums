@@ -1,0 +1,11 @@
+{:uriI"³file://app/assets/javascripts/discourse/templates/mobile/components/mobile-nav.hbs?type=text/x-ember-handlebars&id=afa98e6e5f16304b641b79a8cd30d518749ed06cee729620504e8b44781e9ceb:ET:load_pathI"app/assets/javascripts;T:filenameI"Papp/assets/javascripts/discourse/templates/mobile/components/mobile-nav.hbs;T:	nameI"5discourse/templates/mobile/components/mobile-nav;T:logical_pathI"9discourse/templates/mobile/components/mobile-nav.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"<li><a {{action 'toggleExpanded'}}>{{{selectedHtml}}} <i class='fa fa-caret-down'></i></a></li>
+<ul class='drop {{if expanded 'expanded'}}'>
+{{yield}}
+</ul>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"^file-digest://app/assets/javascripts/discourse/templates/mobile/components/mobile-nav.hbs;TTF:charsetI"
+utf-8;F:digest"%z+ŠúÆí1šW±Î#rœ³u=•åC
+Nù"›ğ¾É:lengthi:dependencies_digest"%"çı]£Rl@v
+Î?›èÃNtkã _Md’lm:idI"Eafa98e6e5f16304b641b79a8cd30d518749ed06cee729620504e8b44781e9ceb;F:
+mtimel+°cX

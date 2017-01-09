@@ -1,0 +1,22 @@
+{:uriI"£file://app/assets/javascripts/discourse/templates/badges/index.hbs?type=text/x-ember-handlebars&id=dc23b4fdee9eeee81013d1c22d18642e42f8038c2b47e3e95d77571dcd2f2700:ET:load_pathI"app/assets/javascripts;T:filenameI"@app/assets/javascripts/discourse/templates/badges/index.hbs;T:	nameI"%discourse/templates/badges/index;T:logical_pathI")discourse/templates/badges/index.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"ù<div class='container badges'>
+  <h1>{{i18n 'badges.title'}}</h1>
+
+  <div class='badge-groups'>
+    {{#each badgeGroups as |bg|}}
+      <div class='badge-grouping'>
+        <div class='title'>
+          <h3>{{bg.badgeGrouping.displayName}}</h3>
+        </div>
+
+        {{#each bg.badges as |b|}}
+          {{badge-card badge=b navigateOnClick="true"}}
+        {{/each}}
+      </div>
+    {{/each}}
+  </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Nfile-digest://app/assets/javascripts/discourse/templates/badges/index.hbs;TTF:charsetI"
+utf-8;F:digest"%E˛ßÿÊuc≤ºŒˆ´¸_G£‡§oÄ:úÍÒªÀN:lengthiù:dependencies_digest"%|ﬂN>>–’Ùw®Y>3oûÊö ≠X\†Îe∏u(2}:idI"Edc23b4fdee9eeee81013d1c22d18642e42f8038c2b47e3e95d77571dcd2f2700;F:
+mtimel+∞cX

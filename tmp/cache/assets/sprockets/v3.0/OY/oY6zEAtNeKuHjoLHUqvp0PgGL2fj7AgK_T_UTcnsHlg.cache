@@ -1,0 +1,10 @@
+{:uriI"¢file://app/assets/javascripts/discourse/templates/user/badges.hbs?type=text/x-ember-handlebars&id=e4facf5824674e6b759deb8702754e4a0308554feae2065add77eb159e0c4051:ET:load_pathI"app/assets/javascripts;T:filenameI"?app/assets/javascripts/discourse/templates/user/badges.hbs;T:	nameI"$discourse/templates/user/badges;T:logical_pathI"(discourse/templates/user/badges.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"Æ<section class='user-content user-badges-list'>
+  {{#each model as |ub|}}
+    {{badge-card badge=ub.badge count=ub.count navigateOnClick="true" username=user.username_lower}}
+  {{/each}}
+</section>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Mfile-digest://app/assets/javascripts/discourse/templates/user/badges.hbs;TTF:charsetI"
+utf-8;F:digest"%°&Ç³éDÆQ15Zq¾÷¸U±ÑÑŠ¡›4·s¾Î:lengthiÆ:dependencies_digest"%²9o½:]‰'H®×°˜†(•FÖ‡	tÛ¯õ.:idI"Ee4facf5824674e6b759deb8702754e4a0308554feae2065add77eb159e0c4051;F:
+mtimel+°cX

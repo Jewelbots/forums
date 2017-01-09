@@ -1,0 +1,24 @@
+{:uriI"­file://app/assets/javascripts/admin/templates/components/embeddable-host.hbs?type=text/x-ember-handlebars&id=55b97e2bdcb60b5a8d42ec440aa24e52c2543e8b2101bc4920b717d931f14635:ET:load_pathI"app/assets/javascripts;T:filenameI"Japp/assets/javascripts/admin/templates/components/embeddable-host.hbs;T:	nameI"/admin/templates/components/embeddable-host;T:logical_pathI"3admin/templates/components/embeddable-host.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"A{{#if editing}}
+  <td>
+    {{input value=buffered.host placeholder="example.com" enter="save" class="host-name"}}
+  </td>
+  <td>
+    {{category-chooser value=categoryId}}
+  </td>
+  <td>
+    {{d-button icon="check" action="save" class="btn-primary" disabled=cantSave}}
+    {{d-button icon="times" action="cancel" class="btn-danger" disabled=host.isSaving}}
+  </td>
+{{else}}
+  <td>{{host.host}}</td>
+  <td>{{category-badge host.category}}</td>
+  <td>
+    {{d-button icon="pencil" action="edit"}}
+    {{d-button icon="trash-o" action="delete" class='btn-danger'}}
+  </td>
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Xfile-digest://app/assets/javascripts/admin/templates/components/embeddable-host.hbs;TTF:charsetI"
+utf-8;F:digest"%{bí«¨,Åİ"X¦°Qxú8’ÿÍ¸²ÁöD©ªB:lengthiA:dependencies_digest"%-Ğ=@Õµ;Or…oeg¥ÓCêè…À +:idI"E55b97e2bdcb60b5a8d42ec440aa24e52c2543e8b2101bc4920b717d931f14635;F:
+mtimel+°cX

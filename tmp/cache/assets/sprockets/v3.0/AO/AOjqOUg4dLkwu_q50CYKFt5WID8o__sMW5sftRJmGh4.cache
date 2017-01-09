@@ -1,0 +1,12 @@
+{:uriI"¥file://app/assets/javascripts/discourse/templates/topic-entrance.hbs?type=text/x-ember-handlebars&id=4726b2613d2456a9ab9a3e39e15adb284ce48c3330c6fb6f4136fc8921da9b54:ET:load_pathI"app/assets/javascripts;T:filenameI"Bapp/assets/javascripts/discourse/templates/topic-entrance.hbs;T:	nameI"'discourse/templates/topic-entrance;T:logical_pathI"+discourse/templates/topic-entrance.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"â{{#d-button action="enterTop" class="full jump-top"}}
+  {{fa-icon 'caret-up'}} {{{topDate}}}
+{{/d-button}}
+
+{{#d-button action="enterBottom" class="full jump-button"}}
+  {{{bottomDate}}} {{fa-icon 'caret-down'}}
+{{/d-button}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Pfile-digest://app/assets/javascripts/discourse/templates/topic-entrance.hbs;TTF:charsetI"
+utf-8;F:digest"%á²òEÍ)Rÿ¥Æ¨ß…tBÁ¨ùêõxm]‘#Ïbë:lengthiâ:dependencies_digest"%E"~ªNã$7iÊÁÁ_€'J†3:|ô”ç":ì—á:idI"E4726b2613d2456a9ab9a3e39e15adb284ce48c3330c6fb6f4136fc8921da9b54;F:
+mtimel+°cX

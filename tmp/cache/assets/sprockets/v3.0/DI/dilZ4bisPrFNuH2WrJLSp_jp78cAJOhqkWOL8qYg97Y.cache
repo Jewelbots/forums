@@ -1,0 +1,8 @@
+{:uriI"µfile://app/assets/javascripts/discourse/templates/components/user-fields/confirm.hbs?type=text/x-ember-handlebars&id=9a68042dd3245d93055ef5e267e9dddf5a1141bfed3e34139d42267ec2f5040a:ET:load_pathI"app/assets/javascripts;T:filenameI"Rapp/assets/javascripts/discourse/templates/components/user-fields/confirm.hbs;T:	nameI"7discourse/templates/components/user-fields/confirm;T:logical_pathI";discourse/templates/components/user-fields/confirm.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"t<div class='controls'>
+  <label>{{input checked=value type="checkbox"}} {{{field.description}}}</label>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"`file-digest://app/assets/javascripts/discourse/templates/components/user-fields/confirm.hbs;TTF:charsetI"
+utf-8;F:digest"%Œ'wjÊzÁÃŸ±©ÃÍQÌé0µ[‹î¾ìr\I:lengthit:dependencies_digest"%ÅwuÌôÉ 1^2Ê“Ğë“ëÒ$ÀèÅ”©ôI­¾ª™U:idI"E9a68042dd3245d93055ef5e267e9dddf5a1141bfed3e34139d42267ec2f5040a;F:
+mtimel+°cX

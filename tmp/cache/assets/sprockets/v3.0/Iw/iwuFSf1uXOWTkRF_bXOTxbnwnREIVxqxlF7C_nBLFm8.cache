@@ -1,0 +1,6 @@
+{:uriI"¢file://app/assets/javascripts/discourse/templates/group-posts.hbs?type=text/x-ember-handlebars&id=7e005537dc6b05b2c13e5cfc7a4e635facaad31518960ca93565eaaf8bd23d83:ET:load_pathI"app/assets/javascripts;T:filenameI"?app/assets/javascripts/discourse/templates/group-posts.hbs;T:	nameI"$discourse/templates/group-posts;T:logical_pathI"(discourse/templates/group-posts.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"O{{group-post-stream posts=model emptyText=emptyText loadMore="loadMore"}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Mfile-digest://app/assets/javascripts/discourse/templates/group-posts.hbs;TTF:charsetI"
+utf-8;F:digest"%Œgu-5Dg+âª\y»é‰ÀD1"%yÔµ€þ?VºüÍ:lengthiO:dependencies_digest"%es¡¯=¦älÜœÎw<ÚË6xÐ[zWœUÔù¥1ã¿Ó·ä:idI"E7e005537dc6b05b2c13e5cfc7a4e635facaad31518960ca93565eaaf8bd23d83;F:
+mtimel+°cX

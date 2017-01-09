@@ -1,0 +1,10 @@
+{:uriI"µfile://app/assets/javascripts/discourse/templates/components/preference-checkbox.hbs?type=text/x-ember-handlebars&id=850f5d35540827db66f455ed84339db4ed04595ee3cd5fd5535a77f06b3865cf:ET:load_pathI"app/assets/javascripts;T:filenameI"Rapp/assets/javascripts/discourse/templates/components/preference-checkbox.hbs;T:	nameI"7discourse/templates/components/preference-checkbox;T:logical_pathI";discourse/templates/components/preference-checkbox.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"w<label class='checkbox-label'>
+  {{input type="checkbox" disabled=disabled checked=checked}}
+  {{label}}
+</label>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"`file-digest://app/assets/javascripts/discourse/templates/components/preference-checkbox.hbs;TTF:charsetI"
+utf-8;F:digest"%ÅÕä‹ﬂ\%/û“õ®ÃJ∞}Æ§ä1ò
+#Z√ªI∆:lengthiw:dependencies_digest"%x<¥p≤q(û˙XK-/ﬁÇúzN—Æ©%}üªÓ:idI"E850f5d35540827db66f455ed84339db4ed04595ee3cd5fd5535a77f06b3865cf;F:
+mtimel+∞cX

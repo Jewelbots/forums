@@ -1,0 +1,10 @@
+{:uriI"´file://app/assets/javascripts/discourse/templates/components/top-period-buttons.hbs?type=text/x-ember-handlebars&id=2ac29d75451e2905e3ec7529ec90d766d500746d7df35ec358496200afad39a3:ET:load_pathI"app/assets/javascripts;T:filenameI"Qapp/assets/javascripts/discourse/templates/components/top-period-buttons.hbs;T:	nameI"6discourse/templates/components/top-period-buttons;T:logical_pathI":discourse/templates/components/top-period-buttons.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"~{{#each periods as |p|}}
+  {{#d-button action="changePeriod" actionParam=p}}
+    {{period-title p}}
+  {{/d-button}}
+{{/each}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"_file-digest://app/assets/javascripts/discourse/templates/components/top-period-buttons.hbs;TTF:charsetI"
+utf-8;F:digest"%s‡~žÃÆhþÜ?Æ$„ÐsN›FGl<ByÝ%¯³Ñ¶:lengthi~:dependencies_digest"%¾!Ño0œwcäáÒ¬hÇ6Ò€Á£‚nY©ú«œ:idI"E2ac29d75451e2905e3ec7529ec90d766d500746d7df35ec358496200afad39a3;F:
+mtimel+°cX

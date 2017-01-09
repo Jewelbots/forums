@@ -1,0 +1,15 @@
+{:uriI"©file://app/assets/javascripts/admin/templates/site-settings-category.hbs?type=text/x-ember-handlebars&id=c98969e2288c15ef0df68ea1629b73298f66c8b5561d5ae01de297405c078710:ET:load_pathI"app/assets/javascripts;T:filenameI"Fapp/assets/javascripts/admin/templates/site-settings-category.hbs;T:	nameI"+admin/templates/site-settings-category;T:logical_pathI"/admin/templates/site-settings-category.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"{{#if filteredContent}}
+  <div class='form-horizontal settings'>
+    {{#each filteredContent as |setting|}}
+      {{site-setting setting=setting saveAction="saveSetting"}}
+    {{/each}}
+  </div>
+{{else}}
+  <br/>
+  {{i18n 'admin.site_settings.no_results'}}
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Tfile-digest://app/assets/javascripts/admin/templates/site-settings-category.hbs;TTF:charsetI"
+utf-8;F:digest"%el®´6a‹ÕğˆO¶‹øÏ»}OB˜EŸ­bQ:lengthi:dependencies_digest"%rn¨RlÕE¢qB&°€~„~/_,(VŸW2I<‡¾:idI"Ec98969e2288c15ef0df68ea1629b73298f66c8b5561d5ae01de297405c078710;F:
+mtimel+°cX

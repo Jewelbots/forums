@@ -1,0 +1,12 @@
+{:uriI"±file://app/assets/javascripts/discourse/templates/components/category-unread.hbs?type=text/x-ember-handlebars&id=b2deb348abdf84258539232b04723814ad2394a9cd708fb34d44c1c659b374ee:ET:load_pathI"app/assets/javascripts;T:filenameI"Napp/assets/javascripts/discourse/templates/components/category-unread.hbs;T:	nameI"3discourse/templates/components/category-unread;T:logical_pathI"7discourse/templates/components/category-unread.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"{{#if category.unreadTopics}}
+  <a href="{{unbound category.unreadUrl}}" class='badge new-posts badge-notification' title='{{i18n 'topic.unread_topics' count=category.unreadTopics}}'>{{i18n 'filters.unread.lower_title_with_count' count=category.unreadTopics}}</a>
+{{/if}}
+{{#if category.newTopics}}
+  <a href="{{unbound category.newUrl}}" class='badge new-posts badge-notification' title='{{i18n 'topic.new_topics' count=category.newTopics}}'>{{i18n 'filters.new.lower_title_with_count' count=category.newTopics}}</a>
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"\file-digest://app/assets/javascripts/discourse/templates/components/category-unread.hbs;TTF:charsetI"
+utf-8;F:digest"%&í
+×iú:œ!ÀÙË-0˜ú€º«o;Ó6kÝ£]p:lengthi:dependencies_digest"%±ìžŸ¥Æõòº*&Ì?i2ÔVðDHŒOÆ>9Ú™îÿ§Ê:idI"Eb2deb348abdf84258539232b04723814ad2394a9cd708fb34d44c1c659b374ee;F:
+mtimel+°cX

@@ -1,0 +1,18 @@
+{:uriI"·file://app/assets/javascripts/discourse/templates/mobile/components/navigation-bar.hbs?type=text/x-ember-handlebars&id=5e826976b9db4d6a42d7801ff4426aa8310f2b67382765c5f88bea79c18b05f1:ET:load_pathI"app/assets/javascripts;T:filenameI"Tapp/assets/javascripts/discourse/templates/mobile/components/navigation-bar.hbs;T:	nameI"9discourse/templates/mobile/components/navigation-bar;T:logical_pathI"=discourse/templates/mobile/components/navigation-bar.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"<li>
+  <a {{action "toggleDrop"}}>
+  {{selectedNavItem.displayName}}
+  <i class='fa fa-caret-down'></i>
+  </a>
+</li>
+{{#if expanded}}
+<ul class='drop'>
+  {{#each navItems as |navItem|}}
+    {{navigation-item content=navItem filterMode=filterMode}}
+  {{/each}}
+</ul>
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"bfile-digest://app/assets/javascripts/discourse/templates/mobile/components/navigation-bar.hbs;TTF:charsetI"
+utf-8;F:digest"%†_¶0¬óNeámD‚ÊÊ¥Bğ/Ù¸u¥Š‚~¾©:lengthi:dependencies_digest"%†ÁZëã'¬Ìl[¯I¡‡¢Ëƒ#BÑnL0ŒÂ4•@:idI"E5e826976b9db4d6a42d7801ff4426aa8310f2b67382765c5f88bea79c18b05f1;F:
+mtimel+°cX

@@ -1,0 +1,12 @@
+{:uriI"∞file://app/assets/javascripts/discourse/templates/components/d-editor-modal.hbs?type=text/x-ember-handlebars&id=7c14ee8f783971e5bd109b471f2b6063de3e1074c111dddbb38d8595b69d133b:ET:load_pathI"app/assets/javascripts;T:filenameI"Mapp/assets/javascripts/discourse/templates/components/d-editor-modal.hbs;T:	nameI"2discourse/templates/components/d-editor-modal;T:logical_pathI"6discourse/templates/components/d-editor-modal.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"√
+{{yield}}
+
+<div class='controls'>
+  {{d-button class="btn-primary" label="composer.modal_ok" action="ok"}}
+  {{d-button class="btn-danger" label="composer.modal_cancel" action="cancel"}}
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"[file-digest://app/assets/javascripts/discourse/templates/components/d-editor-modal.hbs;TTF:charsetI"
+utf-8;F:digest"%	7ƒ\¥OQ‚ÁKË‹˜]ØƒDçΩ∑ã„·<∫)≤°I:lengthi√:dependencies_digest"%⁄À ¡R7 ¢<†Èl*PRÍ∞0N3ï7Ω±v5`j:idI"E7c14ee8f783971e5bd109b471f2b6063de3e1074c111dddbb38d8595b69d133b;F:
+mtimel+∞cX

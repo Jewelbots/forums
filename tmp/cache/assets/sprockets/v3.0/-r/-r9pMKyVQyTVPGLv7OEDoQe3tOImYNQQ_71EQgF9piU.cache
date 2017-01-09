@@ -1,0 +1,12 @@
+{:uriI"¶file://app/assets/javascripts/discourse/templates/components/create-topics-notice.hbs?type=text/x-ember-handlebars&id=d38215479ae84ac8eb794f96e706cd91d67383f566e375249a23da8202783ed9:ET:load_pathI"app/assets/javascripts;T:filenameI"Sapp/assets/javascripts/discourse/templates/components/create-topics-notice.hbs;T:	nameI"8discourse/templates/components/create-topics-notice;T:logical_pathI"<discourse/templates/components/create-topics-notice.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"{{#unless hidden}}
+  <div class='row'>
+    <div class='alert alert-info alert-too-few-topics'>
+      {{message}}
+    </div>
+  </div>
+{{/unless}};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"afile-digest://app/assets/javascripts/discourse/templates/components/create-topics-notice.hbs;TTF:charsetI"
+utf-8;F:digest"%°ÆG1L6>VnsüNÀ	!İ>Ïf¡lr*75_:lengthi:dependencies_digest"%0Ä—š!ÓvøJkQñWÒµ7FAœ¨!*óÑ?
+&‹:idI"Ed38215479ae84ac8eb794f96e706cd91d67383f566e375249a23da8202783ed9;F:
+mtimel+°cX

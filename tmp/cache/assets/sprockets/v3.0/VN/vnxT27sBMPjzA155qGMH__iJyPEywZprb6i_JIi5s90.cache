@@ -1,0 +1,17 @@
+{:uriI"©file://app/assets/javascripts/admin/templates/modal/admin_agree_flag.hbs?type=text/x-ember-handlebars&id=e8d5d1daf5823f171246d1607e2d306f5ac9274b11e238a61be074f40458f2c4:ET:load_pathI"app/assets/javascripts;T:filenameI"Fapp/assets/javascripts/admin/templates/modal/admin_agree_flag.hbs;T:	nameI"+admin/templates/modal/admin_agree_flag;T:logical_pathI"/admin/templates/modal/admin_agree_flag.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"Ò{{#if model.user_deleted}}
+  <button title="{{i18n 'admin.flags.agree_flag_restore_post_title'}}" {{action "agreeFlagRestorePost"}} class="btn"><i class="fa fa-thumbs-o-up"></i><i class="fa fa-eye"></i>{{i18n 'admin.flags.agree_flag_restore_post'}}</button>
+{{else}}
+  {{#unless model.postHidden}}
+    <button title="{{i18n 'admin.flags.agree_flag_hide_post_title'}}" {{action "agreeFlagHidePost"}} class="btn"><i class="fa fa-thumbs-o-up"></i><i class="fa fa-eye-slash"></i>{{i18n 'admin.flags.agree_flag_hide_post'}}</button>
+  {{/unless}}
+{{/if}}
+<button title="{{i18n 'admin.flags.agree_flag_title'}}" {{action "agreeFlagKeepPost"}} class="btn"><i class="fa fa-thumbs-o-up"></i>{{i18n 'admin.flags.agree_flag'}}</button>
+{{#if model.canDeleteAsSpammer}}
+  <button title="{{i18n 'admin.flags.delete_spammer_title'}}" {{action "deleteSpammer" model.user}} class="btn btn-danger"><i class="fa fa-exclamation-triangle"></i>{{i18n 'admin.flags.delete_spammer'}}</button>
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Tfile-digest://app/assets/javascripts/admin/templates/modal/admin_agree_flag.hbs;TTF:charsetI"
+utf-8;F:digest"%¥8å’Ş~@©…rqÿ…ÌñÌğ£²æ
+ÀÖ™áº:lengthiÒ:dependencies_digest"%ÅÚáE¿Ô,¾’jF•.ü°°µâ§s³È¨o Æ:idI"Ee8d5d1daf5823f171246d1607e2d306f5ac9274b11e238a61be074f40458f2c4;F:
+mtimel+°cX

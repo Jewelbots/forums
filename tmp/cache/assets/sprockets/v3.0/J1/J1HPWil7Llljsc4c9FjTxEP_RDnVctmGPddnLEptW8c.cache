@@ -1,0 +1,35 @@
+I"prequire('discourse/lib/raw-handlebars').template({"1":function(container,depth0,helpers,partials,data) {
+    return "<div class='topic-statuses'>\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},"status.href",{"name":"if","hash":{},"hashTypes":{},"hashContexts":{},"fn":container.program(4, data, 0),"inverse":container.program(6, data, 0),"types":["PathExpression"],"contexts":[depth0],"data":data})) != null ? stack1 : "");
+},"4":function(container,depth0,helpers,partials,data) {
+    return "<a href='"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"status.href",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "' title='"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"status.title",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "' class='topic-status "
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"status.extraClasses",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "'><i class='fa fa-"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"status.icon",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "'></i></a>";
+},"6":function(container,depth0,helpers,partials,data) {
+    return "<"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"status.openTag",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + " title='"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"status.title",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "' class='topic-status'><i class='fa fa-"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"status.icon",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "'></i></"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"status.closeTag",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + ">";
+},"8":function(container,depth0,helpers,partials,data) {
+    return "</div>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},"view.renderDiv",{"name":"if","hash":{},"hashTypes":{},"hashContexts":{},"fn":container.program(1, data, 0),"inverse":container.noop,"types":["PathExpression"],"contexts":[depth0],"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},"status","in","view.statuses",{"name":"each","hash":{},"hashTypes":{},"hashContexts":{},"fn":container.program(3, data, 0),"inverse":container.noop,"types":["PathExpression","CommentStatement","PathExpression"],"contexts":[depth0,depth0,depth0],"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},"view.renderDiv",{"name":"if","hash":{},"hashTypes":{},"hashContexts":{},"fn":container.program(8, data, 0),"inverse":container.noop,"types":["PathExpression"],"contexts":[depth0],"data":data})) != null ? stack1 : "");
+},"useData":true});:ET

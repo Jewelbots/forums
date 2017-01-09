@@ -1,0 +1,12 @@
+{:uriI"´file://app/assets/javascripts/discourse/templates/components/edit-category-tags.hbs?type=text/x-ember-handlebars&id=b8e9e2d233b01503c0b09f35cb8cfd81dfc8edf0e8cc480be7b4c25f4b662da3:ET:load_pathI"app/assets/javascripts;T:filenameI"Qapp/assets/javascripts/discourse/templates/components/edit-category-tags.hbs;T:	nameI"6discourse/templates/components/edit-category-tags;T:logical_pathI":discourse/templates/components/edit-category-tags.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"O<section class="field">
+  <p>{{i18n 'category.tags_allowed_tags'}}</p>
+  {{tag-chooser placeholderKey="category.tags_placeholder" tags=category.allowed_tags}}
+
+  <p>{{i18n 'category.tags_allowed_tag_groups'}}</p>
+  {{tag-group-chooser placeholderKey="category.tag_groups_placeholder" tagGroups=category.allowed_tag_groups}}
+</section>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"_file-digest://app/assets/javascripts/discourse/templates/components/edit-category-tags.hbs;TTF:charsetI"
+utf-8;F:digest"%ÉÔÚO+l‘éÎåEÕ¶HSG²]L»É<quHôÏ:lengthiO:dependencies_digest"%ÈÝI> F?ÇÖ*pÆò ?ç2 ³="ic¡7H:idI"Eb8e9e2d233b01503c0b09f35cb8cfd81dfc8edf0e8cc480be7b4c25f4b662da3;F:
+mtimel+°cX

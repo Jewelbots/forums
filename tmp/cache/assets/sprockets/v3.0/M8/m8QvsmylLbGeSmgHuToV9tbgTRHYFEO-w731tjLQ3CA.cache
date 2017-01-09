@@ -1,0 +1,6 @@
+{:uriI"­file://app/assets/javascripts/discourse/templates/components/color-input.hbs?type=text/x-ember-handlebars&id=024d77f428b17947615348764c91744a7c2bd3f2c8107e96a9642b0e716eb2c9:ET:load_pathI"app/assets/javascripts;T:filenameI"Japp/assets/javascripts/discourse/templates/components/color-input.hbs;T:	nameI"/discourse/templates/components/color-input;T:logical_pathI"3discourse/templates/components/color-input.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"C{{text-field class="hex-input" value=hexValue maxlength="6"}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Xfile-digest://app/assets/javascripts/discourse/templates/components/color-input.hbs;TTF:charsetI"
+utf-8;F:digest"%pÓƒÁù5{^€Ê{%'°à¨0Feì°ßº:lengthiC:dependencies_digest"%¶Ì7ÂîgÔÏİ®ˆ^1\ÖÑ;«4ù†ÉoM¹e‚kÊ:idI"E024d77f428b17947615348764c91744a7c2bd3f2c8107e96a9642b0e716eb2c9;F:
+mtimel+°cX

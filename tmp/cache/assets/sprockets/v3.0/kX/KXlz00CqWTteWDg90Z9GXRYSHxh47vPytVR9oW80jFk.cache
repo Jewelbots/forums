@@ -1,0 +1,8 @@
+{:uriI"œfile://app/assets/javascripts/admin/templates/site-text.hbs?type=text/x-ember-handlebars&id=d2dcb6c9ed26c9ee535cdf5a1705d13ed9d2386b205eec0df7cb46accc28b82f:ET:load_pathI"app/assets/javascripts;T:filenameI"9app/assets/javascripts/admin/templates/site-text.hbs;T:	nameI"admin/templates/site-text;T:logical_pathI""admin/templates/site-text.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"6<div class='row site-texts'>
+  {{outlet}}
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Gfile-digest://app/assets/javascripts/admin/templates/site-text.hbs;TTF:charsetI"
+utf-8;F:digest"%Ì."•ùÕ/æéUÂçzP]µù8h¡·õÇÛJ:qd‰‚:lengthi6:dependencies_digest"%/$ÃÓbàÔ/~ÖÒ™UíO'žKu°GÄ¾µËýˆ´:idI"Ed2dcb6c9ed26c9ee535cdf5a1705d13ed9d2386b205eec0df7cb46accc28b82f;F:
+mtimel+°cX

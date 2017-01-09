@@ -1,0 +1,45 @@
+{:uriI"±file://app/assets/javascripts/discourse/templates/components/composer-editor.hbs?type=text/x-ember-handlebars&id=de7785145751c40dd821f5db2fc6b3e5ced0355a3fcb856828127b09fe6ea20d:ET:load_pathI"app/assets/javascripts;T:filenameI"Napp/assets/javascripts/discourse/templates/components/composer-editor.hbs;T:	nameI"3discourse/templates/components/composer-editor;T:logical_pathI"7discourse/templates/components/composer-editor.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"D{{d-editor tabindex="4"
+           value=composer.reply
+           placeholder="composer.reply_placeholder"
+           previewUpdated="previewUpdated"
+           markdownOptions=markdownOptions
+           extraButtons="extraButtons"
+           importQuote="importQuote"
+           toggleOptions="toggleOptions"
+           showUploadModal="showUploadModal"
+           togglePreview="togglePreview"
+           validation=validation
+           loading=composer.loading
+           forcePreview=forcePreview}}
+
+<div class="composer-bottom-right">
+  {{#if site.mobileView}}
+    <input type="file" id="mobile-uploader" multiple />
+    <a class="mobile-file-upload {{if isUploading 'hidden'}}">{{i18n 'upload'}}</a>
+
+    {{#if showPreview}}
+      {{d-button action='togglePreview' class='hide-preview' label='composer.hide_preview'}}
+    {{/if}}
+  {{else}}
+    <a href {{action "togglePreview"}} class='toggle-preview'>{{{toggleText}}}</a>
+  {{/if}}
+
+  {{#if isUploading}}
+    <div id="file-uploading">
+      {{loading-spinner size="small"}} {{i18n 'upload_selector.uploading'}}
+      {{uploadProgress}}%
+      {{#if isCancellable}}
+        <a href id="cancel-file-upload" {{action "cancelUpload"}}>{{fa-icon "times"}}</a>
+      {{/if}}
+    </div>
+  {{/if}}
+  <div id='draft-status' class="{{if isUploading 'hidden'}}">
+    {{draftStatus}}
+  </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"\file-digest://app/assets/javascripts/discourse/templates/components/composer-editor.hbs;TTF:charsetI"
+utf-8;F:digest"%L‘'‰­!ªù£•†ãU0¡‚úÏŠ_ry
+Up—AR$:lengthiD:dependencies_digest"%E5”æÎŠÅ=G‰k•]8cR;>)ÞúSÇk/Žg:idI"Ede7785145751c40dd821f5db2fc6b3e5ced0355a3fcb856828127b09fe6ea20d;F:
+mtimel+°cX

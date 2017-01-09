@@ -1,0 +1,10 @@
+{:uriI"¶file://app/assets/javascripts/admin/templates/components/screened-ip-address-form.hbs?type=text/x-ember-handlebars&id=fa3820c8e338467bd464c93062a18bcb06e785854bd26101fdbba8bbe8abd48b:ET:load_pathI"app/assets/javascripts;T:filenameI"Sapp/assets/javascripts/admin/templates/components/screened-ip-address-form.hbs;T:	nameI"8admin/templates/components/screened-ip-address-form;T:logical_pathI"<admin/templates/components/screened-ip-address-form.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"u<b>{{i18n 'admin.logs.screened_ips.form.label'}}</b>
+{{text-field value=ip_address disabled=formSubmitted class="ip-address-input" placeholderKey="admin.logs.screened_ips.form.ip_address" autocorrect="off" autocapitalize="off"}}
+{{combo-box content=actionNames value=actionName}}
+{{d-button action="submit" disabled=formSubmitted label="admin.logs.screened_ips.form.add"}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"afile-digest://app/assets/javascripts/admin/templates/components/screened-ip-address-form.hbs;TTF:charsetI"
+utf-8;F:digest"%ÑÎê½W®Ï+8Á¼7à]âŠK!¬‡µrG)ù#5è:lengthiu:dependencies_digest"%8SŠËšB©l©)âíd
+»!¨ûÉAËS:idI"Efa3820c8e338467bd464c93062a18bcb06e785854bd26101fdbba8bbe8abd48b;F:
+mtimel+°cX

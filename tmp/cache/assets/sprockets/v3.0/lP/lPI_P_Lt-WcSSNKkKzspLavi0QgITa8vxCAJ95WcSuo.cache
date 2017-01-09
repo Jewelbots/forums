@@ -1,0 +1,28 @@
+{:uriI"§file://app/assets/javascripts/admin/templates/permalinks_list_item.hbs?type=text/x-ember-handlebars&id=7cc67bf4c7161e6202cd28c077e45c550e91f8cae1a64dd8469820abc93e8fcd:ET:load_pathI"app/assets/javascripts;T:filenameI"Dapp/assets/javascripts/admin/templates/permalinks_list_item.hbs;T:	nameI")admin/templates/permalinks_list_item;T:logical_pathI"-admin/templates/permalinks_list_item.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"Á<div class="col first url">{{url}}</div>
+<div class="col topic">
+  {{#if topic_id}}
+    <a href='{{unbound topic_url}}'>{{topic_title}}</a>
+  {{/if}}
+</div>
+<div class="col post">
+  {{#if post_id}}
+    <a href='{{unbound post_url}}'>#{{post_number}} {{post_topic_title}}</a>
+  {{/if}}
+</div>
+<div class="col category">
+  {{#if category_id}}
+    <a href='{{unbound category_url}}'>{{category_name}}</a>
+  {{/if}}
+</div>
+<div class="col external_url">
+  {{#if external_url}}
+    <a href='{{unbound external_url}}'>{{external_url}}</a>
+  {{/if}}
+</div>
+<div class="col action"><button class="btn btn-danger" {{action "destroy" this}}><i class="fa fa-trash-o"></i></button></div>
+<div class="clearfix"></div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Rfile-digest://app/assets/javascripts/admin/templates/permalinks_list_item.hbs;TTF:charsetI"
+utf-8;F:digest"%ø	w$[´èÂ*±í.àâÚù&unëiF›¾u ƒvåÄ\¢:lengthiÁ:dependencies_digest"%RœD@ ¬«J=#ç¡å àÀÞ°¶ƒO¥†á]k‹:idI"E7cc67bf4c7161e6202cd28c077e45c550e91f8cae1a64dd8469820abc93e8fcd;F:
+mtimel+°cX

@@ -1,0 +1,18 @@
+{:uriI"´file://app/assets/javascripts/discourse/templates/components/json-file-uploader.hbs?type=text/x-ember-handlebars&id=42a16e4167df1a8ec6cd855156cac8e548c0cbeae9580d4ec044bbf234829a62:ET:load_pathI"app/assets/javascripts;T:filenameI"Qapp/assets/javascripts/discourse/templates/components/json-file-uploader.hbs;T:	nameI"6discourse/templates/components/json-file-uploader;T:logical_pathI":discourse/templates/components/json-file-uploader.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI":<div class="jsfu-shade-container">
+  <div class="jsfu-file">
+    <input id="js-file-input" type="file" style="display:none;" accept={{accept}}>
+    {{d-button class="fileSelect" action="selectFile" class="" icon="upload" label="upload_selector.select_file"}}
+    {{conditional-loading-spinner condition=loading size="small"}}
+  </div>
+  <div class="jsfu-separator">{{i18n "alternation"}}</div>
+  <div class="jsfu-paste">
+    {{textarea value=value}}
+  </div>
+  <div class="jsfu-shade {{if hover '' 'hidden'}}"><span class="text">{{fa-icon "upload"}}</span></div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"_file-digest://app/assets/javascripts/discourse/templates/components/json-file-uploader.hbs;TTF:charsetI"
+utf-8;F:digest"%þÐ°3	êy‡¯/f°ù¥l=È¨‹[ÌØÃ=xD3O5‹:lengthi::dependencies_digest"%µ2ò<² `©òüÚ
+uÄ„6> Yœ§ÙYÚ[eh1:idI"E42a16e4167df1a8ec6cd855156cac8e548c0cbeae9580d4ec044bbf234829a62;F:
+mtimel+°cX

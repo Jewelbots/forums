@@ -1,0 +1,50 @@
+{:uriI"≠file://app/assets/javascripts/admin/templates/modal/admin_incoming_email.hbs?type=text/x-ember-handlebars&id=6c477bcfb768b0397b2b354fb3427dcbf673bb2ff877929c8cd54a2d3bf716b8:ET:load_pathI"app/assets/javascripts;T:filenameI"Japp/assets/javascripts/admin/templates/modal/admin_incoming_email.hbs;T:	nameI"/admin/templates/modal/admin_incoming_email;T:logical_pathI"3admin/templates/modal/admin_incoming_email.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI")<div class="control-group">
+  <label>{{i18n "admin.email.incoming_emails.modal.error"}}</label>
+  <div class="controls">
+    <p>{{model.error}}</p>
+    {{#if model.error_description}}
+      <p class="error-description">{{model.error_description}}</p>
+    {{/if}}
+  </div>
+</div>
+
+<hr>
+
+<div class="control-group">
+  <label>{{i18n "admin.email.incoming_emails.modal.headers"}}</label>
+  <div class="controls">
+    {{textarea value=model.headers wrap="off"}}
+  </div>
+</div>
+
+<div class="control-group">
+  <label>{{i18n "admin.email.incoming_emails.modal.subject"}}</label>
+  <div class="controls">
+    {{model.subject}}
+  </div>
+</div>
+
+<div class="control-group">
+  <label>{{i18n "admin.email.incoming_emails.modal.body"}}</label>
+  <div class="controls">
+    {{textarea value=model.body}}
+  </div>
+</div>
+
+{{#if model.rejection_message}}
+
+  <hr>
+
+  <div class="control-group">
+    <label>{{i18n "admin.email.incoming_emails.modal.rejection_message"}}</label>
+    <div class="controls">
+      {{textarea value=model.rejection_message}}
+    </div>
+  </div>
+
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Xfile-digest://app/assets/javascripts/admin/templates/modal/admin_incoming_email.hbs;TTF:charsetI"
+utf-8;F:digest"%≈Ó6FP¶∞eA!·“úõÈ∑dîFs∂èQ:=*Vmﬁ:lengthi):dependencies_digest"%©/35µO˘5›d∫´Ç¯—3÷_¿ÃläPõiœ§Ø:idI"E6c477bcfb768b0397b2b354fb3427dcbf673bb2ff877929c8cd54a2d3bf716b8;F:
+mtimel+∞cX

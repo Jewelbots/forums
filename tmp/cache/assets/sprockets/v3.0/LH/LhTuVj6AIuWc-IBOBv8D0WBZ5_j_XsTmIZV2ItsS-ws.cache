@@ -1,0 +1,12 @@
+{:uriI"¨file://app/assets/javascripts/discourse/templates/list/posters-column.raw.hbs?type=text/x-handlebars&id=ca1473332a8a5f67334853cb7ff64986f9627bce5d5230fbd28d5a36e8b8ced1:ET:load_pathI"app/assets/javascripts;T:filenameI"Kapp/assets/javascripts/discourse/templates/list/posters-column.raw.hbs;T:	nameI",discourse/templates/list/posters-column;T:logical_pathI"4discourse/templates/list/posters-column.raw.hbs;T:content_typeI"text/x-handlebars;T:sourceI"<td class='posters'>
+{{#each posters as |poster|}}
+<a href="{{poster.user.path}}" data-user-card="{{poster.user.username}}" class="{{poster.extras}}">
+    {{avatar poster avatarTemplatePath="user.avatar_template" usernamePath="user.username" imageSize="small"}}
+</a>
+{{/each}}
+</td>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Bprocessors:type=text/x-handlebars&file_type=text/x-handlebars;TTI"Yfile-digest://app/assets/javascripts/discourse/templates/list/posters-column.raw.hbs;TTF:charsetI"
+utf-8;F:digest"%•ñıWMCË¾Qî÷dù¯±Ñô"d:è/Â‡Ì¡‚x:lengthi:dependencies_digest"%Lûjáä±‚éÓ8­WVúÂk08“´Hl‚È£ĞÛá:idI"Eca1473332a8a5f67334853cb7ff64986f9627bce5d5230fbd28d5a36e8b8ced1;F:
+mtimel+°cX

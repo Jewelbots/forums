@@ -1,0 +1,13 @@
+{:uriI"°file://app/assets/javascripts/discourse/templates/category-group-autocomplete.raw.hbs?type=text/x-handlebars&id=5d03e38f73eb8dfc78f8d7eae96d8d96fcfbe396e8a0eb2f99fb7610a41be0c1:ET:load_pathI"app/assets/javascripts;T:filenameI"Sapp/assets/javascripts/discourse/templates/category-group-autocomplete.raw.hbs;T:	nameI"4discourse/templates/category-group-autocomplete;T:logical_pathI"<discourse/templates/category-group-autocomplete.raw.hbs;T:content_typeI"text/x-handlebars;T:sourceI"¼<div class='autocomplete'>
+  <ul>
+    {{#each options as |option|}}
+      <li><a href>{{category-link option allowUncategorized="true" link="false"}}</a></li>
+    {{/each}}
+  </ul>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Bprocessors:type=text/x-handlebars&file_type=text/x-handlebars;TTI"afile-digest://app/assets/javascripts/discourse/templates/category-group-autocomplete.raw.hbs;TTF:charsetI"
+utf-8;F:digest"%EÿÅ
+ON§ú3D¶Å7èz™M˜%°Sï›ó+$…:lengthi¼:dependencies_digest"%ï_Ğ“bMü…İ/•XÍ6 æo?]à,û•iÛc:idI"E5d03e38f73eb8dfc78f8d7eae96d8d96fcfbe396e8a0eb2f99fb7610a41be0c1;F:
+mtimel+°cX

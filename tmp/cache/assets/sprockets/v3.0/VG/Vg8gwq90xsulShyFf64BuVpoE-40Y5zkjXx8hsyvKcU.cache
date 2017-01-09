@@ -1,0 +1,33 @@
+{:uriI"°file://app/assets/javascripts/discourse/templates/components/topic-progress.hbs?type=text/x-ember-handlebars&id=a7f408f3de46c9f3bdb3d0c5a2bd6d6476d27b1474ddc1bd06046e7226e678dc:ET:load_pathI"app/assets/javascripts;T:filenameI"Mapp/assets/javascripts/discourse/templates/components/topic-progress.hbs;T:	nameI"2discourse/templates/components/topic-progress;T:logical_pathI"6discourse/templates/components/topic-progress.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"{{#unless hidden}}
+  {{#if expanded}}
+    <nav id='topic-progress-expanded'>
+      {{d-button action="jumpTop"
+                 disabled=jumpTopDisabled
+                 class="full no-text"
+                 icon="caret-up"
+                 label="topic.progress.go_top"}}
+      <div class='jump-form'>
+        {{input value=toPostIndex}}
+        {{d-button action="jumpPost" label="topic.progress.go"}}
+      </div>
+      {{d-button action="jumpBottom"
+                 disabled=jumpBottomDisabled
+                 class="full no-text jump-bottom"
+                 icon="caret-down"
+                 label="topic.progress.go_bottom"}}
+    </nav>
+  {{/if}}
+  <nav id='topic-progress' title="{{i18n 'topic.progress.title'}}" class="{{if hideProgress 'hidden'}}">
+    <div class='nums'>
+      <h4>{{progressPosition}}</h4><span class="{{if hugeNumberOfPosts 'hidden'}}">
+      <span>/</span>
+      <h4>{{postStream.filteredPostsCount}}</h4></span>
+    </div>
+    <i class="fa {{unless expanded 'fa-sort'}}"></i>
+  </nav>
+{{/unless}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"[file-digest://app/assets/javascripts/discourse/templates/components/topic-progress.hbs;TTF:charsetI"
+utf-8;F:digest"%ÂˆÁ—æ^Eû‘Õ‹]+Ö½å•¹+‹Çª?¸Àðf=ôƒN:lengthi:dependencies_digest"%gòŠ˜©°ÄúÉC¦©Tl/~%ŒávKG´o“V::idI"Ea7f408f3de46c9f3bdb3d0c5a2bd6d6476d27b1474ddc1bd06046e7226e678dc;F:
+mtimel+°cX

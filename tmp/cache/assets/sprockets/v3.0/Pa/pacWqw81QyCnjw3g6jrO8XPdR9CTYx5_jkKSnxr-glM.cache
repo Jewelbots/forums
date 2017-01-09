@@ -1,0 +1,16 @@
+{:uriI"°file://app/assets/javascripts/discourse/templates/components/directory-item.hbs?type=text/x-ember-handlebars&id=6b0ea4664420c48b532fe8fcf09f0cb40ebd1f9de1aa9490d3b95c74759e1e2c:ET:load_pathI"app/assets/javascripts;T:filenameI"Mapp/assets/javascripts/discourse/templates/components/directory-item.hbs;T:	nameI"2discourse/templates/components/directory-item;T:logical_pathI"6discourse/templates/components/directory-item.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"<td>{{user-info user=item.user}}</td>
+<td>{{number item.likes_received}}</td>
+<td>{{number item.likes_given}}</td>
+<td>{{number item.topic_count}}</td>
+<td>{{number item.post_count}}</td>
+<td>{{number item.topics_entered}}</td>
+<td>{{number item.posts_read}}</td>
+<td>{{number item.days_visited}}</td>
+{{#if showTimeRead}}
+  <td><span class='time-read'>{{unbound item.time_read}}</span></td>
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"[file-digest://app/assets/javascripts/discourse/templates/components/directory-item.hbs;TTF:charsetI"
+utf-8;F:digest"%è,¡f>Û‚€D–|ı$ˆ“îİvêèïê$IÕ!E6:lengthi:dependencies_digest"%l¿´+²|Bü*ˆ¶6¡“,–[¸²jşup4:idI"E6b0ea4664420c48b532fe8fcf09f0cb40ebd1f9de1aa9490d3b95c74759e1e2c;F:
+mtimel+°cX

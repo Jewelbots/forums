@@ -1,0 +1,33 @@
+{:uriI"Øfile://app/assets/javascripts/discourse/templates/components/category-drop.hbs?type=text/x-ember-handlebars&id=b5b2718316865d0780226290fd3d24fc78133a35f6c5ae691b6edfe02aa62d56:ET:load_pathI"app/assets/javascripts;T:filenameI"Lapp/assets/javascripts/discourse/templates/components/category-drop.hbs;T:	nameI"1discourse/templates/components/category-drop;T:logical_pathI"5discourse/templates/components/category-drop.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"„{{#if category}}
+  <a href {{action "expand"}} class="badge-category" style={{badgeStyle}} aria-label={{i18n 'categories.category_list'}} aria-expanded={{expanded}}>
+    <span class="badge-category-bg" style={{categoryColor}}></span>
+    {{#if category.read_restricted}}
+      {{fa-icon "lock"}}
+    {{/if}}
+    {{category.name}}
+  </a>
+{{else}}
+  {{#if noSubcategories}}
+    <a href {{action "expand"}} class='badge-category home' style={{badgeStyle}} aria-label={{i18n 'categories.category_list'}} aria-expanded={{expanded}}>{{i18n 'categories.no_subcategory'}}</a>
+  {{else}}
+    <a href {{action "expand"}} class='badge-category home' style={{badgeStyle}} aria-label={{i18n 'categories.category_list'}} aria-expanded={{expanded}}>{{allCategoriesLabel}}</a>
+  {{/if}}
+{{/if}}
+
+{{#if categories}}
+  <a href {{action "expand"}} class={{dropdownButtonClass}} style={{badgeStyle}}><i class={{iconClass}}></i></a>
+  <section class="{{unless expanded 'hidden'}} category-dropdown-menu chooser}}">
+    <div class='cat'><a href={{allCategoriesUrl}} data-drop-close="true" class='badge-category home'>{{allCategoriesLabel}}</a></div>
+    {{#if subCategory}}
+      <div class='cat'><a href={{noCategoriesUrl}} data-drop-close="true" class='badge-category home'>{{i18n 'categories.no_subcategory'}}</a></div>
+    {{/if}}
+    {{#if renderCategories}}
+      {{#each categories as |c|}}<div class='cat'>{{category-link c allowUncategorized=true hideParent=subCategory}}</div>{{/each}}
+    {{/if}}
+  </section>
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Zfile-digest://app/assets/javascripts/discourse/templates/components/category-drop.hbs;TTF:charsetI"
+utf-8;F:digest"%°_qÈ/ Âò∆˜ﬂÚ¨fvµ£·9ë&{¨-ú1Ãmàº:lengthi„:dependencies_digest"%„˚»9∂ÔÒ‰§ºVı _˜n•B^R≠Z|ÅH™˙Ú[Ô˛:idI"Eb5b2718316865d0780226290fd3d24fc78133a35f6c5ae691b6edfe02aa62d56;F:
+mtimel+∞cX

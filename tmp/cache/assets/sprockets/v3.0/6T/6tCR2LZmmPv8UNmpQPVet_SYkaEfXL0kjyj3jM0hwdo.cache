@@ -1,0 +1,11 @@
+{:uriI"¯file://app/assets/javascripts/admin/templates/components/site-text-summary.hbs?type=text/x-ember-handlebars&id=5182211b936c550ce282965c77c9792767ccffee13ae8af7c487bd1fbd9584e5:ET:load_pathI"app/assets/javascripts;T:filenameI"Lapp/assets/javascripts/admin/templates/components/site-text-summary.hbs;T:	nameI"1admin/templates/components/site-text-summary;T:logical_pathI"5admin/templates/components/site-text-summary.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"Ç{{d-button label="admin.site_text.edit" class='edit' action="edit"}}
+<h3 class='site-text-id'>{{siteText.id}}</h3>
+<div class='site-text-value'>{{siteText.value}}</div>
+
+<div class='clearfix'></div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Zfile-digest://app/assets/javascripts/admin/templates/components/site-text-summary.hbs;TTF:charsetI"
+utf-8;F:digest"%	?CsPƒÅâ‚¾ö>ÌÏ‰SL\L5uKU%ÄÙ>–":lengthiÇ:dependencies_digest"%Äê‡w(¡‡ê¿º÷Ôòòá¯4
++'÷Î5Úˆd“^EÚ:idI"E5182211b936c550ce282965c77c9792767ccffee13ae8af7c487bd1fbd9584e5;F:
+mtimel+°cX

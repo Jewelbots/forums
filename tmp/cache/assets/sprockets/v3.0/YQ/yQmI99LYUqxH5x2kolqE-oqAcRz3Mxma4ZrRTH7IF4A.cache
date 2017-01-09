@@ -1,0 +1,34 @@
+{:uriI"žfile://app/assets/javascripts/admin/templates/groups_type.hbs?type=text/x-ember-handlebars&id=3ac1c9b8e10de1c05a6b6f7e7ac63cc34c70cc082143bf3be99d36610c135dc5:ET:load_pathI"app/assets/javascripts;T:filenameI";app/assets/javascripts/admin/templates/groups_type.hbs;T:	nameI" admin/templates/groups_type;T:logical_pathI"$admin/templates/groups_type.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"C<div class='row groups'>
+  <div class='content-list span6'>
+    <h3>{{i18n 'admin.groups.edit'}}</h3>
+    <ul>
+      {{#each model as |group|}}
+        <li>
+          {{#link-to "adminGroup" group.type group.name}}{{group.name}}
+            {{#if group.userCountDisplay}}
+              <span class="count">{{group.userCountDisplay}}</span>
+            {{/if}}
+          {{/link-to}}
+        </li>
+      {{/each}}
+    </ul>
+    <div class='controls'>
+      {{#if isAuto}}
+        {{d-button action="refreshAutoGroups" icon="refresh" label="admin.groups.refresh" disabled=refreshingAutoGroups}}
+      {{else}}
+        {{#link-to 'adminGroup' 'new' class="btn"}}
+          {{fa-icon "plus"}} {{i18n 'admin.groups.new'}}
+        {{/link-to}}
+      {{/if}}
+    </div>
+  </div>
+
+  <div class='content-editor'>
+    {{outlet}}
+  </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Ifile-digest://app/assets/javascripts/admin/templates/groups_type.hbs;TTF:charsetI"
+utf-8;F:digest"%ýŒ™?vå÷!žÉ«’_òÅ<¢ºT¨ù¼Ã†ëö‰2Œv:lengthiC:dependencies_digest"%¤.¬¥ØK²¥/ð¸ßù’Ù\Þ‡Gãf~…y¨ˆuOš:idI"E3ac1c9b8e10de1c05a6b6f7e7ac63cc34c70cc082143bf3be99d36610c135dc5;F:
+mtimel+°cX

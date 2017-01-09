@@ -1,0 +1,54 @@
+{:uriI"¬file://app/assets/javascripts/admin/templates/modal/admin_badge_preview.hbs?type=text/x-ember-handlebars&id=f7ccc3e7b077f441b9a050942cbf25114ad9f01e4aed71352d51c1843fd6bc98:ET:load_pathI"app/assets/javascripts;T:filenameI"Iapp/assets/javascripts/admin/templates/modal/admin_badge_preview.hbs;T:	nameI".admin/templates/modal/admin_badge_preview;T:logical_pathI"2admin/templates/modal/admin_badge_preview.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"n<div class="badge-query-preview">
+  {{#if errors}}
+    <p class="error-header">{{i18n 'admin.badges.preview.sql_error_header'}}</p>
+
+    <pre class="badge-errors">{{errors}}</pre>
+
+    <!--
+    TODO we want some help pages for this, link to those instead
+    <p>
+      {{i18n 'admin.badges.preview.error_help'}}
+    </p>
+    <ul>
+      <li><a href="https://meta.discourse.org/t/triggered-custom-badge-queries/19336">https://meta.discourse.org/t/triggered-custom-badge-queries/19336</a></li>
+    </ul>
+    -->
+  {{else}}
+    <p class="grant-count">
+      {{#if count}}
+        {{{i18n 'admin.badges.preview.grant_count' count=count}}}
+      {{else}}
+        {{{i18n 'admin.badges.preview.no_grant_count'}}}
+      {{/if}}
+    </p>
+
+    {{#if count_warning}}
+      <div class="count-warning">
+        <p class="heading"><i class="fa fa-warning"></i> {{i18n 'admin.badges.preview.bad_count_warning.header'}}</p>
+        <p class="body">{{i18n 'admin.badges.preview.bad_count_warning.text'}}</p>
+      </div>
+    {{/if}}
+
+    {{#if sample}}
+      <p class="sample">
+        {{i18n 'admin.badges.preview.sample'}}
+      </p>
+      <ul>
+        {{#each processed_sample as |html|}}
+          <li>{{{html}}}</li>
+        {{/each}}
+      </ul>
+    {{/if}}
+
+    {{#if has_query_plan}}
+        <div class="badge-query-plan">
+          {{{query_plan_html}}}
+        </div>
+    {{/if}}
+  {{/if}}
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Wfile-digest://app/assets/javascripts/admin/templates/modal/admin_badge_preview.hbs;TTF:charsetI"
+utf-8;F:digest"%¬_¥•–b<¼–blbœ½n´êZÞ¨%€]ÇIÉîŸQ%:lengthin:dependencies_digest"%jNåªÖL®‹V‘†ö•k’!C½&ZeDn‘·-Ð:idI"Ef7ccc3e7b077f441b9a050942cbf25114ad9f01e4aed71352d51c1843fd6bc98;F:
+mtimel+°cX

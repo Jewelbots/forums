@@ -1,0 +1,25 @@
+{:uriI"­file://app/assets/javascripts/discourse/templates/modal/change-timestamp.hbs?type=text/x-ember-handlebars&id=4c8ab09cacca92efafa13fb69472fb98764a63d6fabaef1e7490a40cdf37c149:ET:load_pathI"app/assets/javascripts;T:filenameI"Japp/assets/javascripts/discourse/templates/modal/change-timestamp.hbs;T:	nameI"/discourse/templates/modal/change-timestamp;T:logical_pathI"3discourse/templates/modal/change-timestamp.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"$<div class="modal-body change-timestamp">
+  <p>
+    {{i18n 'topic.change_timestamp.instructions'}}
+  </p>
+
+  <p class="alert alert-error {{unless validTimestamp 'hidden'}}">
+    {{i18n 'topic.change_timestamp.invalid_timestamp'}}
+  </p>
+
+  <form>
+    {{date-picker-past value=date containerId="date-container"}}
+    {{input type="time" value=time}}
+  </form>
+
+  <div id="date-container" />
+</div>
+
+<div class="modal-footer">
+  <button class="btn btn-primary" disabled={{buttonDisabled}} {{action "changeTimestamp"}}>{{buttonTitle}}</button>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Xfile-digest://app/assets/javascripts/discourse/templates/modal/change-timestamp.hbs;TTF:charsetI"
+utf-8;F:digest"%Ğığ¸À¦\`)aG?"ÛèõŞB70ÆáBÈƒûµ¶„":lengthi$:dependencies_digest"%”ËÑ]ğVïB?Pú¢µştÅş—ñ}ÍC‘'Tk1_o:idI"E4c8ab09cacca92efafa13fb69472fb98764a63d6fabaef1e7490a40cdf37c149;F:
+mtimel+°cX

@@ -1,0 +1,51 @@
+{:uriI"¢file://app/assets/javascripts/discourse/templates/badges/show.hbs?type=text/x-ember-handlebars&id=749bb03888dcd0ce18c863c4378f9bff7b84af17e24be35de3a9e5ca3ed3dfd1:ET:load_pathI"app/assets/javascripts;T:filenameI"?app/assets/javascripts/discourse/templates/badges/show.hbs;T:	nameI"$discourse/templates/badges/show;T:logical_pathI"(discourse/templates/badges/show.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"<div class='container show-badge {{model.slug}}'>
+  <h1>
+    {{#link-to 'badges.index'}}{{i18n 'badges.title'}}{{/link-to}}
+     /
+    {{model.name}}
+  </h1>
+
+  <div class='show-badge-details'>
+    {{badge-card badge=model size="large" count=userBadges.grant_count}}
+    <div class='badge-grant-info'>
+      <div>
+        <div class='grant-info-item'>
+          {{check-mark checked=model.allow_title}} {{i18n 'badges.allow_title'}}
+        </div>
+        <div class='grant-info-item'>
+          {{check-mark checked=model.multiple_grant}} {{i18n 'badges.multiple_grant'}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{#if userBadges}}
+    <div class="user-badges {{model.slug}}">
+      {{#load-more selector=".badge-info" action="loadMore"}}
+        {{#each userBadges as |ub|}}
+          {{#user-info user=ub.user size="medium" class="badge-info" date=ub.granted_at}}
+            <div class="granted-on">{{i18n 'badges.granted_on' date=(inline-date ub.granted_at)}}</div>
+            {{#if ub.post_number}}
+              <a class="post-link" href="{{unbound ub.topic.url}}/{{unbound ub.post_number}}">{{{ub.topic.fancyTitle}}}</a>
+            {{/if}}
+          {{/user-info}}
+        {{/each}}
+      {{/load-more}}
+
+      {{#unless canLoadMore}}
+        {{#if canShowOthers}}
+        <div class='clearfix'>
+          <a class='btn' href='{{model.url}}'>{{i18n 'badges.others_count' count=model.grant_count}}</a>
+        </div>
+        {{/if}}
+      {{/unless}}
+    </div>
+
+    {{conditional-loading-spinner condition=canLoadMore}}
+  {{/if}}
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Mfile-digest://app/assets/javascripts/discourse/templates/badges/show.hbs;TTF:charsetI"
+utf-8;F:digest"%ùP‘64T·4—@äq,6cëF€²pÒ!èğ:lengthi:dependencies_digest"%ÁŸ7¾F±`ÓÌÌñéµ4v8Lêxàë~/ñ×§:idI"E749bb03888dcd0ce18c863c4378f9bff7b84af17e24be35de3a9e5ca3ed3dfd1;F:
+mtimel+°cX

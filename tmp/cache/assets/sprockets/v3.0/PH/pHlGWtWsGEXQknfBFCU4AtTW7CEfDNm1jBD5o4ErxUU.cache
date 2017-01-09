@@ -1,0 +1,8 @@
+{:uriI"²file://app/assets/javascripts/admin/templates/components/site-settings/string.hbs?type=text/x-ember-handlebars&id=3a27cc5ca08d3092bd800d113d7b74c1560b4ea6041f66ddb21237dae3058e71:ET:load_pathI"app/assets/javascripts;T:filenameI"Oapp/assets/javascripts/admin/templates/components/site-settings/string.hbs;T:	nameI"4admin/templates/components/site-settings/string;T:logical_pathI"8admin/templates/components/site-settings/string.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"°{{text-field value=value classNames="input-setting-string"}}
+{{setting-validation-message message=validationMessage}}
+<div class='desc'>{{{unbound setting.description}}}</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"]file-digest://app/assets/javascripts/admin/templates/components/site-settings/string.hbs;TTF:charsetI"
+utf-8;F:digest"%HªèhÙOdÚw¨«¼GJÐïÚ·,Ø\êzq3ö:lengthi°:dependencies_digest"%øvRWd\š‡|k%½8òVºQqø°Ýœ“­%%>u:idI"E3a27cc5ca08d3092bd800d113d7b74c1560b4ea6041f66ddb21237dae3058e71;F:
+mtimel+°cX

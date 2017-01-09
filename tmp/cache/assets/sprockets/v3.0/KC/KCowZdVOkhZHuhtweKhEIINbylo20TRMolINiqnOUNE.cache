@@ -1,0 +1,7 @@
+{:uriI"¾file://app/assets/javascripts/discourse/templates/components/edit-category-topic-template.hbs?type=text/x-ember-handlebars&id=f1617f4a4fb047f94595f45961ace4cdc4aac13c7711d5eb444ace1c50865680:ET:load_pathI"app/assets/javascripts;T:filenameI"[app/assets/javascripts/discourse/templates/components/edit-category-topic-template.hbs;T:	nameI"@discourse/templates/components/edit-category-topic-template;T:logical_pathI"Ddiscourse/templates/components/edit-category-topic-template.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"b<label>{{i18n 'category.topic_template'}}</label>
+{{d-editor value=category.topic_template}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"ifile-digest://app/assets/javascripts/discourse/templates/components/edit-category-topic-template.hbs;TTF:charsetI"
+utf-8;F:digest"%PW¤{&§>î±axšõù™.ùÌ"Ÿkö_<ÍSÑ:lengthib:dependencies_digest"%¹PÚ?1~ü·ëÄü|=HÑ7ÌqÕSÉ2’Êê¥S#§Di:idI"Ef1617f4a4fb047f94595f45961ace4cdc4aac13c7711d5eb444ace1c50865680;F:
+mtimel+°cX

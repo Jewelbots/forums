@@ -1,0 +1,46 @@
+{:uriI"†file://app/assets/javascripts/admin/templates/email-bounced.hbs?type=text/x-ember-handlebars&id=e0eea6655b357626a3439d0c8d140832ed3fee3d27f4c5ea1a092ad31a0a07c1:ET:load_pathI"app/assets/javascripts;T:filenameI"=app/assets/javascripts/admin/templates/email-bounced.hbs;T:	nameI""admin/templates/email-bounced;T:logical_pathI"&admin/templates/email-bounced.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"Ö{{#load-more selector=".email-list tr" action="loadMore"}}
+  <table class='table email-list'>
+    <thead>
+      <tr>
+        <th>{{i18n 'admin.email.time'}}</th>
+        <th>{{i18n 'admin.email.user'}}</th>
+        <th>{{i18n 'admin.email.to_address'}}</th>
+        <th>{{i18n 'admin.email.email_type'}}</th>
+      </tr>
+    </thead>
+
+    <tr class="filters">
+      <td>{{i18n 'admin.email.logs.filters.title'}}</td>
+      <td>{{text-field value=filter.user placeholderKey="admin.email.logs.filters.user_placeholder"}}</td>
+      <td>{{text-field value=filter.address placeholderKey="admin.email.logs.filters.address_placeholder"}}</td>
+      <td>{{text-field value=filter.type placeholderKey="admin.email.logs.filters.type_placeholder"}}</td>
+    </tr>
+
+    {{#each model as |l|}}
+      <tr>
+        <td>{{format-date l.created_at}}</td>
+        <td>
+          {{#if l.user}}
+            {{#link-to 'adminUser' l.user}}{{avatar l.user imageSize="tiny"}}{{/link-to}}
+            {{#link-to 'adminUser' l.user}}{{l.user.username}}{{/link-to}}
+          {{else}}
+            &mdash;
+          {{/if}}
+        </td>
+        <td><a href='mailto:{{unbound l.to_address}}'>{{l.to_address}}</a></td>
+        <td>{{l.email_type}}</td>
+      </tr>
+    {{else}}
+      <tr><td colspan="4">{{i18n 'admin.email.logs.none'}}</td></tr>
+    {{/each}}
+
+  </table>
+{{/load-more}}
+
+{{conditional-loading-spinner condition=loading}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Kfile-digest://app/assets/javascripts/admin/templates/email-bounced.hbs;TTF:charsetI"
+utf-8;F:digest"%™ /‹3$ÿ•xÉ‹(g&ã¸–ïÔü/é⁄´‰@=g”:n:lengthiÖ:dependencies_digest"%
+¨wô>xù∏5ç§g{TVÃ¬©Oò/∫ﬁ˜q„˚K’:idI"Ee0eea6655b357626a3439d0c8d140832ed3fee3d27f4c5ea1a092ad31a0a07c1;F:
+mtimel+∞cX

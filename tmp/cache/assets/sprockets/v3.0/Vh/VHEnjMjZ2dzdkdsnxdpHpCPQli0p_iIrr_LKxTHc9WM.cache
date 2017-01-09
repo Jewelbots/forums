@@ -1,0 +1,12 @@
+{:uriI"¬file://app/assets/javascripts/discourse/templates/components/user-badge.hbs?type=text/x-ember-handlebars&id=e2f1925a7ce457a300461a2a0ad339cf4a0199036eac85b00e33f9e1876fd384:ET:load_pathI"app/assets/javascripts;T:filenameI"Iapp/assets/javascripts/discourse/templates/components/user-badge.hbs;T:	nameI".discourse/templates/components/user-badge;T:logical_pathI"2discourse/templates/components/user-badge.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"²<a href="{{badgeUrl}}">
+  {{#badge-button badge=badge}}
+    {{#if showGrantCount}}
+      <span class="count">(&times;&nbsp;{{count}})</span>
+    {{/if}}
+  {{/badge-button}}
+</a>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Wfile-digest://app/assets/javascripts/discourse/templates/components/user-badge.hbs;TTF:charsetI"
+utf-8;F:digest"%^K®–«¾—E`­A¸áøåÍ–Q,Ÿ|½^ÑC²Çû¿Œô:lengthi²:dependencies_digest"%\Q,ù…*ñ½c¾™ùvÂÝÇ¦·è&.8Pä%»¯·:idI"Ee2f1925a7ce457a300461a2a0ad339cf4a0199036eac85b00e33f9e1876fd384;F:
+mtimel+°cX

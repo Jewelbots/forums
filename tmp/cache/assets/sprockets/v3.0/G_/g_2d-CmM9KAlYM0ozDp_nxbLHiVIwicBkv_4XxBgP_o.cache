@@ -1,0 +1,10 @@
+{:uriI"¢file://app/assets/javascripts/discourse/templates/user/stream.hbs?type=text/x-ember-handlebars&id=0f6124550b3fbfcae9c93d66dbf7c717040e6734d95e975f1d8f76b788c0848b:ET:load_pathI"app/assets/javascripts;T:filenameI"?app/assets/javascripts/discourse/templates/user/stream.hbs;T:	nameI"$discourse/templates/user/stream;T:logical_pathI"(discourse/templates/user/stream.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"{{#user-stream stream=model}}
+  {{#each model.content as |item|}}
+    {{stream-item item=item removeBookmark="removeBookmark"}}
+  {{/each}}
+{{/user-stream}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Mfile-digest://app/assets/javascripts/discourse/templates/user/stream.hbs;TTF:charsetI"
+utf-8;F:digest"%¬—ë…#ğIL;‹K¬íĞbXwf£~0Õp&"'ŞjŞ:lengthi:dependencies_digest"%Æu–#öO–(·Ì{f@œg–’bÍ$öó¾&e:idI"E0f6124550b3fbfcae9c93d66dbf7c717040e6734d95e975f1d8f76b788c0848b;F:
+mtimel+°cX

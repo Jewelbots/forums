@@ -1,0 +1,30 @@
+{:uriI"§file://app/assets/javascripts/discourse/templates/user/badge-title.hbs?type=text/x-ember-handlebars&id=f784d74f79d1c641c6fe573aff23fa2a7d1a21e3821d0ab1bf38fa9dc4860872:ET:load_pathI"app/assets/javascripts;T:filenameI"Dapp/assets/javascripts/discourse/templates/user/badge-title.hbs;T:	nameI")discourse/templates/user/badge-title;T:logical_pathI"-discourse/templates/user/badge-title.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"Ó<section class='user-content'>
+  <form class="form-horizontal">
+
+    <div class="control-group">
+      <div class="controls">
+        <h3>{{i18n 'badges.select_badge_for_title'}}</h3>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label"></label>
+      <div class="controls">
+        {{combo-box valueAttribute="id" value=selectedUserBadgeId nameProperty="badge.name" content=selectableUserBadges}}
+      </div>
+    </div>
+
+    <div class="control-group">
+      <div class="controls">
+        <button class="btn btn-primary" disabled={{disableSave}} {{action "save"}}>{{savingStatus}}</button>
+        {{#if saved}}{{i18n 'saved'}}{{/if}}
+      </div>
+    </div>
+
+  </form>
+</section>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Rfile-digest://app/assets/javascripts/discourse/templates/user/badge-title.hbs;TTF:charsetI"
+utf-8;F:digest"%–¼5Õß6ƒþúr&œÎ1Êd¦ºæÉìVöÎ+œ^3¸:lengthiÓ:dependencies_digest"%§51[’Þ#¤‹DÃÒƒ¸\\ÃK*møpô!ƒ„Ï:idI"Ef784d74f79d1c641c6fe573aff23fa2a7d1a21e3821d0ab1bf38fa9dc4860872;F:
+mtimel+°cX

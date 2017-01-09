@@ -1,0 +1,19 @@
+I"¯require('discourse/lib/raw-handlebars').template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "<"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"this.tagName",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + " class=\""
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"class",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + " "
+    + container.escapeExpression((helpers["cold-age-class"] || (depth0 && depth0["cold-age-class"]) || helpers.helperMissing).call(depth0 != null ? depth0 : {},"topic.createdAt",{"name":"cold-age-class","hash":{"class":"","startDate":"topic.bumpedAt"},"hashTypes":{"class":"StringLiteral","startDate":"PathExpression"},"hashContexts":{"class":depth0,"startDate":depth0},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + " activity\" title=\""
+    + ((stack1 = helpers.get.call(depth0 != null ? depth0 : {},"topic.bumpedAtTitle",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data})) != null ? stack1 : "")
+    + "\"><a href=\""
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"topic.lastPostUrl",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "\">"
+    + container.escapeExpression((helpers["format-date"] || (depth0 && depth0["format-date"]) || helpers.helperMissing).call(depth0 != null ? depth0 : {},"topic.bumpedAt",{"name":"format-date","hash":{"noTitle":"true","format":"tiny"},"hashTypes":{"noTitle":"StringLiteral","format":"StringLiteral"},"hashContexts":{"noTitle":depth0,"format":depth0},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "</a></"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"this.tagName",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + ">\n";
+},"useData":true});:ET

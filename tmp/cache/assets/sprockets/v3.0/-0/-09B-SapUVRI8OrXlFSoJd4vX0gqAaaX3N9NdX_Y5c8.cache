@@ -1,0 +1,12 @@
+{:uriI"Ωfile://app/assets/javascripts/admin/templates/components/admin-report-trust-level-counts.hbs?type=text/x-ember-handlebars&id=04b34491b1a4d30c53a71d6079fb2416e1e5846691001484acf7237a3a8d8e90:ET:load_pathI"app/assets/javascripts;T:filenameI"Zapp/assets/javascripts/admin/templates/components/admin-report-trust-level-counts.hbs;T:	nameI"?admin/templates/components/admin-report-trust-level-counts;T:logical_pathI"Cadmin/templates/components/admin-report-trust-level-counts.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"m<td class="title">{{report.title}}</td>
+<td class="value">{{#link-to 'adminUsersList.show' 'newuser'}}{{value-at-tl report.data level="0"}}{{/link-to}}</td>
+<td class="value">{{#link-to 'adminUsersList.show' 'basic'}}{{value-at-tl report.data level="1"}}{{/link-to}}</td>
+<td class="value">{{#link-to 'adminUsersList.show' 'member'}}{{value-at-tl report.data level="2"}}{{/link-to}}</td>
+<td class="value">{{#link-to 'adminUsersList.show' 'regular'}}{{value-at-tl report.data level="3"}}{{/link-to}}</td>
+<td class="value">{{#link-to 'adminUsersList.show' 'leader'}}{{value-at-tl report.data level="4"}}{{/link-to}}</td>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"hfile-digest://app/assets/javascripts/admin/templates/components/admin-report-trust-level-counts.hbs;TTF:charsetI"
+utf-8;F:digest"%ÃFîi≠ùGıÀó¡<øèà˙ÍˇE›ÿmÒ7Ê%®™¸:lengthim:dependencies_digest"%¿`Ì@âMá*\yìGâÄ8£≈Ω5
+µ6Ú¿ë?j∏:idI"E04b34491b1a4d30c53a71d6079fb2416e1e5846691001484acf7237a3a8d8e90;F:
+mtimel+∞cX

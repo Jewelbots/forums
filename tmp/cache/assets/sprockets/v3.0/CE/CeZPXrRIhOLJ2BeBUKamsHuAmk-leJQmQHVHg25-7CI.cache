@@ -1,0 +1,20 @@
+{:uriI"«file://app/assets/javascripts/admin/templates/modal/admin_suspend_user.hbs?type=text/x-ember-handlebars&id=7d3689eea3486fe773d7640429ddc4f97269dbf5ade4d80edd827d0df682fc9b:ET:load_pathI"app/assets/javascripts;T:filenameI"Happ/assets/javascripts/admin/templates/modal/admin_suspend_user.hbs;T:	nameI"-admin/templates/modal/admin_suspend_user;T:logical_pathI"1admin/templates/modal/admin_suspend_user.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"9<div class="modal-body">
+  <form>
+    {{i18n 'admin.user.suspend_duration'}}
+    {{text-field value=duration maxlength="5" autofocus="autofocus"}}
+    {{i18n 'admin.user.suspend_duration_units'}}<br/>
+    <br/>
+    {{{i18n 'admin.user.suspend_reason_label'}}}<br/>
+    <br/>
+    {{text-field value=reason class="span8"}}
+  </form>
+</div>
+<div class="modal-footer">
+  <button class='btn btn-danger' {{action "suspend"}} disabled={{submitDisabled}}><i class='fa fa-ban'></i>{{i18n 'admin.user.suspend'}}</button>
+  <a {{action "closeModal"}}>{{i18n 'cancel'}}</a>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Vfile-digest://app/assets/javascripts/admin/templates/modal/admin_suspend_user.hbs;TTF:charsetI"
+utf-8;F:digest"%Bã	¦ŒÉ»Iõ·¤¥Ñ?N÷¦Hôk“u¸¨µ‘ÿ¸¬`š:lengthi9:dependencies_digest"%I5:qÝgDÒ5‰’&ÙûKÝ€†aÂ	<-³mf®:idI"E7d3689eea3486fe773d7640429ddc4f97269dbf5ade4d80edd827d0df682fc9b;F:
+mtimel+°cX

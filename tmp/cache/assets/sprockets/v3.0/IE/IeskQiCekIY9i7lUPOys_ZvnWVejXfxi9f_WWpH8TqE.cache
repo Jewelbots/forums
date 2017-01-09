@@ -1,0 +1,14 @@
+{:uriI"¶file://app/assets/javascripts/discourse/templates/components/group-post-stream.js.hbs?type=text/x-ember-handlebars&id=f11688d430a0fefcd4f393ab4d3caa3305182b91b69e4d4527d292bda7687875:ET:load_pathI"app/assets/javascripts;T:filenameI"Sapp/assets/javascripts/discourse/templates/components/group-post-stream.js.hbs;T:	nameI"5discourse/templates/components/group-post-stream;T:logical_pathI"9discourse/templates/components/group-post-stream.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"ï{{#load-more selector=".user-stream .item" action="loadMore"}}
+  <div class='user-stream'>
+    {{#each posts as |post|}}
+      {{group-post post=post}}
+    {{else}}
+      <div>{{i18n emptyText}}</div>
+    {{/each}}
+  </div>
+{{/load-more}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"afile-digest://app/assets/javascripts/discourse/templates/components/group-post-stream.js.hbs;TTF:charsetI"
+utf-8;F:digest"%Æß.Y„~}õ„]ŠÍC­ùŠƒÜ9F°m]•È:lengthiï:dependencies_digest"%Y~am…‡7ŠCäSwÔPÖ›@Ü¢¥Ü4§–t–CòÚr:idI"Ef11688d430a0fefcd4f393ab4d3caa3305182b91b69e4d4527d292bda7687875;F:
+mtimel+°cX

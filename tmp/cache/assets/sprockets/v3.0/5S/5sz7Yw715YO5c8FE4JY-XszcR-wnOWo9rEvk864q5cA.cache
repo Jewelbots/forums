@@ -1,0 +1,8 @@
+{:uriI"¯file://app/assets/javascripts/discourse/templates/components/login-buttons.hbs?type=text/x-ember-handlebars&id=05d84069f606dbc280d017735aae1baa49618c8b749c181c9d04e77443596727:ET:load_pathI"app/assets/javascripts;T:filenameI"Lapp/assets/javascripts/discourse/templates/components/login-buttons.hbs;T:	nameI"1discourse/templates/components/login-buttons;T:logical_pathI"5discourse/templates/components/login-buttons.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"{{#each buttons as |b|}}
+  <button class="btn btn-social {{b.name}}" {{action "externalLogin" b}}>{{b.title}}</button>
+{{/each}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Zfile-digest://app/assets/javascripts/discourse/templates/components/login-buttons.hbs;TTF:charsetI"
+utf-8;F:digest"%º`õâ_Ä»A\”ƒ.úÍv2˜#é#³?QÜ¾ÿ:lengthi:dependencies_digest"%Vm‚	ßÈTL¨Ó§á1¹«¤é*BËsæØy:idI"E05d84069f606dbc280d017735aae1baa49618c8b749c181c9d04e77443596727;F:
+mtimel+°cX

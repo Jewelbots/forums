@@ -1,0 +1,16 @@
+{:uriI"°file://app/assets/javascripts/discourse/templates/components/period-chooser.hbs?type=text/x-ember-handlebars&id=2567cabd48b8c25ea1610f0edb933383afaaf4c45d08afec3d0cdfd669987df3:ET:load_pathI"app/assets/javascripts;T:filenameI"Mapp/assets/javascripts/discourse/templates/components/period-chooser.hbs;T:	nameI"2discourse/templates/components/period-chooser;T:logical_pathI"6discourse/templates/components/period-chooser.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"l<h2>{{period-title period showDateRange=true}}</h2>
+<button>{{fa-icon "caret-down"}}</button>
+
+<div id='period-popup' class="{{unless showPeriods 'hidden'}} period-popup">
+  <ul>
+    {{#each site.periods as |p|}}
+      <li><a href {{action "changePeriod" p}}>{{period-title p showDateRange=true}}</a></li>
+    {{/each}}
+  </ul>
+</div>
+<div class='clearfix'></div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"[file-digest://app/assets/javascripts/discourse/templates/components/period-chooser.hbs;TTF:charsetI"
+utf-8;F:digest"%HIi¼:1®8ÆÛà²3”JµŞÒH”x6h£iêı¦:lengthil:dependencies_digest"%?b¾‡A»ªàµq»ÔÓ{¥h·Lˆ%ìÙö×òu:idI"E2567cabd48b8c25ea1610f0edb933383afaaf4c45d08afec3d0cdfd669987df3;F:
+mtimel+°cX

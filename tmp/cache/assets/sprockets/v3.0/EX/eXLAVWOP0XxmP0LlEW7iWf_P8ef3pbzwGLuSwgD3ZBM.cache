@@ -1,0 +1,14 @@
+{:uriI"Ÿfile://app/assets/javascripts/admin/templates/badges-index.hbs?type=text/x-ember-handlebars&id=1b64201c9be2d9ee49e3844eb46f41c933bc66099b801bf0a7c8f9e4f0db14aa:ET:load_pathI"app/assets/javascripts;T:filenameI"<app/assets/javascripts/admin/templates/badges-index.hbs;T:	nameI"!admin/templates/badges-index;T:logical_pathI"%admin/templates/badges-index.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"ç<div class='current-badge span13'>
+  <p>{{i18n 'admin.badges.none_selected'}}</p>
+
+  <div>
+    {{#link-to 'adminBadges.show' 'new' class="btn"}}
+      {{fa-icon "plus"}} {{i18n 'admin.badges.new'}}
+    {{/link-to}}
+  </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Jfile-digest://app/assets/javascripts/admin/templates/badges-index.hbs;TTF:charsetI"
+utf-8;F:digest"%8ænBb#ßH |ê%çUnZ…o‹oª O´&‡yÔ:lengthiç:dependencies_digest"%„‹¹+Ïò‘@D%²‘iÔG/êgY™ÆÉ§Ë8·:idI"E1b64201c9be2d9ee49e3844eb46f41c933bc66099b801bf0a7c8f9e4f0db14aa;F:
+mtimel+°cX

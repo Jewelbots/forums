@@ -1,0 +1,9 @@
+{:uriI"°file://app/assets/javascripts/discourse/templates/components/navigation-bar.hbs?type=text/x-ember-handlebars&id=5c3fafa573742f687b51765c07207984c6977995817fcd195a9db6e850be76a5:ET:load_pathI"app/assets/javascripts;T:filenameI"Mapp/assets/javascripts/discourse/templates/components/navigation-bar.hbs;T:	nameI"2discourse/templates/components/navigation-bar;T:logical_pathI"6discourse/templates/components/navigation-bar.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"…{{#each navItems as |navItem|}}
+  {{navigation-item content=navItem filterMode=filterMode}}
+{{/each}}
+{{custom-html "extraNavItem"}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"[file-digest://app/assets/javascripts/discourse/templates/components/navigation-bar.hbs;TTF:charsetI"
+utf-8;F:digest"%´S³QÀî…×:ı´†Ÿ•€Nå_ÖóèÈRnA:lengthi…:dependencies_digest"%]këÙâ¶'qó|ÂUùC­—=ÆBï7ê¦’db:idI"E5c3fafa573742f687b51765c07207984c6977995817fcd195a9db6e850be76a5;F:
+mtimel+°cX

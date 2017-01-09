@@ -1,0 +1,14 @@
+{:uriI"©file://app/assets/javascripts/discourse/templates/modal/dismiss-read.hbs?type=text/x-ember-handlebars&id=8fc750f6166a7def1390e05a73adcefb1e5f34782556c0bd040f29a638bd2de2:ET:load_pathI"app/assets/javascripts;T:filenameI"Fapp/assets/javascripts/discourse/templates/modal/dismiss-read.hbs;T:	nameI"+discourse/templates/modal/dismiss-read;T:logical_pathI"/discourse/templates/modal/dismiss-read.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"@<div class="modal-body">
+  <p>
+    {{preference-checkbox labelKey="topics.bulk.also_dismiss_topics" checked=dismissTopics}}
+  </p>
+</div>
+
+<div class="modal-footer">
+  <button class='btn btn-primary' {{action "dismissReadTopics" dismissTopics}}><i class="fa fa-check"></i> {{i18n 'topics.bulk.dismiss'}}</button>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Tfile-digest://app/assets/javascripts/discourse/templates/modal/dismiss-read.hbs;TTF:charsetI"
+utf-8;F:digest"%@eÁFC$l$»Ü©ùÂÎñöÚ¥È{E.\:lengthi@:dependencies_digest"%u˜Èà´%£¤Ö±®u.“a÷»âÚVÏ‘U@ Ê:idI"E8fc750f6166a7def1390e05a73adcefb1e5f34782556c0bd040f29a638bd2de2;F:
+mtimel+°cX

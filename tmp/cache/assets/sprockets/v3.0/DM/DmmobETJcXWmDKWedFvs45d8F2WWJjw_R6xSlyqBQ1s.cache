@@ -1,0 +1,11 @@
+{:uriI"´file://app/assets/javascripts/discourse/templates/components/bulk-select-button.hbs?type=text/x-ember-handlebars&id=8154a7e38786c187a3022a15e14f58c5e643994348d3b9ef92a59d4a9b637062:ET:load_pathI"app/assets/javascripts;T:filenameI"Qapp/assets/javascripts/discourse/templates/components/bulk-select-button.hbs;T:	nameI"6discourse/templates/components/bulk-select-button;T:logical_pathI":discourse/templates/components/bulk-select-button.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"x{{#if selected}}
+  <div id='bulk-select'>
+    {{d-button action="showBulkActions" icon="wrench"}}
+  </div>
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"_file-digest://app/assets/javascripts/discourse/templates/components/bulk-select-button.hbs;TTF:charsetI"
+utf-8;F:digest"%Ÿ
+VîªˆådÛZ|KÛ@Û¾*ð—¹Ö?BbÅÉŠ:lengthix:dependencies_digest"%Ìˆe+÷™ž>ƒª6,ë 1¦)BJ×&Æ èˆ„ÜP†:idI"E8154a7e38786c187a3022a15e14f58c5e643994348d3b9ef92a59d4a9b637062;F:
+mtimel+°cX

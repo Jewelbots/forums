@@ -1,0 +1,17 @@
+I"rrequire('discourse/lib/raw-handlebars').template({"1":function(container,depth0,helpers,partials,data) {
+    return "<a href=\""
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"poster.user.path",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "\" data-user-card=\""
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"poster.user.username",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "\" class=\""
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"poster.extras",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "\">\n    "
+    + container.escapeExpression((helpers.avatar || (depth0 && depth0.avatar) || helpers.helperMissing).call(depth0 != null ? depth0 : {},"poster",{"name":"avatar","hash":{"imageSize":"small","usernamePath":"user.username","avatarTemplatePath":"user.avatar_template"},"hashTypes":{"imageSize":"StringLiteral","usernamePath":"StringLiteral","avatarTemplatePath":"StringLiteral"},"hashContexts":{"imageSize":depth0,"usernamePath":depth0,"avatarTemplatePath":depth0},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "\n</a>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "<td class='posters'>\n"
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},"poster","in","posters",{"name":"each","hash":{},"hashTypes":{},"hashContexts":{},"fn":container.program(1, data, 0),"inverse":container.noop,"types":["PathExpression","CommentStatement","PathExpression"],"contexts":[depth0,depth0,depth0],"data":data})) != null ? stack1 : "")
+    + "</td>\n";
+},"useData":true});:ET

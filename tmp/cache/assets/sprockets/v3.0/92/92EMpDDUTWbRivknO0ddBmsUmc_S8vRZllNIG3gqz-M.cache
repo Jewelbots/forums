@@ -1,0 +1,21 @@
+{:uriI"œfile://app/assets/javascripts/admin/templates/customize.hbs?type=text/x-ember-handlebars&id=6f6de48dc62418e2b9614ae43a506dbbcc4b00b229bc2f679235ad286b58bd78:ET:load_pathI"app/assets/javascripts;T:filenameI"9app/assets/javascripts/admin/templates/customize.hbs;T:	nameI"admin/templates/customize;T:logical_pathI""admin/templates/customize.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"â<div class='customize'>
+  {{#admin-nav}}
+    {{nav-item route='adminCustomize.colors' label='admin.customize.colors.title'}}
+    {{nav-item route='adminCustomizeCssHtml' label='admin.customize.css_html.title'}}
+    {{nav-item route='adminSiteText' label='admin.site_text.title'}}
+    {{nav-item route='adminCustomizeEmailTemplates' label='admin.customize.email_templates.title'}}
+    {{nav-item route='adminUserFields' label='admin.user_fields.title'}}
+    {{nav-item route='adminEmojis' label='admin.emoji.title'}}
+    {{nav-item route='adminPermalinks' label='admin.permalink.title'}}
+    {{nav-item route='adminEmbedding' label='admin.embedding.title'}}
+  {{/admin-nav}}
+
+  <div class="admin-container">
+    {{outlet}}
+  </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Gfile-digest://app/assets/javascripts/admin/templates/customize.hbs;TTF:charsetI"
+utf-8;F:digest"%,İ¢BdÊ¸Nó‘–.Tøœ(!¯eÂ\9ğœø:lengthiâ:dependencies_digest"%ğôN×|~Áußßàk»=rÉñÂÉÀ°¸½`3úÍ:idI"E6f6de48dc62418e2b9614ae43a506dbbcc4b00b229bc2f679235ad286b58bd78;F:
+mtimel+°cX

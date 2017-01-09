@@ -1,0 +1,23 @@
+{:uriI"≤file://app/assets/javascripts/discourse/templates/components/basic-topic-list.hbs?type=text/x-ember-handlebars&id=ae31d7d84101827ebe99b5af15716e89b8500cddd1316b570673d62746c5fbf4:ET:load_pathI"app/assets/javascripts;T:filenameI"Oapp/assets/javascripts/discourse/templates/components/basic-topic-list.hbs;T:	nameI"4discourse/templates/components/basic-topic-list;T:logical_pathI"8discourse/templates/components/basic-topic-list.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"Y{{#conditional-loading-spinner condition=loading}}
+  {{#if topics}}
+    {{topic-list showParticipants=showParticipants
+                 showPosters=showPosters
+                 hideCategory=hideCategory
+                 topics=topics
+                 expandExcerpts=expandExcerpts
+                 bulkSelectEnabled=bulkSelectEnabled
+                 canBulkSelect=canBulkSelect
+                 selected=selected}}
+  {{else}}
+    {{#unless loadingMore}}
+    <div class='alert alert-info'>
+      {{i18n 'choose_topic.none_found'}}
+    </div>
+    {{/unless}}
+  {{/if}}
+{{/conditional-loading-spinner}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"]file-digest://app/assets/javascripts/discourse/templates/components/basic-topic-list.hbs;TTF:charsetI"
+utf-8;F:digest"%âôíkfo&àXÇ∫é¿ÇÅ≠Ãc9¢Ωñ!ﬁ¶ˇﬂΩ:lengthiY:dependencies_digest"%AkÒñOˆJ¿DõÍYöqﬁhRÒZ[ŒÁ7,äˇ§¨:idI"Eae31d7d84101827ebe99b5af15716e89b8500cddd1316b570673d62746c5fbf4;F:
+mtimel+∞cX

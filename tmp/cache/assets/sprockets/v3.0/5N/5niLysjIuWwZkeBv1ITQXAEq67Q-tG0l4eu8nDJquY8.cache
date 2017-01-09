@@ -1,0 +1,24 @@
+{:uriI"¢file://app/assets/javascripts/discourse/templates/modal/modal.hbs?type=text/x-ember-handlebars&id=b5664a2af602eba6be8afc33b8e42f7f31de7a5d2e44e1b20fce66b9eff3f984:ET:load_pathI"app/assets/javascripts;T:filenameI"?app/assets/javascripts/discourse/templates/modal/modal.hbs;T:	nameI"$discourse/templates/modal/modal;T:logical_pathI"(discourse/templates/modal/modal.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"C<div class="modal-outer-container">
+  <div class="modal-middle-container">
+    <div class="modal-inner-container">
+      <div class="modal-header">
+        <a class="close" {{action "closeModal"}}>{{fa-icon "times"}}</a>
+        <h3>{{title}}</h3>
+        <div class="clearfix"></div>
+      </div>
+      <div id='modal-alert'></div>
+      {{outlet "modalBody"}}
+      {{#each errors as |error|}}
+        <div class="alert alert-error">
+          <button class="close" data-dismiss="alert">Ã—</button>
+          {{error}}
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Mfile-digest://app/assets/javascripts/discourse/templates/modal/modal.hbs;TTF:charsetI"
+utf-8;F:digest"%G²àD=L Ú?&‡°+ ÏŸF°G·¬Êgê”µ:lengthiC:dependencies_digest"%ÛáBfºğ@é¨éòB‹øA ó”˜èHí/!:idI"Eb5664a2af602eba6be8afc33b8e42f7f31de7a5d2e44e1b20fce66b9eff3f984;F:
+mtimel+°cX

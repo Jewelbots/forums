@@ -1,0 +1,18 @@
+{:uriI"¨file://app/assets/javascripts/discourse/templates/modal/merge-topic.hbs?type=text/x-ember-handlebars&id=039479e67591fe076587434ea38f2df8afa1722c86bb8cd2b117c9e4e498bb6a:ET:load_pathI"app/assets/javascripts;T:filenameI"Eapp/assets/javascripts/discourse/templates/modal/merge-topic.hbs;T:	nameI"*discourse/templates/modal/merge-topic;T:logical_pathI".discourse/templates/modal/merge-topic.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"ž<div id='move-selected' class="modal-body">
+  <p>{{{i18n 'topic.merge_topic.instructions' count=selectedPostsCount}}}</p>
+
+  <form>
+    {{choose-topic currentTopicId=model.id selectedTopicId=selectedTopicId}}
+  </form>
+</div>
+
+<div class="modal-footer">
+  {{#d-button class="btn-primary" disabled=buttonDisabled action="movePostsToExistingTopic"}}
+    {{fa-icon 'sign-out'}} {{buttonTitle}}
+  {{/d-button}}
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Sfile-digest://app/assets/javascripts/discourse/templates/modal/merge-topic.hbs;TTF:charsetI"
+utf-8;F:digest"%-¡bœ[—PfÃÛf°­ñ@9V¯ «’y‡"£ÒHsá¹:lengthiž:dependencies_digest"%™¨Úàoª÷QÌ…ƒÃ°ëÉ@¢:i/+00¯è³›Ì^v:idI"E039479e67591fe076587434ea38f2df8afa1722c86bb8cd2b117c9e4e498bb6a;F:
+mtimel+°cX

@@ -1,0 +1,11 @@
+{:uriI"«file://app/assets/javascripts/discourse/templates/components/user-stat.hbs?type=text/x-ember-handlebars&id=5fca36785706846c0ff20220ee286d541dd5b86b51b90a2ce77bc526cb1c38c0:ET:load_pathI"app/assets/javascripts;T:filenameI"Happ/assets/javascripts/discourse/templates/components/user-stat.hbs;T:	nameI"-discourse/templates/components/user-stat;T:logical_pathI"1discourse/templates/components/user-stat.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"<span class='value'>
+  {{#if icon}}{{fa-icon icon}}{{/if}}
+  {{number value}}
+</span>
+<span class='label'>{{{i18n label count=value}}}</span>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Vfile-digest://app/assets/javascripts/discourse/templates/components/user-stat.hbs;TTF:charsetI"
+utf-8;F:digest"%æhî
+(±ğëác³^½œ±A“77ê§ÁW¢k]°©:lengthi:dependencies_digest"%ìÂ¬ÿ¸OtZØƒ³63œCd¿œË•! £ş$†r@Õ:idI"E5fca36785706846c0ff20220ee286d541dd5b86b51b90a2ce77bc526cb1c38c0;F:
+mtimel+°cX

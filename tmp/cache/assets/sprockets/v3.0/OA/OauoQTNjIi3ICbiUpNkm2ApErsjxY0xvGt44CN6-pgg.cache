@@ -1,0 +1,12 @@
+{:uriI"°file://app/assets/javascripts/discourse/templates/group-selector-autocomplete.raw.hbs?type=text/x-handlebars&id=1b1037d858f91686f3e59f3215ecf80ec26dd7f3d4dba06581930e4a76c6c8d3:ET:load_pathI"app/assets/javascripts;T:filenameI"Sapp/assets/javascripts/discourse/templates/group-selector-autocomplete.raw.hbs;T:	nameI"4discourse/templates/group-selector-autocomplete;T:logical_pathI"<discourse/templates/group-selector-autocomplete.raw.hbs;T:content_typeI"text/x-handlebars;T:sourceI"Œ<div class='autocomplete'>
+  <ul>
+    {{#each options as |option|}}
+      <li><a href>{{option.name}}</a></li>
+    {{/each}}
+  </ul>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Bprocessors:type=text/x-handlebars&file_type=text/x-handlebars;TTI"afile-digest://app/assets/javascripts/discourse/templates/group-selector-autocomplete.raw.hbs;TTF:charsetI"
+utf-8;F:digest"%äO$u¼"é‘¹±ÀÆ;ø…”öF¿nÏÌ›+SÈ~(£®1:lengthiŒ:dependencies_digest"%”X°-Aš„ÓÜVf}=›b@ù(Äœ¾¿®º×ÔBBGx:idI"E1b1037d858f91686f3e59f3215ecf80ec26dd7f3d4dba06581930e4a76c6c8d3;F:
+mtimel+°cX

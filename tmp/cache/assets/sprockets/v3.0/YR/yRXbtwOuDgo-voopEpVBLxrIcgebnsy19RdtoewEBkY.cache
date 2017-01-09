@@ -1,0 +1,18 @@
+{:uriI"®file://app/assets/javascripts/discourse/templates/components/bread-crumbs.hbs?type=text/x-ember-handlebars&id=3938796a806941f6b37bc4d2120a39ec3908ae1541b1f5b7e1b6ffa505f4f7c6:ET:load_pathI"app/assets/javascripts;T:filenameI"Kapp/assets/javascripts/discourse/templates/components/bread-crumbs.hbs;T:	nameI"0discourse/templates/components/bread-crumbs;T:logical_pathI"4discourse/templates/components/bread-crumbs.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"Ğ{{category-drop category=firstCategory categories=parentCategories}}
+
+{{#if childCategories}}
+  {{category-drop category=secondCategory parentCategory=firstCategory categories=childCategories subCategory="true" noSubcategories=noSubcategories}}
+{{/if}}
+
+{{#if siteSettings.tagging_enabled}}
+  {{tag-drop firstCategory=firstCategory secondCategory=secondCategory tagId=tagId}}
+{{/if}}
+
+{{plugin-outlet "bread-crumbs-right" tagName="li"}}
+
+<div class='clear'></div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Yfile-digest://app/assets/javascripts/discourse/templates/components/bread-crumbs.hbs;TTF:charsetI"
+utf-8;F:digest"%‘êòk	hîÿnë“¨ÇÓ%+LjÄŸ0HmuÈ±ê:lengthiĞ:dependencies_digest"%O€m•öU,Ù¤gôò{ƒ«mbsY\ûàÚ{ÜŠ::idI"E3938796a806941f6b37bc4d2120a39ec3908ae1541b1f5b7e1b6ffa505f4f7c6;F:
+mtimel+°cX

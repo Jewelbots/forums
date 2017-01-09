@@ -1,0 +1,13 @@
+{:uriI"Æfile://app/assets/javascripts/discourse/templates/composer/similar-topics.hbs?type=text/x-ember-handlebars&id=b4a339dc28b148678a4bb1865d7d81ef2a1ebeedba0f8ef027c6ae602eaa38c5:ET:load_pathI"app/assets/javascripts;T:filenameI"Kapp/assets/javascripts/discourse/templates/composer/similar-topics.hbs;T:	nameI"0discourse/templates/composer/similar-topics;T:logical_pathI"4discourse/templates/composer/similar-topics.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"Ï<a href {{action "closeMessage"}} class='close'>{{fa-icon "close"}}</a>
+<h3>{{i18n 'composer.similar_topics'}}</h3>
+
+<ul class='topics'>
+  {{mount-widget widget="search-result-topic" args=(as-hash results=message.similarTopics)}}
+</ul>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Yfile-digest://app/assets/javascripts/discourse/templates/composer/similar-topics.hbs;TTF:charsetI"
+utf-8;F:digest"%$∞‡íãvø⁄ Äÿß¡ÂsŸ´Â&TÄÔƒZü&ï:lengthiÏ:dependencies_digest"%{
+ˆ›MÏLífÏ>ÕÂ«ˇ¢Ÿ¯ÜÑ
+€ÕÅÑGΩ∑ı:idI"Eb4a339dc28b148678a4bb1865d7d81ef2a1ebeedba0f8ef027c6ae602eaa38c5;F:
+mtimel+∞cX

@@ -1,0 +1,30 @@
+{:uriI"Øfile://app/assets/javascripts/discourse/templates/user-selector-autocomplete.raw.hbs?type=text/x-handlebars&id=fbceca92f9cdf48033b32eba3baa2cc683d404fd48d3aac33377cadb68b47835:ET:load_pathI"app/assets/javascripts;T:filenameI"Rapp/assets/javascripts/discourse/templates/user-selector-autocomplete.raw.hbs;T:	nameI"3discourse/templates/user-selector-autocomplete;T:logical_pathI";discourse/templates/user-selector-autocomplete.raw.hbs;T:content_typeI"text/x-handlebars;T:sourceI"Ä<div class='autocomplete'>
+  <ul>
+    {{#each options.users as |user|}}
+      <li>
+        <a href>
+          {{avatar user imageSize="tiny"}}
+          <span class='username'>{{user.username}}</span>
+          <span class='name'>{{user.name}}</span>
+        </a>
+      </li>
+    {{/each}}
+    {{#if options.groups}}
+      {{#each options.groups as |group|}}
+        <li>
+          <a href>
+            <i class='fa fa-users'></i>
+            <span class='username'>{{group.name}}</span>
+            <span class='name'>{{max-usernames group.usernames max="3"}}</span>
+          </a>
+        </li>
+      {{/each}}
+    {{/if}}
+  </ul>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Bprocessors:type=text/x-handlebars&file_type=text/x-handlebars;TTI"`file-digest://app/assets/javascripts/discourse/templates/user-selector-autocomplete.raw.hbs;TTF:charsetI"
+utf-8;F:digest"%ÇÒΩè,uªÃ
+îÊ£Ò≥·Ò∆0œwÛË‹4πÂ?J¬ë:lengthiÄ:dependencies_digest"%n‡hso}H-rz˚˝Ex8?t*L Q)≥æ∑:idI"Efbceca92f9cdf48033b32eba3baa2cc683d404fd48d3aac33377cadb68b47835;F:
+mtimel+∞cX

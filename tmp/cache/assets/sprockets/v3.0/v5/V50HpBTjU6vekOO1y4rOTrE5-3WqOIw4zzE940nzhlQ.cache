@@ -1,0 +1,10 @@
+{:uriI"¯file://app/assets/javascripts/discourse/templates/components/disabled-icon.hbs?type=text/x-ember-handlebars&id=3f8926d980fc82c08bb578458f6c17861bea4d10ceb739c0ad61f55872527e4c:ET:load_pathI"app/assets/javascripts;T:filenameI"Lapp/assets/javascripts/discourse/templates/components/disabled-icon.hbs;T:	nameI"1discourse/templates/components/disabled-icon;T:logical_pathI"5discourse/templates/components/disabled-icon.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"l{{fa-icon icon modifier="stack-2x"}}
+
+{{#if disabled}}
+  {{fa-icon "ban" modifier="stack-2x"}}
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Zfile-digest://app/assets/javascripts/discourse/templates/components/disabled-icon.hbs;TTF:charsetI"
+utf-8;F:digest"%Ø¤"õ={'	Ëªzmµµ´îH»èĞ¾¾3¢q°@Dù:lengthil:dependencies_digest"%ó‰×UÕTCV‘oìS—ìØ(QfXhI“6+iÅ:idI"E3f8926d980fc82c08bb578458f6c17861bea4d10ceb739c0ad61f55872527e4c;F:
+mtimel+°cX

@@ -1,0 +1,13 @@
+{:uriI"¦file://app/assets/javascripts/discourse/templates/modal/raw_email.hbs?type=text/x-ember-handlebars&id=1f7bb59a5dbdb26d4a0f51a889055070d233048a652082f8668ed362c2c1dc01:ET:load_pathI"app/assets/javascripts;T:filenameI"Capp/assets/javascripts/discourse/templates/modal/raw_email.hbs;T:	nameI"(discourse/templates/modal/raw_email;T:logical_pathI",discourse/templates/modal/raw_email.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"ª<div class="modal-body">
+  {{#if rawEmail}}
+    {{textarea value=rawEmail class="raw-email-textarea"}}
+  {{else}}
+    {{i18n 'raw_email.not_available'}}
+  {{/if}}
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Qfile-digest://app/assets/javascripts/discourse/templates/modal/raw_email.hbs;TTF:charsetI"
+utf-8;F:digest"%Ä$ÆyîxNh²µö‹„U0
+<ô?hÓm“	X1šÙU:lengthiª:dependencies_digest"%-<¹Z¨€ˆï‹&r°–Lû¥W"Æ€µ£å½‹¸:idI"E1f7bb59a5dbdb26d4a0f51a889055070d233048a652082f8668ed362c2c1dc01;F:
+mtimel+°cX

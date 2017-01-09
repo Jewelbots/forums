@@ -1,0 +1,11 @@
+{:uriI"¹file://app/assets/javascripts/admin/templates/components/admin-report-per-day-counts.hbs?type=text/x-ember-handlebars&id=5446c5560910402c3499e512a60b6bad0eb4e845ba65320f688cdf84febe0536:ET:load_pathI"app/assets/javascripts;T:filenameI"Vapp/assets/javascripts/admin/templates/components/admin-report-per-day-counts.hbs;T:	nameI";admin/templates/components/admin-report-per-day-counts;T:logical_pathI"?admin/templates/components/admin-report-per-day-counts.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"(<td class="title"><a href={{report.reportUrl}}>{{report.title}}</a></td>
+<td class="value">{{report.todayCount}}</td>
+<td class="value">{{report.yesterdayCount}}</td>
+<td class="value">{{report.sevenDaysAgoCount}}</td>
+<td class="value">{{report.thirtyDaysAgoCount}}</td>
+<td class="value"></td>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"dfile-digest://app/assets/javascripts/admin/templates/components/admin-report-per-day-counts.hbs;TTF:charsetI"
+utf-8;F:digest"%–êİ0•€åğ¢§¸ŞpPÚ=CS<`¹ãq¹¨-D6:lengthi(:dependencies_digest"%ûqKI2×(,Ù!¿™}ë¼@Ø?pÂ<J†"Tçvén:idI"E5446c5560910402c3499e512a60b6bad0eb4e845ba65320f688cdf84febe0536;F:
+mtimel+°cX

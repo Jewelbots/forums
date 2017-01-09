@@ -1,0 +1,24 @@
+{:uriI"file://app/assets/javascripts/admin/templates/groups-bulk.hbs?type=text/x-ember-handlebars&id=9ae9bf2a78adc381fc308ae885c0372e7acec2fb0f9e959669b322672e7bd2a4:ET:load_pathI"app/assets/javascripts;T:filenameI";app/assets/javascripts/admin/templates/groups-bulk.hbs;T:	nameI" admin/templates/groups-bulk;T:logical_pathI"$admin/templates/groups-bulk.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"ú<div class='groups-bulk'>
+  <p>{{i18n "admin.groups.bulk_paste"}}</p>
+
+  <div class='control'>
+    {{textarea value=users class="paste-users"}}
+  </div>
+
+  <div class='control'>
+    {{combo-box content=groups valueAttribute="id" value=groupId none="admin.groups.bulk_select"}}
+  </div>
+
+  <div class='control'>
+    {{d-button disabled=buttonDisabled
+               class="btn-primary"
+               action="addToGroup"
+               icon="plus"
+               label="admin.groups.bulk"}}
+  </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Ifile-digest://app/assets/javascripts/admin/templates/groups-bulk.hbs;TTF:charsetI"
+utf-8;F:digest"%™%io}¹6A‹’öCvQï•}ø9Odb7¶å¡O]…:lengthiú:dependencies_digest"%õı8(şa'Ë¢9ËWWlI+g6)›ù× cÍ}:idI"E9ae9bf2a78adc381fc308ae885c0372e7acec2fb0f9e959669b322672e7bd2a4;F:
+mtimel+°cX

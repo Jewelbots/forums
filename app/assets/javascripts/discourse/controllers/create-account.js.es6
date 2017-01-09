@@ -438,6 +438,11 @@ export default Ember.Controller.extend(ModalFunctionality, {
     // $("#stripe-checkout-btn").trigger( "click" );
   },
 
+  showCOPPA(){
+    $("[for*='new-account-email']").text('Parent\'s email');
+    $("#new-account-email").parent('td').parent('tr').next('tr').children('td:last').children('label').text("We're getting their permission so you can post!");
+    this.showSignup();
+  },
 
   stripeReturnCheck() {
     if ($(".stripe-button-el").prop('disabled') == true) {
@@ -489,7 +494,7 @@ export default Ember.Controller.extend(ModalFunctionality, {
           $('#error_birthday_msg').css('display', 'block');
           return false;
         } else if(age < 13) {
-          this.checkStripe();
+          this.showCOPPA();
         } else {
           this.showSignup();
         }
@@ -499,7 +504,7 @@ export default Ember.Controller.extend(ModalFunctionality, {
     createAccount() {
       //check ambassador fields
       if(this.isAmbassador){
-        if($('.user-fields').find('input:visible:text:first').val()==''){
+        if($('.user-fields').find('input:visible:text:first').val()=='' || $('.user-fields').find('input:text:eq(1)').val() == '' || $('.user-fields').find('input:text:eq(2)').val() == '' || $('.user-fields').find('input:text:eq(3)').val() == ''){
           $('#ambassador-validation').text('Please complete your address first!');
           return;
         }

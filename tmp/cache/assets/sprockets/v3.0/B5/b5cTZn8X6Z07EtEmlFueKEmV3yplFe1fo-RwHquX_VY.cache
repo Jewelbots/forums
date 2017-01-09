@@ -1,0 +1,32 @@
+{:uriI"œfile://app/assets/javascripts/discourse/templates/group.hbs?type=text/x-ember-handlebars&id=d603e29640f459c9beb7a8c6429736976265839345d699550da020b9ba23331c:ET:load_pathI"app/assets/javascripts;T:filenameI"9app/assets/javascripts/discourse/templates/group.hbs;T:	nameI"discourse/templates/group;T:logical_pathI""discourse/templates/group.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"Ô<div class="container user-table">
+  <div class="wrapper">
+  <section class='user-navigation'>
+    <ul class='action-list nav-stacked'>
+      {{#each getTabs as |tab|}}
+        <li class="{{if tab.active 'active'}}">
+          {{#link-to tab.location model title=tab.message}}
+            {{tab.message}}
+            {{#if tab.count}}<span class='count'>({{tab.count}})</span>{{/if}}
+          {{/link-to}}
+        </li>
+      {{/each}}
+    </ul>
+  </section>
+
+  <section class='user-main'>
+    <section class='user-right groups'>
+      <section class='about group'>
+        <div class='details'>
+          <h1>{{model.name}}</h1>
+        </div>
+      </section>
+      {{outlet}}
+    </section>
+  </section>
+  </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Gfile-digest://app/assets/javascripts/discourse/templates/group.hbs;TTF:charsetI"
+utf-8;F:digest"%§jÏ2H¹©[|ÒLfûUç¬öuo+Üf_&ô†ºð³:lengthiÔ:dependencies_digest"%`D$ Úùlš­mB·Í‚xÜÇî‡·`JBp;i¤; ¡:idI"Ed603e29640f459c9beb7a8c6429736976265839345d699550da020b9ba23331c;F:
+mtimel+°cX

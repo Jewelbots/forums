@@ -1,0 +1,26 @@
+I"Brequire('discourse/lib/raw-handlebars').template({"1":function(container,depth0,helpers,partials,data) {
+    return "      <li>\n        <a href>\n          "
+    + container.escapeExpression((helpers.avatar || (depth0 && depth0.avatar) || helpers.helperMissing).call(depth0 != null ? depth0 : {},"user",{"name":"avatar","hash":{"imageSize":"tiny"},"hashTypes":{"imageSize":"StringLiteral"},"hashContexts":{"imageSize":depth0},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "\n          <span class='username'>"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"user.username",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "</span>\n          <span class='name'>"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"user.name",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "</span>\n        </a>\n      </li>\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},"group","in","options.groups",{"name":"each","hash":{},"hashTypes":{},"hashContexts":{},"fn":container.program(4, data, 0),"inverse":container.noop,"types":["PathExpression","CommentStatement","PathExpression"],"contexts":[depth0,depth0,depth0],"data":data})) != null ? stack1 : "");
+},"4":function(container,depth0,helpers,partials,data) {
+    return "        <li>\n          <a href>\n            <i class='fa fa-users'></i>\n            <span class='username'>"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"group.name",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "</span>\n            <span class='name'>"
+    + container.escapeExpression((helpers["max-usernames"] || (depth0 && depth0["max-usernames"]) || helpers.helperMissing).call(depth0 != null ? depth0 : {},"group.usernames",{"name":"max-usernames","hash":{"max":"3"},"hashTypes":{"max":"StringLiteral"},"hashContexts":{"max":depth0},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "</span>\n          </a>\n        </li>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "<div class='autocomplete'>\n  <ul>\n"
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},"user","in","options.users",{"name":"each","hash":{},"hashTypes":{},"hashContexts":{},"fn":container.program(1, data, 0),"inverse":container.noop,"types":["PathExpression","CommentStatement","PathExpression"],"contexts":[depth0,depth0,depth0],"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},"options.groups",{"name":"if","hash":{},"hashTypes":{},"hashContexts":{},"fn":container.program(3, data, 0),"inverse":container.noop,"types":["PathExpression"],"contexts":[depth0],"data":data})) != null ? stack1 : "")
+    + "  </ul>\n</div>\n";
+},"useData":true});:ET

@@ -1,0 +1,12 @@
+{:uriI"´file://app/assets/javascripts/discourse/templates/user/preferences/_save-button.hbs?type=text/x-ember-handlebars&id=01011e31748cf81faa94806edfbb9e70efd4abe0c882bbcdd1705af1b48ada12:ET:load_pathI"app/assets/javascripts;T:filenameI"Qapp/assets/javascripts/discourse/templates/user/preferences/_save-button.hbs;T:	nameI"6discourse/templates/user/preferences/_save-button;T:logical_pathI":discourse/templates/user/preferences/_save-button.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"Ã{{#d-button action="save" disabled=model.isSaving class="btn btn-primary save-user"}}
+  {{saveButtonText}}
+{{/d-button}}
+
+{{#if saved}}
+  <span class='saved-user'>{{i18n 'saved'}}</span>
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"_file-digest://app/assets/javascripts/discourse/templates/user/preferences/_save-button.hbs;TTF:charsetI"
+utf-8;F:digest"%±*©•ú×'|Ae‰z©†â$*ÌŒØø.Î¡¨"¥nØ}>:lengthiÃ:dependencies_digest"%´[”•…—HÅp€£ÙhÕJ!ŞT}i5ÓÊX!|B—º:idI"E01011e31748cf81faa94806edfbb9e70efd4abe0c882bbcdd1705af1b48ada12;F:
+mtimel+°cX

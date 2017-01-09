@@ -1,0 +1,13 @@
+{:uriI"§file://app/assets/javascripts/admin/templates/components/admin-nav.hbs?type=text/x-ember-handlebars&id=fa1e7a87daee26ec18310a92736538c029ddcbf9c4afcc30bf6f9931ea8e68a1:ET:load_pathI"app/assets/javascripts;T:filenameI"Dapp/assets/javascripts/admin/templates/components/admin-nav.hbs;T:	nameI")admin/templates/components/admin-nav;T:logical_pathI"-admin/templates/components/admin-nav.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"}<div class='admin-controls'>
+  <div class='span15'>
+    <ul class="nav nav-pills">
+      {{yield}}
+    </ul>
+  </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Rfile-digest://app/assets/javascripts/admin/templates/components/admin-nav.hbs;TTF:charsetI"
+utf-8;F:digest"%®;vØ6‹UMy)îUd+ËË„ö-F¶}k0¯r][$:lengthi}:dependencies_digest"%.N-Ógá–O,ÜˆÃ|‰²
+Bª×y+ã”oÝ3–uÍ :idI"Efa1e7a87daee26ec18310a92736538c029ddcbf9c4afcc30bf6f9931ea8e68a1;F:
+mtimel+°cX

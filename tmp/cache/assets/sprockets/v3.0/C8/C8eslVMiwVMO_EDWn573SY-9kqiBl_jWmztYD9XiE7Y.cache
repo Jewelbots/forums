@@ -1,0 +1,10 @@
+{:uriI"¬file://app/assets/javascripts/admin/templates/components/permalink-form.hbs?type=text/x-ember-handlebars&id=35eec96abcbd939fd05fd8652bef3736dd6c14073c155c024acc88d97bf5e34b:ET:load_pathI"app/assets/javascripts;T:filenameI"Iapp/assets/javascripts/admin/templates/components/permalink-form.hbs;T:	nameI".admin/templates/components/permalink-form;T:logical_pathI"2admin/templates/components/permalink-form.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"<b>{{i18n 'admin.permalink.form.label'}}</b>
+{{text-field value=url disabled=formSubmitted class="permalink-url" placeholderKey="admin.permalink.url" autocorrect="off" autocapitalize="off"}}
+{{combo-box content=permalinkTypes value=permalinkType}}
+{{text-field value=permalink_type_value disabled=formSubmitted class="external-url" placeholderKey=permalinkTypePlaceholder autocorrect="off" autocapitalize="off"}}
+<button class="btn" {{action "submit" target="view"}} disabled={{formSubmitted}}>{{i18n 'admin.permalink.form.add'}}</button>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Wfile-digest://app/assets/javascripts/admin/templates/components/permalink-form.hbs;TTF:charsetI"
+utf-8;F:digest"%(·$eŠZ¥¾ºò,GÂ½7¤£,}–ò'VO~I|_š:lengthi:dependencies_digest"%n5§¢)FJ7¢€W‚ÃUí³˜…×}ÂGâ5Bá{Ç:idI"E35eec96abcbd939fd05fd8652bef3736dd6c14073c155c024acc88d97bf5e34b;F:
+mtimel+°cX

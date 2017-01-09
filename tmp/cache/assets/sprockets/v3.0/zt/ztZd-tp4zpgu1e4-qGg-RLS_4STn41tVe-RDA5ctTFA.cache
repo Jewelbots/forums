@@ -1,0 +1,18 @@
+{:uriI"¡file://app/assets/javascripts/discourse/templates/rename-tag.hbs?type=text/x-ember-handlebars&id=8c5749c474bc0f1284dc0adeabbe48f9a192af811fefb7f0e163f80efda71020:ET:load_pathI"app/assets/javascripts;T:filenameI">app/assets/javascripts/discourse/templates/rename-tag.hbs;T:	nameI"#discourse/templates/rename-tag;T:logical_pathI"'discourse/templates/rename-tag.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"d<div class="modal-body">
+  <label>
+    <p>{{i18n "tagging.rename_instructions"}}</p>
+    {{input value=buffered.id maxlength=siteSettings.max_tag_length}}
+  </label>
+</div>
+
+<div class="modal-footer">
+  {{d-button class="btn-primary"
+             action="performRename"
+             label="tagging.rename_tag"
+             disabled=renameDisabled}}
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Lfile-digest://app/assets/javascripts/discourse/templates/rename-tag.hbs;TTF:charsetI"
+utf-8;F:digest"%nnôm ôý©ŒÒ¼d'=ëæ7ˆÊFÌá˜<Ï°8åL:lengthid:dependencies_digest"%¶á=l0âÛo0J.ûM²c&Éè€,‘b}~3Èo(°:idI"E8c5749c474bc0f1284dc0adeabbe48f9a192af811fefb7f0e163f80efda71020;F:
+mtimel+°cX

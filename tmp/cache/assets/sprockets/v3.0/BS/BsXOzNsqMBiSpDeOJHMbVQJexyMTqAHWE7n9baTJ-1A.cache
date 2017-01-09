@@ -1,0 +1,27 @@
+{:uriI"†file://app/assets/javascripts/discourse/templates/exception.hbs?type=text/x-ember-handlebars&id=7c5020a7f00f4979373c81aafb3f1b707c1b4b980ad75f8ea8e3545ffa225e33:ET:load_pathI"app/assets/javascripts;T:filenameI"=app/assets/javascripts/discourse/templates/exception.hbs;T:	nameI""discourse/templates/exception;T:logical_pathI"&discourse/templates/exception.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"¢<div class="container">
+  <div class="error-page">
+    <div class="face">:(</div>
+    <div class="reason">{{reason}}</div>
+    <div class="url">
+      {{i18n 'errors.prev_page'}} <a href={{requestUrl}} data-auto-route="true">{{requestUrl}}</a>
+    </div>
+    <div class="desc">
+      {{#if networkFixed}}
+        <i class="fa fa-check-circle"></i>
+      {{/if}}
+
+      {{desc}}
+    </div>
+    <div class="buttons">
+      {{#each enabledButtons as |buttonData|}}
+        {{d-button icon=buttonData.icon action=buttonData.action label=buttonData.key class=buttonData.classes}}
+      {{/each}}
+      {{conditional-loading-spinner condition=loading}}
+    </div>
+  </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Kfile-digest://app/assets/javascripts/discourse/templates/exception.hbs;TTF:charsetI"
+utf-8;F:digest"%Eñﬂ‡e©á⁄õµÓ√>∂ü,Cªùø|¿$W(:lengthi¢:dependencies_digest"%Ü’ç“ZëQŒ{" ÔÖ€§,?:ëºdÌÉ!-:idI"E7c5020a7f00f4979373c81aafb3f1b707c1b4b980ad75f8ea8e3545ffa225e33;F:
+mtimel+∞cX

@@ -1,0 +1,16 @@
+{:uriI"ªfile://app/assets/javascripts/discourse/templates/modal/not-activated.hbs?type=text/x-ember-handlebars&id=677dd6700eab15872f1c8b08c070b532e0e41449fbc8d10d36f5d9acc3d582e8:ET:load_pathI"app/assets/javascripts;T:filenameI"Gapp/assets/javascripts/discourse/templates/modal/not-activated.hbs;T:	nameI",discourse/templates/modal/not-activated;T:logical_pathI"0discourse/templates/modal/not-activated.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"™<div class="modal-body">
+  {{#if emailSent}}
+    {{{i18n 'login.sent_activation_email_again' currentEmail=currentEmail}}}
+  {{else}}
+    {{{i18n 'login.not_activated' sentTo=sentTo}}}
+    <a href {{action "sendActivationEmail"}}>{{i18n 'login.resend_activation_email'}}</a>
+  {{/if}}
+</div>
+<div class="modal-footer">
+  <button class='btn btn-primary' {{action "closeModal"}}>{{i18n 'close'}}</button>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Ufile-digest://app/assets/javascripts/discourse/templates/modal/not-activated.hbs;TTF:charsetI"
+utf-8;F:digest"%qP²·ÆéˆúöÎ>Z)Çàª!¯ÁQ#xÁ«©ê`+=:lengthi™:dependencies_digest"%‡¾/"§¹ûsSRà¦qôPŸ\N“‡n?¦@P:idI"E677dd6700eab15872f1c8b08c070b532e0e41449fbc8d10d36f5d9acc3d582e8;F:
+mtimel+°cX

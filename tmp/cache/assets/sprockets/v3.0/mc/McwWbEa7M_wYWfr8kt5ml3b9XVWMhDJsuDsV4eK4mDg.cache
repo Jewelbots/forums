@@ -1,0 +1,11 @@
+{:uriI"«file://app/assets/javascripts/discourse/templates/modal/option_boolean.hbs?type=text/x-ember-handlebars&id=e3641da9aaaed393e56ba4cdebace209523b051e77f1a2b87f797aea0cfd5578:ET:load_pathI"app/assets/javascripts;T:filenameI"Happ/assets/javascripts/discourse/templates/modal/option_boolean.hbs;T:	nameI"-discourse/templates/modal/option_boolean;T:logical_pathI"1discourse/templates/modal/option_boolean.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"_<label>
+  {{input type="checkbox" checked=checked}}
+  {{title}}
+</label>
+
+{{description}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Vfile-digest://app/assets/javascripts/discourse/templates/modal/option_boolean.hbs;TTF:charsetI"
+utf-8;F:digest"%4ßÕk‹SþãáU¡îô€ÙÏìœJHÛdÒ©ä^ï²[:lengthi_:dependencies_digest"%¤HKnòŒD$ýŠ¶Nì¡Zï›dWÑðþ®ÏoE+´º:idI"Ee3641da9aaaed393e56ba4cdebace209523b051e77f1a2b87f797aea0cfd5578;F:
+mtimel+°cX

@@ -1,0 +1,16 @@
+{:uriI"£file://app/assets/javascripts/discourse/templates/queued-posts.hbs?type=text/x-ember-handlebars&id=c59157d985950a587f097b2a2bb6a099d6640c864145ae65daeb4cbecf27b502:ET:load_pathI"app/assets/javascripts;T:filenameI"@app/assets/javascripts/discourse/templates/queued-posts.hbs;T:	nameI"%discourse/templates/queued-posts;T:logical_pathI")discourse/templates/queued-posts.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"b<div class='container'>
+  <div class='queued-posts'>
+    {{#each model as |post|}}
+      {{queued-post post=post currentlyEditing=editing removePost="removePost"}}
+    {{else}}
+      <p>{{i18n "queue.none"}}</p>
+    {{/each}}
+
+    {{d-button action="refresh" label="refresh" icon="refresh" disabled=model.refreshing id='refresh-queued'}}
+  </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Nfile-digest://app/assets/javascripts/discourse/templates/queued-posts.hbs;TTF:charsetI"
+utf-8;F:digest"%ò%zå+i9C‚ÈK+çãò\@Ü%†»(îÿç ãß3:lengthib:dependencies_digest"%ÃÖì–»Šµ£›Ig%ì=Â¹@ŸÚÓÜ77<eë:idI"Ec59157d985950a587f097b2a2bb6a099d6640c864145ae65daeb4cbecf27b502;F:
+mtimel+°cX

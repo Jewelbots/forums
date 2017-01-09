@@ -1,0 +1,21 @@
+I"¤require('discourse/lib/raw-handlebars').template({"1":function(container,depth0,helpers,partials,data) {
+    return "      <button class='btn bulk-select' title='"
+    + container.escapeExpression((helpers.i18n || (depth0 && depth0.i18n) || helpers.helperMissing).call(depth0 != null ? depth0 : {},"topics.bulk.toggle",{"name":"i18n","hash":{},"hashTypes":{},"hashContexts":{},"types":["StringLiteral"],"contexts":[depth0],"data":data}))
+    + "'><i class='fa fa-list'></i></button>\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    return "    <i class='"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"view.sortClass",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "'></i>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "<th data-sort-order='"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"order",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "' class='"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"view.className",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "'>"
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},"showBulkToggle",{"name":"if","hash":{},"hashTypes":{},"hashContexts":{},"fn":container.program(1, data, 0),"inverse":container.noop,"types":["PathExpression"],"contexts":[depth0],"data":data})) != null ? stack1 : "")
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"view.localizedName",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},"view.isSorting",{"name":"if","hash":{},"hashTypes":{},"hashContexts":{},"fn":container.program(3, data, 0),"inverse":container.noop,"types":["PathExpression"],"contexts":[depth0],"data":data})) != null ? stack1 : "")
+    + "</th>\n";
+},"useData":true});:ET

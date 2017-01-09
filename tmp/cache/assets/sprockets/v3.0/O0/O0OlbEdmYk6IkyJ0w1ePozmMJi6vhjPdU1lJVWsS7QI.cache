@@ -1,0 +1,39 @@
+{:uriI"™file://app/assets/javascripts/discourse/templates/navigation/category.hbs?type=text/x-ember-handlebars&id=b1ed90c063f88433c79a378a36a92f38beb26acef3d7073bde6be1c934e78964:ET:load_pathI"app/assets/javascripts;T:filenameI"Gapp/assets/javascripts/discourse/templates/navigation/category.hbs;T:	nameI",discourse/templates/navigation/category;T:logical_pathI"0discourse/templates/navigation/category.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"<section class='category-heading'>
+  {{#if category.logo_url}}
+    {{cdn-img src=category.logo_url class="category-logo"}}
+    {{#if category.description}}
+      <p>{{{category.description}}}</p>
+    {{/if}}
+  {{/if}}
+</section>
+
+<div class='category-navigation'>
+  {{bread-crumbs categories=categories
+                 category=category
+                 noSubcategories=noSubcategories
+                 hideSubcategories=showingSubcategoryList}}
+
+  {{navigation-bar navItems=navItems filterMode=filterMode}}
+
+  {{#if currentUser}}
+    {{category-notifications-button category=category}}
+  {{/if}}
+
+  {{#if canCreateTopic}}
+    {{d-button  id="create-topic"
+                class="btn-default"
+                action="createTopic"
+                icon="plus"
+                label="topic.create"
+                disabled=cannotCreateTopicOnCategory}}
+  {{/if}}
+
+  {{#if canEditCategory}}
+    {{d-button class="btn-default edit-category" action="editCategory" actionParam=category icon="wrench" label="category.edit_long"}}
+  {{/if}}
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Ufile-digest://app/assets/javascripts/discourse/templates/navigation/category.hbs;TTF:charsetI"
+utf-8;F:digest"%óæ9”‰ò(ÑãóñÌ∂n$æ,8Ïœ§ñcèZÓ‰ÿu»:lengthi:dependencies_digest"%PÉ[–óTNˇ∫˙\+M(Ù›á;Óâé”Ó9SâZçúÒŸ:idI"Eb1ed90c063f88433c79a378a36a92f38beb26acef3d7073bde6be1c934e78964;F:
+mtimel+∞cX

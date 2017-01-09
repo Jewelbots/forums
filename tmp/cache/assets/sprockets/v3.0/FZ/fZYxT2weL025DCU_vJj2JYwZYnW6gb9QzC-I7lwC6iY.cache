@@ -1,0 +1,33 @@
+{:uriI"≥file://app/assets/javascripts/admin/templates/logs/staff_action_logs_list_item.hbs?type=text/x-ember-handlebars&id=4b07d53c0ccc97080a0e5f2e477505418bd6f27b638617edcbad88ef77be3e97:ET:load_pathI"app/assets/javascripts;T:filenameI"Papp/assets/javascripts/admin/templates/logs/staff_action_logs_list_item.hbs;T:	nameI"5admin/templates/logs/staff_action_logs_list_item;T:logical_pathI"9admin/templates/logs/staff_action_logs_list_item.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI" <div class="col value first staff_user">
+  {{#link-to 'adminUser' acting_user}}{{avatar acting_user imageSize="tiny"}}{{/link-to}}
+  <a {{action "filterByStaffUser" acting_user}} class="btn btn-small">{{acting_user.username}}</a>
+</div>
+<div class="col value action">
+  <a {{action "filterByAction" this}} class="btn btn-small">{{actionName}}</a>
+</div>
+<div class="col value subject">
+  {{#if target_user}}
+    {{#link-to 'adminUser' target_user}}{{avatar target_user imageSize="tiny"}}{{/link-to}}
+    <a {{action "filterByTargetUser" target_user}} class="btn btn-small">{{target_user.username}}</a>
+  {{/if}}
+  {{#if subject}}
+    <a {{action "filterBySubject" subject}} title={{subject}}  class="btn btn-small">{{subject}}</a>
+  {{/if}}
+</div>
+<div class="col value created_at">{{age-with-tooltip created_at}}</div>
+<div class="col value details">
+  {{{formattedDetails}}}
+  {{#if useCustomModalForDetails}}
+    <a {{action "showCustomDetailsModal" this}}>{{i18n 'admin.logs.staff_actions.show'}}</a>
+  {{/if}}
+  {{#if useModalForDetails}}
+    <a {{action "showDetailsModal" this}}>{{i18n 'admin.logs.staff_actions.show'}}</a>
+  {{/if}}
+</div>
+<div class="col value context">{{context}}</div>
+<div class="clearfix"></div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"^file-digest://app/assets/javascripts/admin/templates/logs/staff_action_logs_list_item.hbs;TTF:charsetI"
+utf-8;F:digest"%≤∫å~©Œs…)¶}'mﬁ◊$=	2?…YÇ¶û¸:lengthi :dependencies_digest"%ÿã;O;{Èø∫á±ÈıÑ‹œïÎ÷I>b#ËË≥®äÖOù:idI"E4b07d53c0ccc97080a0e5f2e477505418bd6f27b638617edcbad88ef77be3e97;F:
+mtimel+∞cX

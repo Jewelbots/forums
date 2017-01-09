@@ -1,0 +1,6 @@
+{:uriI"³file://app/assets/javascripts/discourse/templates/components/edit-category-tab.hbs?type=text/x-ember-handlebars&id=3c3d0d4cd150c294ca99f8be9d80360a8e88122748dfd5f659ed6f0e3eeb204b:ET:load_pathI"app/assets/javascripts;T:filenameI"Papp/assets/javascripts/discourse/templates/components/edit-category-tab.hbs;T:	nameI"5discourse/templates/components/edit-category-tab;T:logical_pathI"9discourse/templates/components/edit-category-tab.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"/<a href {{action "select"}}>{{title}}</a>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"^file-digest://app/assets/javascripts/discourse/templates/components/edit-category-tab.hbs;TTF:charsetI"
+utf-8;F:digest"%ìÍŸåŸâb.ÇôD@qÜ‡æC!¬ä†ÙÃÇÅ²€:lengthi/:dependencies_digest"%u!¾¨èEs–ï¯—A“XÔÕÆA@P‘ÕrÖxÓ80oV:idI"E3c3d0d4cd150c294ca99f8be9d80360a8e88122748dfd5f659ed6f0e3eeb204b;F:
+mtimel+°cX

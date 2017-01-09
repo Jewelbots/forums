@@ -1,0 +1,32 @@
+{:uriI"file://app/assets/javascripts/admin/templates/email_index.hbs?type=text/x-ember-handlebars&id=6dca5fe4968562413b6be2c20808269b768baa4989b43ba7bc75c9866111df86:ET:load_pathI"app/assets/javascripts;T:filenameI";app/assets/javascripts/admin/templates/email_index.hbs;T:	nameI" admin/templates/email_index;T:logical_pathI"$admin/templates/email_index.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"=<table class="table">
+  <tr>
+    <th>{{i18n 'admin.email.delivery_method'}}</th>
+    <td>{{delivery_method}}</td>
+  </tr>
+
+  {{#each model.settings as |s|}}
+    <tr>
+      <th style='width: 25%'>{{s.name}}</th>
+      <td>{{s.value}}</td>
+    </tr>
+  {{/each}}
+</table>
+
+<div class='admin-controls'>
+  {{#if sendingEmail}}
+  <div class='span15 controls'>{{i18n 'admin.email.sending_test'}}</div>
+  {{else}}
+  <div class='controls'>
+    {{text-field value=testEmailAddress placeholderKey="admin.email.test_email_address"}}
+  </div>
+  <div class='span10 controls'>
+    <button class='btn btn-primary' {{action "sendTestEmail"}} disabled={{sendTestEmailDisabled}}>{{i18n 'admin.email.send_test'}}</button>
+    {{#if sentTestEmail}}<span class='result-message'>{{i18n 'admin.email.sent_test'}}</span>{{/if}}
+  </div>
+  {{/if}}
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Ifile-digest://app/assets/javascripts/admin/templates/email_index.hbs;TTF:charsetI"
+utf-8;F:digest"%vKù76ìd m¦?"+3AG¸”hÀÍÍçÒâ:lengthi=:dependencies_digest"%¿#XÌäl²xëØ›³ü¿EZõ¸ãƒ±ˆU;ãÎŸõç:idI"E6dca5fe4968562413b6be2c20808269b768baa4989b43ba7bc75c9866111df86;F:
+mtimel+°cX

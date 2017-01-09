@@ -1,0 +1,22 @@
+{:uriI"Øfile://app/assets/javascripts/discourse/templates/user/notifications-index.hbs?type=text/x-ember-handlebars&id=144c4942ec969a9f45d25785b4a959fbfdcbeb10d180668b1b876ea7a9909586:ET:load_pathI"app/assets/javascripts;T:filenameI"Lapp/assets/javascripts/discourse/templates/user/notifications-index.hbs;T:	nameI"1discourse/templates/user/notifications-index;T:logical_pathI"5discourse/templates/user/notifications-index.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"õ{{#if model.error}}
+  <div class="item error">
+    {{#if model.forbidden}}
+      {{i18n 'errors.reasons.forbidden'}}
+    {{else}}
+      {{i18n 'errors.desc.unknown'}}
+    {{/if}}
+  </div>
+{{/if}}
+
+{{#if hasNotifications}}
+  {{user-notifications-large notifications=model}}
+  {{conditional-loading-spinner condition=loading}}
+{{else}}
+  <div class='alert alert-info'>{{i18n 'notifications.empty'}}</div>
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Zfile-digest://app/assets/javascripts/discourse/templates/user/notifications-index.hbs;TTF:charsetI"
+utf-8;F:digest"%Sâvä?∑¯6õ›$ä2?Om!%ÅŒa¸ñ<¢±x:lengthiõ:dependencies_digest"%¶1
+!¿qbõv-`K∑ß¶∞	_)ârLπ≠\+›:idI"E144c4942ec969a9f45d25785b4a959fbfdcbeb10d180668b1b876ea7a9909586;F:
+mtimel+∞cX

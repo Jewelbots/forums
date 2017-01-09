@@ -1,0 +1,14 @@
+{:uriI"¶file://app/assets/javascripts/discourse/templates/components/edit-category-images.hbs?type=text/x-ember-handlebars&id=7eed88a06cf03e8da28a8aeedcd4e27536d3a989a0c41a2bafc1d1ee5ef9a78d:ET:load_pathI"app/assets/javascripts;T:filenameI"Sapp/assets/javascripts/discourse/templates/components/edit-category-images.hbs;T:	nameI"8discourse/templates/components/edit-category-images;T:logical_pathI"<discourse/templates/components/edit-category-images.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"O<section class='field'>
+  <label>{{i18n 'category.logo'}}</label>
+  {{image-uploader imageUrl=category.logo_url type="category_logo" class="no-repeat"}}
+</section>
+
+<section class='field'>
+  <label>{{i18n 'category.background_image'}}</label>
+  {{image-uploader imageUrl=category.background_url type="category_background"}}
+</section>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"afile-digest://app/assets/javascripts/discourse/templates/components/edit-category-images.hbs;TTF:charsetI"
+utf-8;F:digest"%Yp9ô;tÍÆz”õC¯V\{»!îæø·4™M„:lengthiO:dependencies_digest"%I¥µõgƒÚhUÅL—¢_G6ä~„°`ù¤÷‚a:idI"E7eed88a06cf03e8da28a8aeedcd4e27536d3a989a0c41a2bafc1d1ee5ef9a78d;F:
+mtimel+°cX

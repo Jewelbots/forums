@@ -1,0 +1,12 @@
+{:uriI"°file://app/assets/javascripts/discourse/templates/components/toggle-deleted.hbs?type=text/x-ember-handlebars&id=dc11853f59bd9cbe68f9ab1d8936a22bcdd5c7417cd6e1cf40204bd71cf7aa2b:ET:load_pathI"app/assets/javascripts;T:filenameI"Mapp/assets/javascripts/discourse/templates/components/toggle-deleted.hbs;T:	nameI"2discourse/templates/components/toggle-deleted;T:logical_pathI"6discourse/templates/components/toggle-deleted.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"m{{#if postStream.show_deleted}}
+  <p>{{i18n 'deleted_filter.disabled_description'}}</p>
+  <button class='btn btn-danger' {{action "toggleDeleted"}}>{{i18n 'deleted_filter.enable'}}</button>
+{{else}}
+  <p>{{i18n 'deleted_filter.enabled_description'}}</p>
+  <button class='btn btn-danger' {{action "toggleDeleted"}}>{{i18n 'deleted_filter.disable'}}</button>
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"[file-digest://app/assets/javascripts/discourse/templates/components/toggle-deleted.hbs;TTF:charsetI"
+utf-8;F:digest"%¨û0»(!•o¬‘$F«•µ/X<×wlh™KUC:lengthim:dependencies_digest"%ŸÀ»[Å§¢v:â”˜ÍþïMf=v{Àù‡Ñ#+@:idI"Edc11853f59bd9cbe68f9ab1d8936a22bcdd5c7417cd6e1cf40204bd71cf7aa2b;F:
+mtimel+°cX

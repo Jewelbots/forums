@@ -1,0 +1,15 @@
+{:uriI"±file://app/assets/javascripts/discourse/templates/components/avatar-uploader.hbs?type=text/x-ember-handlebars&id=59119d87fafcb0bd4bce2e0348f0c024848456932046a6a289492f2d9a4c3fb3:ET:load_pathI"app/assets/javascripts;T:filenameI"Napp/assets/javascripts/discourse/templates/components/avatar-uploader.hbs;T:	nameI"3discourse/templates/components/avatar-uploader;T:logical_pathI"7discourse/templates/components/avatar-uploader.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"à<label class="btn" disabled={{uploading}} title="{{i18n 'user.change_avatar.upload_title'}}">
+  {{fa-icon "picture-o"}}&nbsp;{{uploadButtonText}}
+  <input disabled={{uploading}} type="file" accept="image/*" style="visibility: hidden; position: absolute;" />
+</label>
+{{#if uploading}}
+  <span>{{i18n 'upload_selector.uploading'}} {{uploadProgress}}%</span>
+{{/if}}
+{{#if imageIsNotASquare}}
+  <div class="warning">{{i18n 'user.change_avatar.image_is_not_a_square'}}</div>
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"\file-digest://app/assets/javascripts/discourse/templates/components/avatar-uploader.hbs;TTF:charsetI"
+utf-8;F:digest"%`¥–…‹RÅÓ 9`bu³óâ+béŒ³Ö]²Ì$÷d_-:lengthià:dependencies_digest"%^TÆwP|}µ¸[¦/v77ßy•ğ«º+b»ÎHMÀB¦:idI"E59119d87fafcb0bd4bce2e0348f0c024848456932046a6a289492f2d9a4c3fb3;F:
+mtimel+°cX

@@ -1,0 +1,12 @@
+{:uriI"±file://app/assets/javascripts/discourse/templates/modal/bulk_actions_buttons.hbs?type=text/x-ember-handlebars&id=e27277c7538d0b316b2a8e9896046ca8f2eed249dc47c62e3ab62cb059bb6339:ET:load_pathI"app/assets/javascripts;T:filenameI"Napp/assets/javascripts/discourse/templates/modal/bulk_actions_buttons.hbs;T:	nameI"3discourse/templates/modal/bulk_actions_buttons;T:logical_pathI"7discourse/templates/modal/bulk_actions_buttons.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"œ{{#each buttonRows as |row|}}
+  <p>
+    {{#each row as |button|}}
+      {{d-button action=button.action label=button.label}}
+    {{/each}}
+  </p>
+{{/each}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"\file-digest://app/assets/javascripts/discourse/templates/modal/bulk_actions_buttons.hbs;TTF:charsetI"
+utf-8;F:digest"%$*Þ¥Á\Û¿Í@ÓÀtÖJ5”!q=;ØµC¦ûE‹M:lengthiœ:dependencies_digest"%ÿNÑ\gªÕOóö†sÝùû£ƒHœ~S­_N…Ã:idI"Ee27277c7538d0b316b2a8e9896046ca8f2eed249dc47c62e3ab62cb059bb6339;F:
+mtimel+°cX

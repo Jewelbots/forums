@@ -1,0 +1,40 @@
+{:uriI"¢file://app/assets/javascripts/discourse/templates/emoji-toolbar.raw.hbs?type=text/x-handlebars&id=fd2b41d1a2cafe5ac9dfa7eec50877c115aa91df38d1238d2156a7b4847534d6:ET:load_pathI"app/assets/javascripts;T:filenameI"Eapp/assets/javascripts/discourse/templates/emoji-toolbar.raw.hbs;T:	nameI"&discourse/templates/emoji-toolbar;T:logical_pathI".discourse/templates/emoji-toolbar.raw.hbs;T:content_typeI"text/x-handlebars;T:sourceI"‰<div class='emoji-modal {{modalClass}}'>
+  <ul class='toolbar'>
+    {{#each toolbarItems as |item|}}<li><a title='{{item.title}}' {{#if item.selected}}class='selected'{{/if}} data-group-id='{{item.groupId}}'><img src='{{item.src}}' class='emoji'></a></li>{{/each}}
+  </ul>
+  <div class='emoji-table-wrapper'>
+  <table class='emoji-page'>
+    {{#each rows as |row|}}
+      <tr>
+        {{#each row as |item|}}
+          <td><a title='{{item.title}}'><img src='{{item.src}}' class='emoji'></a></td>
+        {{/each}}
+      </tr>
+    {{/each}}
+  </table>
+  </div>
+
+  <div class='info'></div>
+  <div class='nav'>
+    <span class='prev'>
+      {{#if prevDisabled}}
+        {{fa-icon "fast-backward"}}
+      {{else}}
+        <a>{{fa-icon "fast-backward"}}</a>
+      {{/if}}
+    </span>
+    <span class='next'>
+      {{#if nextDisabled}}
+        {{fa-icon "fast-forward"}}
+      {{else}}
+        <a>{{fa-icon "fast-forward"}}</a>
+      {{/if}}
+    </span>
+  </div>
+  <div class='clearfix'></div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Bprocessors:type=text/x-handlebars&file_type=text/x-handlebars;TTI"Sfile-digest://app/assets/javascripts/discourse/templates/emoji-toolbar.raw.hbs;TTF:charsetI"
+utf-8;F:digest"%‚≈NÒÂ:SÌ'':mn«q˙djä˝êïŒπÖ:lengthi‰:dependencies_digest"%:√Ú2h®)ß3Ù»wˇæ;Ω€s[[ü3Êmπ˝Òˆ:idI"Efd2b41d1a2cafe5ac9dfa7eec50877c115aa91df38d1238d2156a7b4847534d6;F:
+mtimel+∞cX

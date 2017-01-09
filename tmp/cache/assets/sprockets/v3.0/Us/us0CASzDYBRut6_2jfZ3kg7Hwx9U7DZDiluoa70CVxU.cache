@@ -1,0 +1,25 @@
+{:uriI"½file://app/assets/javascripts/discourse/templates/components/desktop-notification-config.hbs?type=text/x-ember-handlebars&id=60d0608c460e8a7052927ef7de879613e8c35bb9ee6152451a81021e6c457666:ET:load_pathI"app/assets/javascripts;T:filenameI"Zapp/assets/javascripts/discourse/templates/components/desktop-notification-config.hbs;T:	nameI"?discourse/templates/components/desktop-notification-config;T:logical_pathI"Cdiscourse/templates/components/desktop-notification-config.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"m
+{{#if isNotSupported}}
+  {{d-button icon="bell-slash" label="user.desktop_notifications.not_supported" disabled="true"}}
+{{/if}}
+{{#if isDefaultPermission}}
+  {{d-button icon="bell-slash" label="user.desktop_notifications.perm_default" action="requestPermission"}}
+{{/if}}
+{{#if isDeniedPermission}}
+  {{d-button icon="bell-slash" label="user.desktop_notifications.perm_denied_btn" action="recheckPermission" disabled='true'}}
+  {{i18n "user.desktop_notifications.perm_denied_expl"}}
+{{/if}}
+{{#if isGrantedPermission}}
+  {{#if isEnabled}}
+    {{d-button icon="bell-slash-o" label="user.desktop_notifications.disable" action="turnoff"}}
+    {{i18n "user.desktop_notifications.currently_enabled"}}
+  {{else}}
+    {{d-button icon="bell-o" label="user.desktop_notifications.enable" action="turnon"}}
+    {{i18n "user.desktop_notifications.currently_disabled"}}
+  {{/if}}
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"hfile-digest://app/assets/javascripts/discourse/templates/components/desktop-notification-config.hbs;TTF:charsetI"
+utf-8;F:digest"%‡#Ïo?höœƒ]Â6Ÿ7ûP†>p.xª~Uı€‘Ù:ú:lengthim:dependencies_digest"%ëKÓÚö!sI`à “™¦x wsZÅi¢2|[¸eº:idI"E60d0608c460e8a7052927ef7de879613e8c35bb9ee6152451a81021e6c457666;F:
+mtimel+°cX

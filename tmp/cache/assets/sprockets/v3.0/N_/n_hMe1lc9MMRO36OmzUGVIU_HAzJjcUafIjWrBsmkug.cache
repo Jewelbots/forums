@@ -1,0 +1,7 @@
+{:uriI"¯file://app/assets/javascripts/discourse/templates/composer/group-mentioned.hbs?type=text/x-ember-handlebars&id=2d0dbfee9d17f4aba6b6e9eb22cec8e48c4e354845a2c5566b018278ddd5f164:ET:load_pathI"app/assets/javascripts;T:filenameI"Lapp/assets/javascripts/discourse/templates/composer/group-mentioned.hbs;T:	nameI"1discourse/templates/composer/group-mentioned;T:logical_pathI"5discourse/templates/composer/group-mentioned.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"`<a href {{action "closeMessage"}} class='close'>{{fa-icon "close"}}</a>
+{{{message.body}}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Zfile-digest://app/assets/javascripts/discourse/templates/composer/group-mentioned.hbs;TTF:charsetI"
+utf-8;F:digest"%ÙÁtŸ!áf˜“%J‘«ò»lº7Ñ¶ñELŠï±:lengthi`:dependencies_digest"% ü°Ûd4î°Ğ[n”´í°=èeş'V]VI«`Rı¯:idI"E2d0dbfee9d17f4aba6b6e9eb22cec8e48c4e354845a2c5566b018278ddd5f164;F:
+mtimel+°cX

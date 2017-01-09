@@ -1,0 +1,31 @@
+{:uriI"œfile://app/assets/javascripts/discourse/templates/share.hbs?type=text/x-ember-handlebars&id=73b707653b380ebf56354190c2e3a9d87f609f6efd3e77b4f34e39722c699f69:ET:load_pathI"app/assets/javascripts;T:filenameI"9app/assets/javascripts/discourse/templates/share.hbs;T:	nameI"discourse/templates/share;T:logical_pathI""discourse/templates/share.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"û{{#if link}}
+  <h3>{{shareTitle}}</h3>
+
+  {{#if date}}
+    <span class="date">{{displayDate}}</span>
+  {{/if}}
+
+  <div>
+    <input type='text'>
+    <div class="share-for-touch"><div class="overflow-ellipsis"><a></a></div></div>
+  </div>
+
+  {{#each sources as |s|}}
+    {{share-source source=s title=title action="share"}}
+  {{/each}}
+
+  {{#if canReplyAsNewTopic}}
+    <div class='reply-as-new-topic'>
+      <a href {{action "replyAsNewTopic"}} aria-label='{{i18n 'post.reply_as_new_topic'}}' title='{{i18n 'post.reply_as_new_topic'}}'>{{fa-icon "plus"}}{{i18n 'topic.create'}}</a>
+    </div>
+  {{/if}}
+
+  <div class='link'>
+    <a href {{action "close"}} aria-label='{{i18n 'share.close'}}' title='{{i18n 'share.close'}}'>{{fa-icon "close"}}</a>
+  </div>
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Gfile-digest://app/assets/javascripts/discourse/templates/share.hbs;TTF:charsetI"
+utf-8;F:digest"%ÜŒgm/ÓúOîd/D™=9{yâB/}Wå;D¨¬P:lengthiû:dependencies_digest"%á)è‡˜$¼*ækké…s³]mo-DAÜ±pü‚6jx—:idI"E73b707653b380ebf56354190c2e3a9d87f609f6efd3e77b4f34e39722c699f69;F:
+mtimel+°cX

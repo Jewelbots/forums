@@ -1,0 +1,10 @@
+{:uriI"Ÿfile://app/assets/javascripts/discourse/templates/bulk-tag.hbs?type=text/x-ember-handlebars&id=b2f3e5cf0f54c850dfa3e94c7ed71d3c233b117f008a7831b89932321bbd0a99:ET:load_pathI"app/assets/javascripts;T:filenameI"<app/assets/javascripts/discourse/templates/bulk-tag.hbs;T:	nameI"!discourse/templates/bulk-tag;T:logical_pathI"%discourse/templates/bulk-tag.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"¥<p>{{i18n "topics.bulk.choose_new_tags"}}</p>
+
+<p>{{tag-chooser tags=tags}}</p>
+
+{{d-button action="changeTags" disabled=emptyTags label="topics.bulk.change_tags"}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Jfile-digest://app/assets/javascripts/discourse/templates/bulk-tag.hbs;TTF:charsetI"
+utf-8;F:digest"%-¡„|hÛ†üP–fÑL7¬£^‹¨# ×ˆ¤(:lengthi¥:dependencies_digest"%Œ¹V¢YmbÙÃıÄøÙ*PC)¸1êâ”¢şX¥Úõ[:idI"Eb2f3e5cf0f54c850dfa3e94c7ed71d3c233b117f008a7831b89932321bbd0a99;F:
+mtimel+°cX

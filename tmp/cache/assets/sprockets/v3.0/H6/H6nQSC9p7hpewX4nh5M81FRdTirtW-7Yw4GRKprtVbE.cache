@@ -1,0 +1,19 @@
+{:uriI"˜file://app/assets/javascripts/admin/templates/email.hbs?type=text/x-ember-handlebars&id=20498d5a7b0ff65c9ee161c57b2121ffb47eeb5276254cef9c284a24525aa128:ET:load_pathI"app/assets/javascripts;T:filenameI"5app/assets/javascripts/admin/templates/email.hbs;T:	nameI"admin/templates/email;T:logical_pathI"admin/templates/email.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"—{{#admin-nav}}
+  {{nav-item route='adminEmail.index' label='admin.email.settings'}}
+  {{nav-item route='adminEmail.previewDigest' label='admin.email.preview_digest'}}
+  {{nav-item route='adminCustomizeEmailTemplates' label='admin.email.templates'}}
+  {{nav-item route='adminEmail.sent' label='admin.email.sent'}}
+  {{nav-item route='adminEmail.skipped' label='admin.email.skipped'}}
+  {{nav-item route='adminEmail.bounced' label='admin.email.bounced'}}
+  {{nav-item route='adminEmail.received' label='admin.email.received'}}
+  {{nav-item route='adminEmail.rejected' label='admin.email.rejected'}}
+{{/admin-nav}}
+
+<div class="admin-container">
+  {{outlet}}
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Cfile-digest://app/assets/javascripts/admin/templates/email.hbs;TTF:charsetI"
+utf-8;F:digest"%1vc(ì£2ú×µ!¿pgÛÜ.¿ÓúËı9êv©¨:lengthi—:dependencies_digest"%1@$ßàn hÃEœfl³¨¨mÖ¢RŒ}„¶¸`:idI"E20498d5a7b0ff65c9ee161c57b2121ffb47eeb5276254cef9c284a24525aa128;F:
+mtimel+°cX

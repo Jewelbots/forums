@@ -1,0 +1,86 @@
+{:uriI"«file://app/assets/javascripts/discourse/templates/components/ip-lookup.hbs?type=text/x-ember-handlebars&id=59675d9f97b3d610d5509ca5e62958819c8183bb6c2788fb866a601aa45016c3:ET:load_pathI"app/assets/javascripts;T:filenameI"Happ/assets/javascripts/discourse/templates/components/ip-lookup.hbs;T:	nameI"-discourse/templates/components/ip-lookup;T:logical_pathI"1discourse/templates/components/ip-lookup.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"´
+{{#if ip}}
+  <button class="btn" {{action "lookup"}}>
+    {{fa-icon "globe"}}{{i18n 'admin.user.ip_lookup'}}
+  </button>
+{{/if}}
+{{#if show}}
+  <div class="location-box">
+    <a class="close pull-right" {{action "hide"}}>{{fa-icon "times"}}</a>
+    <h4>{{i18n 'ip_lookup.title'}}</h4>
+    <dl>
+      {{#if location}}
+        {{#if location.hostname}}
+          <dt>{{i18n 'ip_lookup.hostname'}}</dt>
+          <dd>{{location.hostname}}</dd>
+        {{/if}}
+
+        <dt>{{i18n 'ip_lookup.location'}}</dt>
+        <dd>
+          {{#if location.loc}}
+            <a href="https://maps.google.com/maps?q={{unbound location.loc}}" target="_blank">{{location.loc}}</a><br>
+            {{city}}
+          {{else}}
+            {{i18n 'ip_lookup.location_not_found'}}
+          {{/if}}
+        </dd>
+
+        {{#if location.org}}
+          <dt>{{i18n 'ip_lookup.organisation'}}</dt>
+          <dd>{{location.org}}</dd>
+        {{/if}}
+
+        {{#if location.phone}}
+          <dt>{{i18n 'ip_lookup.phone'}}</dt>
+          <dd>{{location.phone}}</dd>
+        {{/if}}
+      {{else}}
+        {{loading-spinner size="small"}}
+      {{/if}}
+
+      <dt>
+        {{i18n 'ip_lookup.other_accounts'}}
+        <strong>{{totalOthersWithSameIP}}</strong>
+        {{#if other_accounts.length}}
+          <button class="btn btn-danger pull-right" {{action "deleteOtherAccounts"}}>
+            {{fa-icon "warning"}}{{i18n 'ip_lookup.delete_other_accounts' count=otherAccountsToDelete}}
+          </button>
+        {{/if}}
+      </dt>
+      {{#conditional-loading-spinner size="small" condition=otherAccountsLoading}}
+        {{#if other_accounts.length}}
+          <dd class="other-accounts">
+            <table class="table table-condensed table-hover">
+              <thead>
+                <tr>
+                  <th>{{i18n 'ip_lookup.username'}}</th>
+                  <th>{{i18n 'ip_lookup.trust_level'}}</th>
+                  <th>{{i18n 'ip_lookup.read_time'}}</th>
+                  <th>{{i18n 'ip_lookup.topics_entered'}}</th>
+                  <th>{{i18n 'ip_lookup.post_count'}}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{#each other_accounts as |a|}}
+                  <tr>
+                    <td>{{#link-to "adminUser" a}}{{avatar a usernamePath="user.username" imageSize="small"}}&nbsp;{{a.username}}{{/link-to}}</td>
+                    <td>{{a.trustLevel.id}}</td>
+                    <td>{{a.time_read}}</td>
+                    <td>{{a.topics_entered}}</td>
+                    <td>{{a.post_count}}</td>
+                  </tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </dd>
+        {{/if}}
+      {{/conditional-loading-spinner}}
+    </dl>
+  </div>
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Vfile-digest://app/assets/javascripts/discourse/templates/components/ip-lookup.hbs;TTF:charsetI"
+utf-8;F:digest"%_âfš>õ–FÜTówH#è(ñ{8tƒ!Ìÿ„î3Äû:lengthi´
+:dependencies_digest"%ª@€BRGÅl0)€õÙ×)¥0LðËÃNW‡CçŸ`:idI"E59675d9f97b3d610d5509ca5e62958819c8183bb6c2788fb866a601aa45016c3;F:
+mtimel+°cX

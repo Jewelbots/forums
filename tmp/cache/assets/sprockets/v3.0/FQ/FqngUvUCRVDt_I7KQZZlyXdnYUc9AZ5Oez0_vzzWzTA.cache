@@ -1,0 +1,18 @@
+{:uriI"Æfile://app/assets/javascripts/discourse/templates/components/small-action.hbs?type=text/x-ember-handlebars&id=a13c10b3992520d64c30102d1fdd5d1244dd572d30387116a2327701ae5350cd:ET:load_pathI"app/assets/javascripts;T:filenameI"Kapp/assets/javascripts/discourse/templates/components/small-action.hbs;T:	nameI"0discourse/templates/components/small-action;T:logical_pathI"4discourse/templates/components/small-action.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"…<div class='small-action-desc'>
+  {{#if post}}
+    {{#if post.can_delete}}
+      <button {{action "delete"}} title={{i18n "post.controls.delete"}}>{{fa-icon "times"}}</button>
+    {{/if}}
+    {{#if post.can_edit}}
+      <button {{action "edit"}} title={{i18n "post.controls.edit"}}>{{fa-icon "pencil"}}</button>
+    {{/if}}
+    <a href={{post.usernameUrl}} data-user-card={{post.username}}>
+      {{avatar post imageSize="small"}}
+    </a>
+  {{/if}}
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Yfile-digest://app/assets/javascripts/discourse/templates/components/small-action.hbs;TTF:charsetI"
+utf-8;F:digest"%Üõbs"Y Ÿ7A‘ÃO‹Ÿ yõí`®D]”)XfìÁ9:lengthi…:dependencies_digest"%´uë•“Á[¶‰b3ÅÍ!ÕÂÌ^Ño3î⁄Î√√º}?±:idI"Ea13c10b3992520d64c30102d1fdd5d1244dd572d30387116a2327701ae5350cd;F:
+mtimel+∞cX

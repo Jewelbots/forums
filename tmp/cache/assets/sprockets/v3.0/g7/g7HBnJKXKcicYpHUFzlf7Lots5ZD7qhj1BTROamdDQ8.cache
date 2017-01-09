@@ -1,0 +1,8 @@
+{:uriI"³file://app/assets/javascripts/discourse/templates/components/composer-messages.hbs?type=text/x-ember-handlebars&id=65d9489cd9f6c1ab7d5cba5536bfaf1817d76a995e26b42c22ec651185766f67:ET:load_pathI"app/assets/javascripts;T:filenameI"Papp/assets/javascripts/discourse/templates/components/composer-messages.hbs;T:	nameI"5discourse/templates/components/composer-messages;T:logical_pathI"9discourse/templates/components/composer-messages.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"r{{#each messages as |message|}}
+  {{composer-message message=message closeMessage="closeMessage"}}
+{{/each}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"^file-digest://app/assets/javascripts/discourse/templates/components/composer-messages.hbs;TTF:charsetI"
+utf-8;F:digest"%-þoÏ/ûÉqU¾XíiI	P¹W»ŒÙ!—–•Ê@‹:lengthir:dependencies_digest"%åqGøEºŒG»œ7ä?ÏLp" 0?c»ŠJez²˜Ôö:idI"E65d9489cd9f6c1ab7d5cba5536bfaf1817d76a995e26b42c22ec651185766f67;F:
+mtimel+°cX

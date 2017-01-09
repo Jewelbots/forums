@@ -1,0 +1,64 @@
+{:uriI"´file://app/assets/javascripts/discourse/templates/discovery/categories.hbs?type=text/x-ember-handlebars&id=6d39c8bac8a2da66588770427d5b91e5f1c9e7d99b9475b0909871269a0bf57f:ET:load_pathI"app/assets/javascripts;T:filenameI"Happ/assets/javascripts/discourse/templates/discovery/categories.hbs;T:	nameI"-discourse/templates/discovery/categories;T:logical_pathI"1discourse/templates/discovery/categories.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"±{{#if model.categories}}
+  {{#discovery-categories refresh="refresh"}}
+    <table class='topic-list categories'>
+      <thead>
+        <tr>
+          <th class='category'>{{i18n 'categories.category'}}</th>
+          <th class='latest'>{{i18n 'categories.latest'}}</th>
+          <th class='stats topics'>{{i18n 'categories.topics'}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each model.categories as |c|}}
+          <tr data-category_id='{{unbound c.id}}' class="{{if c.description_excerpt 'has-description' 'no-description'}} {{if c.logo_url 'has-logo' 'no-logo'}}">
+            <td class='category' style={{border-color c.color}}>
+              <div>
+                {{category-title-link category=c}}
+                {{category-unread category=c}}
+                {{#if c.logo_url}}
+                  {{category-logo-link category=c}}
+                {{/if}}
+
+                <div class="category-description">
+                  {{{c.description_excerpt}}}
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              {{#if c.subcategories}}
+                <div class='subcategories'>
+                  {{#each c.subcategories as |s|}}
+                    {{category-link s hideParent="true"}}
+                    {{category-unread category=s}}
+                  {{/each}}
+                </div>
+              {{/if}}
+            </td>
+            <td class="{{if c.archived 'archived'}} latest">
+              {{#each c.featuredTopics as |f|}}
+                {{featured-topic topic=f latestTopicOnly=latestTopicOnly action="showTopicEntrance"}}
+              {{/each}}
+            </td>
+            <td class='stats' title={{c.topicStatsTitle}}>
+              <table class="categoryStats">
+                <tbody>
+                {{#each c.topicCountStats as |s|}}
+                  <tr>
+                    <td class="value">{{s.value}}</td>
+                    <td class="unit"> / {{s.unit}}</td>
+                  </tr>
+                {{/each}}
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  {{/discovery-categories}}
+  <footer class='topic-list-bottom'></footer>
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Vfile-digest://app/assets/javascripts/discourse/templates/discovery/categories.hbs;TTF:charsetI"
+utf-8;F:digest"%R™ŒL∏tä!á∏n≤AávÛƒù≈à¨´8ôc]:lengthi±:dependencies_digest"%~Ôd≠zíâæQŸñ_¿ÒDƒÄ<îQa}(Úì≥™»§:idI"E6d39c8bac8a2da66588770427d5b91e5f1c9e7d99b9475b0909871269a0bf57f;F:
+mtimel+∞cX

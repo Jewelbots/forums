@@ -1,0 +1,31 @@
+{:uriI"file://app/assets/javascripts/admin/templates/permalinks.hbs?type=text/x-ember-handlebars&id=f99c860cf77743efa25a2a4b7ab4f1ad497d836f3ee89d75fcccc8df0abb8eb9:ET:load_pathI"app/assets/javascripts;T:filenameI":app/assets/javascripts/admin/templates/permalinks.hbs;T:	nameI"admin/templates/permalinks;T:logical_pathI"#admin/templates/permalinks.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"\<div class="permalink-title"><h2>{{i18n 'admin.permalink.title'}}</h2></div>
+<div class="pull-right">
+  {{text-field value=filter class="url-input" placeholderKey="admin.permalink.form.filter" autocorrect="off" autocapitalize="off"}}
+</div>
+{{permalink-form action="recordAdded"}}
+<br/>
+
+{{#conditional-loading-spinner condition=loading}}
+  {{#if model.length}}
+    <div class='table admin-logs-table permalinks'>
+      <div class="heading-container">
+        <div class="col heading first url">{{i18n 'admin.permalink.url'}}</div>
+        <div class="col heading topic">{{i18n 'admin.permalink.topic_title'}}</div>
+        <div class="col heading post">{{i18n 'admin.permalink.post_title'}}</div>
+        <div class="col heading category">{{i18n 'admin.permalink.category_title'}}</div>
+        <div class="col heading external_url">{{i18n 'admin.permalink.external_url'}}</div>
+        <div class="col heading actions"></div>
+        <div class="clearfix"></div>
+      </div>
+      {{permalinks-list content=model}}
+    </div>
+  {{else}}
+    {{i18n 'search.no_results'}}
+  {{/if}}
+{{/conditional-loading-spinner}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Hfile-digest://app/assets/javascripts/admin/templates/permalinks.hbs;TTF:charsetI"
+utf-8;F:digest"%¡›·L
+ÔºÕë¿orÆ²²õoaAQ1y,Ò†ë:lengthi\:dependencies_digest"%.= Xî®™Îİ8(äFªş0r7.†şsµ‹:idI"Ef99c860cf77743efa25a2a4b7ab4f1ad497d836f3ee89d75fcccc8df0abb8eb9;F:
+mtimel+°cX

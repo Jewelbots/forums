@@ -1,0 +1,10 @@
+{:uriI"°file://app/assets/javascripts/admin/templates/components/site-settings/enum.hbs?type=text/x-ember-handlebars&id=f1faeab8d41d4c40c844946ae722744beefa5283f6f8a7c975b399d8d428421d:ET:load_pathI"app/assets/javascripts;T:filenameI"Mapp/assets/javascripts/admin/templates/components/site-settings/enum.hbs;T:	nameI"2admin/templates/components/site-settings/enum;T:logical_pathI"6admin/templates/components/site-settings/enum.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"ä{{combo-box valueAttribute="value" content=setting.validValues value=value none=setting.allowsNone}}
+{{preview}}
+{{setting-validation-message message=validationMessage}}
+<div class='desc'>{{{unbound setting.description}}}</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"[file-digest://app/assets/javascripts/admin/templates/components/site-settings/enum.hbs;TTF:charsetI"
+utf-8;F:digest"%Ìqî¶íL3ÿ
+Ëã´¿½»Ê¢8ðæœcåU1:lengthiä:dependencies_digest"%‡[X	¡"æÐ¼dE”ÓVšÜÉ²­ZCªü× ú›—:idI"Ef1faeab8d41d4c40c844946ae722744beefa5283f6f8a7c975b399d8d428421d;F:
+mtimel+°cX

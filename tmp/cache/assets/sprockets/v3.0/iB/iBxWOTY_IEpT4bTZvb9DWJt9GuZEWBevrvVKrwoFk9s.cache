@@ -1,0 +1,13 @@
+{:uriI"¥file://app/assets/javascripts/discourse/templates/list/action-list.raw.hbs?type=text/x-handlebars&id=1e46e126c6485dfab1df0a5043ae99c78016f1608cf8e63fce9c0eb9e6902924:ET:load_pathI"app/assets/javascripts;T:filenameI"Happ/assets/javascripts/discourse/templates/list/action-list.raw.hbs;T:	nameI")discourse/templates/list/action-list;T:logical_pathI"1discourse/templates/list/action-list.raw.hbs;T:content_typeI"text/x-handlebars;T:sourceI"à{{#if postNumbers}}
+<div class='post-actions {{className}}'>
+  <i class='fa fa-{{icon}}'></i>
+  {{#each postNumbers as |postNumber|}}
+    <a href='{{topic.url}}/{{postNumber}}'>#{{postNumber}}</a>
+  {{/each}}
+</div>
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Bprocessors:type=text/x-handlebars&file_type=text/x-handlebars;TTI"Vfile-digest://app/assets/javascripts/discourse/templates/list/action-list.raw.hbs;TTF:charsetI"
+utf-8;F:digest"%Ï¿KµîCÀRõÓ¨©ãif$FÝ“¬ìBŒÎô|LýÇ:lengthià:dependencies_digest"%â.ê‡€+Êò„ýR¡z±ÌH_ 8hâ`~™ÿ£óy$Æ:idI"E1e46e126c6485dfab1df0a5043ae99c78016f1608cf8e63fce9c0eb9e6902924;F:
+mtimel+°cX

@@ -1,0 +1,41 @@
+{:uriI"™file://app/assets/javascripts/discourse/templates/modal/edit-category.hbs?type=text/x-ember-handlebars&id=9b126f0671e7f415b374ad0f93df86c05ed880f018247ba5879b400fb76e39fc:ET:load_pathI"app/assets/javascripts;T:filenameI"Gapp/assets/javascripts/discourse/templates/modal/edit-category.hbs;T:	nameI",discourse/templates/modal/edit-category;T:logical_pathI"0discourse/templates/modal/edit-category.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"<div>
+  <ul class="nav nav-pills">
+    {{edit-category-tab panels=panels selectedTab=selectedTab tab="general"}}
+    {{#unless model.isUncategorizedCategory}}
+      {{edit-category-tab panels=panels selectedTab=selectedTab tab="security"}}
+    {{/unless}}
+    {{edit-category-tab panels=panels selectedTab=selectedTab tab="settings"}}
+    {{edit-category-tab panels=panels selectedTab=selectedTab tab="images"}}
+    {{edit-category-tab panels=panels selectedTab=selectedTab tab="topic-template"}}
+    {{#if siteSettings.tagging_enabled}}
+      {{edit-category-tab panels=panels selectedTab=selectedTab tab="tags"}}
+    {{/if}}
+  </ul>
+
+  <div class="modal-body">
+    {{#each panels as |tab|}}
+      {{component tab selectedTab=selectedTab category=model}}
+    {{/each}}
+  </div>
+
+  <div class="modal-footer">
+    {{d-button id="save-category" class="btn-primary" disabled=disabled action="saveCategory" label=saveLabel}}
+
+    {{#if model.can_delete}}
+      {{d-button class="btn-danger pull-right"
+                 disabled=deleteDisabled
+                 action="deleteCategory"
+                 icon="trash-o"
+                 label="category.delete"}}
+    {{else}}
+      <div class="cannot_delete_reason">
+        {{{model.cannot_delete_reason}}}
+      </div>
+    {{/if}}
+  </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Ufile-digest://app/assets/javascripts/discourse/templates/modal/edit-category.hbs;TTF:charsetI"
+utf-8;F:digest"%a¨ØwçTWèÒ∆›•ﬁ∞˚¥k*Ôo¬•FÉø]ÈÅê:lengthi:dependencies_digest"%°-€Bø/‹Ö¿√ÈÄ·Í20%¯2v0aÍà:idI"E9b126f0671e7f415b374ad0f93df86c05ed880f018247ba5879b400fb76e39fc;F:
+mtimel+∞cX

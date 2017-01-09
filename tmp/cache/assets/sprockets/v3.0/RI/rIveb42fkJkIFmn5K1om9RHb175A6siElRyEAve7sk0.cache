@@ -1,0 +1,46 @@
+{:uriI"†file://app/assets/javascripts/admin/templates/backups_index.hbs?type=text/x-ember-handlebars&id=aa0f81600e0d2136a6ef282c9b64319661eb5d17e8384bb9823bb272f334626b:ET:load_pathI"app/assets/javascripts;T:filenameI"=app/assets/javascripts/admin/templates/backups_index.hbs;T:	nameI""admin/templates/backups_index;T:logical_pathI"&admin/templates/backups_index.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI";<table>
+  <tr>
+    <th width="55%">{{i18n 'admin.backups.columns.filename'}}</th>
+    <th width="10%">{{i18n 'admin.backups.columns.size'}}</th>
+    <th>
+      <div class="pull-right">
+        {{resumable-upload target="/admin/backups/upload" success="uploadSuccess" error="uploadError" uploadText=uploadLabel title="admin.backups.upload.title"}}
+        {{#if site.isReadOnly}}
+          {{d-button icon="eye" action="toggleReadOnlyMode" disabled=status.model.isOperationRunning title="admin.backups.read_only.disable.title" label="admin.backups.read_only.disable.label"}}
+        {{else}}
+          {{d-button icon="eye" action="toggleReadOnlyMode" disabled=status.model.isOperationRunning title="admin.backups.read_only.enable.title" label="admin.backups.read_only.enable.label"}}
+        {{/if}}
+      </div>
+    </th>
+  </tr>
+  {{#each model as |backup|}}
+    <tr>
+      <td>{{backup.filename}}</td>
+      <td>{{human-size backup.size}}</td>
+      <td>
+        <div class="pull-right">
+          <a href={{backup.link}} class="btn download" title="{{i18n 'admin.backups.operations.download.title'}}">{{fa-icon "download"}}{{i18n 'admin.backups.operations.download.label'}}</a>
+          {{#if status.model.isOperationRunning}}
+            {{d-button icon="trash-o" action="destroyBackup" actionParam=backup class="btn-danger" disabled="true" title="admin.backups.operations.is_running"}}
+            {{d-button icon="play" action="startRestore" actionParam=backup disabled=status.model.restoreDisabled title=restoreTitle label="admin.backups.operations.restore.label"}}
+          {{else}}
+            {{d-button icon="trash-o" action="destroyBackup" actionParam=backup class="btn-danger" title="admin.backups.operations.destroy.title"}}
+            {{d-button icon="play" action="startRestore" actionParam=backup disabled=status.model.restoreDisabled title=restoreTitle label="admin.backups.operations.restore.label"}}
+          {{/if}}
+        </div>
+      </td>
+    </tr>
+  {{else}}
+    <tr>
+      <td>{{i18n 'admin.backups.none'}}</td>
+      <td></td>
+      <td></td>
+    </tr>
+  {{/each}}
+</table>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Kfile-digest://app/assets/javascripts/admin/templates/backups_index.hbs;TTF:charsetI"
+utf-8;F:digest"%·bàË),ßS6,√√vá?1®éÈlìNÅ@U4·Î∫:lengthi;:dependencies_digest"%Ã":È∂y·˝˜
+ç@M*mT∂”™ΩN§rBãÏ&ÓC‹:idI"Eaa0f81600e0d2136a6ef282c9b64319661eb5d17e8384bb9823bb272f334626b;F:
+mtimel+∞cX

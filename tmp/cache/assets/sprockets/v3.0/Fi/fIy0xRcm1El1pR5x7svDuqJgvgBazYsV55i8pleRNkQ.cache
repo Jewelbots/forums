@@ -1,0 +1,23 @@
+{:uriI"±file://app/assets/javascripts/admin/templates/customize-email-templates-edit.hbs?type=text/x-ember-handlebars&id=3955b71539ab3e569ede5a8775374a71800d0b41f8626ff49bad84b92618f802:ET:load_pathI"app/assets/javascripts;T:filenameI"Napp/assets/javascripts/admin/templates/customize-email-templates-edit.hbs;T:	nameI"3admin/templates/customize-email-templates-edit;T:logical_pathI"7admin/templates/customize-email-templates-edit.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"­<div class='email-template'>
+  <label>{{i18n "admin.customize.email_templates.subject"}}</label>
+  {{#if hasMultipleSubjects}}
+    <h3>{{#link-to 'adminSiteText' (query-params q=hasMultipleSubjects)}}{{i18n "admin.customize.email_templates.multiple_subjects"}}{{/link-to}}</h3>
+  {{else}}
+    {{input value=buffered.subject}}
+  {{/if}}
+  <br>
+
+  <label>{{i18n "admin.customize.email_templates.body"}}</label>
+  {{d-editor value=buffered.body}}
+
+  {{#save-controls model=emailTemplate action="saveChanges" saved=saved}}
+    {{#if emailTemplate.can_revert}}
+      {{d-button action="revertChanges" label="admin.customize.email_templates.revert"}}
+    {{/if}}
+  {{/save-controls}}
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"\file-digest://app/assets/javascripts/admin/templates/customize-email-templates-edit.hbs;TTF:charsetI"
+utf-8;F:digest"%ñ¢Û|znÑà¬åœÍò(p‹6ÞwfJKØzÙ¬:lengthi­:dependencies_digest"%!µÍæ¹‹r2€"J!Šú³³õËb"Ñ°6–ùí_8ä:idI"E3955b71539ab3e569ede5a8775374a71800d0b41f8626ff49bad84b92618f802;F:
+mtimel+°cX

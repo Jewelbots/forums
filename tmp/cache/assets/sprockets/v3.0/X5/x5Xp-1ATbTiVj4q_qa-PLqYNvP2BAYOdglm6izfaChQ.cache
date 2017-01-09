@@ -1,0 +1,32 @@
+{:uriI"§file://app/assets/javascripts/admin/templates/email_preview_digest.hbs?type=text/x-ember-handlebars&id=9ddbaa3562cff0da57f790551819f6bf0d94f1d77d0eb0262ac7da15ef892f87:ET:load_pathI"app/assets/javascripts;T:filenameI"Dapp/assets/javascripts/admin/templates/email_preview_digest.hbs;T:	nameI")admin/templates/email_preview_digest;T:logical_pathI"-admin/templates/email_preview_digest.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"ö<p>{{i18n 'admin.email.preview_digest_desc'}}</p>
+
+<div class='admin-controls'>
+  <div class='span7 controls'>
+    <label for='last-seen'>{{i18n 'admin.email.last_seen_user'}}</label>
+    {{date-picker-past value=lastSeen id="last-seen"}}
+    <label>{{i18n 'admin.email.user'}}:</label>
+    {{user-selector single="true" usernames=username}}
+    <button class='btn' {{action "refresh"}}>{{i18n 'admin.email.refresh'}}</button>
+    <div class="toggle">
+      <label>{{i18n 'admin.email.format'}}</label>
+      {{#if showHtml}}
+        <span>{{i18n 'admin.email.html'}}</span> | <a href {{action "toggleShowHtml"}}>{{i18n 'admin.email.text'}}</a>
+      {{else}}
+        <a href {{action "toggleShowHtml"}}>{{i18n 'admin.email.html'}}</a> | <span>{{i18n 'admin.email.text'}}</span>
+      {{/if}}
+    </div>
+  </div>
+</div>
+
+{{#conditional-loading-spinner condition=loading}}
+  {{#if showHtml}}
+    {{{model.html_content}}}
+  {{else}}
+    <pre>{{{model.text_content}}}</pre>
+  {{/if}}
+{{/conditional-loading-spinner}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Rfile-digest://app/assets/javascripts/admin/templates/email_preview_digest.hbs;TTF:charsetI"
+utf-8;F:digest"%ñƒPí)Ù½*Rø{ø_«BW4œJøgq’W8ld:lengthiö:dependencies_digest"%ºyú"0äS‚7e¯m¿º—Ù<¦Ç7ˆª¥Y{O:idI"E9ddbaa3562cff0da57f790551819f6bf0d94f1d77d0eb0262ac7da15ef892f87;F:
+mtimel+°cX

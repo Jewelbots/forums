@@ -1,0 +1,11 @@
+{:uriI"®file://app/assets/javascripts/discourse/templates/list/post-count-or-badges.raw.hbs?type=text/x-handlebars&id=613aa317fed4e1ea770b58dbba79d3add8792a64feb5fe52e660d1a704c55f07:ET:load_pathI"app/assets/javascripts;T:filenameI"Qapp/assets/javascripts/discourse/templates/list/post-count-or-badges.raw.hbs;T:	nameI"2discourse/templates/list/post-count-or-badges;T:logical_pathI":discourse/templates/list/post-count-or-badges.raw.hbs;T:content_typeI"text/x-handlebars;T:sourceI"ä{{#if view.showBadges}}
+  {{raw "topic-post-badges" unread=topic.unread newPosts=topic.displayNewPosts unseen=topic.unseen url=topic.lastUnreadUrl}}
+{{else}}
+  {{raw "list/posts-count-column" topic=topic tagName="div"}}
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Bprocessors:type=text/x-handlebars&file_type=text/x-handlebars;TTI"_file-digest://app/assets/javascripts/discourse/templates/list/post-count-or-badges.raw.hbs;TTF:charsetI"
+utf-8;F:digest"%ğ=Šnhc2¢5Éçš$Î#át4ítd'J±ôí:lengthiä:dependencies_digest"%`ªK/İï#Ê¯‡PY°—Á
+Ğ.kobÕ©+0š:idI"E613aa317fed4e1ea770b58dbba79d3add8792a64feb5fe52e660d1a704c55f07;F:
+mtimel+°cX

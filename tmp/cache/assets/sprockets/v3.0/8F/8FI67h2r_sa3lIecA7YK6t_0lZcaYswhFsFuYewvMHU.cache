@@ -1,0 +1,53 @@
+{:uriI"¡file://app/assets/javascripts/discourse/templates/user/email.hbs?type=text/x-ember-handlebars&id=05f8a93a7d1ca4da47a5db12899f83ca614a36665917f848f395b1d160b33b31:ET:load_pathI"app/assets/javascripts;T:filenameI">app/assets/javascripts/discourse/templates/user/email.hbs;T:	nameI"#discourse/templates/user/email;T:logical_pathI"'discourse/templates/user/email.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"<section class='user-content'>
+  <form class="form-horizontal">
+
+    <div class="control-group">
+      <div class="controls">
+        <h3>{{i18n 'user.change_email.title'}}</h3>
+      </div>
+    </div>
+
+    {{#if success}}
+        <div class="control-group">
+          <div class="instructions">
+            <p>{{i18n 'user.change_email.success'}}</p>
+          </div>
+        </div>
+    {{else}}
+      {{#if error}}
+        <div class="control-group">
+          <div class="instructions">
+            <div class='alert alert-error'>{{errorMessage}}</div>
+          </div>
+        </div>
+      {{/if}}
+
+      <div class="control-group">
+        <label class="control-label">{{i18n 'user.email.title'}}</label>
+        <div class="controls">
+          {{text-field value=newEmail id="change_email" classNames="input-xxlarge"}}
+        </div>
+        <div class='instructions'>
+          {{#if taken}}
+            {{i18n 'user.change_email.taken'}}
+          {{else}}
+            {{i18n 'user.email.instructions'}}
+          {{/if}}
+
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="controls">
+          <button {{action "changeEmail"}} disabled={{saveDisabled}} class="btn btn-primary">{{saveButtonText}}</button>
+        </div>
+      </div>
+    {{/if}}
+
+  </form>
+</section>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Lfile-digest://app/assets/javascripts/discourse/templates/user/email.hbs;TTF:charsetI"
+utf-8;F:digest"%+v„G¿Ò[À)àª¾(ß!RX|Ò¦ªaõCi$¿œ®:lengthi:dependencies_digest"%KãêE00¸–©fN*ÎCTZßëñ`“¾ÀƒÛ³4:idI"E05f8a93a7d1ca4da47a5db12899f83ca614a36665917f848f395b1d160b33b31;F:
+mtimel+°cX

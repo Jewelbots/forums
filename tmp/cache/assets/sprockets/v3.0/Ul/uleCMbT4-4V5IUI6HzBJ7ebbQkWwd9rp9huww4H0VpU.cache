@@ -1,0 +1,60 @@
+{:uriI"£file://app/assets/javascripts/discourse/templates/modal/invite.hbs?type=text/x-ember-handlebars&id=f5618fda45a397df00d65781e605cb397c229924a9dd1496bee8e1ec7cf20563:ET:load_pathI"app/assets/javascripts;T:filenameI"@app/assets/javascripts/discourse/templates/modal/invite.hbs;T:	nameI"%discourse/templates/modal/invite;T:logical_pathI")discourse/templates/modal/invite.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"j<div class="modal-body invite-modal">
+  {{#if model.error}}
+    <div class="alert alert-error">
+      <button class="close" data-dismiss="alert">√ó</button>
+      {{errorMessage}}
+    </div>
+  {{/if}}
+  {{#if model.finished}}
+    {{{successMessage}}}
+  {{else}}
+    <label>{{inviteInstructions}}</label>
+    {{#if allowExistingMembers}}
+      {{#if isPrivateTopic}}
+        {{user-selector single="true"
+                        allowAny=true
+                        excludeCurrentUser="true"
+                        usernames=emailOrUsername
+                        allowedUsers="true"
+                        topicId=topicId
+                        placeholderKey=placeholderKey}}
+      {{else}}
+        {{user-selector
+            single="true"
+            allowAny=true
+            excludeCurrentUser="true"
+            includeMentionableGroups="true"
+            hasGroups=hasGroups
+            usernames=emailOrUsername
+            placeholderKey=placeholderKey}}
+      {{/if}}
+    {{else}}
+      {{text-field value=emailOrUsername placeholderKey="topic.invite_reply.email_placeholder"}}
+    {{/if}}
+    {{#if showGroups}}
+      <label><span class={{showGroupsClass}}>{{i18n 'topic.automatically_add_to_groups'}}</span></label>
+      {{group-selector groupFinder=groupFinder groupNames=model.groupNames placeholderKey="topic.invite_private.group_name"}}
+    {{/if}}
+
+    {{#if showCustomMessage}}
+      <br><label><span class='optional'>{{i18n 'invite.custom_message'}}</span> <a {{action "showCustomMessageBox"}}>{{i18n 'invite.custom_message_link'}}</a>.</label>
+      {{#if hasCustomMessage}}{{textarea value=customMessage placeholder=customMessagePlaceholder}}{{/if}}
+    {{/if}}
+
+  {{/if}}
+</div>
+<div class="modal-footer">
+  {{#if model.finished}}
+    {{d-button class="btn-primary" action="closeModal" label="close"}}
+  {{else}}
+    {{d-button icon=inviteIcon action="createInvite" class="btn-primary" disabled=disabled label=buttonTitle}}
+    {{#if showCopyInviteButton}}
+      {{d-button icon="link" action="generateInvitelink" class="btn-primary" disabled=disabledCopyLink label='user.invited.generate_link'}}
+    {{/if}}
+  {{/if}}
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Nfile-digest://app/assets/javascripts/discourse/templates/modal/invite.hbs;TTF:charsetI"
+utf-8;F:digest"%WœÖûJéM“o:bÈé≥bwvıï ‘ΩÍ:Ïê>ö·:lengthij:dependencies_digest"%Tú)5ò‹Ú!¿¨≈GW<.Œjb{èÁnê/ø≤”>”®:idI"Ef5618fda45a397df00d65781e605cb397c229924a9dd1496bee8e1ec7cf20563;F:
+mtimel+∞cX

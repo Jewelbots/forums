@@ -1,0 +1,7 @@
+{:uriI"«file://app/assets/javascripts/discourse/templates/composer/custom-body.hbs?type=text/x-ember-handlebars&id=10edd3d393cb5ad3801d5a27935f41734eb9b26243f44e39661ae7c031e3a0ae:ET:load_pathI"app/assets/javascripts;T:filenameI"Happ/assets/javascripts/discourse/templates/composer/custom-body.hbs;T:	nameI"-discourse/templates/composer/custom-body;T:logical_pathI"1discourse/templates/composer/custom-body.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"g<a href {{action "closeMessage"}} class='close'>{{fa-icon "close"}}</a>
+<p>{{{message.body}}}</p>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Vfile-digest://app/assets/javascripts/discourse/templates/composer/custom-body.hbs;TTF:charsetI"
+utf-8;F:digest"%SiA³À=	¸+î	-Îr>na1P£bô¡‡©{II\:lengthig:dependencies_digest"%FÒÇä1“Ã„ÀÃ#Ê±Æ‹³3ùªqvÌ¤.³^Me:idI"E10edd3d393cb5ad3801d5a27935f41734eb9b26243f44e39661ae7c031e3a0ae;F:
+mtimel+°cX

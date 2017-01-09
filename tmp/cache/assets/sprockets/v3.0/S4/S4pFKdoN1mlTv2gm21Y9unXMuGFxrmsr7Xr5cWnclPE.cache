@@ -1,0 +1,10 @@
+{:uriI"¬file://app/assets/javascripts/admin/templates/components/customize-link.hbs?type=text/x-ember-handlebars&id=33481a5527e391233ab4da856afc0f491a90b202c32bb23800c0c1d8e8c62a70:ET:load_pathI"app/assets/javascripts;T:filenameI"Iapp/assets/javascripts/admin/templates/components/customize-link.hbs;T:	nameI".admin/templates/components/customize-link;T:logical_pathI"2admin/templates/components/customize-link.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"“<li>
+  <a href="/admin/customize/css_html/{{customization.id}}/css" class="{{if active 'active'}}">
+    {{customization.description}}
+  </a>
+</li>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Wfile-digest://app/assets/javascripts/admin/templates/components/customize-link.hbs;TTF:charsetI"
+utf-8;F:digest"%²ú§•Ğ›Éá‹ÄáU=İˆ‰ÖÙ3	Vy¡¶fCkrô„:lengthi“:dependencies_digest"%Çâå¸&÷'u8áùÔöZªÆ–#£?n[©p [&[:idI"E33481a5527e391233ab4da856afc0f491a90b202c32bb23800c0c1d8e8c62a70;F:
+mtimel+°cX

@@ -1,0 +1,16 @@
+{:uriI"±file://app/assets/javascripts/admin/templates/components/admin-report-counts.hbs?type=text/x-ember-handlebars&id=333310d7d5ccef8d9be80658008624c24ac51f8560a2fd86b5f2742e1a64daad:ET:load_pathI"app/assets/javascripts;T:filenameI"Napp/assets/javascripts/admin/templates/components/admin-report-counts.hbs;T:	nameI"3admin/templates/components/admin-report-counts;T:logical_pathI"7admin/templates/components/admin-report-counts.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"<td class="title">
+  {{#if report.icon}}
+    {{fa-icon report.icon}}
+  {{/if}}
+  <a href="{{report.reportUrl}}">{{report.title}}</a>
+</td>
+<td class="value">{{report.todayCount}}</td>
+<td class="value {{report.yesterdayTrend}}" title={{report.yesterdayCountTitle}}>{{report.yesterdayCount}} {{fa-icon "caret-up" class="up"}} {{fa-icon "caret-down" class="down"}}</td>
+<td class="value {{report.sevenDayTrend}}" title={{report.sevenDayCountTitle}}>{{report.lastSevenDaysCount}} {{fa-icon "caret-up" class="up"}} {{fa-icon "caret-down" class="down"}}</td>
+<td class="value {{report.thirtyDayTrend}}" title={{report.thirtyDayCountTitle}}>{{report.lastThirtyDaysCount}} {{fa-icon "caret-up" class="up"}} {{fa-icon "caret-down" class="down"}}</td>
+<td class="value">{{report.total}}</td>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"\file-digest://app/assets/javascripts/admin/templates/components/admin-report-counts.hbs;TTF:charsetI"
+utf-8;F:digest"%>Ç[Æ“ß†¥“XãK»…ö£ BU\¤r^Ğ—§;èÄÄ:lengthi:dependencies_digest"%tñ}eÄàäÈAKq@/ñæQıÅ	¦|=E(ï¹’:idI"E333310d7d5ccef8d9be80658008624c24ac51f8560a2fd86b5f2742e1a64daad;F:
+mtimel+°cX

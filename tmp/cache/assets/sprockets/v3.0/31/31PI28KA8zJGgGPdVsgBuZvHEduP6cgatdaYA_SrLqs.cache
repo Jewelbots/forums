@@ -1,0 +1,31 @@
+{:uriI"ôfile://app/assets/javascripts/admin/templates/badges.hbs?type=text/x-ember-handlebars&id=96eb2055e22baaefacce3ae114477418a792a535597b78d6c7beb9f354997a1d:ET:load_pathI"app/assets/javascripts;T:filenameI"6app/assets/javascripts/admin/templates/badges.hbs;T:	nameI"admin/templates/badges;T:logical_pathI"admin/templates/badges.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"Z<div class="badges">
+
+  <div class='content-list span6'>
+    <h3>{{i18n 'admin.badges.title'}}</h3>
+    <ul>
+      {{#each model as |badge|}}
+      <li>
+        {{#link-to 'adminBadges.show' badge.id}}
+          {{badge-button badge=badge}}
+          {{#if badge.newBadge}}
+            <span class="list-badge">{{i18n 'filters.new.lower_title'}}</span>
+          {{/if}}
+        {{/link-to}}
+      </li>
+      {{/each}}
+    </ul>
+    {{#link-to 'adminBadges.show' 'new' class="btn"}}
+      {{fa-icon "plus"}} {{i18n 'admin.badges.new'}}
+    {{/link-to}}
+    <br>
+    <br>
+  </div>
+
+  {{outlet}}
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Dfile-digest://app/assets/javascripts/admin/templates/badges.hbs;TTF:charsetI"
+utf-8;F:digest"%¨‘√Jﬂ
+6Ωæ]QDêÎàd>Ù¶`å©á@ç`?~–:lengthiZ:dependencies_digest"%‹›∞Ôø%Úw(q¨. Í€{¶=HåÏP£;°:idI"E96eb2055e22baaefacce3ae114477418a792a535597b78d6c7beb9f354997a1d;F:
+mtimel+∞cX

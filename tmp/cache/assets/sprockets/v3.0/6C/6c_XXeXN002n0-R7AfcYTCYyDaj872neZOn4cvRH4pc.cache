@@ -1,0 +1,36 @@
+{:uriI"™file://app/assets/javascripts/admin/templates/emojis.hbs?type=text/x-ember-handlebars&id=1b3275d2f58c0fa7703e7d93412589f72190e39b5d1c5c15a06f2a56f080f90f:ET:load_pathI"app/assets/javascripts;T:filenameI"6app/assets/javascripts/admin/templates/emojis.hbs;T:	nameI"admin/templates/emojis;T:logical_pathI"admin/templates/emojis.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"I<div class='emoji'>
+  <h2>{{i18n 'admin.emoji.title'}}</h2>
+
+  <p class="desc">{{i18n 'admin.emoji.help'}}</p>
+
+  <p>{{emoji-uploader done="emojiUploaded"}}</p>
+
+  {{#if model}}
+    <div class="span8">
+      <table id="custom_emoji">
+        <thead>
+          <tr>
+            <th>{{i18n "admin.emoji.image"}}</th>
+            <th>{{i18n "admin.emoji.name"}}</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each model as |e|}}
+            <tr>
+              <th><img class="emoji" src="{{unbound e.url}}" title="{{unbound e.name}}"></th>
+              <th>:{{e.name}}:</th>
+              <th><button {{action "destroy" e}} class='btn btn-danger no-text pull-right'>{{fa-icon 'trash-o'}} </button></th>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  {{/if}}
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Dfile-digest://app/assets/javascripts/admin/templates/emojis.hbs;TTF:charsetI"
+utf-8;F:digest"%yªþfWÝ%ö{è
+öÑ×4è€©·ÍŸÉ>ZÚìh'.ºbZ:lengthiI:dependencies_digest"%dDSòGËÕ;›3ó/ˆ=˜8Ÿøµ;„‚ði\@:bB:idI"E1b3275d2f58c0fa7703e7d93412589f72190e39b5d1c5c15a06f2a56f080f90f;F:
+mtimel+°cX

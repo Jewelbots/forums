@@ -1,0 +1,33 @@
+I"×require('discourse/lib/raw-handlebars').template({"1":function(container,depth0,helpers,partials,data) {
+    return "<a href='"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"url",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "' class='badge badge-notification unread' title='"
+    + container.escapeExpression((helpers.i18n || (depth0 && depth0.i18n) || helpers.helperMissing).call(depth0 != null ? depth0 : {},"topic.unread_posts",{"name":"i18n","hash":{"count":"unread"},"hashTypes":{"count":"PathExpression"},"hashContexts":{"count":depth0},"types":["StringLiteral"],"contexts":[depth0],"data":data}))
+    + "'>"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"unread",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "</a>\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    return "<a href='"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"url",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "' class='badge badge-notification new-posts' title='"
+    + container.escapeExpression((helpers.i18n || (depth0 && depth0.i18n) || helpers.helperMissing).call(depth0 != null ? depth0 : {},"topic.total_unread_posts",{"name":"i18n","hash":{"count":"newPosts"},"hashTypes":{"count":"PathExpression"},"hashContexts":{"count":depth0},"types":["StringLiteral"],"contexts":[depth0],"data":data}))
+    + "'>"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"newPosts",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "</a>\n";
+},"5":function(container,depth0,helpers,partials,data) {
+    return "<a href='"
+    + container.escapeExpression(helpers.get.call(depth0 != null ? depth0 : {},"url",{"name":"get","hash":{},"hashTypes":{},"hashContexts":{},"types":["PathExpression"],"contexts":[depth0],"data":data}))
+    + "' class='badge badge-notification new-topic' title='"
+    + container.escapeExpression((helpers.i18n || (depth0 && depth0.i18n) || helpers.helperMissing).call(depth0 != null ? depth0 : {},"topic.new",{"name":"i18n","hash":{},"hashTypes":{},"hashContexts":{},"types":["StringLiteral"],"contexts":[depth0],"data":data}))
+    + "'>"
+    + container.escapeExpression((helpers.i18n || (depth0 && depth0.i18n) || helpers.helperMissing).call(depth0 != null ? depth0 : {},"filters.new.lower_title",{"name":"i18n","hash":{},"hashTypes":{},"hashContexts":{},"types":["StringLiteral"],"contexts":[depth0],"data":data}))
+    + "</a>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "<span class='topic-post-badges'>\n"
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},"unread",{"name":"if","hash":{},"hashTypes":{},"hashContexts":{},"fn":container.program(1, data, 0),"inverse":container.noop,"types":["PathExpression"],"contexts":[depth0],"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},"newPosts",{"name":"if","hash":{},"hashTypes":{},"hashContexts":{},"fn":container.program(3, data, 0),"inverse":container.noop,"types":["PathExpression"],"contexts":[depth0],"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},"unseen",{"name":"if","hash":{},"hashTypes":{},"hashContexts":{},"fn":container.program(5, data, 0),"inverse":container.noop,"types":["PathExpression"],"contexts":[depth0],"data":data})) != null ? stack1 : "")
+    + "</span>\n";
+},"useData":true});:ET

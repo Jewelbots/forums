@@ -1,0 +1,13 @@
+{:uriI"§file://app/assets/javascripts/discourse/templates/list/topic-excerpt.raw.hbs?type=text/x-handlebars&id=1b0532d1d09686ef97fcdd8581ed5152a3cbaed61d9997f993c7aaa103b8b8e5:ET:load_pathI"app/assets/javascripts;T:filenameI"Japp/assets/javascripts/discourse/templates/list/topic-excerpt.raw.hbs;T:	nameI"+discourse/templates/list/topic-excerpt;T:logical_pathI"3discourse/templates/list/topic-excerpt.raw.hbs;T:content_typeI"text/x-handlebars;T:sourceI"Æ{{#if topic.hasExcerpt}}
+  <div class="topic-excerpt">
+    {{{topic.excerpt}}}
+    {{#if topic.excerptTruncated}}
+      <a href="{{topic.url}}">{{i18n 'read_more'}}</a>
+    {{/if}}
+  </div>
+{{/if}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Bprocessors:type=text/x-handlebars&file_type=text/x-handlebars;TTI"Xfile-digest://app/assets/javascripts/discourse/templates/list/topic-excerpt.raw.hbs;TTF:charsetI"
+utf-8;F:digest"%ğˆæ§‚…û°ÎµØU8„òYäEI—©ÂURevº±:lengthiÆ:dependencies_digest"%ªb¥IöÛÌ×PÏzã—D¸¾6®Ê3MŒ=k§Ç:idI"E1b0532d1d09686ef97fcdd8581ed5152a3cbaed61d9997f993c7aaa103b8b8e5;F:
+mtimel+°cX

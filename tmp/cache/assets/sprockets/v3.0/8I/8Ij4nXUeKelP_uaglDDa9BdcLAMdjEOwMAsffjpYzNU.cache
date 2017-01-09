@@ -1,0 +1,29 @@
+{:uriI"¡file://app/assets/javascripts/discourse/templates/user/about.hbs?type=text/x-ember-handlebars&id=8204ae83c6021a6b59c35bf5414ef9c05655d6a3244a8512d40a8cccb896e2a5:ET:load_pathI"app/assets/javascripts;T:filenameI">app/assets/javascripts/discourse/templates/user/about.hbs;T:	nameI"#discourse/templates/user/about;T:logical_pathI"'discourse/templates/user/about.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"<form class="form-horizontal">
+
+  <div class="control-group">
+    <div class="controls">
+      <h3>{{i18n 'user.change_about.title'}}</h3>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">{{i18n 'user.bio'}}</label>
+    <div class="controls">
+      {{d-editor value=model.bio_raw}}
+    </div>
+  </div>
+
+  <div class="control-group">
+    <div class="controls">
+      {{#d-button action="changeAbout" class="btn btn-primary"}}
+        {{saveButtonText}}
+      {{/d-button}}
+    </div>
+  </div>
+
+</form>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Lfile-digest://app/assets/javascripts/discourse/templates/user/about.hbs;TTF:charsetI"
+utf-8;F:digest"%úÏ"×¢î›æwã½š,Áøkô$3ð8ß2Ö‚Ã?’:lengthi:dependencies_digest"%Ù™«2/Ú „õc¬Î‚Ô&Úd¶±U+Áˆ<ÇðÃ(:idI"E8204ae83c6021a6b59c35bf5414ef9c05655d6a3244a8512d40a8cccb896e2a5;F:
+mtimel+°cX

@@ -1,0 +1,17 @@
+{:uriI"°file://app/assets/javascripts/discourse/templates/components/image-uploader.hbs?type=text/x-ember-handlebars&id=5d0b09ece4900aea0bc73fab9338528469686c0aaf3329d74c94cca9c71ea90d:ET:load_pathI"app/assets/javascripts;T:filenameI"Mapp/assets/javascripts/discourse/templates/components/image-uploader.hbs;T:	nameI"2discourse/templates/components/image-uploader;T:logical_pathI"6discourse/templates/components/image-uploader.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"k<div class="uploaded-image-preview input-xxlarge" style={{backgroundStyle}}>
+  <div class="image-upload-controls">
+    <label class="btn pad-left no-text {{if uploading 'disabled'}}">
+      {{fa-icon "picture-o"}}
+      <input disabled={{uploading}} type="file" accept="image/*" style="visibility: hidden; position: absolute;" />
+    </label>
+    {{#if backgroundStyle}}
+      <button {{action "trash"}} class="btn btn-danger pad-left no-text">{{fa-icon "trash-o"}}</button>
+    {{/if}}
+    <span class="btn {{unless uploading 'hidden'}}">{{i18n 'upload_selector.uploading'}} {{uploadProgress}}%</span>
+  </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"[file-digest://app/assets/javascripts/discourse/templates/components/image-uploader.hbs;TTF:charsetI"
+utf-8;F:digest"%ž_¯V\Õ½µ]jÕÎÞmª#SaÎq² @š%Æ8ÛÀ:lengthik:dependencies_digest"%‚|4{(ËWUi.M0¸ÑXH8|¦ù\tIA´:idI"E5d0b09ece4900aea0bc73fab9338528469686c0aaf3329d74c94cca9c71ea90d;F:
+mtimel+°cX

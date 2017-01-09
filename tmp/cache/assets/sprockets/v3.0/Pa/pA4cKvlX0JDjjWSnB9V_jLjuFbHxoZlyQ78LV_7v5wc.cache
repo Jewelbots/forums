@@ -1,0 +1,14 @@
+{:uriI"¨file://app/assets/javascripts/discourse/templates/topic/unsubscribe.hbs?type=text/x-ember-handlebars&id=6864c54222bacd2af4c42b3f22f7bd5af66e217e1216f6e1195c636a85a8186d:ET:load_pathI"app/assets/javascripts;T:filenameI"Eapp/assets/javascripts/discourse/templates/topic/unsubscribe.hbs;T:	nameI"*discourse/templates/topic/unsubscribe;T:logical_pathI".discourse/templates/topic/unsubscribe.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"À<div class="container">
+  <p>
+    {{{stopNotificiationsText}}}
+  </p>
+  <p>
+    {{i18n "topic.unsubscribe.change_notification_state"}} {{topic-notifications-button topic=model}}
+  </p>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Sfile-digest://app/assets/javascripts/discourse/templates/topic/unsubscribe.hbs;TTF:charsetI"
+utf-8;F:digest"%ÀŠ
+P5“Ç`¾©}ùËÌíZŸÏ¦­"‹*1ZÛØ:lengthiÀ:dependencies_digest"%ßÔÖ„ÉÚ*¸§'üf"ªÜ¦J™jÚžXneÒšš…	:idI"E6864c54222bacd2af4c42b3f22f7bd5af66e217e1216f6e1195c636a85a8186d;F:
+mtimel+°cX

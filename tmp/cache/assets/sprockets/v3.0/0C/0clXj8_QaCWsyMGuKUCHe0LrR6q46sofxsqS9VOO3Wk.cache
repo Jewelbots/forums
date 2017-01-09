@@ -1,0 +1,18 @@
+{:uriI"•file://app/assets/javascripts/admin/templates/customize-css-html.hbs?type=text/x-ember-handlebars&id=8c3afbd1bfe8b0b548a9f05de2342e6ac3be249a3c078438f9495d6cdf5e84d9:ET:load_pathI"app/assets/javascripts;T:filenameI"Bapp/assets/javascripts/admin/templates/customize-css-html.hbs;T:	nameI"'admin/templates/customize-css-html;T:logical_pathI"+admin/templates/customize-css-html.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"Ü<div class='content-list span6'>
+  <h3>{{i18n 'admin.customize.css_html.long_title'}}</h3>
+  <ul>
+    {{#each model as |c|}}
+      {{customize-link customization=c}}
+    {{/each}}
+  </ul>
+
+  {{d-button label="admin.customize.new" icon="plus" action="newCustomization" class="btn-primary"}}
+  {{d-button action="importModal" icon="upload" label="admin.customize.import"}}
+</div>
+
+{{outlet}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Pfile-digest://app/assets/javascripts/admin/templates/customize-css-html.hbs;TTF:charsetI"
+utf-8;F:digest"%Œá8$9ºa`ì ñ*È6b0:”ÊıGvû∑£a‚:lengthiÜ:dependencies_digest"%QœRﬁbm$ÍÆµÔ∂n‚_ÆÂ#©TZ_ñÅ˙_:idI"E8c3afbd1bfe8b0b548a9f05de2342e6ac3be249a3c078438f9495d6cdf5e84d9;F:
+mtimel+∞cX

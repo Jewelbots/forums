@@ -1,0 +1,15 @@
+{:uriI"´file://app/assets/javascripts/discourse/templates/modal/bulk_notification_level.hbs?type=text/x-ember-handlebars&id=a8869033df4c5944e9fc0d3e2680d65c38ec3ed0ddaba260454f3195de06d58b:ET:load_pathI"app/assets/javascripts;T:filenameI"Qapp/assets/javascripts/discourse/templates/modal/bulk_notification_level.hbs;T:	nameI"6discourse/templates/modal/bulk_notification_level;T:logical_pathI":discourse/templates/modal/bulk_notification_level.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"É{{#each notificationLevels as |level|}}
+  <div class='controls'>
+    <label class='radio'>
+      {{radio-button value=level.id name="notification_level" selection=notificationLevelId}} <strong>{{unbound level.name}}</strong>
+      <div class='description'>{{{unbound level.description}}}</div>
+    </label>
+  </div>
+{{/each}}
+
+<button class='btn' disabled={{disabled}} {{action "changeNotificationLevel"}}>{{i18n 'topics.bulk.notification_level'}}</button>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"_file-digest://app/assets/javascripts/discourse/templates/modal/bulk_notification_level.hbs;TTF:charsetI"
+utf-8;F:digest"%éÆB´h[¸=UÒŽ_ìB¸%`3>°­nàDÔ{tè:lengthiÉ:dependencies_digest"%`=¤Ãá™õÿâèvN´!|&¶Ž-ÃéË>ÆÛ$M:idI"Ea8869033df4c5944e9fc0d3e2680d65c38ec3ed0ddaba260454f3195de06d58b;F:
+mtimel+°cX

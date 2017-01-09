@@ -1,0 +1,58 @@
+{:uriI"ùfile://app/assets/javascripts/admin/templates/email-sent.hbs?type=text/x-ember-handlebars&id=a1b73c2fce1e3f15f961ec401042f9cdb0331b9b54053240a68ee821a94af2f1:ET:load_pathI"app/assets/javascripts;T:filenameI":app/assets/javascripts/admin/templates/email-sent.hbs;T:	nameI"admin/templates/email-sent;T:logical_pathI"#admin/templates/email-sent.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"ª{{#load-more selector=".email-list tr" action="loadMore"}}
+  <table class='table email-list'>
+    <thead>
+      <tr>
+        <th>{{i18n 'admin.email.sent_at'}}</th>
+        <th>{{i18n 'admin.email.user'}}</th>
+        <th>{{i18n 'admin.email.to_address'}}</th>
+        <th>{{i18n 'admin.email.email_type'}}</th>
+        <th>{{i18n 'admin.email.reply_key'}}</th>
+      </tr>
+    </thead>
+
+    <tr class="filters">
+      <td>{{i18n 'admin.email.logs.filters.title'}}</td>
+      <td>{{text-field value=filter.user placeholderKey="admin.email.logs.filters.user_placeholder"}}</td>
+      <td>{{text-field value=filter.address placeholderKey="admin.email.logs.filters.address_placeholder"}}</td>
+      <td>{{text-field value=filter.type placeholderKey="admin.email.logs.filters.type_placeholder"}}</td>
+      <td>{{text-field value=filter.reply_key placeholderKey="admin.email.logs.filters.reply_key_placeholder"}}</td>
+    </tr>
+
+    {{#each model as |l|}}
+      <tr>
+        <td>{{format-date l.created_at}}</td>
+        <td>
+          {{#if l.user}}
+            {{#link-to 'adminUser' l.user}}{{avatar l.user imageSize="tiny"}}{{/link-to}}
+            {{#link-to 'adminUser' l.user}}{{l.user.username}}{{/link-to}}
+          {{else}}
+            &mdash;
+          {{/if}}
+        </td>
+        <td>
+          {{#if l.bounced}}{{fa-icon "repeat" title="admin.email.bounced"}}{{/if}}
+          <a href='mailto:{{unbound l.to_address}}'>{{l.to_address}}</a>
+        </td>
+        <td>{{l.email_type}}</td>
+        <td class='post-link'>
+          {{#if l.post_url}}
+            <a href="{{l.post_url}}">{{l.post_description}}</a>
+            <span class='reply-key'>{{l.reply_key}}</span>
+          {{else}}
+            <span class='reply-key'>{{l.reply_key}}</span>
+          {{/if}}
+        </td>
+      </tr>
+    {{else}}
+      <tr><td colspan="5">{{i18n 'admin.email.logs.none'}}</td></tr>
+    {{/each}}
+
+  </table>
+{{/load-more}}
+
+{{conditional-loading-spinner condition=loading}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Hfile-digest://app/assets/javascripts/admin/templates/email-sent.hbs;TTF:charsetI"
+utf-8;F:digest"%.õ[é·/h≥(ıØﬂ∑^É-»≥¨˚÷7Ö⁄Ä<∑l}:lengthiª:dependencies_digest"%G›â›Gë.FÃî∫÷7ÓÀ'ÛyÄqaË‹Nî¬∞±˙Ñ:idI"Ea1b73c2fce1e3f15f961ec401042f9cdb0331b9b54053240a68ee821a94af2f1;F:
+mtimel+∞cX

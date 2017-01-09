@@ -1,0 +1,12 @@
+{:uriI"¶file://app/assets/javascripts/discourse/templates/components/user-fields/dropdown.hbs?type=text/x-ember-handlebars&id=cfcea6d2abf84f6b164801c09da6ab1e25bc73a7d97b83bdeb9c1ff999d2d424:ET:load_pathI"app/assets/javascripts;T:filenameI"Sapp/assets/javascripts/discourse/templates/components/user-fields/dropdown.hbs;T:	nameI"8discourse/templates/components/user-fields/dropdown;T:logical_pathI"<discourse/templates/components/user-fields/dropdown.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"ß<label>{{{field.name}}}</label>
+<div class='controls'>
+  {{combo-box content=field.options value=value none=noneLabel}}
+  {{#if field.required}}<span class='required'>*</span>{{/if}}
+  <p>{{{field.description}}}</p>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"afile-digest://app/assets/javascripts/discourse/templates/components/user-fields/dropdown.hbs;TTF:charsetI"
+utf-8;F:digest"%qÚ8VÌ)‘,
+æMÄ‰¨eí4uä±&/xE:’Hª?:lengthiß:dependencies_digest"%i¸cû*ƒiÁoOG­6‡Ì²Ş~½¡'+à.Ü¦¢:idI"Ecfcea6d2abf84f6b164801c09da6ab1e25bc73a7d97b83bdeb9c1ff999d2d424;F:
+mtimel+°cX

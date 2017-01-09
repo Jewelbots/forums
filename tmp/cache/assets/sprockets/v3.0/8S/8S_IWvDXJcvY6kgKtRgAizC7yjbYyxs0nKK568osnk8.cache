@@ -1,0 +1,63 @@
+{:uriI"²file://app/assets/javascripts/discourse/templates/mobile/discovery/categories.hbs?type=text/x-ember-handlebars&id=e358470dd1b061f710dafe0856742bdbe4293d8e85a7e31840f3e06f7bc02fb9:ET:load_pathI"app/assets/javascripts;T:filenameI"Oapp/assets/javascripts/discourse/templates/mobile/discovery/categories.hbs;T:	nameI"4discourse/templates/mobile/discovery/categories;T:logical_pathI"8discourse/templates/mobile/discovery/categories.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"ñ{{#each model.categories as |c|}}
+  <div class='category-list-item category' style="border-color: #{{unbound c.color}}">
+    <table class='topic-list'>
+      <tr>
+        <th class="main-link">
+          {{category-title-link category=c}}
+        </th>
+      </tr>
+
+      {{#if c.description_excerpt}}
+        <tr class="category-description">
+          <td colspan="3">
+            {{{c.description_excerpt}}}
+          </td>
+        </tr>
+      {{/if}}
+
+      {{#each c.topics as |t|}}
+        <tr class="{{if t.archived 'archived'}} category-topic-link">
+          <td class='main-link'>
+            <div class='topic-inset'>
+              {{topic-status topic=t}}
+              {{topic-link t}}
+              {{#if t.unseen}}
+                <span class="badge-notification new-topic"></span>
+              {{/if}}
+              <span class="{{cold-age-class t.last_posted_at}}" title='{{raw-date t.last_posted_at}}'>{{{format-age t.last_posted_at}}}</span>
+            </div>
+          </td>
+          <td class='num posts'>{{raw "list/post-count-or-badges" topic=t postBadgesEnabled="true"}}</td>
+        </tr>
+
+      {{/each}}
+      {{#if c.subcategories}}
+        <tr class="subcategories-list">
+          <td>
+            <div class='subcategories'>
+              {{#each c.subcategories as |subcategory|}}
+                {{category-link subcategory}}
+              {{/each}}
+            </div>
+          </td>
+        </tr>
+      {{/if}}
+
+    </table>
+    <footer class="clearfix">
+      <figure title="{{i18n 'year_desc'}}">{{number c.topics_year}} <figcaption>{{i18n 'category.this_year'}}</figcaption></figure>
+      <figure title="{{i18n 'month_desc'}}">{{number c.topics_month}} <figcaption>{{i18n 'month'}}</figcaption></figure>
+      <figure title="{{i18n 'week_desc'}}">{{number c.topics_week}} <figcaption>{{i18n 'week'}}</figcaption></figure>
+
+      {{#if c.can_edit}}
+        <a href {{action "editCategory" c}} class='btn btn-small'>{{i18n 'category.edit'}}</a>
+      {{/if}}
+
+    </footer>
+  </div>
+{{/each}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"]file-digest://app/assets/javascripts/discourse/templates/mobile/discovery/categories.hbs;TTF:charsetI"
+utf-8;F:digest"%¯!ı÷³ù?tŸŸp×muÖsgH¥Àø©¹6‡C”“Şš:lengthiñ:dependencies_digest"%+ñmb¡IÅ—œ°’ì\ü3ò¹±­+‚:Â-K•›ú…£:idI"Ee358470dd1b061f710dafe0856742bdbe4293d8e85a7e31840f3e06f7bc02fb9;F:
+mtimel+°cX

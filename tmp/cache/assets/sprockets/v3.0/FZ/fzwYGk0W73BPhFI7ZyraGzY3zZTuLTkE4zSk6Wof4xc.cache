@@ -1,0 +1,29 @@
+{:uriI"¦file://app/assets/javascripts/discourse/templates/topic-list-header.raw.hbs?type=text/x-handlebars&id=ca20edfed4442469d3fd0a8d2d681913b02919ea7dd1c3818e65c1d9f46003d7:ET:load_pathI"app/assets/javascripts;T:filenameI"Iapp/assets/javascripts/discourse/templates/topic-list-header.raw.hbs;T:	nameI"*discourse/templates/topic-list-header;T:logical_pathI"2discourse/templates/topic-list-header.raw.hbs;T:content_typeI"text/x-handlebars;T:sourceI"m{{#if bulkSelectEnabled}}
+<th class='star'>
+  <button class='btn bulk-select' title='{{i18n "topics.bulk.toggle"}}'><i class='fa fa-list'></i></button>
+</th>
+{{/if}}
+{{raw "topic-list-header-column" order='default' name='topic.title' showBulkToggle=toggleInTitle}}
+{{#unless hideCategory}}
+  {{raw "topic-list-header-column" sortable=sortable order='category' name='category_title'}}
+{{/unless}}
+{{#if showPosters}}
+  {{raw "topic-list-header-column" order='posters' name='users'}}
+{{/if}}
+{{raw "topic-list-header-column" sortable=sortable number='true' order='posts' name='replies'}}
+{{#if showParticipants}}
+  {{raw "topic-list-header-column" order='participants' name='users'}}
+{{/if}}
+{{#if showLikes}}
+  {{raw "topic-list-header-column" sortable=sortable number='true' order='likes' name='likes'}}
+{{/if}}
+{{#if showOpLikes}}
+  {{raw "topic-list-header-column" sortable=sortable number='true' order='op_likes' name='likes'}}
+{{/if}}
+{{raw "topic-list-header-column" sortable=sortable number='true' order='views' name='views'}}
+{{raw "topic-list-header-column" sortable=sortable number='true' order='activity' name='activity'}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Bprocessors:type=text/x-handlebars&file_type=text/x-handlebars;TTI"Wfile-digest://app/assets/javascripts/discourse/templates/topic-list-header.raw.hbs;TTF:charsetI"
+utf-8;F:digest"%¹ïõ³KqÙoÖ‰îÕTŸØŸÄ/ïÌö:ÀŠ«¯ÅGŸE§K:lengthim:dependencies_digest"%`ÑÐ.WXº:ä ñ=èç”·‰qs5nÍÅ˜púëïc:idI"Eca20edfed4442469d3fd0a8d2d681913b02919ea7dd1c3818e65c1d9f46003d7;F:
+mtimel+°cX

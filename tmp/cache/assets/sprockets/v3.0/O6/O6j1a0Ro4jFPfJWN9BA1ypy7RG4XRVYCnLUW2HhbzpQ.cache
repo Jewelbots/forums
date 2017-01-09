@@ -1,0 +1,31 @@
+{:uriI"¡file://app/assets/javascripts/discourse/templates/tags/index.hbs?type=text/x-ember-handlebars&id=a450c23906e529223dd0bcaf24e5c89d22ae56b357491742569c90bb06995d40:ET:load_pathI"app/assets/javascripts;T:filenameI">app/assets/javascripts/discourse/templates/tags/index.hbs;T:	nameI"#discourse/templates/tags/index;T:logical_pathI"'discourse/templates/tags/index.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"»<div class="container">
+  {{discourse-banner user=currentUser banner=site.banner}}
+</div>
+
+<div class="list-controls">
+  <div class="container">
+    {{#if canAdminTags}}
+      {{tags-admin-dropdown}}
+    {{/if}}
+    <h2>{{i18n "tagging.tags"}}</h2>
+  </div>
+</div>
+
+<div class='tag-sort-options'>
+  {{i18n "tagging.sort_by"}}
+  <a {{action "sortByCount"}}>{{i18n "tagging.sort_by_count"}}</a>
+  <a {{action "sortById"}}>{{i18n "tagging.sort_by_name"}}</a>
+</div>
+
+<hr/>
+
+{{#each model.extras.categories as |category|}}
+  {{tag-list tags=category.tags sortProperties=sortProperties categoryId=category.id}}
+{{/each}}
+
+{{tag-list tags=model sortProperties=sortProperties titleKey="tagging.all_tags"}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Lfile-digest://app/assets/javascripts/discourse/templates/tags/index.hbs;TTF:charsetI"
+utf-8;F:digest"%ü¢¨Ç†DÙÏ\W^õ±ìê^…—fíïA±ò;Ì¶¬ƒê:lengthi»:dependencies_digest"%hg¥daæêÿViùLtðÕZn$[óÀ¸z.¾)6:idI"Ea450c23906e529223dd0bcaf24e5c89d22ae56b357491742569c90bb06995d40;F:
+mtimel+°cX

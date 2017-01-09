@@ -1,0 +1,14 @@
+{:uriI"™file://app/assets/javascripts/admin/templates/groups.hbs?type=text/x-ember-handlebars&id=e9d94faf3fd642e4cde220c96f77f76cd576fbc91cdfb919726de2b4e89e81fd:ET:load_pathI"app/assets/javascripts;T:filenameI"6app/assets/javascripts/admin/templates/groups.hbs;T:	nameI"admin/templates/groups;T:logical_pathI"admin/templates/groups.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"G{{#admin-nav}}
+  {{nav-item route='adminGroupsType' routeParam='custom' label='admin.groups.custom'}}
+  {{nav-item route='adminGroupsType' routeParam='automatic' label='admin.groups.automatic'}}
+  {{nav-item route='adminGroups.bulk' label='admin.groups.bulk'}}
+{{/admin-nav}}
+
+<div class="admin-container">
+  {{outlet}}
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Dfile-digest://app/assets/javascripts/admin/templates/groups.hbs;TTF:charsetI"
+utf-8;F:digest"%ñ»À1éĞ	«ÀBÉÁè÷uBâyÿ0ŞÎ‡6ï@c²"e:lengthiG:dependencies_digest"%o­œMkØãş{B^¾)Š26,ìE-)0D8<§:idI"Ee9d94faf3fd642e4cde220c96f77f76cd576fbc91cdfb919726de2b4e89e81fd;F:
+mtimel+°cX

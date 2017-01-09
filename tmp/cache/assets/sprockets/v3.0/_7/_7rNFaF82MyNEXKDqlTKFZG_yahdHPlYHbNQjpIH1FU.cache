@@ -1,0 +1,14 @@
+{:uriI"ªfile://app/assets/javascripts/discourse/templates/modal/post-enqueued.hbs?type=text/x-ember-handlebars&id=7f46411db71cb3e9034e2b53a52e79fae8883e28e9a7cb3a9404994e892e8315:ET:load_pathI"app/assets/javascripts;T:filenameI"Gapp/assets/javascripts/discourse/templates/modal/post-enqueued.hbs;T:	nameI",discourse/templates/modal/post-enqueued;T:logical_pathI"0discourse/templates/modal/post-enqueued.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"ü<div class="modal-body">
+  <p>{{{description}}}</p>
+
+  <p>{{{i18n "queue.approval.pending_posts" count=model.pending_count}}}</p>
+</div>
+<div class="modal-footer">
+  {{d-button action="closeModal" class="btn-primary" label="queue.approval.ok"}}
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Ufile-digest://app/assets/javascripts/discourse/templates/modal/post-enqueued.hbs;TTF:charsetI"
+utf-8;F:digest"%mÕä¸¡BGğçE‹­(j'{ÚÁ
+Š‰nĞŞ$Íö±:lengthiü:dependencies_digest"%Ïò[Êş} ¡®Òiul;F@.©aóó»~ÖB$†1$×:idI"E7f46411db71cb3e9034e2b53a52e79fae8883e28e9a7cb3a9404994e892e8315;F:
+mtimel+°cX

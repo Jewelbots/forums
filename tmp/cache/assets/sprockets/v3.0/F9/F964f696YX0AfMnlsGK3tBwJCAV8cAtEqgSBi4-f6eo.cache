@@ -1,0 +1,36 @@
+{:uriI"†file://app/assets/javascripts/discourse/templates/discovery.hbs?type=text/x-ember-handlebars&id=d62bdfbf7b26f7b0ce3dd52fd3dd7765a3523f7e88f750db51761d23ab91a933:ET:load_pathI"app/assets/javascripts;T:filenameI"=app/assets/javascripts/discourse/templates/discovery.hbs;T:	nameI""discourse/templates/discovery;T:logical_pathI"&discourse/templates/discovery.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"…<div class="container">
+  {{discourse-banner user=currentUser banner=site.banner}}
+</div>
+
+<div class="list-controls">
+  <div class="container">
+    {{outlet "navigation-bar"}}
+  </div>
+</div>
+
+{{conditional-loading-spinner condition=loading}}
+
+<div class="container list-container {{if loading "hidden"}}">
+  <div class="row">
+    <div class="full-width">
+      <div id="header-list-area">
+        {{outlet "header-list-container"}}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="full-width">
+      <div id="list-area">
+        {{plugin-outlet "discovery-list-container-top"}}
+        {{outlet "list-container"}}
+      </div>
+    </div>
+  </div>
+</div>
+
+{{plugin-outlet "discovery-below"}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Kfile-digest://app/assets/javascripts/discourse/templates/discovery.hbs;TTF:charsetI"
+utf-8;F:digest"%,6,÷è#èyób,`2fÿ√Âô´ˆfàÊjÌÆ(Ç:lengthi…:dependencies_digest"%£ñç˛2Ú∑|DWeãô	Ê é	∏î>	!Û„2¿-.):idI"Ed62bdfbf7b26f7b0ce3dd52fd3dd7765a3523f7e88f750db51761d23ab91a933;F:
+mtimel+∞cX

@@ -1,0 +1,13 @@
+{:uriI"°file://app/assets/javascripts/discourse/templates/components/composer-title.hbs?type=text/x-ember-handlebars&id=3f8152d6fb736d0509d58370b7207128c26cf7d080970681dc955869dd78df0d:ET:load_pathI"app/assets/javascripts;T:filenameI"Mapp/assets/javascripts/discourse/templates/components/composer-title.hbs;T:	nameI"2discourse/templates/components/composer-title;T:logical_pathI"6discourse/templates/components/composer-title.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI""{{text-field value=composer.title
+             tabindex="2"
+             id="reply-title"
+             maxLength=siteSettings.max_topic_title_length
+             placeholderKey="composer.title_placeholder"
+             disabled=composer.loading}}
+
+{{popup-input-tip validation=validation}}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"[file-digest://app/assets/javascripts/discourse/templates/components/composer-title.hbs;TTF:charsetI"
+utf-8;F:digest"%'Š³Ä¶za†Á}öÀ¢1Ñá$9šÔë€g4âÏé{­»‹:lengthi":dependencies_digest"%eH:I¿UáÌJù°ñÍ–z„íqß_Ñ-ÍgvšË¸]:idI"E3f8152d6fb736d0509d58370b7207128c26cf7d080970681dc955869dd78df0d;F:
+mtimel+°cX

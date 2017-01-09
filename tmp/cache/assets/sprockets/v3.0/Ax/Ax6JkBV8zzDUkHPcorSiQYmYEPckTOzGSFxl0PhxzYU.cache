@@ -1,0 +1,16 @@
+{:uriI"²file://app/assets/javascripts/discourse/templates/components/discourse-banner.hbs?type=text/x-ember-handlebars&id=d947a28411f7f3ef00ef070dffe8dd3df2f57f2ef5238b3836cd5a1497f03497:ET:load_pathI"app/assets/javascripts;T:filenameI"Oapp/assets/javascripts/discourse/templates/components/discourse-banner.hbs;T:	nameI"4discourse/templates/components/discourse-banner;T:logical_pathI"8discourse/templates/components/discourse-banner.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"l<div class="row">
+  <div id="banner" class={{overlay}}>
+    <div id="banner-content">
+      <div class="close" {{action "dismiss"}}><i class="fa fa-times" title="{{i18n 'banner.close'}}"></i></div>
+      {{{banner.html}}}
+      {{#if currentUser.staff}}
+        <p><a href="{{banner.url}}">{{{i18n "banner.edit"}}}</a></p>
+      {{/if}}
+    </div>
+  </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"]file-digest://app/assets/javascripts/discourse/templates/components/discourse-banner.hbs;TTF:charsetI"
+utf-8;F:digest"%èáW~ ççê×iÖtQ­®	¾™`˜I"	#k:lengthil:dependencies_digest"%³¦§P²*yNÀ\Âi=IâŒœB÷«"eÔT™6Çú*.:idI"Ed947a28411f7f3ef00ef070dffe8dd3df2f57f2ef5238b3836cd5a1497f03497;F:
+mtimel+°cX

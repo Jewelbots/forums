@@ -1,0 +1,13 @@
+I"'require('discourse/lib/raw-handlebars').template({"1":function(container,depth0,helpers,partials,data) {
+    return "  "
+    + container.escapeExpression((helpers.raw || (depth0 && depth0.raw) || helpers.helperMissing).call(depth0 != null ? depth0 : {},"topic-post-badges",{"name":"raw","hash":{"url":"topic.lastUnreadUrl","unseen":"topic.unseen","newPosts":"topic.displayNewPosts","unread":"topic.unread"},"hashTypes":{"url":"PathExpression","unseen":"PathExpression","newPosts":"PathExpression","unread":"PathExpression"},"hashContexts":{"url":depth0,"unseen":depth0,"newPosts":depth0,"unread":depth0},"types":["StringLiteral"],"contexts":[depth0],"data":data}))
+    + "\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    return "  "
+    + container.escapeExpression((helpers.raw || (depth0 && depth0.raw) || helpers.helperMissing).call(depth0 != null ? depth0 : {},"list.posts-count-column",{"name":"raw","hash":{"tagName":"div","topic":"topic"},"hashTypes":{"tagName":"StringLiteral","topic":"PathExpression"},"hashContexts":{"tagName":depth0,"topic":depth0},"types":["StringLiteral"],"contexts":[depth0],"data":data}))
+    + "\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = helpers["if"].call(depth0 != null ? depth0 : {},"view.showBadges",{"name":"if","hash":{},"hashTypes":{},"hashContexts":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"types":["PathExpression"],"contexts":[depth0],"data":data})) != null ? stack1 : "");
+},"useData":true});:ET

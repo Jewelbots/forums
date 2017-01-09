@@ -1,0 +1,12 @@
+{:uriI"¥file://app/assets/javascripts/admin/templates/logs/details_modal.hbs?type=text/x-ember-handlebars&id=c4ca559ecccd7d93075a14a2e7817e96b368a294677f7340f9ffaceee510d5bf:ET:load_pathI"app/assets/javascripts;T:filenameI"Bapp/assets/javascripts/admin/templates/logs/details_modal.hbs;T:	nameI"'admin/templates/logs/details_modal;T:logical_pathI"+admin/templates/logs/details_modal.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"µ<div class="modal-body">
+  <pre>{{model.details}}</pre>
+</div>
+<div class="modal-footer">
+  <button class='btn btn-primary' {{action "closeModal"}}>{{i18n 'close'}}</button>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Pfile-digest://app/assets/javascripts/admin/templates/logs/details_modal.hbs;TTF:charsetI"
+utf-8;F:digest"%„BYkÊ³Ê]@
+ldè{´ryMë`•>X„<êoê(†:lengthiµ:dependencies_digest"%Œ#°Æe}ƒ‚{ ó#'åi³âJ‹Õ‰ú£°Š:idI"Ec4ca559ecccd7d93075a14a2e7817e96b368a294677f7340f9ffaceee510d5bf;F:
+mtimel+°cX

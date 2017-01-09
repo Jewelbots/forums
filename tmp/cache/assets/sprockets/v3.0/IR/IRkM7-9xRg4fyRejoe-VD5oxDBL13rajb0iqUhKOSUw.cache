@@ -1,0 +1,12 @@
+{:uriI"¯file://app/assets/javascripts/discourse/templates/modal/topic-bulk-actions.hbs?type=text/x-ember-handlebars&id=fe7a77dadb697157dcd1db3b5f4ee03efc42cb519c7f262102ef9e8a35b65859:ET:load_pathI"app/assets/javascripts;T:filenameI"Lapp/assets/javascripts/discourse/templates/modal/topic-bulk-actions.hbs;T:	nameI"1discourse/templates/modal/topic-bulk-actions;T:logical_pathI"5discourse/templates/modal/topic-bulk-actions.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"z<div class='modal-body'>
+
+  <p>{{{i18n 'topics.bulk.selected' count=length}}}</p>
+
+  {{outlet "bulkOutlet"}}
+
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Zfile-digest://app/assets/javascripts/discourse/templates/modal/topic-bulk-actions.hbs;TTF:charsetI"
+utf-8;F:digest"%2BÐ¸3CÙe}œ½ŽT”e£2ŠÒ·iz—ÂF<êm÷:lengthiz:dependencies_digest"%(·FIbv*E¡'Wìß,Åðëe­×©ž½cÃ{s:idI"Efe7a77dadb697157dcd1db3b5f4ee03efc42cb519c7f262102ef9e8a35b65859;F:
+mtimel+°cX

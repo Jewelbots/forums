@@ -1,0 +1,20 @@
+{:uriI"¬file://app/assets/javascripts/admin/templates/customize-email-templates.hbs?type=text/x-ember-handlebars&id=605579d1146525a22822c41ab3c115d1394c52dac64acc48a53330b88a48e864:ET:load_pathI"app/assets/javascripts;T:filenameI"Iapp/assets/javascripts/admin/templates/customize-email-templates.hbs;T:	nameI".admin/templates/customize-email-templates;T:logical_pathI"2admin/templates/customize-email-templates.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"9<div class='row'>
+  <div class='content-list span6'>
+    <ul>
+      {{#each sortedTemplates as |et|}}
+        <li>
+          {{#link-to 'adminCustomizeEmailTemplates.edit' et}}{{et.title}}{{/link-to}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class='content-editor'>
+    {{outlet}}
+  </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Wfile-digest://app/assets/javascripts/admin/templates/customize-email-templates.hbs;TTF:charsetI"
+utf-8;F:digest"%­"˜8n<Ê‘3º"s’{ÿG4 z•Jì{Žü:lengthi9:dependencies_digest"%þÜÚÆt¯C	Bt¤zßÒ¤®ä³`vª÷bµ¥7m:idI"E605579d1146525a22822c41ab3c115d1394c52dac64acc48a53330b88a48e864;F:
+mtimel+°cX

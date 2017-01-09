@@ -1,0 +1,23 @@
+{:uriI"¨file://app/assets/javascripts/admin/templates/components/value-list.hbs?type=text/x-ember-handlebars&id=954d2d584028318b35912d9f5675c6f843133d08918809ec41ae6fc873fa8603:ET:load_pathI"app/assets/javascripts;T:filenameI"Eapp/assets/javascripts/admin/templates/components/value-list.hbs;T:	nameI"*admin/templates/components/value-list;T:logical_pathI".admin/templates/components/value-list.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"{{#if collection}}
+  <div class='values'>
+    {{#each collection as |value index|}}
+      <div class='value' draggable='true' data-index={{index}}>
+        {{d-button action="removeValue"
+                   actionParam=value
+                   icon="times"
+                   class="btn-small"}}
+        {{value}}
+      </div>
+    {{/each}}
+  </div>
+{{/if}}
+
+<div class='input'>
+  {{text-field value=newValue placeholderKey=addKey}}
+  {{d-button action="addValue" icon="plus" class="btn-primary btn-small" disabled=inputInvalid}}
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Sfile-digest://app/assets/javascripts/admin/templates/components/value-list.hbs;TTF:charsetI"
+utf-8;F:digest"%…q£Ö¥EJJ<en<ÿ¤E¼¼_À¿J×«ÔVÁ:lengthi:dependencies_digest"%)µ/EÄgº	ú¡BVxÃfËyÙ‘îÅ`â¢:idI"E954d2d584028318b35912d9f5675c6f843133d08918809ec41ae6fc873fa8603;F:
+mtimel+°cX

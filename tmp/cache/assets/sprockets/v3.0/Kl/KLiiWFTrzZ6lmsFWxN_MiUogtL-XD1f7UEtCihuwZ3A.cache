@@ -1,0 +1,9 @@
+{:uriI"«file://app/assets/javascripts/admin/templates/modal/admin_start_backup.hbs?type=text/x-ember-handlebars&id=7d0520517ab7faea46ebc7f97d29033abab85e4cb7eb3eb418e19b619044d0bf:ET:load_pathI"app/assets/javascripts;T:filenameI"Happ/assets/javascripts/admin/templates/modal/admin_start_backup.hbs;T:	nameI"-admin/templates/modal/admin_start_backup;T:logical_pathI"1admin/templates/modal/admin_start_backup.hbs;T:content_typeI"text/x-ember-handlebars;T:sourceI"<button {{action "startBackup"}} class="btn btn-primary">{{i18n 'yes_value'}}</button>
+<button {{action "startBackupWithoutUpload"}} class="btn">{{i18n 'admin.backups.operations.backup.without_uploads'}}</button>
+<button {{action "cancel"}} class="btn">{{i18n 'no_value'}}</button>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Nprocessors:type=text/x-ember-handlebars&file_type=text/x-ember-handlebars;TTI"Vfile-digest://app/assets/javascripts/admin/templates/modal/admin_start_backup.hbs;TTF:charsetI"
+utf-8;F:digest"%Ì3{»m‰IZ§oÂ÷—æRºB•~Î*jóÍeÔşu:lengthi:dependencies_digest"%ĞñXuò­rtìØÃéW”‰İ
+sQàb‘93:idI"E7d0520517ab7faea46ebc7f97d29033abab85e4cb7eb3eb418e19b619044d0bf;F:
+mtimel+°cX
