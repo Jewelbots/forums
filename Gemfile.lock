@@ -491,7 +491,7 @@ DEPENDENCIES
   ruby-readability
   sanitize
   sass
-  sass-rails
+  sass-rails (~> 5.0.6)
   seed-fu (~> 2.3.5)
   shoulda
   sidekiq
