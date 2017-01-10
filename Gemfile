@@ -47,7 +47,7 @@ gem 'onebox'
 
 gem 'http_accept_language', '~>2.0.5', require: false
 
-gem 'ember-rails'
+gem 'ember-rails', '0.18.5'
 gem 'ember-source', '1.12.2'
 gem 'barber'
 gem 'babel-transpiler'
@@ -99,14 +99,14 @@ gem 'rest-client'
 gem 'rinku'
 gem 'sanitize'
 gem 'sass'
-gem 'sass-rails', '~> 5.0.6'
+gem 'sass-rails'
 gem 'sidekiq'
 gem 'sidekiq-statistic'
 
 # for sidekiq web
 gem 'sinatra', require: false
 gem 'execjs', require: false
-gem 'mini_racer', '~> 0.1.6'
+gem 'mini_racer'
 gem 'thin', require: false
 gem 'highline', require: false
 gem 'rack-protection' # security
