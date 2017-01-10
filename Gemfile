@@ -99,7 +99,7 @@ gem 'rest-client'
 gem 'rinku'
 gem 'sanitize'
 gem 'sass'
-gem 'sass-rails'
+gem 'sass-rails', '~> 5.0.6'
 gem 'sidekiq'
 gem 'sidekiq-statistic'
 
