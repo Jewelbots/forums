@@ -27,7 +27,7 @@ else
   # gem 'actionmailer'
   # gem 'activejob'
   # gem 'railties'
-  # gem 'sprockets-rails'
+  # gem 'sprockets-rails, '~> 3.6.3'
   gem 'rails', '~> 4.2'
 
   gem 'rails-observers'
